@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <header class="pageperupa">
+       <div class="container karyacontainer">
+        <div class="row text-center text-lg-left">
+            {% for karya in Karya %}
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb lithumb">
+                    <div class="thumbnail_list">
+                        <a href="/karya/{{ karya.id }}" class="d-block mb-4 h-100">
+                            <img class="img-fluid imgtum imgkarya potraitthumb" src="/media/{{ karya.Gambar }}" alt="">
+                            <div class="middle">
+                                <div class="text"><i class="fas fa-link"></i></div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="descthumb">
+                        <label>{{ karya.Judul }}</label><br>
+                        <label>{{ karya.Perupa.Panggilan }}</label>
+                    </div>
+                </div>
+            {% endfor %}
+         </div>
+       </div>
+    </header>
+
+
+    {% if Karya.has_other_pages %}
+        <nav aria-label="Page navigation example" style="margin: 0 auto;">
+            <ul class="pagination">
+                {% if Karya.has_previous %}
+                    <li class="page-item"><a class="page-link" href="?page={{ Karya.previous_page_number }}">&laquo;</a></li>
+                {% else %}
+                    <li class="disabled"><span>&laquo;</span></li>
+                {% endif %}
+
+                {% for i in Karya.paginator.page_range %}
+                    {% if Karya.number == i %}
+                        <li class="active"><span>{{ i }}<span class="sr-only">(current)</span></span></li>
+                     {% else %}
+                        <li><a class="page-link" href="?page={{ i }}">{{ i }}</a></li>
+                    {% endif %}
+                {% endfor %}
+
+                {% if Karya.has_next %}
+                    <li class="page-item"><a class="page-link" href="?page={{ Karya.next_page_number }}">&raquo;</a></li>
+                {% else %}
+                    <li class="disabled"><span>&raquo;</span></li>
+                 {% endif %}
+            </ul>
+        </nav>
+    {% endif %}
+
+
+{% endblock %}

@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <section>
+        <div class="topdetail">
+          <div class="container">
+            <img src="/media/{{ Perupa.Gambar }}" class="imgperupadetail">
+          </div>
+          <div class="container containertop">
+            <h1>{{ Perupa.Nama }}</h1>
+            <label>{{ Perupa.Tanggal_Lahir }} - {{ Perupa.Tanggal_Wafat }}</label><br><Br>
+            <label>20 Lukisan</label>
+          </div>
+        </div>
+
+        <div class="container">
+             <div class="isidetail">
+                 <p>{{ Perupa.Keterangan }}</p>
+             </div>
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+     <section class="pageperupa">
+       <div class="container perupadetailcontainer">
+        <div class="row text-center text-lg-left">
+
+            <!--thumbnail list-->
+
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb lithumb">
+            <div class="thumbnail_list">
+              <a href="" class="d-block mb-4 h-100">
+                <img class="img-fluid imgtum imgkarya potraitthumb" src="/media/{{ karya.Gambar }}" alt="">
+                  <div class="middle">
+                    <div class="text"><i class="fas fa-link"></i></div>
+                  </div>
+              </a>
+            </div>
+          </div>
+
+          <nav aria-label="Page navigation example" style="margin: 0 auto;">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+      </div>
+
+       </div>
+    </section>
+{% endblock %}
