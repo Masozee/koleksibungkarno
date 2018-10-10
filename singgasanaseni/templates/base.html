@@ -16,7 +16,7 @@
 
     <!-- Custom Fonts -->
     <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
-    <link href="{% static 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic' %}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="{% static 'vendor/simple-line-icons/css/simple-line-icons.css' %}" rel="stylesheet">
 
     <!-- Custom CSS -->
@@ -40,21 +40,21 @@
     <nav id="sidebar-wrapper">
       <ul class="sidebar-nav">
         <li class="sidebar-brand">
-          <a class="js-scroll-trigger" href="Http://localhost:8000/">
+          <a class="js-scroll-trigger" href="{% url 'homepage-views' %}">
             <img src="{% static 'img/logomenu.png' %}">
           </a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="http://185.201.9.184/perupa/">Perupa</a>
+          <a class="js-scroll-trigger" href="{% url 'perupa-list' %}">Perupa</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="http://185.201.9.184/karya/">Karya</a>
+          <a class="js-scroll-trigger" href="{% url 'karya-list' %}">Karya</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="http://185.201.9.184/acara/">Acara</a>
+          <a class="js-scroll-trigger" href="{% url 'acara-list' %}">Acara</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="http://185.201.9.184/tentangkami/">Tentang Kami</a>
+          <a class="js-scroll-trigger" href="{% url 'tentang-kami' %}">Tentang Kami</a>
         </li>
       </ul>
     </nav>
