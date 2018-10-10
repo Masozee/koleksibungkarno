@@ -17,16 +17,16 @@ admin.sites.AdminSite.index_title = 'Singgasana Seni'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', homepageviews.index),
-    path('tentangkami/', homepageviews.tentangkami),
-    path('karya/', singgasanaseniviews.karyalist),
-    re_path(r'^karya/(?P<karya_id>\d+)/$', singgasanaseniviews.Karyadetail),
-    path('perupa/', singgasanaseniviews.PerupaList),
-    re_path(r'^perupa/(?P<perupa_id>\d+)/$', singgasanaseniviews.Perupadetail),
-    path('acara/', singgasanaseniviews.Acaralist),
-    re_path(r'^acara/(?P<acara_id>\d+)/$', singgasanaseniviews.acaradetail),
-    path('istana/', singgasanaseniviews.Istanalist),
-    re_path(r'^istana/(?P<istana_id>\d+)/$', singgasanaseniviews.Istanadetail),
+    path('', homepageviews.index, name='homepage-views'),
+    path('tentangkami/', homepageviews.tentangkami, name='tentang-kami'),
+    path('karya/', singgasanaseniviews.karyalist, name='karya-list'),
+    re_path(r'^karya/(?P<karya_id>\d+)/$', singgasanaseniviews.Karyadetail, name='karya-detail'),
+    path('perupa/', singgasanaseniviews.PerupaList, name='perupa-list'),
+    re_path(r'^perupa/(?P<perupa_id>\d+)/$', singgasanaseniviews.Perupadetail, name='perupa-detail'),
+    path('acara/', singgasanaseniviews.Acaralist, name='acara-list'),
+    re_path(r'^acara/(?P<acara_id>\d+)/$', singgasanaseniviews.acaradetail, name='acara-detail'),
+    path('istana/', singgasanaseniviews.Istanalist, name='istana-list'),
+    re_path(r'^istana/(?P<istana_id>\d+)/$', singgasanaseniviews.Istanadetail, name='istana-detail'),
 
 ]
 
