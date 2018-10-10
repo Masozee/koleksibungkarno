@@ -180,7 +180,7 @@ h6 {
 
 .menu-toggle {
     position: fixed;
-    left: 15px;
+    left: 50px;
     top: 15px;
     width: 50px;
     height: 50px;
@@ -578,6 +578,8 @@ a:hover {
         position: absolute;
     top: 7%;
     left: 10%;
+    border-radius: 50%;
+    border:1px solid #ccc;
 }
 
 .perupadetailcontainer{
@@ -598,4 +600,91 @@ a:hover {
     overflow: scroll;
     max-height: 250px;
     padding-right: 2%;
+    min-height: 250px;
+    overflow-x: hidden;
+    margin-bottom: 10px;
 }
+
+.imgkarya{
+   background: url(images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+#background {
+    width: 100%; 
+    height: auto; 
+    position: fixed; 
+    left: 0px; 
+    top: 0px; 
+    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+}
+
+.stretch {
+    width:100%;
+    height:100%;
+}
+
+.divdesc{
+    background: #787272;
+    width: 30px;
+    height: 100%;
+    position: fixed;
+    color: #fff;
+}
+
+.divdesc label{
+      -webkit-transform :rotate(90deg);
+      -ms-transform :rotate(90deg);
+      transform: rotate(90deg);
+
+    letter-spacing: 8px;
+    font-weight: bold;
+    margin-top: 24px;
+}
+.detailkaryadiv{
+        background: #787272de;
+    position: fixed;
+    width: 35%;
+    height: 100%;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    padding-top: 75px;
+    font-size: 15px;
+    -webkit-transition: all .4s ease 0s;
+    transition: all .4s ease 0s;
+    -webkit-transform: translateX(250px);
+    transform: translateX(250px);
+    left: -55%;
+}
+
+.detailkaryadiv.active {
+    left: -20%;
+    -webkit-transition: all .4s ease 0s;
+    transition: all .4s ease 0s;
+}
+
+
+.detailkaryadiv.activemenu {
+    left: 0%;
+    -webkit-transition: all .4s ease 0s;
+    transition: all .4s ease 0s;
+}
+
+
+
+.detailkaryadiv h1{font-size: 28px;}
+
+.detailkaryadiv p{text-align: justify; padding: 20px 50px;}
+.detailkaryadiv img{
+    height: auto;
+    width: 150px;
+}
+
+.closeDivDetail{position: absolute;color: #fff; top: 10px; right: 20px;}
+.paging_block{width: 100%; text-align: center;}
+.contentperupa{min-height: 330px;}
