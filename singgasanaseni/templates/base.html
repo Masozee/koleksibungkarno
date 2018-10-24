@@ -1,4 +1,5 @@
-{% load staticfiles %}
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,10 +10,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Singgasana Seni</title>
+    <title>Singgasanaseni</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{%  static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}" />
 
     <!-- Custom Fonts -->
     <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
@@ -26,48 +28,45 @@
 
   <body id="page-top">
 
-    <!-- Navigation -->
-    <a class="menu-toggle" href="#">
-      <i class="fas fa-bars"></i>
-    </a>
 
-    <!--search-->
-    <span class="searchdiv">
-      <input type="text" class="txtsearch" placeholder="Search...">
-      <a href="#"><i class="fas fa-search btnsearch"></i></a>
-    </span>
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="/">
+              <img src="{% static 'img/logo.jpg' %}">
+            </a>
+          </div>
+          <ul class="nav">
+            <li><a href="{% url 'karya-list' %}">Koleksi</a></li>
+            <li><a href="{% url 'perupa-list' %}">Perupa</a></li>
+            <li><a href="{% url 'istana-list' %}">Istana</a></li>
+            <li><a href="#">Publikasi</a></li>
+            <li><a href="{% url 'acara-list' %}">Berita</a></li>
+            <li><a href="{% url 'tentang-kami' %}">Tentang Kami</a></li>
+            <li>
+                <form class="navbar-form navbar-right">
+                  <div class="input-group">
+                    <input type="text" class="form-control formsearch" placeholder="Search" name="search">
+                    <div class="input-group-btn">
+                        <a href="#">
+                          <i class="fa fa-search" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                  </div>
+                </form>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-    <nav id="sidebar-wrapper">
-      <ul class="sidebar-nav">
-        <li class="sidebar-brand">
-          <a class="js-scroll-trigger" href="{% url 'homepage-views' %}">
-            <img src="{% static 'img/logomenu.png' %}">
-          </a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="{% url 'perupa-list' %}">Perupa</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="{% url 'karya-list' %}">Karya</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="{% url 'acara-list' %}">Acara</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="{% url 'tentang-kami' %}">Tentang Kami</a>
-        </li>
-      </ul>
-    </nav>
-    
-   
+        {% block content %}
+`
+        {% endblock %}
 
-    <!-- Header -->
+    <footer>
+        @Singgasana Seni. Hak Cipta dilindungi undang-undang
 
-          <!--thumbnail list-->
-            {% block content %}
-            
-            {% endblock %}
-
+    </footer>
 
     <!-- Bootstrap core JavaScript -->
     <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
@@ -78,6 +77,27 @@
 
     <!-- Custom scripts for this template -->
     <script src="{% static 'js/stylish-portfolio.min.js' %}"></script>
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+
+          $(".sample1").click(function(){
+            $(".popups").addClass('animated slideInUp').css("display","block");
+          });
+
+          $(".closepop").click(function(){
+            $(".popups").css("display","none");
+            $(".popups").addClass('animated slideOutUp');
+
+          });
+
+
+        });
+    </script>
+
+
   </body>
 
 </html>

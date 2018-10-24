@@ -40,7 +40,7 @@ class karya(models.Model):
 
     No_Index = models.CharField(max_length=50)
     Judul = models.CharField(max_length=50)
-    Perupa = models.ForeignKey(perupa, on_delete=models.CASCADE)
+    Perupa = models.ForeignKey(perupa ,on_delete=models.CASCADE)
     Jenis = models.CharField(max_length=10, choices=KARYA_CHOICES)
     Dimensi = models.CharField(max_length=25)
     Material = models.CharField(max_length=20)

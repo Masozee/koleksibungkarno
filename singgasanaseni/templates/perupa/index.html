@@ -1,53 +1,64 @@
 {% extends 'base.html' %}
 
 {% block content %}
+    <article>
+      <div class="container-fluid">
 
-    <header class="pageperupa">
-       <div class="container perupacontainer">
-            <div class="row text-center text-lg-left">
-                {% for perupa in Perupa %}
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb lithumb">
-                    <div class="thumbnail_list">
-                        <a href="/perupa/{{ perupa.id }}" class="d-block mb-4 h-100">
-                            <img class="img-fluid imgtum imgkarya potraitthumb" src="/media/{{ perupa.Gambar }}" alt="">
-                            <div class="middle">
-                                <div class="text"><i class="fas fa-link"></i></div>
-                            </div>
-                        </a>
-                    </div>
+          <div class="row">
+            <div class="col-md-12 sectionkoleksi">
+              <span class="divkoleksi divkarya">
+                <h3>Koleksi > Perupa</h3>
+              </span>
 
-                    <div class="descthumb">
-                        <label>{{ perupa.Nama }}</label><br>
-                    </div>
+                <div class="formsearchkarya">
+                    <form method="GET" action="">
+                        <input type="text" name="q" placeholder="Search  artist">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </form>
                 </div>
-            {% endfor %}
 
-                {% if Perupa.has_other_pages %}
-                    <nav aria-label="Page navigation example" style="margin: 0 auto;">
-                        <ul class="pagination">
-                            {% if Perupa.has_previous %}
-                                <li class="page-item"><a class="page-link" href="?page={{ Perupa.previous_page_number }}">&laquo;</a></li>
-                            {% else %}
-                                <li class="disabled"><span>&laquo;</span></li>
-                            {% endif %}
-
-                            {% for i in Perupa.paginator.page_range %}
-                                {% if Perupa.number == i %}
-                                    <li class="active"><span>{{ i }}<span class="sr-only">(current)</span></span></li>
-                                {% else %}
-                                    <li><a class="page-link" href="?page={{ i }}">{{ i }}</a></li>
-                                {% endif %}
-                            {% endfor %}
-
-                            {% if Perupa.has_next %}
-                                <li class="page-item"><a class="page-link" href="?page={{ Perupa.next_page_number }}">&raquo;</a></li>
-                            {% else %}
-                                <li class="disabled"><span>&raquo;</span></li>
-                            {% endif %}
-                        </ul>
-                    </nav>
-                {% endif %}
             </div>
-       </div>
-    </header>
+          </div>
+
+          <div class="row bgkarya">
+             <div class="col-md-12 sectionkoleksi">
+              <span class="divkoleksi">
+                page {{ perupa.number }}/{{ perupa.paginator.num_pages }}
+                <span class="pagingkarya">
+                     <ul class="pagination">
+                        {% if perupa.has_previous %}
+                            <a href="?page={{ perupa.previous_page_number }}"><</a>
+                        {% endif %}
+
+                        {% for i in perupa.paginator.page_range %}
+                            {% if perupa.number == i %}
+                                <li class="active"><span>{{ i }}<span class="sr-only">(current)</span></span></li>
+                            {% else %}
+                                <li><a href="?page={{ i }}">{{ i }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+
+                        {% if perupa.has_next %}
+                            <a href="?page={{ perupa.next_page_number }}"> > </a>
+                        {% endif %}
+                     </ul>
+                </span>
+              </span>
+            </div>
+
+              <div class="col-md-12">
+                    <ul class="seckarya">
+                         {% for Perupa in perupa %}
+                        <li class="col-md-3 perupalist karyalist">
+                            <a href="/perupa/{{ Perupa.id }}" class="sample1">
+                                <h5>{{ Perupa.Nama }}</h5>
+                            </a>
+                            <p>{{ Perupa.Tanggal_Lahir }} - {{ Perupa.Tanggal_Wafat }}</p>
+                        </li>
+                        {% endfor %}
+                    </ul>
+              </div>
+          </div>
+      </div>
+    </article>
 {% endblock %}

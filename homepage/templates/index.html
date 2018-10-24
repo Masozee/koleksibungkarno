@@ -1,66 +1,8 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
 
-  <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="Singgasana Seni" content="">
-
-    <title>Singgasana Seni</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
-    <link href="{% static 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic' %}" rel="stylesheet" type="text/css">
-    <link href="{% static 'vendor/simple-line-icons/css/simple-line-icons.css' %}" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="{% static 'css/stylish-portfolio.min.css' %}" rel="stylesheet">
-
-  </head>
-
-  <body id="page-top">
-
-    <!-- Navigation -->
-    <a class="menu-toggle" href="#">
-      <i class="fas fa-bars"></i>
-    </a>
-
-    <!--search-->
-    <span class="searchdiv">
-      <input type="text" class="txtsearch" placeholder="Search...">
-      <a href="#"><i class="fas fa-search btnsearch"></i></a>
-    </span>
-
-    <nav id="sidebar-wrapper">
-      <ul class="sidebar-nav">
-        <li class="sidebar-brand">
-          <a class="js-scroll-trigger" href="http://185.201.9.184">
-            <img src="{% static 'img/logomenu.png' %}">
-          </a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="http://185.201.9.184/perupa">Perupa</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="http://185.201.9.184/karya">Karya</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="http://185.201.9.184/acara">Acara</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="http://185.201.9.184/tentangkami">Tentang Kami</a>
-        </li>
-      </ul>
-    </nav>
-    
-   
-
+{% block content %}
+    {% load static %}
     <!-- Header -->
     <header>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -71,25 +13,15 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="d-block w-100" src="{% static 'img/slide1.png' %}" alt="First slide">
-              <div class="carousel-caption d-none d-md-block">
-                <h3>Upacara Asah Pangur</h3>
-                <p>I Gusti Ketut Kobot</p>
-              </div>
+              <img class="d-block w-100" src="{% static 'img/slider1.png' %}" alt="First slide">
+
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="{% static 'img/slide2.png' %}" alt="Second slide">
-              <div class="carousel-caption d-none d-md-block">
-                <h3>Gelombang Laut</h3>
-                <p>Wilhelmus Jean Frederic Imandt</p>
-              </div>
+              <img class="d-block w-100" src="{% static 'img/slider2.jpeg' %}" alt="Second slide">
+
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="{% static 'img/slide3.png' %}" alt="Third slide">
-              <div class="carousel-caption d-none d-md-block">
-                <h3>Tarian Bali</h3>
-                <p>Ida Bagus Made Narendra</p>
-              </div>
+              <img class="d-block w-100" src="{% static 'img/slider3.jpeg' %}" alt="Third slide">
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -103,16 +35,127 @@
         </div>
     </header>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <article>
+      <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12 sectionkoleksi">
+              <div class="divkoleksi">
+                <h3>Koleksi</h3>
+                <a href="#">View All</a>
+              </div>
+            </div>
+            <div class="col-lg-12 sectionkoleksi">
+                <ul>
+                    <li class="koleksidiv">
+                      <a href="#">
+                        <img src="{% static 'img/jpg1.jpg' %}" class="koleksiimg">
+                        <label class="koleksilabel">Potret dan Sensualitas</label>
+                      </a>
+                    </li>
+                    <li class="koleksidiv">
+                      <a href="#">
+                        <img src="{% static 'img/jpg1.jpg' %}" class="koleksiimg">
+                        <label class="koleksilabel">Alam Benda</label>
+                      </a>
+                    </li>
+                    <li class="koleksidiv">
+                      <a href="#">
+                        <img src="{% static 'img/jpg1.jpg' %}" class="koleksiimg">
+                        <label class="koleksilabel">Pemandangan Alam dan Kota</label>
+                      </a>
+                    </li>
+                    <li class="koleksidiv">
+                      <a href="#">
+                        <img src="{% static 'img/jpg1.jpg' %}" class="koleksiimg">
+                        <label class="koleksilabel">Perjuangan dan Potret para pejuang</label>
+                      </a>
+                    </li>
+                    <li class="koleksidiv">
+                      <a href="#">
+                        <img src="{% static 'img/jpg1.jpg' %}" class="koleksiimg">
+                        <label class="koleksilabel">Tradisi/Budaya/Mitologi/Keseharian</label>
+                      </a>
+                    </li>
+                    <li class="koleksidiv">
+                      <a href="#">
+                        <img src="{% static 'img/jpg1.jpg' %}" class="koleksiimg">
+                        <label class="koleksilabel">patung dan Kriya</label>
+                      </a>
+                    </li>
+                </ul>
+            </div>
+          </div>
 
-    <!-- Plugin JavaScript -->
-    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="{% static 'js/stylish-portfolio.min.js' %}"></script>
+          <!--perupa-->
+          <div class="row">
+            <div class="col-md-12 sectionkoleksi">
+              <div class="divkoleksi">
+                <h3>Perupa</h3>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <ul>
+                  <li class="col-md-4 perupalist">
+                    <a href="#">
+                      <img src="{% static 'img/perupa1.jpg' %}" class="">
+                      <label class="koleksilabel">Basuki Abdoellah</label>
+                    </a>
+                  </li>
+                  <li class="col-md-4 perupalist">
+                    <a href="#">
+                      <img src="{% static 'img/perupa2.jpg' %}" class="">
+                      <label class="koleksilabel">Nature</label>
+                    </a>
+                  </li>
+                  <li class="col-md-4 perupalist">
+                    <a href="#">
+                      <img src="{% static 'img/perupa3.jpg' %}" class="">
+                      <label class="koleksilabel">Nature</label>
+                    </a>
+                  </li>
+              </ul>
+            </div>
+          </div>
 
-  </body>
 
-</html>
+
+          <!--News-->
+          <div class="row">
+            <div class="col-md-12 sectionkoleksi">
+              <div class="divkoleksi">
+                <h3>News</h3>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <ul class="sectionnews">
+                  <li class="col-md-4 perupalist newslist">
+                    <a href="#">
+                      <img src="{% static 'img/karya1.jpg' %}">
+                      <span class="divdetailnews">
+                        <h2>SENANDUNG IBU PERTIWI</h2>
+                        <h3>2-30 AGUSTUS 2018</h3>
+                        <label>GALERI NASIONAL INDONESIA</label>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="col-md-4 perupalist newslist">
+                    <a href="#">
+                      <img src="{% static 'img/karya1.jpg' %}" class="">
+                     
+                    </a>
+                  </li>
+                  <li class="col-md-4 perupalist newslist">
+                    <a href="#">
+                      <img src="{% static 'img/karya1.jpg' %}" class="">
+
+                    </a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </article>
+
+
+{% endblock %}

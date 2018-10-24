@@ -404,7 +404,7 @@ a:hover {
 }
 .searchdiv a{color: inherit;}
 .carousel-item {
-  height: 100vh;
+  height: 450px;
   min-height: 300px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
@@ -473,10 +473,7 @@ a:hover {
   padding: 16px 32px;
 }
 
-.karyalist{
-     background-repeat: no-repeat;
-    background-size: auto;
-}
+
 
 
 
@@ -688,3 +685,160 @@ a:hover {
 .closeDivDetail{position: absolute;color: #fff; top: 10px; right: 20px;}
 .paging_block{width: 100%; text-align: center;}
 .contentperupa{min-height: 330px;}
+
+.nav li{float: left;padding: 10px 15px;}
+.nav li a{float: left;}
+.koleksidiv{
+        float: left;
+    list-style: none;
+    width: 193px;
+    max-width: 100%;
+}
+.formsearch{display: none;}
+.koleksiimg{
+        width: 96%;
+    padding: 5px;
+}
+.koleksilabel{text-align: center;width: 100%; float: left;}
+.sectionkoleksi{
+        padding: 0 4%;
+}
+.divkoleksi{
+        width: 100%;
+    float: left;
+    border-bottom: 1px solid #ccc;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.divkoleksi h3{float: left;}
+.divkoleksi a {float: right;}
+.gridkoleksi{
+    padding: 0 4% ;
+}
+.perupalist{list-style: none;
+float: left;
+}
+.newslist img{max-width: 100%;}
+.sectionnews{
+    padding: 0 3%;
+}
+
+.divdetailnews{
+        background: #ffffffc7;
+    position: absolute;
+    bottom: 0;
+    /* left: 0; */
+    width: 93%;
+    padding: 0 30px;
+    line-height: 0;
+    min-height: 40%;
+    display: none;
+}
+.divdetailnews h2{
+      line-height: 1em;
+    margin: 0;
+    margin-top: 10%;
+    font-size: 38px;
+    color: #000;
+}
+.divdetailnews label{
+    color: #000;
+}
+
+.divdetailnews h3{font-size: 20px;color: #000}
+footer{
+    background: #787878;
+    color: #fff;
+    padding: 1% 2%;
+    margin-top: 100px;
+}
+.karyalist{
+        padding: 7px;
+}
+.karyalist img{width: 100%;}
+.divkarya h3{
+        color: #d0ca21;
+    font-weight: normal;
+    font-size: 20px;
+}
+.seckarya{
+        padding: 0 2%;
+}
+.divkarya{    border-bottom: 1px solid #d0ca21 !important; margin-bottom: 5px;}
+.bgkarya{
+    background: #f2f2fb;
+    margin-top: 5px;
+}
+.bgkarya h3{
+    font-size: 15px;
+    color: #ababab;
+
+}
+
+.pagingkarya{text-align: right;float: right;}
+.formsearchkarya{float: right;}
+.formsearchkarya input{    border: none;
+    font-size: 12px;
+    text-align: left;
+    margin-right: 10px;
+    width: 150px;}
+
+
+.popups{
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background: #000000bd;
+    display: none;
+}
+
+.navbar{
+-webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.11);
+-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.11);
+box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.11);
+}
+.toppoups{
+            min-height: 87px;
+}
+.centerpopups{
+    background: #000;
+    border-bottom: 1px solid #826219;
+    border-top: 1px solid #826219;
+}
+.centerpopups img{
+    border: 1px solid #826219;
+}
+.bottompop{
+    min-height: 315px;
+    color: #fff;
+    line-height: 2em;
+    padding-top: 25px;
+}
+.bottompop h3{font-weight: normal;}
+.arrowrightkarya{
+    color: #fff;
+    font-size: 60px;
+    /* float: right; */
+    margin-left: 5%;
+}
+
+
+.arrowleftkarya{
+    color: #fff;
+    font-size: 60px;
+    /* float: right; */
+    margin-right: 5%;
+}
+
+.closepop{
+        color: #fff;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 30px;
+}
+
+
