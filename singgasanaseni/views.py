@@ -31,11 +31,14 @@ def PerupaList(request):
 def Perupadetail(request, perupa_id):
     try:
         Perupa = perupa.objects.get(pk=perupa_id)
-    except perupa.DoesNotExist:
+    except Perupa.DoesNotExist:
         raise Http404('Data Perupa Belum Tersedia')
+
+    karyarelated = karya.objects.filter(Perupa__karya=Perupa.id)
 
     context={
         "Perupa": Perupa,
+        "Karya": karyarelated
     }
 
     return render(request, 'perupa/detail.html', context)
@@ -43,6 +46,9 @@ def Perupadetail(request, perupa_id):
 #Karya-------------------------------------------------------------------------------------
 def karyalist(request):
     Karya = karya.objects.all()
+
+
+
     query = request.GET.get("q")
     if query:
         Karya = Karya.filter(Judul__icontains=query)
@@ -59,7 +65,8 @@ def karyalist(request):
 
     context = {
         "karya": Karya,
-        "page_request_var": Page_request_var
+        "page_request_var": Page_request_var,
+
     }
 
     return render(request, 'karya/index.html', context)
@@ -67,11 +74,12 @@ def karyalist(request):
 
 def Karyadetail(request, karya_id):
     try:
-        Karya = karya.objects.get(pk=karya_id)
+        Detail = karya.objects.get(pk=karya_id)
     except karya.DoesNotExist:
         raise Http404('data Karya belum tersedia')
 
-    return render(request, 'karya/detail.html', context={'Karya': Karya})
+    return render(request, 'karya/index.html', context={'detail': Detail})
+
 
 #acara-------------------------------------------------------------------------------
 def Acaralist(request):

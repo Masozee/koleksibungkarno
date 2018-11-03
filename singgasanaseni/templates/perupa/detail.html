@@ -1,57 +1,140 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <section>
-        <div class="topdetail">
-          <div class="container">
-            <img src="/media/{{ Perupa.Gambar }}" class="imgperupadetail">
-          </div>
-          <div class="container containertop">
-            <h1>{{ Perupa.Nama }}</h1>
-            <label>{{ Perupa.Tanggal_Lahir }} - {{ Perupa.Tanggal_Wafat }}</label><br><Br>
-            <label>20 Lukisan</label>
-          </div>
-        </div>
+    <article>
+      <div class="container-fluid">
 
-        <div class="container">
-             <div class="isidetail">
-                 <p>{{ Perupa.Keterangan }}</p>
-             </div>
+          <div class="row">
+            <div class="col-md-12 sectionprofile">
+              <div class="row">
+                <div class="col-md-3 profil">
+                    <img src="/media/{{ Perupa.Gambar }}">
+                </div>
+                <div class="col-md-5 profildetail">
+                    <h2>{{ Perupa.Nama }}</h2>
+                    <label>{{ Perupa.Tanggal_Lahir }} - {{ Perupa.Tanggal_Wafat }}</label>
 
-        </div>
-    </section>
-
-
-
-
-     <section class="pageperupa">
-       <div class="container perupadetailcontainer">
-        <div class="row text-center text-lg-left">
-
-            <!--thumbnail list-->
-
-          <div class="col-lg-3 col-md-4 col-xs-6 thumb lithumb">
-            <div class="thumbnail_list">
-              <a href="" class="d-block mb-4 h-100">
-                <img class="img-fluid imgtum imgkarya potraitthumb" src="/media/{{ Karya.Gambar }}" alt="">
-                  <div class="middle">
-                    <div class="text"><i class="fas fa-link"></i></div>
-                  </div>
-              </a>
+                      <div class="panel-wrapper">
+                        <a href="#show" class="show" id="show">[show full text +]</a>
+                        <a href="#hide" class="hide" id="hide">[hide text -]</a>
+                        <div class="panel">
+                            {{ Perupa.Keterangan }}
+                        </div>
+                        <div class="fade"></div>
+                      </div>
+                </div>
+              </div>
             </div>
           </div>
-
-          <nav aria-label="Page navigation example" style="margin: 0 auto;">
-            <ul class="pagination">
-              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item"><a class="page-link" href="#">Next</a></li>
-            </ul>
-          </nav>
+          <div class="row bgkarya">
+             <div class="col-md-12 sectionkoleksi">
+              <span class="divkoleksi" style="border: none;">
+                <h3>page {{ Karya.number }}/{{ Karya.paginator.num_pages }}</h3>
+                <span class="pagingkarya">
+                    Paging Number
+                </span>
+              </span>
+            </div>
+              {% for karya in Karya %}
+            <div class="col-md-12">
+              <div class="row seckarya">
+                  <div class="col-md-3 perupalist karyalist">
+                    <a href="#" class="sample1">
+                      <img src="/media/{{ karya.Gambar }}" class="">
+                        <figcaption>
+                           <h3>{{ karya.Perupa }}</h3>
+                            <p>
+                              <i>{{ karya.Judul }}</i><Br>
+                              {{ karya.Material }}<br>
+                              {{ karya.Dimensi }}
+                            </p>
+                        </figcaption>
+                    </a>
+                  </div>
+               {% endfor %}
+              </div>
+            </div>
+          </div>
       </div>
+    </article>
 
-       </div>
-    </section>
+
+    <!--popups-->
+    <article class="popups">
+      <a href="#" class="closepop">
+        <i class="fa fa-times"></i>
+      </a>
+      <section class="toppoups">&nbsp;</section>
+      <section class="centerpopups">
+         <a href="#">
+          <span class="arrowleftkarya">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+          </span>
+        </a>
+
+        <img src="/media/{{ Karya.Gambar }}">
+
+        <a href="#">
+          <span class="arrowrightkarya">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </span>
+        </a>
+      </section>
+      <section class="bottompop">
+        <h3>{{ Karya.Perupa }}</h3>
+        <p>
+          <i>Lorem ipsum Lorem ipsum</i><Br>
+          ca.1065<br>
+          Oil and Canvas<br>
+          120 x 145 cm
+        </p>
+      </section>
+    </article>
+
+{% endblock %}
+
+{% block js %}
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.min.js"></script>
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+
+          $(".sample1").click(function(){
+            $(".popups").fadeToggle();
+            //$(".popups").addClass('animated slideInUp').css("display","block");
+          });
+
+          $(".closepop").click(function(){
+            $(".popups").fadeToggle();
+            //$(".popups").css("display","none");
+           /* $(".popups").addClass('animated slideOutUp');*/
+
+          });
+
+           $("#link1").click(function(){
+              $("#jenisbenda").slideToggle();
+           });
+
+            $("#link2").click(function(){
+              $("#jenistema").slideToggle();
+           });
+
+
+            $(".expand").click(function(){
+              alert("test");
+              $(".fulltext").slidedown();
+            });
+
+        });
+    </script>
+
 {% endblock %}

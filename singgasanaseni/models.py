@@ -37,11 +37,20 @@ class karya(models.Model):
         ('Patung', 'Patung'),
         ('Kriya', 'Kriya'),
     )
+    KATEGORI_CHOICES = (
+        ('Potret dan Sensualitas', 'Potret dan Sensualitas'),
+        ('Alam dan Benda', 'Alam dan Benda'),
+        ('Pemandangan Alam dan Kota', 'Pemandangan Alam dan Kota'),
+        ('Perjuangan dan Potret Para Pejuang', 'Perjuangan dan Potret Para Pejuang'),
+        ('Tradisi/Budaya/Mitologi/Keseharian', 'Tradisi/Budaya/Mitologi/Keseharian'),
+        ('Patung dan Kriya', 'Patung dan Kriya'),
+    )
 
     No_Index = models.CharField(max_length=50)
     Judul = models.CharField(max_length=50)
     Perupa = models.ForeignKey(perupa ,on_delete=models.CASCADE)
     Jenis = models.CharField(max_length=10, choices=KARYA_CHOICES)
+    Kategori = models.CharField(max_length=25, choices=KATEGORI_CHOICES, default=True)
     Dimensi = models.CharField(max_length=25)
     Material = models.CharField(max_length=20)
     Tahun_Pembuatan = models.DateField(blank=True, null=True)

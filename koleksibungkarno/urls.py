@@ -20,13 +20,16 @@ urlpatterns = [
     path('', homepageviews.index, name='homepage-views'),
     path('tentangkami/', homepageviews.tentangkami, name='tentang-kami'),
     path('karya/', singgasanaseniviews.karyalist, name='karya-list'),
-    re_path(r'^karya/(?P<karya_id>\d+)/$', singgasanaseniviews.Karyadetail, name='karya-detail'),
+    #path('karya/lukisan', singgasanaseniviews.lukisanlist, name='lukisan-list'),
+    #path('karya/kriya', singgasanaseniviews.kriyalist, name='kriya-list'),
+    #path('karya/patung', singgasanaseniviews.patunglist, name='patung-list'),
     path('perupa/', singgasanaseniviews.PerupaList, name='perupa-list'),
     re_path(r'^perupa/(?P<perupa_id>\d+)/$', singgasanaseniviews.Perupadetail, name='perupa-detail'),
-    path('acara/', singgasanaseniviews.Acaralist, name='acara-list'),
+    path('berita/', singgasanaseniviews.Acaralist, name='acara-list'),
     re_path(r'^acara/(?P<acara_id>\d+)/$', singgasanaseniviews.acaradetail, name='acara-detail'),
     path('istana/', singgasanaseniviews.Istanalist, name='istana-list'),
     re_path(r'^istana/(?P<istana_id>\d+)/$', singgasanaseniviews.Istanadetail, name='istana-detail'),
+
 
 ]
 

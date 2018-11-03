@@ -1,7 +1,66 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
 
-<p>extends</p>
+ <article>
+      <div class="container-fluid">
+          <!--koleksi-->
+          <div class="row sectionistana">
+            <div class="col-md-3 sidebaristana sidebarberita">
+              <div class="beritaterkait">
+                <label class="date">17/08/2017</label>
+                <font>konstruksi awal</font><br>
+                <label> Lorem ipsum, atau ringkasnya lipsum, adalah teks standar</label><br>
+                <label class="source"><i>detik.com</i></label><br>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+              </div>
+              <div class="beritaterkait">
+                <label class="date">17/08/2017</label>
+                <font>konstruksi awal</font><br>
+                <label> Lorem ipsum, atau ringkasnya lipsum, adalah teks standar</label><br>
+                <label class="source"><i>detik.com</i></label><br>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+              </div>
+              <div class="beritaterkait">
+                <label class="date">17/08/2017</label>
+                <font>konstruksi awal</font><br>
+                <label> Lorem ipsum, atau ringkasnya lipsum, adalah teks standar</label><br>
+                <label class="source"><i>detik.com</i></label><br>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+              </div>
+            </div>
+
+            <div class="col-md-7 isiberita">
+              <img src="{% static 'img/slider1.png' %}" class="imgartikel">
+              <div class="heading">
+                <label class="date">17/08/2017</label>
+                <h3>konstruksi konstruksikonstruksikonstruksi </h3>
+                <label class="title">konstruksi konstruksikonstruksikonstruksi  konstruksi konstruksikonstruksikonstruksi </label>
+              </div>
+              <p>
+                    Lorem ipsum, atau ringkasnya lipsum, adalah teks standar yang ditempatkan untuk mendemostrasikan elemen grafis atau presentasi visual seperti font, tipografi, dan tata letak. Maksud penggunaan lipsum adalah agar pengamat tidak terlalu berkonsentrasi kepada arti harfiah per kalimat, melainkan lebih kepada elemen desain dari teks yang dipresentasi.
+                    Lorem ipsum, atau ringkasnya lipsum, adalah teks standar yang ditempatkan untuk mendemostrasikan elemen grafis atau presentasi visual seperti font, tipografi, dan tata letak. Maksud penggunaan lipsum adalah agar pengamat tidak terlalu berkonsentrasi kepada arti harfiah per kalimat, melainkan lebih kepada elemen desain dari teks yang dipresentasi.
+                    Lorem ipsum, atau ringkasnya lipsum, adalah teks standar yang ditempatkan untuk mendemostrasikan elemen grafis atau presentasi visual seperti font, tipografi, dan tata letak. Maksud penggunaan lipsum adalah agar pengamat tidak terlalu berkonsentrasi kepada arti harfiah per kalimat, melainkan lebih kepada elemen desain dari teks yang dipresentasi.
+                     Lorem ipsum, atau ringkasnya lipsum, adalah teks standar yang ditempatkan untuk mendemostrasikan elemen grafis atau presentasi visual seperti font, tipografi, dan tata letak. Maksud penggunaan lipsum adalah agar pengamat tidak terlalu berkonsentrasi kepada arti harfiah per kalimat, melainkan lebih kepada elemen desain dari teks yang dipresentasi.
+                    Lorem ipsum, atau ringkasnya lipsum, adalah teks standar yang ditempatkan untuk mendemostrasikan elemen grafis atau presentasi visual seperti font, tipografi, dan tata letak. Maksud penggunaan lipsum adalah agar pengamat tidak terlalu berkonsentrasi kepada arti harfiah per kalimat, melainkan lebih kepada elemen desain dari teks yang dipresentasi.
+                    Lorem ipsum, atau ringkasnya lipsum, adalah teks standar yang ditempatkan untuk mendemostrasikan elemen grafis atau presentasi visual seperti font, tipografi, dan tata letak. Maksud penggunaan lipsum adalah agar pengamat tidak terlalu berkonsentrasi kepada arti harfiah per kalimat, melainkan lebih kepada elemen desain dari teks yang dipresentasi.
+                </p>
+            </div>
+
+          </div>
+      </div>
+    </article>
 
 {% endblock content%}
+
+{% block js %}
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{% static 'js/stylish-portfolio.min.js' %}"></script>
+{% endblock %}
