@@ -29,45 +29,49 @@
 
   </head>
 
-  <body id="page-top">
+   <body id="page-top">
       <nav class="navbar cbp-hsmenu-wrapper" id="cbp-hsmenu-wrapper">
         <div class="container-fluid">
            <div class="navbar-header">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/">
               <img src="{% static 'img/logo.jpg' %}">
             </a>
           </div>
 
           <div class="cbp-hsinner">
-            <ul class="cbp-hsmenu">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars menures"></i>
+            </a>
+            <a href="#" class="logores">
+              <img src="{% static 'img/logo.jpg' %}">
+            </a>
+
+            <ul class="cbp-hsmenu" id="menuall">
               <li>
                 <a href="#">Koleksi</a>
                 <ul class="cbp-hssubmenu">
                   <li class="menufirst"><a href="#"><i>Koleksi benda seni</i></a></li>
-                  <li><a href="/karya/">Lukisan</a></li>
-                  <li><a href="/karya/">Patung</a></li>
-                  <li><a href="/karya/">Kriya</a></li>
+                  <li><a href="/koleksi/lukisan/">Lukisan</a></li>
+                  <li><a href="/koleksi/patung/">Patung</a></li>
+                  <li><a href="/koleksi/kriya/">Kriya</a></li>
                 </ul>
-              </li>
-              <li>
-                <a href="/perupa/">Perupa</a>
               </li>
               <li>
                 <a href="#">Istana</a>
                 <ul class="cbp-hssubmenu">
                   <li class="menufirst"><a href="#"><i>Istana kepresidenan</i></a></li>
-                  <li><a href="/istana/">Istana Merdeka</a></li>
-                  <li><a href="/istana/">Istana Negara</a></li>
-                  <li><a href="/istana/">Istana Bogor</a></li>
-                  <li><a href="/istana/">Istana Tampaksiring</a></li>
-                  <li><a href="/istana/">Istana Cipanas</a></li>
-                  <li><a href="/istana/">Istana Yogyakarta</a></li>
+                  <li><a href="/istana/merdeka">Istana Merdeka</a></li>
+                  <li><a href="/istana/istananegara">Istana Negara</a></li>
+                  <li><a href="/istana/bogor">Istana Bogor</a></li>
+                  <li><a href="/istana/tampaksiring">Istana Tampaksiring</a></li>
+                  <li><a href="/istana/cipanas">Istana Cipanas</a></li>
+                  <li><a href="/istana/yogyakarta">Istana Yogyakarta</a></li>
                 </ul>
               </li>
               <li><a href="#">Publikasi</a></li>
               <li><a href="/berita/">Berita</a></li>
               <li><a href="/tentangkami/">Tentang Kami</a></li>
-              <li>
+              <li class="searchslot">
                    <form class="navbar-form navbar-right">
                   <div class="input-group">
                     <input type="text" class="form-control formsearch" placeholder="Search" name="search">
@@ -83,13 +87,13 @@
                   <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
                   <div class="overlay-content">
                     <form>
-                      <input type="text" placeholder="Cari apapun disini..." class="txtsearch" name="search">
-                      <button type="submit"><i class="fa fa-search"></i></button>
+                        <form  method="GET" action="/search/">
+                            <input type="text" placeholder="Cari apapun disini...">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
                     </form>
                   </div>
                 </div>
-
-
               </li>
             </ul>
             </div>
@@ -101,7 +105,7 @@
         {% endblock %}
 
     <footer>
-        @Singgasana Seni. Hak Cipta dilindungi undang-undang
+        ©Singgasana Seni. Hak Cipta dilindungi undang-undang
 
     </footer>
       <script>
@@ -121,6 +125,17 @@
     <script>
       var menu = new cbpHorizontalSlideOutMenu( document.getElementById( 'cbp-hsmenu-wrapper' ) );
     </script>
+
+    <script>
+      function myFunction() {
+      var x = document.getElementById("menuall");
+      if (x.className === "cbp-hsmenu") {
+          x.className += " responsive";
+      } else {
+          x.className = "cbp-hsmenu";
+      }
+      }
+      </script>
 
 
   </body>

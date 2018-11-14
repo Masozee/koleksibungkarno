@@ -18,18 +18,23 @@ admin.sites.AdminSite.index_title = 'Singgasana Seni'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', homepageviews.index, name='homepage-views'),
+    path('search/', singgasanaseniviews.searchposts, name='search'),
     path('tentangkami/', homepageviews.tentangkami, name='tentang-kami'),
     path('karya/', singgasanaseniviews.karyalist, name='karya-list'),
-    #path('karya/lukisan', singgasanaseniviews.lukisanlist, name='lukisan-list'),
-    #path('karya/kriya', singgasanaseniviews.kriyalist, name='kriya-list'),
-    #path('karya/patung', singgasanaseniviews.patunglist, name='patung-list'),
-    path('perupa/', singgasanaseniviews.PerupaList, name='perupa-list'),
+    re_path(r'^karya/(?P<karya_id>\d+)/$', singgasanaseniviews.karyadetail, name='karya-detail'),
+    re_path(r'^karya/(?P<slug>[\w-]+)/$', singgasanaseniviews.karyadetail, name='karya-detail'),
+    path('koleksi/lukisan/', singgasanaseniviews.PerupaList, name='perupa-list'),
+    path('koleksi/patung/', singgasanaseniviews.Pematunglist, name='Pematung-list'),
+    path('koleksi/kriya/', singgasanaseniviews.Kriyalist, name='Pengrajin-list'),
     re_path(r'^perupa/(?P<perupa_id>\d+)/$', singgasanaseniviews.Perupadetail, name='perupa-detail'),
-    path('berita/', singgasanaseniviews.Acaralist, name='acara-list'),
-    re_path(r'^acara/(?P<acara_id>\d+)/$', singgasanaseniviews.acaradetail, name='acara-detail'),
-    path('istana/', singgasanaseniviews.Istanalist, name='istana-list'),
-    re_path(r'^istana/(?P<istana_id>\d+)/$', singgasanaseniviews.Istanadetail, name='istana-detail'),
-
+    path('berita/', singgasanaseniviews.Beritalist, name='berita-list'),
+    re_path(r'^berita/(?P<berita_id>\d+)/$', singgasanaseniviews.Beritadetail, name='berita-detail'),
+    path('istana/bogor', singgasanaseniviews.IstanaBogor, name='istana-bogor'),
+    path('istana/cipanas', singgasanaseniviews.IstanaCipanas, name='istana-bogor'),
+    path('istana/merdeka', singgasanaseniviews.IstanaMerdeka, name='istana-bogor'),
+    path('istana/istananegara', singgasanaseniviews.IstanaNegara, name='istana-bogor'),
+    path('istana/tampaksiring', singgasanaseniviews.IstanaTampakSiring, name='istana-bogor'),
+    path('istana/yogyakarta', singgasanaseniviews.IstanaYogya, name='istana-bogor'),
 
 ]
 

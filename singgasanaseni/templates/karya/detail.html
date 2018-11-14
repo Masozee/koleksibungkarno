@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <article>
+      <div class="container-fluid">
+
+          <div class="row">
+            <div class="col-md-12 sectionprofile">
+              <div class="row">
+                <div class="col-md-10 profil">
+                    <img src="/media/{{ Karya.Gambar }}">
+                </div>
+                <div class="col-md-2 profildetail">
+                    <h5>{{ Karya.Judul }}</h5><br>
+                    <p>{{ Karya.Perupa }}</p><br>
+                    <p>{{ Karya.Dimensi }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </article>
+{% endblock %}
+
+{% block js %}
+
+
+{% endblock %}

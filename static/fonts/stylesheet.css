@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('GaramondPremrPro-Capt.eot');
+    src: url('GaramondPremrPro-Capt.eot?#iefix') format('embedded-opentype'),
+        url('GaramondPremrPro-Capt.woff2') format('woff2'),
+        url('GaramondPremrPro-Capt.woff') format('woff'),
+        url('GaramondPremrPro-Capt.svg#GaramondPremrPro-Capt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('GaramondPremrPro-Capt.eot');
+    src: url('GaramondPremrPro-Capt.eot?#iefix') format('embedded-opentype'),
+        url('GaramondPremrPro-Capt.woff2') format('woff2'),
+        url('GaramondPremrPro-Capt.woff') format('woff'),
+        url('GaramondPremrPro-Capt.svg#GaramondPremrPro-Capt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

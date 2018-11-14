@@ -13,9 +13,9 @@ admin.site.register(karya,KaryaAdmin)
 
 # perupa admin
 class PerupaAdmin (admin.ModelAdmin):
-    list_display = ['Nama', 'Panggilan', 'Alamat', 'Tanggal_Lahir']
+    list_display = ['Nama', 'Panggilan', 'Kategori', 'Tanggal_Lahir']
     list_filter = ()
-    search_fields = ['Nama', 'panggilan', 'Alamat', 'Tanggal_Lahir']
+    search_fields = ['Nama', 'panggilan', 'Kategori', 'Tanggal_Lahir']
     list_per_page = 25
 
 admin.site.register(perupa, PerupaAdmin)
@@ -31,19 +31,11 @@ class IstanaAdmin (admin.ModelAdmin):
 admin.site.register(istana,IstanaAdmin)
 
 #event
-class AcaraAdmin (admin.ModelAdmin):
-    list_display = ['Nama', 'Lokasi', 'Mulai', 'Akhir']
+class BeritaAdmin (admin.ModelAdmin):
+    list_display = ['Tanggal', 'Judul', 'Subjudul', 'Sumber', 'Link', 'Gambar']
     list_filter = ()
-    search_fields = ['Nama', 'Lokasi', 'Mulai', 'Akhir']
+    search_fields = ['Tanggal', 'Judul', 'Subjudul', 'Sumber', 'Link', 'Isiberita', 'Gambar']
     list_per_page = 25
 
-admin.site.register(acara,AcaraAdmin)
+admin.site.register(berita,BeritaAdmin)
 
-#event
-class KuratorAdmin (admin.ModelAdmin):
-    list_display = ['Nama']
-    list_filter = ()
-    search_fields = ['Nama']
-    list_per_page = 25
-
-admin.site.register(kurator,KuratorAdmin)

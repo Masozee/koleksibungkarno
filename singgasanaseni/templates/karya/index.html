@@ -24,12 +24,12 @@
                   <div class="filtermenu temakarya">
                     <a id="link2">Tema +</a>
                     <ul id="jenistema" class="jenisbenda">
-                      <li><a href="#">list 1</a></li>
-                      <li><a href="#">list 2</a></li>
-                      <li><a href="#">list 3</a></li>
-                      <li><a href="#">list 4</a></li>
-                      <li><a href="#">list 5</a></li>
-                      <li><a href="#">list 6</a></li>
+                      <li><a href="#">Potret dan Sensualitas</a></li>
+                      <li><a href="#">Alam dan Benda</a></li>
+                      <li><a href="#">Pemandangan Alam dan Kota</a></li>
+                      <li><a href="#">Perjuangan dan Potret Para Pejuang</a></li>
+                      <li><a href="#">Tradisi/Budaya/Mitologi/Keseharian</a></li>
+                      <li><a href="#">Patung dan Kriya</a></li>
                     </ul>
                   </div>
 
@@ -74,7 +74,7 @@
               <div class="row seckarya">
                   {% for Karya in karya %}
                   <div class="col-md-3 perupalist karyalist">
-                    <a href="#" class="sample1">
+                    <a href="/karya/{{ Karya.id }}">
                       <img src="/media/{{ Karya.Gambar }}" class="">
                         <figcaption>
                            <h3>{{ Karya.Perupa }}</h3>
@@ -98,37 +98,6 @@
 
 
     <!--popups-->
-    <article class="popups">
-      <a href="#" class="closepop">
-        <i class="fa fa-times"></i>
-      </a>
-      <section class="toppoups">&nbsp;</section>
-      <section class="centerpopups">
-         <a href="#">
-          <span class="arrowleftkarya">
-            <i class="fa fa-angle-left" aria-hidden="true"></i>
-          </span>
-        </a>
-
-        <img src="/media/{{ detail.Gambar }}">
-
-        <a href="#">
-          <span class="arrowrightkarya">
-            <i class="fa fa-angle-right" aria-hidden="true"></i>
-          </span>
-        </a>
-      </section>
-      <section class="bottompop">
-        <h3>Artist Name</h3>
-        <p>
-          <i>Lorem ipsum Lorem ipsum</i><Br>
-          ca.1065<br>
-          Oil and Canvas<br>
-          120 x 145 cm
-        </p>
-      </section>
-    </article>
-
 
 {% endblock %}
 
@@ -146,18 +115,6 @@
     <script type="text/javascript">
 
         $(document).ready(function() {
-
-          $(".sample1").click(function(){
-            $(".popups").fadeToggle();
-            //$(".popups").addClass('animated slideInUp').css("display","block");
-          });
-
-          $(".closepop").click(function(){
-            $(".popups").fadeToggle();
-            //$(".popups").css("display","none");
-           /* $(".popups").addClass('animated slideOutUp');*/
-
-          });
 
            $("#link1").click(function(){
               $("#jenisbenda").slideToggle();

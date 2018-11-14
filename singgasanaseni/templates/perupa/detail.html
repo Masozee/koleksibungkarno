@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
     <article>
@@ -29,79 +30,68 @@
           <div class="row bgkarya">
              <div class="col-md-12 sectionkoleksi">
               <span class="divkoleksi" style="border: none;">
-                <h3>page {{ Karya.number }}/{{ Karya.paginator.num_pages }}</h3>
+                <h3>page {{ Karyarelated.number }}/{{ Karyarelated.paginator.num_pages }}</h3>
                 <span class="pagingkarya">
-                    Paging Number
+                    <ul class="pagination">
+                        {% if Karyarelated.has_previous %}
+                            <a href="?page={{ Karyarelated.previous_page_number }}"><</a>
+                        {% endif %}
+
+                        {% for i in Karyarelated.paginator.page_range %}
+                            {% if Karyarelated.number == i %}
+                                <li class="active"><span>{{ i }}<span class="sr-only">(current)</span></span></li>
+                            {% else %}
+                                <li><a href="?page={{ i }}">{{ i }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+
+                        {% if Karyarelated.has_next %}
+                            <a href="?page={{ Karyarelated.next_page_number }}"> > </a>
+                        {% endif %}
+                     </ul>
                 </span>
               </span>
             </div>
-              {% for karya in Karya %}
+
             <div class="col-md-12">
               <div class="row seckarya">
+                  {% for karya in Karyarelated %}
                   <div class="col-md-3 perupalist karyalist">
-                    <a href="#" class="sample1">
+                    <a href="/karya/{{ karya.id }}" class="sample1">
                       <img src="/media/{{ karya.Gambar }}" class="">
                         <figcaption>
                            <h3>{{ karya.Perupa }}</h3>
                             <p>
                               <i>{{ karya.Judul }}</i><Br>
+                              {{ karya.Kategori }}<br>
                               {{ karya.Material }}<br>
-                              {{ karya.Dimensi }}
+                             {{ karya.Dimensi }}
                             </p>
                         </figcaption>
                     </a>
                   </div>
-               {% endfor %}
+                  {% endfor %}
+              </div>
+              </div>
+
+
               </div>
             </div>
           </div>
       </div>
     </article>
 
-
-    <!--popups-->
-    <article class="popups">
-      <a href="#" class="closepop">
-        <i class="fa fa-times"></i>
-      </a>
-      <section class="toppoups">&nbsp;</section>
-      <section class="centerpopups">
-         <a href="#">
-          <span class="arrowleftkarya">
-            <i class="fa fa-angle-left" aria-hidden="true"></i>
-          </span>
-        </a>
-
-        <img src="/media/{{ Karya.Gambar }}">
-
-        <a href="#">
-          <span class="arrowrightkarya">
-            <i class="fa fa-angle-right" aria-hidden="true"></i>
-          </span>
-        </a>
-      </section>
-      <section class="bottompop">
-        <h3>{{ Karya.Perupa }}</h3>
-        <p>
-          <i>Lorem ipsum Lorem ipsum</i><Br>
-          ca.1065<br>
-          Oil and Canvas<br>
-          120 x 145 cm
-        </p>
-      </section>
-    </article>
-
 {% endblock %}
 
 {% block js %}
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/stylish-portfolio.min.js"></script>
+    <script src="{% static 'js/stylish-portfolio.min.js' %}"></script>
 
 
     <script type="text/javascript">

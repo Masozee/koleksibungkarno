@@ -9,7 +9,7 @@
           <div class="row">
             <div class="col-md-12 sectionkoleksi">
               <span class="divkoleksi divkarya">
-                <h3>Lukisan</h3>
+                <h3>Kriya</h3>
               </span>
               <div class="sectionfilter">
                 <div class="filterkarya">
@@ -22,14 +22,11 @@
                     <a href="#" data-filter=".c">C</a>
                     <a href="#" data-filter=".d">D</a>
                     <a href="#" data-filter=".e">E</a>
-                    <a href="#" data-filter=".f">F</a>
-                    <a href="#" data-filter=".g">G</a>
-                    <a href="#" data-filter=".h">H</a>
-                    <a href="#" data-filter=".i">I</a>
+                    <a href="#" data-filter=".f">G</a>
+                    <a href="#" data-filter=".i">H</a>
                     <a href="#" data-filter=".j">J</a>
                     <a href="#" data-filter=".k">K</a>
-                    <a href="#" data-filter=".l">L</a>
-                    <a href="#" data-filter=".m">M</a>
+                    <a href="#" data-filter=".l">M</a>
                     <a href="#" data-filter=".n">N</a>
                     <a href="#" data-filter=".o">O</a>
                     <a href="#" data-filter=".p">P</a>
@@ -59,23 +56,23 @@
           <div class="row bgkarya">
              <div class="col-md-12 sectionkoleksi">
               <span class="divkoleksi" style="border: none;">
-                <h3>page {{ perupa.number }}/{{ perupa.paginator.num_pages }}</h3>
+                <h3>page {{ pengrajin.number }}/{{ pengrajin.paginator.num_pages }}</h3>
                 <span class="pagingkarya">
                     <ul class="pagination">
-                        {% if perupa.has_previous %}
-                            <a href="?page={{ perupa.previous_page_number }}"><</a>
+                        {% if pengrajin.has_previous %}
+                            <a href="?page={{ pengrajin.previous_page_number }}"><</a>
                         {% endif %}
 
-                        {% for i in perupa.paginator.page_range %}
-                            {% if perupa.number == i %}
+                        {% for i in pengrajin.paginator.page_range %}
+                            {% if pengrajin.number == i %}
                                 <li class="active"><span>{{ i }}<span class="sr-only">(current)</span></span></li>
                             {% else %}
                                 <li><a href="?page={{ i }}">{{ i }}</a></li>
                             {% endif %}
                         {% endfor %}
 
-                        {% if perupa.has_next %}
-                            <a href="?page={{ perupa.next_page_number }}"> > </a>
+                        {% if pengrajin.has_next %}
+                            <a href="?page={{ pengrajin.next_page_number }}"> > </a>
                         {% endif %}
                      </ul>
                 </span>
@@ -84,7 +81,7 @@
             <div class="col-md-12 containerperupa">
               <div class="row seckarya portfolioContainer">
 
-                            {% for Perupa in perupa %}
+                            {% for Perupa in pengrajin %}
                                 <div class="{{ Perupa.Panggilan|slice:"1"|lower }}">
                                     <p>
                                       <h5><a href="/perupa/{{ Perupa.id }}">{{ Perupa.Panggilan }}</a></h5>
