@@ -85,7 +85,7 @@
               <div class="row seckarya portfolioContainer">
 
                             {% for Perupa in perupa %}
-                                <div class="{{ Perupa.Panggilan|slice:"1"|lower }}">
+                                <div class="{{ Perupa.Panggilans|slice:"1"|lower }}">
                                     <p>
                                       <h5><a href="/perupa/{{ Perupa.id }}">{{ Perupa.Panggilan }}</a></h5>
                                       <font>{{ Perupa.Tanggal_Lahir }} - {{ Perupa.Tanggal_Wafat }}</font><br>
