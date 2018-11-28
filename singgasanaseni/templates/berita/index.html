@@ -6,18 +6,19 @@
  <article>
       <div class="container-fluid">
           <!--koleksi-->
-      <div class="sidenav">
           <div class="row sectionistana">
             <div class="col-md-3 sidebaristana sidebarberita">
-                {% for berita in Berita %}
-              <div class="beritaterkait">
-                <label class="date">{{ berita.Tanggal }}</label>
-                <font><a href="#{{ berita.Judul | slugify }}">{{ berita.Judul }}</a></font><br>
-                <label> {{ berita.Subjudul }}</label><br>
-                <label class="source"><i>{{ berita.Sumber }}</i></label><br>
-                <span>&nbsp;&nbsp;&nbsp;</span>
-              </div>
+              <div class="fixedmenuberita" id="menufixed">
+                  {% for berita in Berita %}
+                    <div class="beritaterkait">
+                         <label class="date">{{ berita.Tanggal }}</label>
+                         <font><a href="#{{ berita.Judul | slugify }}">{{ berita.Judul }}</a></font><br>
+                         <label> {{ berita.Subjudul }}</label><br>
+                         <label class="source"><i>{{ berita.Sumber }}</i></label><br>
+                         <span>&nbsp;&nbsp;&nbsp;</span>
+                     </div>
                 {% endfor %}
+            </div>
             </div>
 
 
@@ -38,6 +39,8 @@
       </div>
     </article>
 
+
+
 {% endblock content%}
 
 {% block js %}
@@ -49,4 +52,19 @@
 
     <!-- Custom scripts for this template -->
     <script src="{% static 'js/stylish-portfolio.min.js' %}"></script>
+
+     <script type="text/javascript">
+      window.onscroll = function() {myFunction()};
+      var header = document.getElementById("menufixed");
+      //var sticky = header.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset > 110 ) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
+
 {% endblock %}

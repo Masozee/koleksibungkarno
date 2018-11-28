@@ -21,15 +21,6 @@ class PerupaAdmin (admin.ModelAdmin):
 admin.site.register(perupa, PerupaAdmin)
 
 
-#istana
-class IstanaAdmin (admin.ModelAdmin):
-    list_display = ['Nama', 'Alamat']
-    list_filter = ()
-    search_fields = ['Nama', 'Alamat']
-    list_per_page = 25
-
-admin.site.register(istana,IstanaAdmin)
-
 #event
 class BeritaAdmin (admin.ModelAdmin):
     list_display = ['Tanggal', 'Judul', 'Subjudul', 'Sumber', 'Link', 'Gambar']

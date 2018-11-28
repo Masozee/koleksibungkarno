@@ -25,7 +25,9 @@ SECRET_KEY = '7fobebwf##05!crb8*#ak5&p!@w17)8iq$pd)l5^kehlej)jxu'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['185.201.9.184', 'www.singgasanaseni.org', 'singgasanaseni.org', 'http://singgasanaseni.org']
+ALLOWED_HOSTS = ['singgasanaseni.org', 'www.singgasanaseni.org','http://www.singgasanaseni.org', 'http://singgasanaseni.org', '185.201.9.184', 'localhost']
+
+
 
 
 # Application definition
@@ -38,8 +40,29 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'singgasanaseni',
-    'homepage'
-,]
+    'homepage',
+    #'search',
+    #'django_elasticsearch_dsl',
+    'haystack'
+
+
+    #plugin tambahan
+
+]
+
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'haystack.backends.elasticsearch_backend.ElasticsearchSearchEngine',
+        'URL': 'http://127.0.0.1:9200/',
+        'INDEX_NAME': 'haystack',
+    },
+}
+
+ELASTICSEARCH_DSL = {
+    'default': {
+           'hosts': 'localhost:9200'
+    },
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -75,10 +98,20 @@ WSGI_APPLICATION = 'koleksibungkarno.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-DATABASES = {
+"""DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}"""
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'singgasanaseni',
+        'USER': 'basukiabdullah',
+        'PASSWORD': 'radensaleh1857',
+        'HOST': '',
+        'PORT': '',
     }
 }
 

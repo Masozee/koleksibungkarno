@@ -13,7 +13,8 @@
                 </div>
                 <div class="col-md-5 profildetail">
                     <h2>{{ Perupa.Nama }}</h2>
-                    <label>{{ Perupa.Tanggal_Lahir }} - {{ Perupa.Tanggal_Wafat }}</label>
+                    <label>{{ Perupa.Tanggal_Lahir | date:"d M Y"  }} - {{ Perupa.Tanggal_Wafat |date:"d M Y"  }}</label>
+                    <p>{{ total }} Lukisan</p>
 
                       <div class="panel-wrapper">
                         <a href="#show" class="show" id="show">[show full text +]</a>

@@ -1,8 +1,10 @@
 {% extends "base.html" %}
 
+{% load static %}
+
 
 {% block content %}
-    {% load static %}
+
     <!-- Header -->
    <header>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -53,26 +55,26 @@
             <div class="col-md-12 sectionkoleksi">
               <span class="divkoleksi">
                 <h3>Koleksi</h3>
-                <a href="#">View All</a>
+                <a href="{% url 'karya-list' %}">View All</a>
               </span>
             </div>
             <div class="col-md-12 sectionkoleksi sectionkoleksilist">
               <div class="row">
                     <div class="col-md-4">
                       <a href="/koleksi/lukisan/">
-                        <img src="{% static 'img/jpg1.jpg' %}" class="koleksiimg">
+                        <img src="{% static 'img/lukisan.jpeg' %}" class="koleksiimg">
                         <label class="koleksilabel">Lukisan</label>
                       </a>
                     </div>
                     <div class="col-md-4">
                       <a href="koleksi/patung/">
-                        <img src="{% static 'img/jpg1.jpg' %}" class="koleksiimg">
+                        <img src="{% static 'img/patung.jpeg' %}" class="koleksiimg">
                         <label class="koleksilabel">Patung</label>
                       </a>
                     </div>
                     <div class="col-md-4">
                       <a href="/koleksi/kriya/">
-                        <img src="{% static 'img/jpg1.jpg' %}" class="koleksiimg">
+                        <img src="{% static 'img/kriya.jpeg' %}" class="koleksiimg">
                         <label class="koleksilabel">Kriya</label>
                       </a>
                     </div>
@@ -86,14 +88,14 @@
             <div class="col-md-12 sectionkoleksi">
               <span class="divkoleksi">
                 <h3>News</h3>
-                <a href="#">View All</a>
+                <a href="{% url 'berita-list'  %}">View All</a>
               </span>
             </div>
             <div class="col-md-12 sectionkoleksi sectionkoleksilist">
               <div class="row">
                     <div class="col-md-3 listnews">
                       <a href="#">
-                        <img src="{% static 'img/jpg1.jpg' %}">
+                        <img src="{% static 'img/001.jpg' %}">
                          <figcaption>
                           <h2>SENANDUNG IBU PERTIWI</h2>
                           <h3>2-30 AGUSTUS 2018</h3>
@@ -104,7 +106,7 @@
 
                     <div class="col-md-3 listnews">
                       <a href="#">
-                        <img src="{% static 'img/jpg1.jpg' %}">
+                        <img src="{% static 'img/002.jpg' %}">
                          <figcaption>
                           <h2>SENANDUNG IBU PERTIWI</h2>
                           <h3>2-30 AGUSTUS 2018</h3>
@@ -115,7 +117,7 @@
 
                      <div class="col-md-3 listnews">
                       <a href="#">
-                        <img src="{% static 'img/jpg1.jpg' %}">
+                        <img src="{% static 'img/003.jpg' %}">
                          <figcaption>
                           <h2>SENANDUNG IBU PERTIWI</h2>
                           <h3>2-30 AGUSTUS 2018</h3>
@@ -127,7 +129,7 @@
 
                      <div class="col-md-3 listnews">
                       <a href="#">
-                        <img src="{% static 'img/jpg1.jpg' %}">
+                        <img src="{% static 'img/004.jpg' %}">
                          <figcaption>
                           <h2>SENANDUNG IBU PERTIWI</h2>
                           <h3>2-30 AGUSTUS 2018</h3>
@@ -142,38 +144,43 @@
 
 
           <!--perupa-->
-           <div class="row">
+        <div class="row">
             <div class="col-md-12 sectionkoleksi">
               <span class="divkoleksi">
                 <h3>Perupa</h3>
-                <a href="#">View All</a>
+                <a href="{% url 'Perupa-list' %}">View All</a>
               </span>
             </div>
+
             <div class="col-md-12 sectionkoleksi sectionkoleksilist">
+
               <div class="row">
+
                     <div class="listperupa">
-                      <a href="#">
-                        <img src="{% static 'img/jpg1.jpg' %}" class="koleksiimg">
+                      <a href="/perupa/12/">
+                        <img src="{% static 'img/homeartist1.jpg' %}" class="koleksiimg" style="width: 500px; height: 500px">
                       </a>
                     </div>
                     <div class="listperupa">
-                      <a href="#">
-                        <img src="{% static 'img/jpg1.jpg' %}" class="koleksiimg">
+                      <a href="/perupa/9/">
+                        <img src="{% static 'img/homeartist2.jpg' %}" class="koleksiimg" style="width: 500px; height: 500px">
                       </a>
                     </div>
-                   <div class="listperupa">
-                      <a href="#">
-                        <img src="{% static 'img/jpg1.jpg' %}" class="koleksiimg">
+                    <div class="listperupa">
+                      <a href="/perupa/9/">
+                        <img src="{% static 'img/homeartist3.jpg' %}" class="koleksiimg" style="width: 500px; height: 500px">
                       </a>
                     </div>
+
               </div>
+
             </div>
-          </div>
-          <!--end perupa-->
+
+        </div>
       </div>
     </article>
 
-  {% endblock %}
+  {% endblock content%}
 
 {% block js %}
     <!-- Bootstrap core JavaScript -->

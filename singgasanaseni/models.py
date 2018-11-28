@@ -1,4 +1,6 @@
 from django.db import models
+from django.db.models import Q
+
 
 
 # perupa --------------------------------------------------------------------------------------------
@@ -10,7 +12,7 @@ class perupa(models.Model):
     )
 
     Nama = models.CharField(max_length=50)
-    Panggilan = models.CharField(max_length=20, null=True, blank= True)
+    Panggilan = models.CharField(max_length=50, null=True, blank= True)
     Alamat = models.TextField(null=True, blank=True)
     Tempat_Lahir = models.CharField(max_length=50, null=True, blank=True)
     Tanggal_Lahir = models.DateField(null=True, blank=True)
@@ -21,24 +23,19 @@ class perupa(models.Model):
     Gambar = models.FileField(upload_to='perupa/', blank=True, null=True)
     Upload_date = models.DateTimeField(auto_now_add=True)
 
+
     def __str__(self):
         return self.Panggilan
 
 
-# istana ----------------------------------------------------------------------------------------------
-class istana(models.Model):
-    Nama = models.CharField(max_length=50)
-    Alamat = models.TextField(null=True, blank=True)
-    Gambar = models.FileField(upload_to='istana/', null=True)
-    Keterangan = models.TextField(null=True, blank=True)
-    Upload_date = models.DateTimeField(auto_now_add=True)
-
-    def __str__(self):
-        return self.Nama
-
 
 # Karya ----------------------------------------------------------------------------------------------
 class karya(models.Model):
+    ISTANA_CHOICES = (
+        ('Istana Bogor', 'Istana Bogor'),
+        ('Istana Tampak Siring', 'Istana Tampak Siring')
+    )
+
     KARYA_CHOICES = (
         ('Lukisan', 'Lukisan'),
         ('Patung', 'Patung'),
@@ -62,9 +59,11 @@ class karya(models.Model):
     Material = models.CharField(max_length=20)
     Tahun_Pembuatan = models.DateField(blank=True, null=True)
     Gambar = models.FileField(upload_to='karya/', null=False)
-    Lokasi_Lukisan = models.ForeignKey(istana, on_delete=models.CASCADE)
+    Lokasi_Lukisan = models.CharField(max_length=20, choices=ISTANA_CHOICES, default=True)
     Keterangan = models.TextField(null=True, blank=True)
     Upload_date = models.DateTimeField(auto_now_add=True)
+
+
 
     def __str__(self):
         return self.Judul
@@ -80,6 +79,7 @@ class berita(models.Model):
     Gambar=models.FileField(upload_to='berita/', blank=True)
     Published=models.BooleanField(default=True)
     Upload_date = models.DateTimeField(auto_now_add=True)
+
 
     def __str__(self):
         return self.Judul

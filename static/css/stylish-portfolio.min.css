@@ -325,7 +325,7 @@ footer.footer .social-link:hover {
 }
 
 a {
-    color: #1d809f
+    color: #404a4d
 }
 
 a:active,
@@ -807,10 +807,23 @@ float: left;*/
 }
 
 footer {
-    background: #787878;
-    color: #fff;
-    padding: 1% 2%;
+    background: #fff;
+    color: #000;
+    padding: 1% 4%;
 }
+
+.footermenu span.firstfoot{    padding-left: 0;padding-right: 5%;}
+.footermenu span{padding: 0 10px;}
+.rightfoot{float: right;     text-align: right;
+    padding: 0 !important;}
+.rightfoot label{
+    padding-right: 20px;
+    margin: 0;
+    vertical-align: middle;
+    font-size: 16px;
+}
+.rightfoot a{padding: 3px;}
+.rightfoot img{width: 6%;}
 
 .karyalist {
     /* padding: 7px;
@@ -987,6 +1000,7 @@ footer {
 .sectionkoleksilist {
     background: #f3f0f0;
     padding-top: 2%;
+        padding-bottom: 3%;
 }
 
 
@@ -1317,7 +1331,7 @@ a {
 }
 
 .profildetail h2 {
-    color: #fcc93b;
+    color: #1d2124;
 }
 
 .sectionprofile {
@@ -1564,7 +1578,7 @@ a {
 }
 
 .sectionhome {
-    margin-bottom: 50px;
+    /*margin-bottom: 50px;*/
 }
 
 
@@ -1921,4 +1935,22 @@ a {
         margin-left: -16px;
         margin-top: -11px;
     }
+
+    .footermenu span.firstfoot{
+        width: 100%; float: left;
+    }
+    .sticky{
+        position: relative !important;width: 100% !important;
+    }
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 21%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
 }

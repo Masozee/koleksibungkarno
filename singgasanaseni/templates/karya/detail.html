@@ -3,25 +3,40 @@
 {% load static %}
 
 {% block content %}
-    <article>
-      <div class="container-fluid">
+<!--article>
+    <div class="container">
+        <div class="row bgkarya">
+            <div class="col-md-12 ">
+                    <div class="col-md-10 profil">
+                        <img class="col-12 col-sm-2 col-md-10 px-0" src="/media/{{ Karya.Gambar }}">
+                    </div>
 
-          <div class="row">
-            <div class="col-md-12 sectionprofile">
-              <div class="row">
-                <div class="col-md-10 profil">
-                    <img src="/media/{{ Karya.Gambar }}">
+                    <div class="col-md-2">
+                        <h5>{{ Karya.Judul }}</h5><br>
+                        <p>{{ Karya.Perupa }}</p><br>
+                        <p>{{ Karya.Dimensi }}</p>
+                    </div>
                 </div>
-                <div class="col-md-2 profildetail">
-                    <h5>{{ Karya.Judul }}</h5><br>
-                    <p>{{ Karya.Perupa }}</p><br>
-                    <p>{{ Karya.Dimensi }}</p>
-                </div>
-              </div>
             </div>
-          </div>
-      </div>
-    </article>
+        </div>
+    </div>
+</article-->
+<article>
+<div class="row bgkarya">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <img class="col-12 col-sm-8 col-md-10 px-0" src="/media/{{ Karya.Gambar }}" alt="">
+            </div>
+            <div class="col-md-3">
+                <h5>{{ Karya.Judul }}</h5>
+                <p>{{ Karya.Perupa }}</p>
+                <p>{{ Karya.Dimensi }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+</article>
 {% endblock %}
 
 {% block js %}

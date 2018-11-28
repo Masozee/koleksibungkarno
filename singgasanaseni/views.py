@@ -1,9 +1,8 @@
 from django.shortcuts import render,  Http404
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-from django.db.models import Q
 
 
-from .models import perupa, karya, berita
+from singgasanaseni.models import perupa, karya, berita
 
 #perupa-----------------------------------------------------------------------------------------------
 def PerupaList(request):
@@ -12,7 +11,7 @@ def PerupaList(request):
     if query:
         Perupa = Perupa.filter(Nama__icontains=query)
     Page_request_var = "page"
-    paginator = Paginator(Perupa, 16)
+    paginator = Paginator(Perupa, 20)
     page = request.GET.get(Page_request_var)
     try:
         Perupa = paginator.page(page)
@@ -76,10 +75,11 @@ def Kriyalist(request):
 def Perupadetail(request, perupa_id):
     try:
         Perupa = perupa.objects.get(pk=perupa_id)
-    except Perupa.DoesNotExist:
-        raise Http404('Data Perupa Belum Tersedia')
+    except perupa.DoesNotExist:
+        raise Http404('404.html')
 
     karyarelated = karya.objects.filter(Perupa__id=Perupa.id)
+    total = karyarelated.count()
 
     paginator = Paginator(karyarelated, 20)  # Show 25 contacts per page
 
@@ -96,6 +96,7 @@ def Perupadetail(request, perupa_id):
     context={
         "Perupa": Perupa,
         "Karyarelated": Karyarelated,
+        "total":total
     }
 
     return render(request, 'perupa/detail.html', context)
@@ -148,7 +149,7 @@ def Beritalist(request):
 def Beritadetail(request, berita_id):
     try:
         Berita = berita.objects.get(pk=berita_id)
-    except Berita.DoesNotExist:
+    except berita.DoesNotExist:
         raise Http404('berita Belum Tersedia')
 
     return render(request, 'berita/detail.html', context={'Berita': Berita})
@@ -174,30 +175,5 @@ def IstanaYogya(request):
 
 
 
-
-def searchposts(request):
-    if request.method == 'GET':
-        query= request.GET.get('q')
-
-        submitbutton= request.GET.get('submit')
-
-        if query is not None:
-            lookups= Q(title__icontains=query) | Q(content__icontains=query)
-
-            results={berita.objects.filter(lookups).distinct(),
-                     perupa.objects.filter(lookups).distinct(),
-                     karya.objects.filter(lookups).distinct()}
-
-
-            context={'results': results,
-                     'submitbutton': submitbutton}
-
-            return render(request, 'search/search.html', context)
-
-        else:
-            return render(request, 'search/search.html')
-
-    else:
-        return render(request, 'search/search.html')
 
 

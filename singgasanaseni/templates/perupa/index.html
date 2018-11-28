@@ -57,7 +57,7 @@
             </div>
           </div>
           <div class="row bgkarya">
-             <div class="col-md-12 sectionkoleksi">
+              <div class="col-md-12 sectionkoleksi">
               <span class="divkoleksi" style="border: none;">
                 <h3>page {{ perupa.number }}/{{ perupa.paginator.num_pages }}</h3>
                 <span class="pagingkarya">
@@ -81,25 +81,27 @@
                 </span>
               </span>
             </div>
-            <div class="col-md-12 containerperupa">
-              <div class="row seckarya portfolioContainer">
 
-                            {% for Perupa in perupa %}
-                                <div class="{{ Perupa.Panggilans|slice:"1"|lower }}">
-                                    <p>
-                                      <h5><a href="/perupa/{{ Perupa.id }}">{{ Perupa.Panggilan }}</a></h5>
-                                      <font>{{ Perupa.Tanggal_Lahir }} - {{ Perupa.Tanggal_Wafat }}</font><br>
-                                      <label><a href="#"></a></label>
-                                    </p>
-                                </div>
-                            {% endfor %}
-
-
-              </div>
+              <div class="container">
+            {% for Perupa in perupa %}
+            <div class="row">
+                <div class="col-md-2">
+                    <a href="/perupa/{{ Perupa.id }}">
+                        <img class="col-12 col-sm-2 col-md-10 px-0" src="/media/{{ Perupa.Gambar }}" alt="">
+                    </a>
+                </div>
+                <div class="col-md-7">
+                    <label><a href="/perupa/{{ Perupa.id }}">{{ Perupa.Panggilan }}</a></label>
+                    <p>{{ Perupa.Tanggal_Lahir |date:"d M Y" }} - {{ Perupa.Tanggal_Wafat |date:"d M Y" }}</p>
+                    <p>{{ total }} Karya</p>
+                </div>
             </div>
+                <hr>
+            {% endfor %}
+        </div>
           </div>
       </div>
-    </article>
+     </article>
     {% endblock %}
 
 
