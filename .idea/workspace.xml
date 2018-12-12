@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="077f652a-7fb8-42a3-b99b-79f8e0d75adb" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dump.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/koleksibungkarno/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/koleksibungkarno/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/templates/search/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/templates/search/view.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,11 +34,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/koleksibungkarno/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="142">
-              <caret line="27" column="154" selection-start-line="27" selection-start-column="154" selection-end-line="27" selection-end-column="154" />
+              <caret line="27" column="143" selection-start-line="27" selection-start-column="143" selection-end-line="27" selection-end-column="143" />
             </state>
           </provider>
         </entry>
@@ -63,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/search/view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="43" column="22" lean-forward="true" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+            <state relative-caret-position="901">
+              <caret line="53" column="18" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -79,6 +80,18 @@
               <caret line="76" column="39" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/koleksibungkarno/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="e#0#46#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -171,8 +184,8 @@
         <option value="$PROJECT_DIR$/koleksibungkarno/urls.py" />
         <option value="$PROJECT_DIR$/search/views.py" />
         <option value="$PROJECT_DIR$/singgasanaseni/models.py" />
-        <option value="$PROJECT_DIR$/koleksibungkarno/settings.py" />
         <option value="$PROJECT_DIR$/singgasanaseni/templates/search/view.html" />
+        <option value="$PROJECT_DIR$/koleksibungkarno/settings.py" />
       </list>
     </option>
   </component>
@@ -358,12 +371,12 @@
       <updated>1538632398054</updated>
       <workItem from="1543286806870" duration="314000" />
       <workItem from="1543381380908" duration="9116000" />
-      <workItem from="1544495035700" duration="16974000" />
+      <workItem from="1544495035700" duration="17113000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26404000" />
+    <option name="totallyTimeSpent" value="26543000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -652,23 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/koleksibungkarno/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/koleksibungkarno/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="27" column="154" selection-start-line="27" selection-start-column="154" selection-end-line="27" selection-end-column="154" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/singgasanaseni/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-56">
@@ -698,8 +694,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/search/view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="43" column="22" lean-forward="true" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+        <state relative-caret-position="901">
+          <caret line="53" column="18" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/koleksibungkarno/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/koleksibungkarno/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="27" column="143" selection-start-line="27" selection-start-column="143" selection-end-line="27" selection-end-column="143" />
         </state>
       </provider>
     </entry>
