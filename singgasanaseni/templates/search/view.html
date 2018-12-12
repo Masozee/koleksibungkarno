@@ -12,18 +12,39 @@
 {% for object in object_list %}
     {% with object|class_name as klass %}
       {% if klass == 'perupa' %}
-           <div class='row'>
-             <div class='col-12'>
-                Perupa : <a href="/perupa/{{ object.id }}">{{ object.Nama }}</a>
+
+          <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <a href="/perupa/{{ object.id }}">
+                        <img class="col-12 col-sm-2 col-md-10 px-0" src="/media/{{ object.Gambar }}" alt="">
+                    </a>
+                </div>
+                <div class="col-md-7">
+                    <label><a href="/perupa/{{ object.id }}">{{ object.Panggilan }}</a></label>
+                    <p>{{ object.Tanggal_Lahir |date:"d M Y" }} - {{ object.Tanggal_Wafat |date:"d M Y" }}</p>
+                </div>
             </div>
+            <hr>
           </div>
 
       {% elif klass == 'karya' %}
-           <div class='row'>
-             <div class='col-12'>
-                 Karya : <a href="/karya/{{ object.id }}">{{ object.Judul }}</a>
-              </div>
+           <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <a href="/karya/{{ object.id }}">
+                        <img class="col-12 col-sm-2 col-md-10 px-0" src="/media/{{ object.Gambar }}" alt="">
+                    </a>
+                </div>
+                <div class="col-md-7">
+                    <label><a href="/karya/{{ object.id }}">{{ object.Judul }}</a></label>
+                    <p>{{ object.Perupa }}<br>
+                    {{ object.Dimensi }}<br>
+                    {{ object.Material }}</p>
+                </div>
             </div>
+            <hr>
+          </div>
 
       {% elif klass == 'berita' %}
            <div class='row'>
