@@ -88,8 +88,8 @@
                   <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
                   <div class="overlay-content">
                     <form>
-                        <form  method="GET" action="/search/">
-                            <input type="text" placeholder="Cari apapun disini...">
+                        <form  method="GET" action='{% url 'searching' %}'>
+                            <input type="text" name="q" placeholder="Cari apapun disini...">
                             <button type="submit"><i class="fa fa-search"></i></button>
                         </form>
                     </form>

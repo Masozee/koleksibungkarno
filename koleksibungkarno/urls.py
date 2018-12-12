@@ -6,6 +6,7 @@ from rest_framework.urlpatterns import format_suffix_patterns
 
 from singgasanaseni import views as singgasanaseniviews
 from homepage import views as homepageviews
+from search import views as searchviews
 
 
 from django.contrib import admin
@@ -19,7 +20,8 @@ admin.sites.AdminSite.index_title = 'Singgasana Seni'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', homepageviews.index, name='homepage-views'),
-    path('search/', include('haystack.urls')),
+    #path('search/', searchviews.searchposts, name='searchposts' ),
+    path('search/', searchviews.SearchView.as_view(), name='searching' ),
     path('tentangkami/', homepageviews.tentangkami, name='tentang-kami'),
 
     # karya udah aktiv
@@ -34,7 +36,7 @@ urlpatterns = [
     re_path(r'^perupa/(?P<perupa_id>\d+)/$', singgasanaseniviews.Perupadetail, name='perupa-detail'),
 
     path('berita/', singgasanaseniviews.Beritalist, name='berita-list'),
-    re_path(r'^berita/(?P<berita_id>\d+)/$', singgasanaseniviews.Beritadetail, name='berita-detail'),
+    #re_path(r'^berita/(?P<berita_id>\d+)/$', singgasanaseniviews.Beritadetail, name='berita-detail'),
 
     path('istana/bogor', singgasanaseniviews.IstanaBogor, name='istana-bogor'),
     path('istana/cipanas', singgasanaseniviews.IstanaCipanas, name='istana-cipanas'),

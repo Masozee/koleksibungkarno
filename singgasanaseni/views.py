@@ -1,8 +1,13 @@
 from django.shortcuts import render,  Http404
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.db.models import Q
 
 
 from singgasanaseni.models import perupa, karya, berita
+
+
+
+
 
 #perupa-----------------------------------------------------------------------------------------------
 def PerupaList(request):
@@ -28,7 +33,7 @@ def PerupaList(request):
     return render(request, 'perupa/index.html', context)
 
 def Pematunglist(request):
-    Pematung = perupa.objects.filter(Kategori='Pematung')
+    Pematung = perupa.object.filter(Kategori='Pematung')
     query = request.GET.get("q")
     if query:
         Pematung = Pematung.filter(Nama__icontains=query)
@@ -50,7 +55,7 @@ def Pematunglist(request):
     return render(request, 'perupa/indexpatung.html', context)
 
 def Kriyalist(request):
-    Pengrajin = perupa.objects.filter(Kategori='Pengrajin')
+    Pengrajin = perupa.object.filter(Kategori='Pengrajin')
     query = request.GET.get("q")
     if query:
         Pengrajin = Pengrajin.filter(Nama__icontains=query)
@@ -74,11 +79,11 @@ def Kriyalist(request):
 
 def Perupadetail(request, perupa_id):
     try:
-        Perupa = perupa.objects.get(pk=perupa_id)
+        Perupa = perupa.object.get(pk=perupa_id)
     except perupa.DoesNotExist:
         raise Http404('404.html')
 
-    karyarelated = karya.objects.filter(Perupa__id=Perupa.id)
+    karyarelated = karya.object.filter(Perupa__id=Perupa.id)
     total = karyarelated.count()
 
     paginator = Paginator(karyarelated, 20)  # Show 25 contacts per page
@@ -103,12 +108,12 @@ def Perupadetail(request, perupa_id):
 
 #Karya-------------------------------------------------------------------------------------
 def karyalist(request):
-    Karya = karya.objects.all()
+    Karya = karya.object.all()
     query = request.GET.get("q")
     if query:
         Karya = Karya.filter(Judul__icontains=query)
     Page_request_var = "page"
-    paginator = Paginator(Karya, 10)
+    paginator = Paginator(Karya, 12)
     page = request.GET.get(Page_request_var)
 
     try:
@@ -129,7 +134,7 @@ def karyalist(request):
 
 def karyadetail(request, karya_id):
     try:
-        Karya = karya.objects.get(pk=karya_id)
+        Karya = karya.object.get(pk=karya_id)
     except Perupa.DoesNotExist:
         raise Http404('Data karya Belum Tersedia')
 
@@ -142,17 +147,17 @@ def karyadetail(request, karya_id):
 
 #berita-------------------------------------------------------------------------------
 def Beritalist(request):
-    Berita = berita.objects.all()
+    Berita = berita.object.all()
     return render(request, 'berita/index.html', {'Berita': Berita})
 
 
-def Beritadetail(request, berita_id):
+"""def Beritadetail(request, berita_id):
     try:
         Berita = berita.objects.get(pk=berita_id)
     except berita.DoesNotExist:
         raise Http404('berita Belum Tersedia')
 
-    return render(request, 'berita/detail.html', context={'Berita': Berita})
+    return render(request, 'berita/detail.html', context={'Berita': Berita})"""
 
 #istana-------------------------------------
 def IstanaBogor(request):
@@ -172,6 +177,9 @@ def IstanaTampakSiring(request):
 
 def IstanaYogya(request):
     return render(request, 'istana/istanayogyakarta.html' )
+
+
+
 
 
 

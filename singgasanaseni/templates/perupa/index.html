@@ -66,11 +66,17 @@
                             <a href="?page={{ perupa.previous_page_number }}"><</a>
                         {% endif %}
 
-                        {% for i in perupa.paginator.page_range %}
+                        <!--{% for i in perupa.paginator.page_range %}
                             {% if perupa.number == i %}
                                 <li class="active"><span>{{ i }}<span class="sr-only">(current)</span></span></li>
                             {% else %}
                                 <li><a href="?page={{ i }}">{{ i }}</a></li>
+                            {% endif %}
+                        {% endfor %}></-->
+
+                        {% for l in  perupa.paginator.page_range %}
+                            {% if l <= perupa.number|add:5 and l >= perupa.number|add:-5 %}
+                                <li><a href="?page={{forloop.counter}}">{{forloop.counter}}</a></li>
                             {% endif %}
                         {% endfor %}
 

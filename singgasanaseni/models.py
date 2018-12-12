@@ -1,5 +1,24 @@
 from django.db import models
+
+
 from django.db.models import Q
+
+class PerupaQuerySet(models.QuerySet):
+    def search(self, query=None):
+        qs = self
+        if query is not None:
+            or_lookup = (Q(Nama__icontains=query) |
+                         Q(Panggilan__icontains=query)
+                        )
+            qs = qs.filter(or_lookup).distinct() # distinct() is often necessary with Q lookups
+        return qs
+
+class PerupaManager(models.Manager):
+    def get_queryset(self):
+        return PerupaQuerySet(self.model, using=self._db)
+
+    def search(self,query=None):
+        return self.get_queryset().search(query=query)
 
 
 
@@ -23,17 +42,38 @@ class perupa(models.Model):
     Gambar = models.FileField(upload_to='perupa/', blank=True, null=True)
     Upload_date = models.DateTimeField(auto_now_add=True)
 
+    object  = PerupaManager()
+
 
     def __str__(self):
         return self.Panggilan
 
 
 
+class KaryaQuerySet(models.QuerySet):
+    def search(self, query=None):
+        qs = self
+        if query is not None:
+            or_lookup = (Q(Judul__icontains=query)
+                        )
+            qs = qs.filter(or_lookup)# distinct() is often necessary with Q lookups
+        return qs
+
+class KaryaManager(models.Manager):
+    def get_queryset(self):
+        return KaryaQuerySet(self.model, using=self._db)
+
+    def search(self,query=None):
+        return self.get_queryset().search(query=query)
+
 # Karya ----------------------------------------------------------------------------------------------
 class karya(models.Model):
     ISTANA_CHOICES = (
         ('Istana Bogor', 'Istana Bogor'),
-        ('Istana Tampak Siring', 'Istana Tampak Siring')
+        ('Istana Tampak Siring', 'Istana Tampak Siring'),
+        ('Istana Merdeka', 'Istana Merdeka'),
+        ('Istana Negara', 'Istana Negara'),
+        ('Istana Cipanas', 'Istana Cipanas')
     )
 
     KARYA_CHOICES = (
@@ -63,11 +103,31 @@ class karya(models.Model):
     Keterangan = models.TextField(null=True, blank=True)
     Upload_date = models.DateTimeField(auto_now_add=True)
 
+    object = KaryaManager()
+
 
 
     def __str__(self):
         return self.Judul
 
+
+class BeritaQuerySet(models.QuerySet):
+    def search(self, query=None):
+        qs = self
+        if query is not None:
+            or_lookup = (Q(Judul__icontains=query) |
+                         Q(Subjudul__icontains=query) |
+                         Q(Isiberita__icontains=query)
+                        )
+            qs = qs.filter(or_lookup).distinct() # distinct() is often necessary with Q lookups
+        return qs
+
+class BeritaManager(models.Manager):
+    def get_queryset(self):
+        return BeritaQuerySet(self.model, using=self._db)
+
+    def search(self,query=None):
+        return self.get_queryset().search(query=query)
 
 class berita(models.Model):
     Tanggal = models.DateField()
@@ -79,6 +139,10 @@ class berita(models.Model):
     Gambar=models.FileField(upload_to='berita/', blank=True)
     Published=models.BooleanField(default=True)
     Upload_date = models.DateTimeField(auto_now_add=True)
+
+    object=BeritaManager()
+
+
 
 
     def __str__(self):
