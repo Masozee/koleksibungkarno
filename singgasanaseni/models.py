@@ -73,7 +73,8 @@ class karya(models.Model):
         ('Istana Tampak Siring', 'Istana Tampak Siring'),
         ('Istana Merdeka', 'Istana Merdeka'),
         ('Istana Negara', 'Istana Negara'),
-        ('Istana Cipanas', 'Istana Cipanas')
+        ('Istana Cipanas', 'Istana Cipanas'),
+        ('istana Yogya', 'Istana Yogya')
     )
 
     KARYA_CHOICES = (

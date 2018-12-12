@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="077f652a-7fb8-42a3-b99b-79f8e0d75adb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dump.json" beforeDir="false" afterPath="$PROJECT_DIR$/dump.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/koleksibungkarno/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/koleksibungkarno/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/koleksibungkarno/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/koleksibungkarno/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/singgasanaseni/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/search.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/templates/perupa/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/templates/perupa/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/templates/search/indexes/singgasanaseni/karya_text.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/templates/search/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/templates/search/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,10 +32,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/koleksibungkarno/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-519">
+            <state relative-caret-position="-443">
               <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
             </state>
           </provider>
@@ -97,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/singgasanaseni/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="593">
-              <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
+            <state relative-caret-position="110">
+              <caret line="76" column="39" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -121,8 +108,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/koleksibungkarno/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+            <state relative-caret-position="68">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
               </folding>
@@ -228,13 +215,13 @@
         <option value="$PROJECT_DIR$/singgasanaseni/views.py" />
         <option value="$PROJECT_DIR$/koleksibungkarno/urls.py" />
         <option value="$PROJECT_DIR$/search/views.py" />
-        <option value="$PROJECT_DIR$/singgasanaseni/models.py" />
         <option value="$PROJECT_DIR$/singgasanaseni/templates/search/view.html" />
         <option value="$PROJECT_DIR$/koleksibungkarno/settings.py" />
+        <option value="$PROJECT_DIR$/singgasanaseni/models.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="x" value="592" />
     <option name="y" value="22" />
     <option name="width" value="688" />
@@ -418,12 +405,12 @@
       <updated>1538632398054</updated>
       <workItem from="1543286806870" duration="314000" />
       <workItem from="1543381380908" duration="9116000" />
-      <workItem from="1544495035700" duration="15358000" />
+      <workItem from="1544495035700" duration="15731000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24788000" />
+    <option name="totallyTimeSpent" value="25161000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -438,7 +425,7 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49893844" visible="true" weight="0.15912762" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49893844" visible="true" weight="0.15912762" />
       <window_info id="Structure" order="1" sideWeight="0.50106156" side_tool="true" weight="0.21890146" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -452,7 +439,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3279743" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3279743" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49779737" visible="true" weight="0.34512022" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49779737" visible="true" weight="0.34512022" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50220263" side_tool="true" weight="0.33549434" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -695,16 +682,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/koleksibungkarno/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/search/search.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-49">
@@ -750,20 +727,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/singgasanaseni/models.py">
+    <entry file="file://$PROJECT_DIR$/koleksibungkarno/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="593">
-          <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
+        <state relative-caret-position="-443">
+          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/koleksibungkarno/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#0#46#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/koleksibungkarno/settings.py">
+    <entry file="file://$PROJECT_DIR$/singgasanaseni/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-519">
-          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+        <state relative-caret-position="110">
+          <caret line="76" column="39" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
