@@ -25,7 +25,7 @@ SECRET_KEY = '7fobebwf##05!crb8*#ak5&p!@w17)8iq$pd)l5^kehlej)jxu'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['singgasanaseni.org', 'www.singgasanaseni.org','http://www.singgasanaseni.org', 'http://singgasanaseni.org', '141.136.47.155',]
+ALLOWED_HOSTS = ['singgasanaseni.org', 'www.singgasanaseni.org','http://www.singgasanaseni.org', 'http://singgasanaseni.org', '141.136.47.155', 'localhost']
 
 
 
@@ -39,12 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'pure_pagination',
     'singgasanaseni',
     'homepage',
     'search',
 
 ]
-
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -75,6 +75,14 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'koleksibungkarno.wsgi.application'
+
+PAGINATION_SETTINGS = {
+    'PAGE_RANGE_DISPLAYED': 10,
+    'MARGIN_PAGES_DISPLAYED': 2,
+
+    'SHOW_FIRST_PAGE_WHEN_INVALID': True,
+}
+
 
 
 # Database
@@ -136,3 +144,7 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'images')
+
+
+#SETTINGAN UNTUK THIRD PARTY
+

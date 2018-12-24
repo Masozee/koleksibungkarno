@@ -3,7 +3,7 @@ from .models import *
 
 # Register your models here.
 class KaryaAdmin (admin.ModelAdmin):
-    list_display = ['No_Index', 'Judul', 'Perupa', 'Dimensi', 'Material','Kategori', 'Tahun_Pembuatan', 'Lokasi_Lukisan']
+    list_display = ['No_Index', 'Judul', 'Perupa', 'Dimensi', 'Material','Kategori', 'Tahun_Pembuatan', 'Lokasi_Lukisan', 'Naked_Material']
     list_filter = ("Material", "Lokasi_Lukisan")
     search_fields = ['No_Index', 'Judul', 'Perupa_perupa__Nama', 'Dimensi', 'Material', 'Tahun_Pembuatan', 'Lokasi_Lukisan__istana']
     list_per_page = 25

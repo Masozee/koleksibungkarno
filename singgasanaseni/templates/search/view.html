@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load class_name %}
 {% block content %}
+{% load cool_paginate %}
 
 <div class='row title-row my-5'>
     <div class='col-12 py-0'>
@@ -31,7 +32,7 @@
       {% elif klass == 'karya' %}
            <div class="container">
             <div class="row">
-                <div class="col-md-2">
+                <div class="col-md-2 col-sm-10 px-0">
                     <a href="/karya/{{ object.id }}">
                         <img class="col-12 col-sm-2 col-md-10 px-0" src="/media/{{ object.Gambar }}" alt="">
                     </a>
@@ -74,7 +75,7 @@
             <span class="input-group-addon cfe-nav" style='color:#000'>
                 <i class="fa fa-search" aria-hidden="false"></i>
             </span>
-            <input type="text" name="q" data-toggle="popover" data-placement="bottom" data-content="Press enter to search" class="form-control cfe-nav mt-0 py-3" placeholder="Search..." value="" style="" data-original-title="" title="" autofocus="autofocus">
+            <input type="text" name="q"  data-content="Press enter to search" class="form-control cfe-nav mt-0 py-3" placeholder="Search..." value="" >
         </div>
 
     </form>
@@ -82,4 +83,5 @@
     </div>
 </div>
 {% endfor %}
+
 {% endblock content %}

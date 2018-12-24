@@ -8,31 +8,7 @@ from singgasanaseni.models import *
 
 
 
-"""def searchposts(request):
-    if request.method == 'GET':
-        query= request.GET.get('q')
 
-        submitbutton= request.GET.get('submit')
-
-        if query is not None:
-            artist= Q(Nama__icontains=query) | Q(Panggilan__icontains=query)
-
-
-            results= perupa.objects.filter(artist).distinct()
-
-
-            context={'results': results,
-                     'submitbutton': submitbutton,
-
-                     }
-
-            return render(request, 'search/search.html', context)
-
-        else:
-            return render(request, 'search/search.html')
-
-    else:
-        return render(request, 'search/search.html')"""
 
 class SearchView(ListView):
         template_name = 'search/view.html'

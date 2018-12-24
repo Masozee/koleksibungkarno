@@ -92,7 +92,7 @@ class karya(models.Model):
     )
 
     No_Index = models.CharField(max_length=50, unique=True)
-    Judul = models.CharField(max_length=50)
+    Judul = models.CharField(max_length=100)
     Perupa = models.ForeignKey(perupa ,on_delete=models.CASCADE)
     Jenis = models.CharField(max_length=10, choices=KARYA_CHOICES,)
     Kategori = models.CharField(max_length=50, choices=KATEGORI_CHOICES, default=True)
@@ -102,6 +102,7 @@ class karya(models.Model):
     Gambar = models.FileField(upload_to='karya/', null=False)
     Lokasi_Lukisan = models.CharField(max_length=20, choices=ISTANA_CHOICES, default=True)
     Keterangan = models.TextField(null=True, blank=True)
+    Naked_Material = models.BooleanField(default=False)
     Upload_date = models.DateTimeField(auto_now_add=True)
 
     object = KaryaManager()
