@@ -1,6 +1,6 @@
 from django.shortcuts import render,  Http404
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-#from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
+
 
 
 

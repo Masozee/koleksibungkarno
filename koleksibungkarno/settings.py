@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'pure_pagination',
     'singgasanaseni',
     'homepage',
     'search',
@@ -76,12 +75,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'koleksibungkarno.wsgi.application'
 
-PAGINATION_SETTINGS = {
-    'PAGE_RANGE_DISPLAYED': 10,
-    'MARGIN_PAGES_DISPLAYED': 2,
-
-    'SHOW_FIRST_PAGE_WHEN_INVALID': True,
-}
 
 
 
