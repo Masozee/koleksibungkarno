@@ -131,7 +131,7 @@ def Perupadetail(request, perupa_id):
 
 #Karya-------------------------------------------------------------------------------------
 def karyalist(request):
-	Karya = karya.object.all().order_by('Perupa__karya__Kategori')
+	Karya = karya.object.all().order_by('Perupa__karya__Kategori').distinct()
 	query = request.GET.get("q")
 	if query:
 		Karya = Karya.filter(Judul__icontains=query)

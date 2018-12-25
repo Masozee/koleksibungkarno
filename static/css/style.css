@@ -16,4 +16,13 @@
   float: left;
   padding: 3px 6px;
   text-decoration: none;
+  border-radius: 5px;
 }
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
