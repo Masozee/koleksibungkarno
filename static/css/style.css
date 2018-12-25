@@ -8,12 +8,12 @@
 
 
 .pagination {
-  display: inline-block;
+  display: flex;
 }
 
 .pagination a {
   color: black;
   float: left;
-  padding: 8px 16px;
+  padding: 3px 6px;
   text-decoration: none;
 }
