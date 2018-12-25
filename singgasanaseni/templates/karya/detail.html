@@ -29,9 +29,13 @@
                 <img class="col-12 col-sm-8 col-md-10 px-0" src="/media/{{ Karya.Gambar }}" alt="">
             </div>
             <div class="col-md-3">
-                <h5>{{ Karya.Judul }}</h5>
-                <p>{{ Karya.Perupa }}</p>
-                <p>{{ Karya.Dimensi }}</p>
+                <div class="centered">
+                    <h5>{{ Karya.Judul }}</h5>
+                    <p><a href="/perupa/{{ Karya.Perupa_id }}">{{ Karya.Perupa }}</a></p>
+                    <p>{{ Karya.Dimensi }}</p>
+                    <p>{{ Karya.Material }}</p>
+                </div>
+
             </div>
         </div>
     </div>
