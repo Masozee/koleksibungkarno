@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="077f652a-7fb8-42a3-b99b-79f8e0d75adb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/koleksibungkarno/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/koleksibungkarno/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/templates/karya/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/templates/karya/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/singgasanaseni/templates/perupa/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/templates/perupa/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/stylish-portfolio.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/stylish-portfolio.min.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,8 +58,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/perupa/detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="38" column="92" selection-start-line="38" selection-start-column="92" selection-end-line="38" selection-end-column="92" />
+            <state relative-caret-position="115">
+              <caret line="38" column="88" lean-forward="true" selection-start-line="38" selection-start-column="88" selection-end-line="38" selection-end-column="88" />
             </state>
           </provider>
         </entry>
@@ -163,9 +156,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="189" />
+    <option name="y" value="22" />
+    <option name="width" value="934" />
+    <option name="height" value="737" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -376,12 +371,12 @@
       <workItem from="1544495035700" duration="17674000" />
       <workItem from="1545030056021" duration="11403000" />
       <workItem from="1545567497947" duration="12085000" />
-      <workItem from="1545716116332" duration="8782000" />
+      <workItem from="1545716116332" duration="9232000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59374000" />
+    <option name="totallyTimeSpent" value="59824000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -393,10 +388,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="189" y="22" width="934" height="737" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49893844" visible="true" weight="0.23263328" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49893844" visible="true" weight="0.32286996" />
       <window_info id="Structure" order="1" sideWeight="0.50106156" side_tool="true" weight="0.21890146" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -410,7 +405,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3279743" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3279743" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49779737" visible="true" weight="0.34512022" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49779737" visible="true" weight="0.39228296" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50220263" side_tool="true" weight="0.33549434" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.32956153" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -753,8 +748,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/perupa/detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="38" column="92" selection-start-line="38" selection-start-column="92" selection-end-line="38" selection-end-column="92" />
+        <state relative-caret-position="115">
+          <caret line="38" column="88" lean-forward="true" selection-start-line="38" selection-start-column="88" selection-end-line="38" selection-end-column="88" />
         </state>
       </provider>
     </entry>
