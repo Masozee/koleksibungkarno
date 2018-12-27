@@ -66,11 +66,28 @@
               </div>
 
           {% elif klass == 'berita' %}
-               <div class='row'>
-                 <div class='col-12'>
-                    Berita : <a href="/berita/{{ object.id }}">{{ object.Judul }}</a>
-                  </div>
+              <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-sm-10 px-0">
+                        <a href="/berita/#{{ object.Judul }}">
+                            <img class="col-12 col-sm-2 col-md-10 px-0" src="/media/{{ object.Gambar }}" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-7">
+                        <label><a href="/berita/#{{ object.Judul | slugify }}">{{ object.Judul }}</a></label>
+                        <p style="word-wrap: break-word;">{{ object.Sumber }} - {{ object.Isiberita | truncatechars:"100"}}<a href="/berita/#{{ object.Judul }}"> Read More</a></p>
+
+                    </div>
                 </div>
+              <hr>
+              </div>
+
+
+               <!--div class='row'>
+                 <div class='col-12'>
+                    Berita : <a href="/berita/#{{ object.Judul | slugify }}">{{ object.Judul }}</a>
+                  </div>
+                </div-->
 
 
           {% else %}

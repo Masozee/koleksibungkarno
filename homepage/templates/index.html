@@ -93,50 +93,21 @@
             </div>
             <div class="col-md-12 sectionkoleksi sectionkoleksilist">
               <div class="row">
-                    <div class="col-md-3 listnews">
-                      <a href="#">
-                        <img src="{% static 'img/001.jpg' %}">
+                  {% for berita in Berita %}
+                    <div class="col-md-3 listnews karyalist">
+                      <a href="/berita/#{{ berita.Judul | slugify }}">
+                        <img src="/media/{{ berita.Gambar }}">
                          <figcaption>
-                          <h2>SENANDUNG IBU PERTIWI</h2>
-                          <h3>2-30 AGUSTUS 2018</h3>
-                          <label>GALERI NASIONAL INDONESIA</label>
+                          <h3>{{ berita.Judul }}</h3>
+                          <p>{{ berita.Tanggal }}</p>
+                          <label>{{ berita.Subjudul }}</label>
                         </figcaption>
                       </a>
                     </div>
 
-                    <div class="col-md-3 listnews">
-                      <a href="#">
-                        <img src="{% static 'img/002.jpg' %}">
-                         <figcaption>
-                          <h2>SENANDUNG IBU PERTIWI</h2>
-                          <h3>2-30 AGUSTUS 2018</h3>
-                          <label>GALERI NASIONAL INDONESIA</label>
-                        </figcaption>
-                      </a>
-                    </div>
-
-                     <div class="col-md-3 listnews">
-                      <a href="#">
-                        <img src="{% static 'img/003.jpg' %}">
-                         <figcaption>
-                          <h2>SENANDUNG IBU PERTIWI</h2>
-                          <h3>2-30 AGUSTUS 2018</h3>
-                          <label>GALERI NASIONAL INDONESIA</label>
-                        </figcaption>
-                      </a>
-                    </div>
+                  {% endfor %}
 
 
-                     <div class="col-md-3 listnews">
-                      <a href="#">
-                        <img src="{% static 'img/004.jpg' %}">
-                         <figcaption>
-                          <h2>SENANDUNG IBU PERTIWI</h2>
-                          <h3>2-30 AGUSTUS 2018</h3>
-                          <label>GALERI NASIONAL INDONESIA</label>
-                        </figcaption>
-                      </a>
-                    </div>
 
               </div>
             </div>

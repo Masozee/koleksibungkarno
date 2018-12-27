@@ -1,19 +1,16 @@
-from django.shortcuts import render
-from django.db.models import Q
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from itertools import chain
 from django.views.generic import ListView
 
 
 from singgasanaseni.models import *
 
-
-
-
-
 class SearchView(ListView):
         template_name = 'search/view.html'
-        paginate_by = 20
+
         count = 0
+
+
 
         def get_context_data(self, *args, **kwargs):
             context = super().get_context_data(*args, **kwargs)
@@ -36,6 +33,7 @@ class SearchView(ListView):
                     perupa_results,
                     berita_results
                 )
+
                 qs = sorted(queryset_chain,
                             key=lambda instance: instance.pk,
                             reverse=True)

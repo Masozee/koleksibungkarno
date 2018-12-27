@@ -11,9 +11,6 @@ from singgasanaseni.models import perupa, karya, berita
 
 #perupa-----------------------------------------------------------------------------------------------
 def PerupaList(request):
-
-
-
 	Perupa = perupa.object.filter(Kategori='Pelukis',).order_by('Panggilan')
 	query = request.GET.get("q")
 
