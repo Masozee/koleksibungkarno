@@ -13,7 +13,7 @@
                     <div class="beritaterkait">
                          <label class="date">{{ berita.Tanggal }}</label>
                          <font><a href="#{{ berita.Judul | slugify }}">{{ berita.Judul }}</a></font><br>
-                         <label> {{ berita.Subjudul }}</label><br>
+                         <p>{{ berita.Isiberita | truncatechars:"50" }}</p>
                          <label class="source"><i>{{ berita.Sumber }}</i></label><br>
                          <span>&nbsp;&nbsp;&nbsp;</span>
                      </div>
