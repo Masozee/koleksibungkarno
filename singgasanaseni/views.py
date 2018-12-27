@@ -31,7 +31,7 @@ from singgasanaseni.models import perupa, karya, berita
 
 #perupa-----------------------------------------------------------------------------------------------
 def PerupaList(request):
-	Perupa = perupa.object.filter(Kategori='Pelukis').order_by('Panggilan')
+	Perupa = perupa.object.filter(Kategori='Pelukis',).order_by('Panggilan')
 	query = request.GET.get("q")
 
 	if query:
@@ -106,7 +106,7 @@ def Perupadetail(request, perupa_id):
 	except perupa.DoesNotExist:
 		raise Http404('404.html')
 
-	karyarelated = karya.object.filter(Perupa__id=Perupa.id)
+	karyarelated = karya.object.filter(Perupa__id=Perupa.id, Naked_Material=False)
 	total = karyarelated.count()
 
 	paginator = Paginator(karyarelated, 20)  # Show 25 contacts per page
@@ -131,7 +131,7 @@ def Perupadetail(request, perupa_id):
 
 #Karya-------------------------------------------------------------------------------------
 def karyalist(request):
-	Karya = karya.object.all().order_by('Perupa__karya__Kategori').distinct()
+	Karya = karya.object.all().filter(Naked_Material=False).order_by('Perupa__karya__Kategori').distinct()
 	query = request.GET.get("q")
 	if query:
 		Karya = Karya.filter(Judul__icontains=query)

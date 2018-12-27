@@ -1,3 +1,5 @@
+
+
 .centered {
   position: relative;
   top: 50%;
@@ -26,3 +28,10 @@
 }
 
 .pagination a:hover:not(.active) {background-color: #ddd;}
+
+
+.fixedmenuberita {
+  position: sticky;
+  word-wrap: break-word;
+}
+

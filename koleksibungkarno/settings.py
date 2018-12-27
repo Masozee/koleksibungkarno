@@ -25,7 +25,7 @@ SECRET_KEY = '7fobebwf##05!crb8*#ak5&p!@w17)8iq$pd)l5^kehlej)jxu'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['singgasanaseni.org', 'www.singgasanaseni.org','http://www.singgasanaseni.org', 'http://singgasanaseni.org', '141.136.47.155',]
+ALLOWED_HOSTS = ['singgasanaseni.org', 'www.singgasanaseni.org','http://www.singgasanaseni.org', 'http://singgasanaseni.org', '141.136.47.155', 'localhost']
 
 
 

@@ -21,9 +21,9 @@
             </div>
             </div>
 
-
+          <div class="col-md-7 isiberita">
           {% for berita in Berita %}
-            <div class="col-md-7 isiberita" id="{{ berita.Judul |slugify }}">
+            <div id="{{ berita.Judul |slugify }}">
               <img src="/media/{{ berita.Gambar }}" class="imgartikel">
                 <div class="heading">
                     <label class="date">{{ berita.Tanggal }}</label>
@@ -35,6 +35,7 @@
                 </p>
             </div><hr/>
           {% endfor %}
+          </div>
           </div>
       </div>
     </article>
