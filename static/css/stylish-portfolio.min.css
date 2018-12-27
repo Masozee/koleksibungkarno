@@ -6,6 +6,8 @@
     font-style: normal;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
 body,
 html {
     width: 100%;
@@ -13,7 +15,7 @@ html {
 }
 
 body {
-    font-family: 'Garamond Premiere Pro'
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .btn-xl {

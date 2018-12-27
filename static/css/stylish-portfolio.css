@@ -3,6 +3,8 @@
  * Copyright 2013-2018 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio/blob/master/LICENSE)
  */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
 
 body,
 html {
@@ -11,7 +13,7 @@ html {
 }
 
 body {
-  font-family: 'Source Sans Pro';
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .btn-xl {

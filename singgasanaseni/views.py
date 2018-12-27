@@ -6,37 +6,19 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 from singgasanaseni.models import perupa, karya, berita
 
-"""def PerupaList(request):
-	queryset_list = perupa.object.filter(Kategori='Pelukis').order_by('Panggilan')
-	query = request.GET.get("q")
-
-	if query:
-		queryset = queryset_list.filter(Nama__icontains=query)
-
-	paginator = Paginator(queryset_list, 10) #posts per page
-	page = request.GET.get('page')
-	try:
-		queryset = paginator.page(page)
-	except PageNotAnInteger:
-		queryset = paginator.page(1)
-	except EmptyPage:
-		queryset = paginator.page(paginator.num_pages)
-
-	context = {
-		"perupa" : queryset,
-	}
-	return render(request, "perupa/index.html", context)"""
 
 
 
 #perupa-----------------------------------------------------------------------------------------------
 def PerupaList(request):
+
+
+
 	Perupa = perupa.object.filter(Kategori='Pelukis',).order_by('Panggilan')
 	query = request.GET.get("q")
 
 	if query:
 		Perupa = Perupa.filter(Nama__icontains=query)
-
 
 	Page_request_var = "page"
 	paginator = Paginator(Perupa, 20)

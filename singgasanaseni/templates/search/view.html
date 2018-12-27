@@ -2,87 +2,107 @@
 {% load class_name %}
 {% block content %}
 
+<div class="container">
+
+    <div class="container">
+        <div class='col-12 col-md-6 mx-auto my-5 py-5'>
+            <form method='GET' class='' action='.'>
+
+                <div class="input-group form-group-no-border mx-auto" style="margin-bottom: 0px; font-size: 32px;">
+                    <span class="input-group-addon cfe-nav" style='color:#000'>
+                        <i class="fa fa-search" aria-hidden="false"></i>
+                    </span>
+                    <input type="text" name="q"  data-content="Press enter to search" class="form-control cfe-nav mt-0 py-3" placeholder="Search..." value="" >
+                </div>
+
+            </form>
+        </div>
 
 
-<div class='row title-row my-5'>
-    <div class='col-12 py-0'>
-        <h3 class='my-0 py-0'>{{ count }} results for <b>{{ query }}</b></h3>
+        <div class='row title-row my-5'>
+            <div class='col-12 py-0'>
+                <h3 class='my-0 py-0'>{{ count }} results for <b>{{ query }}</b></h3>
+            </div>
+        </div>
+        <hr>
     </div>
+
+    <div class="container">
+    {% for object in object_list %}
+        {% with object|class_name as klass %}
+          {% if klass == 'perupa' %}
+
+              <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <a href="/perupa/{{ object.id }}">
+                            <img class="col-12 col-sm-2 col-md-10 px-0" src="/media/{{ object.Gambar }}" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-7">
+                        <label><a href="/perupa/{{ object.id }}">{{ object.Panggilan }}</a></label>
+                        <p>{{ object.Tanggal_Lahir |date:"d M Y" }} - {{ object.Tanggal_Wafat |date:"d M Y" }}</p>
+                    </div>
+                </div>
+                <hr>
+              </div>
+
+          {% elif klass == 'karya' %}
+               <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-sm-10 px-0">
+                        <a href="/karya/{{ object.id }}">
+                            <img class="col-12 col-sm-2 col-md-10 px-0" src="/media/{{ object.Gambar }}" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-7">
+                        <label><a href="/karya/{{ object.id }}">{{ object.Judul }}</a></label>
+                        <p>{{ object.Perupa }}<br>
+                        {{ object.Dimensi }}<br>
+                        {{ object.Material }}</p>
+                    </div>
+                </div>
+                <hr>
+              </div>
+
+          {% elif klass == 'berita' %}
+               <div class='row'>
+                 <div class='col-12'>
+                    Berita : <a href="/berita/{{ object.id }}">{{ object.Judul }}</a>
+                  </div>
+                </div>
+
+
+          {% else %}
+               <div class='row'>
+                 <div class='col-12 col-lg-8 offset-lg-4'>
+                    <a href='{{ object.get_absolute_url }}'>{{ object }} | {{ object|class_name }}</a>
+                </div>
+               </div>
+            {% endif %}
+
+        {% endwith %}
+        {% empty %}
+    {% endfor %}
+    </div>
+
 </div>
 
-
-{% for object in object_list %}
-    {% with object|class_name as klass %}
-      {% if klass == 'perupa' %}
-
-          <div class="container">
-            <div class="row">
-                <div class="col-md-2">
-                    <a href="/perupa/{{ object.id }}">
-                        <img class="col-12 col-sm-2 col-md-10 px-0" src="/media/{{ object.Gambar }}" alt="">
-                    </a>
-                </div>
-                <div class="col-md-7">
-                    <label><a href="/perupa/{{ object.id }}">{{ object.Panggilan }}</a></label>
-                    <p>{{ object.Tanggal_Lahir |date:"d M Y" }} - {{ object.Tanggal_Wafat |date:"d M Y" }}</p>
-                </div>
-            </div>
-            <hr>
-          </div>
-
-      {% elif klass == 'karya' %}
-           <div class="container">
-            <div class="row">
-                <div class="col-md-2 col-sm-10 px-0">
-                    <a href="/karya/{{ object.id }}">
-                        <img class="col-12 col-sm-2 col-md-10 px-0" src="/media/{{ object.Gambar }}" alt="">
-                    </a>
-                </div>
-                <div class="col-md-7">
-                    <label><a href="/karya/{{ object.id }}">{{ object.Judul }}</a></label>
-                    <p>{{ object.Perupa }}<br>
-                    {{ object.Dimensi }}<br>
-                    {{ object.Material }}</p>
-                </div>
-            </div>
-            <hr>
-          </div>
-
-      {% elif klass == 'berita' %}
-           <div class='row'>
-             <div class='col-12'>
-                Berita : <a href="/berita/{{ object.id }}">{{ object.Judul }}</a>
-              </div>
-            </div>
+{% endblock content %}
 
 
-      {% else %}
-           <div class='row'>
-             <div class='col-12 col-lg-8 offset-lg-4'>
-                <a href='{{ object.get_absolute_url }}'>{{ object }} | {{ object|class_name }}</a>
-            </div>
-           </div>
-        {% endif %}
 
-    {% endwith %}
-
-{% empty %}
 
 <div class='row'>
     <div class='col-12 col-md-6 mx-auto my-5 py-5'>
-    <form method='GET' class='' action='.'>
+        <form method='GET' class='' action='.'>
 
-        <div class="input-group form-group-no-border mx-auto" style="margin-bottom: 0px; font-size: 32px;">
-            <span class="input-group-addon cfe-nav" style='color:#000'>
-                <i class="fa fa-search" aria-hidden="false"></i>
-            </span>
-            <input type="text" name="q"  data-content="Press enter to search" class="form-control cfe-nav mt-0 py-3" placeholder="Search..." value="" >
-        </div>
+            <div class="input-group form-group-no-border mx-auto" style="margin-bottom: 0px; font-size: 32px;">
+                <span class="input-group-addon cfe-nav" style='color:#000'>
+                    <i class="fa fa-search" aria-hidden="false"></i>
+                </span>
+                <input type="text" name="q"  data-content="Press enter to search" class="form-control cfe-nav mt-0 py-3" placeholder="Search..." value="" >
+            </div>
 
-    </form>
-
+        </form>
     </div>
-</div>
-{% endfor %}
-
-{% endblock content %}
