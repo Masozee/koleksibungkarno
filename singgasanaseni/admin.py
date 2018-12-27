@@ -5,7 +5,7 @@ from .models import *
 class KaryaAdmin (admin.ModelAdmin):
     list_display = ['No_Index', 'Judul', 'Perupa', 'Dimensi', 'Material','Kategori', 'Tahun_Pembuatan', 'Lokasi_Lukisan', 'Naked_Material']
     list_filter = ("Material", "Lokasi_Lukisan")
-    search_fields = ['No_Index', 'Judul', 'Perupa_perupa__Nama', 'Dimensi', 'Material', 'Tahun_Pembuatan', 'Lokasi_Lukisan__istana']
+    search_fields = ['No_Index', 'Judul', 'Dimensi', 'Material', 'Tahun_Pembuatan']
     list_per_page = 25
 
 admin.site.register(karya,KaryaAdmin)

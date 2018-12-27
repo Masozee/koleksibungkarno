@@ -36,19 +36,11 @@
                 <span class="pagingkarya">
                     <ul class="pagination">
                         {% if Karyarelated.has_previous %}
-                            <a href="?page={{ Karyarelated.previous_page_number }}"><</a>
+                            <a href="?page={{ Karyarelated.previous_page_number }}">Previousgit </a>
                         {% endif %}
 
-                        {% for i in Karyarelated.paginator.page_range %}
-                            {% if Karyarelated.number == i %}
-                                <li class="active"><span>{{ i }}<span class="sr-only">(current)</span></span></li>
-                            {% else %}
-                                <li><a href="?page={{ i }}">{{ i }}</a></li>
-                            {% endif %}
-                        {% endfor %}
-
                         {% if Karyarelated.has_next %}
-                            <a href="?page={{ Karyarelated.next_page_number }}"> > </a>
+                            <a href="?page={{ Karyarelated.next_page_number }}">Next</a>
                         {% endif %}
                      </ul>
                 </span>

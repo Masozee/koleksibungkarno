@@ -115,10 +115,8 @@ def Perupadetail(request, perupa_id):
 	try:
 		Karyarelated = paginator.page(page)
 	except PageNotAnInteger:
-		# If page is not an integer, deliver first page.
 		Karyarelated = paginator.page(1)
 	except EmptyPage:
-		# If page is out of range (e.g. 9999), deliver last page of results.
 		Karyarelated = paginator.page(paginator.num_pages)
 
 	context={
@@ -131,7 +129,7 @@ def Perupadetail(request, perupa_id):
 
 #Karya-------------------------------------------------------------------------------------
 def karyalist(request):
-	Karya = karya.object.all().filter(Naked_Material=False).order_by('Perupa__karya__Kategori').distinct()
+	Karya = karya.object.all().filter(Naked_Material=False).order_by('Kategori').distinct()
 	query = request.GET.get("q")
 	if query:
 		Karya = Karya.filter(Judul__icontains=query)
