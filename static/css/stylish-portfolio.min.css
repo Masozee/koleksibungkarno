@@ -1492,6 +1492,7 @@ a {
 }
 
 
+
 /* 100% width bar for menu */
 
 .cbp-hsinner {
@@ -1514,6 +1515,15 @@ a {
     padding: 0 10px;
 }
 
+.cbp-hsmenu>li a:hover{
+    font-style: italic;
+}
+
+.cbp-hsmenu>li a:active{
+    font-style: italic;
+}
+
+
 .cbp-hsmenu>li:first-child {
     margin-left: 0;
 }
@@ -1530,6 +1540,8 @@ a {
     z-index: 0;
     outline: none;
 }
+
+
 
 .no-touch .cbp-hsmenu>li>a:hover,
 .no-touch .cbp-hsmenu>li>a:focus,

@@ -81,11 +81,11 @@ def Kriyalist(request):
 
 def Perupadetail(request, perupa_id):
 	try:
-		Perupa = perupa.object.get(pk=perupa_id)
+		Perupa = perupa.object.get(pk=perupa_id, Naked_Material=False)
 	except perupa.DoesNotExist:
 		raise Http404('404.html')
 
-	karyarelated = karya.object.filter(Perupa__id=Perupa.id, Naked_Material=False)
+	karyarelated = karya.object.filter(Perupa__id=Perupa.id)
 	total = karyarelated.count()
 
 	paginator = Paginator(karyarelated, 20)  # Show 25 contacts per page
