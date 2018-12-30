@@ -85,7 +85,7 @@ def Perupadetail(request, perupa_id):
 	except perupa.DoesNotExist:
 		raise Http404('404.html')
 
-	Karyarelated = karya.object.filter(Perupa__id=Perupa.id, Naked_Material=False)
+	Karyarelated = karya.object.filter(Perupa__id=Perupa.id, Perupa__karya__Naked_Material=False).distinct()
 	total = Karyarelated.count()
 
 	paginator = Paginator(Karyarelated, 20)  # Show 25 contacts per page
