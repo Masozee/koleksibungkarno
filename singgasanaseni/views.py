@@ -11,7 +11,7 @@ from singgasanaseni.models import perupa, karya, berita
 
 #perupa-----------------------------------------------------------------------------------------------
 def PerupaList(request):
-	Perupa = perupa.object.filter(Kategori='Pelukis',).order_by('Panggilan')
+	Perupa = perupa.object.filter(Kategori='Pelukis').order_by('Panggilan')
 	query = request.GET.get("q")
 
 	if query:
@@ -81,14 +81,14 @@ def Kriyalist(request):
 
 def Perupadetail(request, perupa_id):
 	try:
-		Perupa = perupa.object.get(pk=perupa_id, Naked_Material=False)
+		Perupa = perupa.object.get(pk=perupa_id)
 	except perupa.DoesNotExist:
 		raise Http404('404.html')
 
-	karyarelated = karya.object.filter(Perupa__id=Perupa.id)
-	total = karyarelated.count()
+	Karyarelated = karya.object.filter(Perupa__id=Perupa.id, Naked_Material=False)
+	total = Karyarelated.count()
 
-	paginator = Paginator(karyarelated, 20)  # Show 25 contacts per page
+	paginator = Paginator(Karyarelated, 20)  # Show 25 contacts per page
 
 	page = request.GET.get('page')
 	try:
