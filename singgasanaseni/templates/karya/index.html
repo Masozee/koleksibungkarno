@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load svg %}
 
 {% block content %}
     <article>
@@ -12,16 +13,27 @@
               </span>
               <div class="sectionfilter">
                 <div class="filterkarya">
-                  <label class="filtermenu" style="padding: 0;">Filter</label>
-                  <div class="filtermenu jeniskarya ">
+                  <label class="filtermenu" style="padding: 0; font-size: smaller; color: #3c4a50">Filter</label>
+
+                <!--form method="get">
+                {{ filter.form.as_p }}
+                <button type="submit">Search</button>
+                </form>
+                <ul>
+                {% for jenis in filter.qs %}
+                <li>{{ jenis.Jenis }}</li>
+                {% endfor %}
+                </ul-->
+
+                  <div class="filtermenu jeniskarya " method="get">
                     <a id="link1">Jenis benda seni +</a>
-                    <ul id="jenisbenda" class="jenisbenda">
-                      <li><a href="#">Patung</a></li>
-                      <li><a href="#">Lukisan</a></li>
-                      <li><a href="#">Kriya</a></li>
+                    <ul id="jenisbenda" class="jenisbenda" name="featured">
+                      <li value="Patung"><a href="#">Patung</a></li>
+                      <li value="Lukisan"><a href="#">Lukisan</a></li>
+                      <li value="Kriya"><a href="#">Kriya</a></li>
                     </ul>
                   </div>
-                  <!--div class="filtermenu temakarya">
+                  <div class="filtermenu temakarya">
                     <a id="link2">Tema +</a>
                     <ul id="jenistema" class="jenisbenda">
                       <li><a href="#">Potret dan Sensualitas</a></li>
@@ -31,7 +43,7 @@
                       <li><a href="#">Tradisi/Budaya/Mitologi/Keseharian</a></li>
                       <li><a href="#">Patung dan Kriya</a></li>
                     </ul>
-                  </div-->
+                  </div>
 
                 </div>
                 <div class="formsearchkarya">
@@ -46,68 +58,23 @@
           </div>
           <div class="row bgkarya">
              <div class="col-md-12 sectionkoleksi">
-              <span class="divkoleksi" style="border: none;">
-                <h3>page {{ karya.number }}/{{ karya.paginator.num_pages }}</h3>
+              <span-- class="divkoleksi" style="border: none;">
                 <span class="pagingkarya">
                     <ul class="pagination">
-                        <li class="page-item">    <!-- Jump to First Page -->
-                           {% if perupa.number != 1 %}
-                               <li class="previous">
-                                  <a href="?page=1">
-                                    <span aria-hidden="true">&laquo;</span>
-                                  </a>
-                           {% else %}
-                               <li class="previous disabled">
-                               <a><span aria-hidden="true">&laquo;</span></a>
-                           {% endif %}
-                       </li>
-
-                       <li class="page-item">  <!-- Jump to Prvious Page -->
-                           {% if karya.has_previous %}
-                               <li class="previous"> <a href="?page={{ karya.previous_page_number }}">
-                                   <span aria-hidden="true">‹</span></a>
-                           {% else %}
-                               <li class="previous disabled"><a>‹</a>
-                           {% endif %}
-                       </li>
-
                         {% if karya.has_previous %}
-                       <li class="page-item">  <!-- Show Previous 4 page numbers -->
-                            <li class="previous"> <a class = "skip_prev" href = "">...</a></li>
-                        {% else %}
-                            <li class="next disabled"><a>...</a>
+                            <a href="?page={{ karya.previous_page_number }}" style="width: 20px; height: auto">{% svg 'back' %}</a>
                         {% endif %}
-                       </li>
 
-                        {% for i in "12345" %}
-                        <!-- Change the range ("12345") according to your choice to show numbers -->
-                       <li class="pg" data = {{i}}><a class = "page_number" href=""></a>
-                        {% endfor %}
+                    <form method="GET" >
+                        <input type="number" name="page" id="formpage">
+                    </form>  <p>of {{ karya.paginator.num_pages }}</p>
+
 
                         {% if karya.has_next %}
-                       <li class="page-item">  <!-- Show next 4 page numbers -->
-                            <li class="previous"> <a class = "skip_next" href = "">...</a></li>
-                        {% else %}
-                            <li class="next disabled"><a>...</a>
+                            <a href="?page={{ karya.next_page_number }}" style="width: 20px; height: auto">{% svg 'next' %}</a>
                         {% endif %}
-                       </li>
-
-                       <li class="page-item">  <!-- Jump to Next Page -->
-                        {% if karya.has_next %}
-                            <li class="previous"> <a href="?page={{ karya.next_page_number }}">›</a></li>
-                        {% else %}
-                            <li class="next disabled"><a>›</a>
-                        {% endif %}
-                       </li>
-
-                       <li class="page-item">  <!-- Jump to Last Page -->
-                         {% if karya.number != karya.paginator.num_pages %}
-                            <li class="previous"> <a href="?page={{ karya.paginator.num_pages }}">»</a></li>
-                         {% else %}
-                            <li class="next disabled"><a>»</a>
-                         {% endif %}
-                       </li>
                      </ul>
+
                 </span>
               </span>
             </div>

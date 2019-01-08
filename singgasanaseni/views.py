@@ -1,15 +1,12 @@
-from django.shortcuts import render,  Http404
+from django.shortcuts import render, Http404
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-
 
 
 
 from singgasanaseni.models import perupa, karya, berita
 
 
-
-
-#perupa-----------------------------------------------------------------------------------------------
+# perupa-----------------------------------------------------------------------------------------------
 def PerupaList(request):
 	Perupa = perupa.object.filter(Kategori='Pelukis').order_by('Panggilan')
 	query = request.GET.get("q")
@@ -28,11 +25,12 @@ def PerupaList(request):
 		Perupa = paginator.page(paginator.num_pages)
 
 	context = {
-		"perupa":Perupa,
+		"perupa": Perupa,
 		"page_request_var": Page_request_var
 	}
 
 	return render(request, 'perupa/index.html', context)
+
 
 def Pematunglist(request):
 	Pematung = perupa.object.filter(Kategori='Pematung').order_by('Panggilan')
@@ -50,11 +48,12 @@ def Pematunglist(request):
 		Pematung = paginator.page(paginator.num_pages)
 
 	context = {
-		"pematung":Pematung,
+		"pematung": Pematung,
 		"page_request_var": Page_request_var
 	}
 
 	return render(request, 'perupa/indexpatung.html', context)
+
 
 def Kriyalist(request):
 	Pengrajin = perupa.object.filter(Kategori='Pengrajin').order_by('Panggilan')
@@ -72,7 +71,7 @@ def Kriyalist(request):
 		Pengrajin = paginator.page(paginator.num_pages)
 
 	context = {
-		"pengrajin":Pengrajin,
+		"pengrajin": Pengrajin,
 		"page_request_var": Page_request_var
 	}
 
@@ -98,15 +97,16 @@ def Perupadetail(request, perupa_id):
 	except EmptyPage:
 		Karyarelated = paginator.page(paginator.num_pages)
 
-	context={
+	context = {
 		"Perupa": Perupa,
 		"Karyarelated": Karyarelated,
-		"total":total
+		"total": total
 	}
 
 	return render(request, 'perupa/detail.html', context)
 
-#Karya-------------------------------------------------------------------------------------
+
+# Karya-------------------------------------------------------------------------------------
 def karyalist(request):
 	Karya = karya.object.all().filter(Naked_Material=False).order_by('Kategori').distinct()
 	query = request.GET.get("q")
@@ -138,14 +138,14 @@ def karyadetail(request, karya_id):
 	except Perupa.DoesNotExist:
 		raise Http404('Data karya Belum Tersedia')
 
-
-	context={
+	context = {
 		"Karya": Karya,
 	}
 
 	return render(request, 'karya/detail.html', context)
 
-#berita-------------------------------------------------------------------------------
+
+# berita-------------------------------------------------------------------------------
 def Beritalist(request):
 	Berita = berita.object.all()
 	return render(request, 'berita/index.html', {'Berita': Berita})
@@ -159,29 +159,29 @@ def Beritalist(request):
 
 	return render(request, 'berita/detail.html', context={'Berita': Berita})"""
 
-#istana-------------------------------------
+
+# istana-------------------------------------
 def IstanaBogor(request):
-	return render(request, 'istana/istanabogor.html' )
+	return render(request, 'istana/istanabogor.html')
+
 
 def IstanaNegara(request):
-	return render(request, 'istana/istananegara.html' )
+	return render(request, 'istana/istananegara.html')
+
 
 def IstanaCipanas(request):
-	return render(request, 'istana/istanacipanas.html' )
+	return render(request, 'istana/istanacipanas.html')
+
 
 def IstanaMerdeka(request):
-	return render(request, 'istana/istanamerdeka.html' )
+	return render(request, 'istana/istanamerdeka.html')
+
 
 def IstanaTampakSiring(request):
-	return render(request, 'istana/istanatampaksiring.html' )
+	return render(request, 'istana/istanatampaksiring.html')
+
 
 def IstanaYogya(request):
-	return render(request, 'istana/istanayogyakarta.html' )
-
-
-
-
-
-
+	return render(request, 'istana/istanayogyakarta.html')
 
 

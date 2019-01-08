@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load svg %}
 
 
 {% load static %}
@@ -61,89 +62,44 @@
           <div class="row bgkarya">
               <div class="col-md-12 sectionkoleksi">
               <span class="divkoleksi" style="border: none;">
-                <h3>page {{ perupa.number }}/{{ perupa.paginator.num_pages }}</h3>
+
                 <span class="pagingkarya">
                     <ul class="pagination">
-
-                        <li class="page-item">    <!-- Jump to First Page -->
-                           {% if perupa.number != 1 %}
-                               <li class="previous">
-                                  <a href="?page=1">
-                                    <span aria-hidden="true">&laquo;</span>
-                                  </a>
-                           {% else %}
-                               <li class="previous disabled">
-                               <a><span aria-hidden="true">&laquo;</span></a>
-                           {% endif %}
-                       </li>
-
-                       <li class="page-item">  <!-- Jump to Prvious Page -->
-                           {% if perupa.has_previous %}
-                               <li class="previous"> <a href="?page={{ perupa.previous_page_number }}">
-                                   <span aria-hidden="true">‹</span></a>
-                           {% else %}
-                               <li class="previous disabled"><a>‹</a>
-                           {% endif %}
-                       </li>
-
-                        {% if perupa.has_previous %}
-                       <li class="page-item">  <!-- Show Previous 4 page numbers -->
-                            <li class="previous"> <a class = "skip_prev" href = "">...</a></li>
-                        {% else %}
-                            <li class="next disabled"><a>...</a>
+                        {% if karya.has_previous %}
+                            <a href="?page={{ perupa.previous_page_number }}" style="width: 20px; height: auto">{% svg 'back' %}</a>
                         {% endif %}
-                       </li>
 
-                        {% for i in "12345" %}
-                        <!-- Change the range ("12345") according to your choice to show numbers -->
-                       <li class="pg" data = {{i}}><a class = "page_number" href=""></a>
-                        {% endfor %}
+                    <form method="GET" >
+                        <input type="number" name="page" id="formpage">
+                    </form>  <p>of {{ perupa.paginator.num_pages }}</p>
 
-                        {% if object_list.has_next %}
-                       <li class="page-item">  <!-- Show next 4 page numbers -->
-                            <li class="previous"> <a class = "skip_next" href = "">...</a></li>
-                        {% else %}
-                            <li class="next disabled"><a>...</a>
+
+                        {% if karya.has_next %}
+                            <a href="?page={{ perupa.next_page_number }}" style="width: 20px; height: auto">{% svg 'next' %}</a>
                         {% endif %}
-                       </li>
-
-                       <li class="page-item">  <!-- Jump to Next Page -->
-                        {% if perupa.has_next %}
-                            <li class="previous"> <a href="?page={{ perupa.next_page_number }}">›</a></li>
-                        {% else %}
-                            <li class="next disabled"><a>›</a>
-                        {% endif %}
-                       </li>
-
-                       <li class="page-item">  <!-- Jump to Last Page -->
-                         {% if perupa.number != perupa.paginator.num_pages %}
-                            <li class="previous"> <a href="?page={{ perupa.paginator.num_pages }}">»</a></li>
-                         {% else %}
-                            <li class="next disabled"><a>»</a>
-                         {% endif %}
-                       </li>
-                    </ul>
+                     </ul>
                 </span>
               </span>
             </div>
 
-              <div class="container">
+          <div class="container portfolioContainer">
             {% for Perupa in perupa.object_list %}
-            <div class="row">
-                <div class="col-md-2">
+            <div class="portfolioContainer">
+                <div class="row">
+                    <div class="col-md-2">
                     <a href="/perupa/{{ Perupa.id }}">
                         <img class="col-12 col-sm-2 col-md-10 px-0" src="/media/{{ Perupa.Gambar }}" alt="">
                     </a>
                 </div>
-                <div class="col-md-7">
+                    <div class="col-md-7">
                     <label><a href="/perupa/{{ Perupa.id }}">{{ Perupa.Panggilan }}</a></label>
                     <p>{{ Perupa.Tanggal_Lahir |date:"d M Y" }} - {{ Perupa.Tanggal_Wafat |date:"d M Y" }}</p>
-
+                </div>
                 </div>
             </div>
                 <hr>
             {% endfor %}
-        </div>
+            </div>
           </div>
       </div>
      </article>

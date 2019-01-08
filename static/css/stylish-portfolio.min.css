@@ -42,7 +42,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 700
+    font-weight: 500;
+    font-family: "Garamond Premiere Pro";
 }
 
 .text-faded {
@@ -906,24 +907,25 @@ footer {
 }
 
 .divkarya {
-    border-bottom: 2px solid #d0ca21 !important;
+    border-bottom: 2px solid #e7a541 !important;
     margin-bottom: 5px;
     margin-top: 0;
 }
 
 .bgkarya {
-    background: #f2f2fb;
+    background: #f2eee1;
     margin-top: 5px;
 }
 
 .bgkarya h3 {
-    font-size: 18px;
+    font-size: 22px;
     color: #ababab;
 }
 
 .pagingkarya {
     text-align: right;
     float: right;
+    color: #cc;
 }
 
 .formsearchkarya {
@@ -1423,6 +1425,7 @@ a {
 .sidebaristana h3 {
     color: #afab3d;
     margin-bottom: 20px;
+    font-family: "Garamond Premiere Pro";
 }
 
 .sidebaristana font {
@@ -1430,6 +1433,7 @@ a {
     margin-top: 10px;
     float: left;
     width: 100%;
+
 }
 
 .sidebaristana label {
@@ -1438,6 +1442,7 @@ a {
 
 .sidebarberita font {
     margin-top: 0;
+    font-style: "GaramondPremrPro-Capt";
 }
 
 .sidebarberita .source {
@@ -1534,6 +1539,8 @@ a {
 
 .cbp-hsmenu>li>a {
     font-size: 17px;
+    font-family: "GaramondPremrPro-Capt";
+    font-kerning: normal;
     color: #867e7e;
     line-height: 3em;
     display: inline-block;
@@ -1666,6 +1673,7 @@ a {
     text-align: left;
     color: #fff;
     outline: none;
+    font-family: "GaramondPremrPro-Capt";
     /* padding: 5px 0;*/
 }
 
