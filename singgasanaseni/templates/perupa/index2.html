@@ -1,19 +1,18 @@
-
 {% extends 'base.html' %}
-{% load static %}
 {% load svg %}
-<!DOCTYPE html>
 
 
+{% load static %}
 
-    {% block content %}
-    <article>
+{% block content %}
+
+     <article>
       <div class="container-fluid">
 
           <div class="row">
             <div class="col-md-12 sectionkoleksi">
               <span class="divkoleksi divkarya">
-                <h3>Perupa</h3>
+                <h3>Lukisan</h3>
               </span>
               <div class="sectionfilter">
                 <div class="filterkarya">
@@ -61,8 +60,9 @@
             </div>
           </div>
           <div class="row bgkarya">
-             <div class="col-md-12 sectionkoleksi">
+              <div class="col-md-12 sectionkoleksi">
               <span class="divkoleksi" style="border: none;">
+
                 <span class="pagingkarya">
                     <ul class="pagination">
                         {% if karya.has_previous %}
@@ -81,44 +81,50 @@
                 </span>
               </span>
             </div>
+          <div class="col-md-12 containerperupa">
+              {% for Perupa in perupa.object_list %}
+              <div class="row seckarya portfolioContainer">
 
-            <div class="container  ">
-                {% for Perupa in perupa.object_list %}
-                <div class="portfolioContainer">
-                  <div class="{{ Perupa.Panggilan | slice:"1" | lower }}">
-                    <div class="row col-md-12">
-                        <div class="col-md-2">
-                            <a href="/perupa/{{ Perupa.id }}">
-                                <img class="col-12 col-sm-2 col-md-10 px-0" src="/media/{{ Perupa.Gambar }}" alt="">
-                            </a>
-                        </div>
-                        <div class="col-lg-8">
-                            <label>
-                                <a href="/perupa/{{ Perupa.id }}">{{ Perupa.Panggilan }}</a>
-                            </label>
-                            <p>{{ Perupa.Tanggal_Lahir |date:"d M Y" }} - {{ Perupa.Tanggal_Wafat |date:"d M Y" }}</p>
 
-                        </div>
+                                <div class="{{ Perupa.Panggilan | slice:"1" | lower }}">
+                                    <p>
+                                      <h5>{{ Perupa.Panggilan }}</h5>
+                                      <font>Jakarta, 08 Agustu 1945</font><br>
+                                      <label><a href="#">8 karya</a></label>
+                                    </p>
+                                </div>
+              </div>
+              {% endfor %}
+          </div>
 
+          <div class="container ">
+            {% for Perupa in perupa.object_list %}
+              <div class="row portfolioContainer">
+                <div class="{{ Perupa.Panggilan | slice:"1" | lower }}">
+                    <div class="col-md-2">
+                        <a href="/perupa/{{ Perupa.id }}">
+                            <img class="col-12 col-sm-2 col-md-10 px-0" src="/media/{{ Perupa.Gambar }}" alt="">
+                        </a>
                     </div>
-
-                  </div>
-
+                    <div class="col-md-7">
+                        <label>
+                            <a href="/perupa/{{ Perupa.id }}">{{ Perupa.Panggilan }}</a>
+                        </label>
+                        <p>{{ Perupa.Tanggal_Lahir |date:"d M Y" }} - {{ Perupa.Tanggal_Wafat |date:"d M Y" }}</p>
+                    </div>
                 </div>
-                    <hr>
-
-                {% endfor %}
-
+            </div>
+                <hr>
+            {% endfor %}
             </div>
           </div>
       </div>
-    </article>
+     </article>
     {% endblock %}
 
 
-
-    {% block js %}
     <!-- Bootstrap core JavaScript -->
+    {% block js %}
     <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
     <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
@@ -198,33 +204,61 @@
                 }
               });
 
-              // use value of search field to filter
-              var $quicksearch = $('.quicksearch').keyup( debounce( function() {
-                qsRegex = new RegExp( $quicksearch.val(), 'gi' );
-                $grid.isotope();
-              }, 200 ) );
-
-              function debounce( fn, threshold ) {
-                  var timeout;
-                  threshold = threshold || 100;
-                  return function debounced() {
-                    clearTimeout( timeout );
-                    var args = arguments;
-                    var _this = this;
-                    function delayed() {
-                      fn.apply( _this, args );
-                    }
-                    timeout = setTimeout( delayed, threshold );
-                  };
-                }
 
 
           });
     </script>
 
-  {% endblock %}
+    <script>
+        $(document).ready(function(){
 
+          var skip_pages = 5; //change your number accordingly you want to show numbers
 
-  </body>
+          var total_pages = {{perupa.paginator.num_pages}};
+          var current_page = {{perupa.number}};
+          var factor = Math.floor(current_page/skip_pages);
 
-</html>
+          $(".page_number").each(function(i, obj) {   //Showing the discrete numbers
+                var page = factor*(skip_pages) + i + 1;
+                if(current_page%skip_pages == 0)
+                  page = (factor-1)*skip_pages + i + 1;
+                if(page - 1 < total_pages){
+                  $(this).html(page);
+                  $(this).attr("href", "?page=" + page);
+                }
+                else{
+                  var x = i+1;
+                  $('li[data=' + x + ']').css("display", "none");
+                }
+          });
+            var page = current_page%skip_pages;
+            if(page == 0)
+              page = skip_pages;
+            $('li[data=' + page + ']').each(function(){   //Deciding the active class
+              $('li[data=' + page + ']').addClass("active");
+            });
+
+          $(".skip_next").click(function(){   //Skip next ... Function
+              if(current_page%skip_pages == 0)
+                factor = factor-1;
+              var page = (factor+1)*skip_pages + 1;
+              if(page < total_pages)
+                $(this).attr("href", "?page=" + page);
+              else
+                $(this).attr("href", "?page=" + total_pages);
+          })
+          $(".skip_prev").click(function(){ //Skip Previous ... Function
+              if(current_page%skip_pages == 0)
+                factor = factor-1;
+              var page = skip_pages*(factor-1) + 1;
+              if(page > 0)
+                $(this).attr("href", "?page=" + page);
+              else
+                $(this).attr("href", "?page=" + "1");
+          })
+        })
+
+    </script>
+
+{% endblock %}
+

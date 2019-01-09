@@ -7,6 +7,7 @@
 
     <!-- Header -->
    <header>
+        {% for slide in Slide %}
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -15,25 +16,25 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="d-block w-100" src="{% static 'img/slider1.png' %}" alt="First slide">
-              <!--<div class="carousel-caption d-none d-md-block">
-                <h3>Suasana Pasar</h3>
-                <p>Henk Ngantung</p>
-              </div>-->
+              <img class="d-block w-100" src="/media/{{ slide.slide1 }}" alt="First slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>{{ slide.caption1 }}</h3>
+                <p>{{ slide.subcaption1 }}</p>
+              </div>
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="{% static 'img/slide3.jpeg' %}" alt="Second slide">
-              <!--<div class="carousel-caption d-none d-md-block">
-                <h3>Suasana Pasar</h3>
-                <p>Henk Ngantung</p>
-              </div>-->
+              <img class="d-block w-100" src="/media/{{ slide.slide2 }}" alt="Second slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>{{ slide.caption2 }}</h3>
+                <p>{{ slide.subcaption2 }}</p>
+              </div>
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="{% static 'img/slide1.jpeg' %}" alt="Third slide">
-              <!--<div class="carousel-caption d-none d-md-block">
-                <h3>Suasana Pasar</h3>
-                <p>Henk Ngantung</p>
-              </div>-->
+              <img class="d-block w-100" src="/media/{{ slide.slide3 }}" alt="Third slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>{{ slide.caption3 }}</h3>
+                <p>{{ slide.subcaption3 }}</p>
+              </div>
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -45,6 +46,7 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
+        {% endfor %}
     </header>
 
     <article>
@@ -165,19 +167,22 @@
     <script src="{% static 'js/stylish-portfolio.min.js' %}"></script>
 
 
-    <script>
-    function openSearch() {
-        document.getElementById("myOverlay").style.display = "block";
-    }
 
-    function closeSearch() {
-        document.getElementById("myOverlay").style.display = "none";
-    }
-    </script>
 
     <script src="js/cbpHorizontalSlideOutMenu.min.js"></script>
     <script>
       var menu = new cbpHorizontalSlideOutMenu( document.getElementById( 'cbp-hsmenu-wrapper' ) );
     </script>
+     <script>
+      function myFunction() {
+      var x = document.getElementById("menuall");
+      if (x.className === "cbp-hsmenu") {
+          x.className += " responsive";
+      } else {
+          x.className = "cbp-hsmenu";
+        }
+      }
+    </script>
+
 
 {% endblock %}

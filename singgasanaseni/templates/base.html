@@ -73,30 +73,6 @@
               <li><a href="{% url 'berita-list' %}">Berita</a></li>
               <li><a href="{% url 'tentang-kami' %}">Tentang Kami</a></li>
               <li><a href="{% url 'searching' %}"><i class="fa fa-search"></i></a></li>
-              <!--li class="searchslot">
-                   <form class="navbar-form navbar-right">
-                  <div class="input-group">
-                    <input type="text" class="form-control formsearch" placeholder="Search" name="search">
-                    <div class="input-group-btn">
-                        <a href="#" onclick="openSearch()">
-                          <i class="fa fa-search" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                  </div>
-                </form>
-
-                <div id="myOverlay" class="overlay animated fadeIn">
-                  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
-                  <div class="overlay-content">
-                    <form>
-                        <form  method="GET" action='{% url 'searching' %}'>
-                            <input type="text" name="q" placeholder="Cari apapun disini...">
-                            <button type="submit"><i class="fa fa-search"></i></button>
-                        </form>
-                    </form>
-                  </div>
-                </div>
-              </li-->
 
             </ul>
             </div>
@@ -139,7 +115,7 @@
     {% endblock %}
 
     <script src="{% static 'js/cbpHorizontalSlideOutMenu.min.js' %}"></script>
-    <script src="{% static 'vendor/jquery/jquery.js' %}"></script>
+
     <script>
       var menu = new cbpHorizontalSlideOutMenu( document.getElementById( 'cbp-hsmenu-wrapper' ) );
     </script>
@@ -154,6 +130,8 @@
       }
       }
     </script>
+
+
 
 
 
