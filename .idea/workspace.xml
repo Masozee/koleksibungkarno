@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="077f652a-7fb8-42a3-b99b-79f8e0d75adb" name="Default" comment="" />
+    <list default="true" id="077f652a-7fb8-42a3-b99b-79f8e0d75adb" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/homepage/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/homepage/templates/index.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,20 +64,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/homepage/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3094">
-              <caret line="182" column="8" selection-start-line="182" selection-start-column="8" selection-end-line="182" selection-end-column="8" />
+            <state relative-caret-position="80">
+              <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file:///Volumes/ozz/koleksibungkarno/singgasanaseni/templates/perupa/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="97" column="18" selection-start-line="97" selection-start-column="18" selection-end-line="97" selection-end-column="18" />
+            <state relative-caret-position="1287">
+              <caret line="106" column="18" selection-start-line="106" selection-start-column="18" selection-end-line="106" selection-end-column="18" />
+              <folding>
+                <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#article#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#0;n#article#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#ul#0;n#span#0;n#span#0;n#div#0;n#div#1;n#div#0;n#article#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#1;n#ul#0;n#span#0;n#span#0;n#div#0;n#div#1;n#div#0;n#article#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -193,15 +201,15 @@
         <option value="$PROJECT_DIR$/homepage/models.py" />
         <option value="$PROJECT_DIR$/homepage/admin.py" />
         <option value="$PROJECT_DIR$/homepage/views.py" />
-        <option value="$PROJECT_DIR$/homepage/templates/index.html" />
         <option value="$PROJECT_DIR$/singgasanaseni/templates/base.html" />
         <option value="$PROJECT_DIR$/../koleksibungkarno copy/singgasanaseni/templates/perupa/index.html" />
         <option value="$PROJECT_DIR$/singgasanaseni/templates/perupa/index.html" />
         <option value="/Volumes/ozz/koleksibungkarno/singgasanaseni/templates/perupa/index.html" />
+        <option value="$PROJECT_DIR$/homepage/templates/index.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1280" />
     <option name="height" value="737" />
@@ -222,6 +230,12 @@
               <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
               <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
               <item name="homepage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
+              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
+              <item name="homepage" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
@@ -440,12 +454,12 @@
       <workItem from="1546416772199" duration="514000" />
       <workItem from="1546503649862" duration="15081000" />
       <workItem from="1546851922219" duration="165000" />
-      <workItem from="1546928878250" duration="13779000" />
+      <workItem from="1546928878250" duration="13998000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108192000" />
+    <option name="totallyTimeSpent" value="108411000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -457,9 +471,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="737" extended-state="1" />
+    <frame x="0" y="22" width="1280" height="737" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49893844" visible="true" weight="0.24717286" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49893844" visible="true" weight="0.24717286" />
       <window_info id="Structure" order="1" sideWeight="0.50106156" side_tool="true" weight="0.21890146" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -473,7 +488,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3279743" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3279743" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49676898" visible="true" weight="0.39228296" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49676898" visible="true" weight="0.39228296" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.503231" side_tool="true" weight="0.39228296" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.32956153" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -807,13 +822,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homepage/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3094">
-          <caret line="182" column="8" selection-start-line="182" selection-start-column="8" selection-end-line="182" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Volumes/ozz/koleksibungkarno/singgasanaseni/templates/karya/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1264">
@@ -823,8 +831,21 @@
     </entry>
     <entry file="file:///Volumes/ozz/koleksibungkarno/singgasanaseni/templates/perupa/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="97" column="18" selection-start-line="97" selection-start-column="18" selection-end-line="97" selection-end-column="18" />
+        <state relative-caret-position="1287">
+          <caret line="106" column="18" selection-start-line="106" selection-start-column="18" selection-end-line="106" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#article#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#0;n#article#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#ul#0;n#span#0;n#span#0;n#div#0;n#div#1;n#div#0;n#article#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#ul#0;n#span#0;n#span#0;n#div#0;n#div#1;n#div#0;n#article#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homepage/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
         </state>
       </provider>
     </entry>
