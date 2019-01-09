@@ -71,7 +71,7 @@
 
                     <form method="GET" >
                         <input type="number" name="page" id="formpage">
-                    </form>  <p>of {{ perupa.paginator.num_pages }}</p>
+                    </form>  <p style="margin-top: auto; margin-bottom: auto;">of {{ perupa.paginator.num_pages }}</p>
 
 
                         {% if karya.has_next %}
@@ -81,35 +81,25 @@
                 </span>
               </span>
             </div>
-
-            <div class="container  ">
-                {% for Perupa in perupa.object_list %}
-                <div class="portfolioContainer">
-                  <div class="{{ Perupa.Panggilan | slice:"1" | lower }}">
-                    <div class="row col-md-12">
-                        <div class="col-md-2">
-                            <a href="/perupa/{{ Perupa.id }}">
-                                <img class="col-12 col-sm-2 col-md-10 px-0" src="/media/{{ Perupa.Gambar }}" alt="">
-                            </a>
-                        </div>
-                        <div class="col-lg-8">
-                            <label>
-                                <a href="/perupa/{{ Perupa.id }}">{{ Perupa.Panggilan }}</a>
-                            </label>
-                            <p>{{ Perupa.Tanggal_Lahir |date:"d M Y" }} - {{ Perupa.Tanggal_Wafat |date:"d M Y" }}</p>
-
-                        </div>
-
+           <div class="container">
+            {% for Perupa in perupa.object_list %}
+            <div class="{{ Perupa.Panggilan | slice:"1" | lower }}">
+                <div class="row col-md-12">
+                    <div class="col-md-2">
+                        <a href="/perupa/{{ Perupa.id }}">
+                            <img class="col-12 col-sm-2 col-md-10 px-0" src="/media/{{ Perupa.Gambar }}" alt="">
+                        </a>
                     </div>
-
-                  </div>
-
+                    <div class="col-md-7">
+                        <h3>
+                            <a href="/perupa/{{ Perupa.id }}">{{ Perupa.Panggilan }}</a>
+                        </h3>
+                        <p>{{ Perupa.Tanggal_Lahir |date:"d M Y" }} - {{ Perupa.Tanggal_Wafat |date:"d M Y" }}</p>
+                    </div>
                 </div>
-                    <hr>
-
-                {% endfor %}
-
+              <hr>
             </div>
+               {% endfor %}
           </div>
       </div>
     </article>
