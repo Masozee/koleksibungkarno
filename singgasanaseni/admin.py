@@ -15,7 +15,7 @@ admin.site.register(karya,KaryaAdmin)
 class PerupaAdmin (admin.ModelAdmin):
     list_display = ['Nama', 'Panggilan', 'Kategori', 'Tanggal_Lahir']
     list_filter = ()
-    search_fields = ['Nama', 'panggilan', 'Kategori', 'Tanggal_Lahir']
+    search_fields = ['Nama', 'Panggilan', 'Kategori', 'Tanggal_Lahir']
     list_per_page = 25
 
 admin.site.register(perupa, PerupaAdmin)

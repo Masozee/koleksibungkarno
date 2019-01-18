@@ -704,11 +704,6 @@ def ZList(request):
 
 
 
-
-
-
-
-
 # Karya----------------------------------------------------------------------------------------------------------
 def karyalist(request):
 	Karya = karya.object.all().filter(Naked_Material=False).order_by('Kategori').distinct()
