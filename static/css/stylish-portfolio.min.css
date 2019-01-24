@@ -1229,7 +1229,11 @@ a {
     padding: 0;
     background: #ffffffe3;
     /* color: #fff; */
+<<<<<<< HEAD
     width: 150px ;
+=======
+    width: 150px;
+>>>>>>> fab20b2ae028dcf77c07b5e59232ef372fd92a54
     border: 1px solid #cccccca3;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;

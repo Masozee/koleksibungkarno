@@ -702,6 +702,1206 @@ def ZList(request):
 
 	return render(request, 'perupa/index.html', context)
 
+#filtering patung --------------
+def APatung(request):
+	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'A').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexpatung.html', context)
+def BPatung(request):
+	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'B').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexpatung.html', context)
+def CPatung(request):
+	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'C').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexpatung.html', context)
+def DPatung(request):
+	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'D').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexpatung.html', context)
+def EPatung(request):
+	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'E').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexpatung.html', context)
+def FPatung(request):
+	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'F').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexpatung.html', context)
+def GPatung(request):
+	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'G').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexpatung.html', context)
+def HPatung(request):
+	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'H').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexpatung.html', context)
+def IPatung(request):
+	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'I').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexpatung.html', context)
+def JPatung(request):
+	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'J').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexpatung.html', context)
+def KPatung(request):
+	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'K').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexpatung.html', context)
+def LPatung(request):
+	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'L').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexpatung.html', context)
+def MPatung(request):
+	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'M').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexpatung.html', context)
+def NPatung(request):
+	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'N').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexpatung.html', context)
+def OPatung(request):
+	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'O').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexpatung.html', context)
+def PPatung(request):
+	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'P').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexpatung.html', context)
+def QPatung(request):
+	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'Q').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexpatung.html', context)
+def RPatung(request):
+	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'R').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexpatung.html', context)
+def SPatung(request):
+	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'S').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexpatung.html', context)
+def TPatung(request):
+	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'T').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexpatung.html', context)
+def UPatung(request):
+	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'U').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexpatung.html', context)
+def VPatung(request):
+	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'V').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexpatung.html', context)
+def WPatung(request):
+	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'W').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexpatung.html', context)
+def XPatung(request):
+	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'X').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexpatung.html', context)
+def YPatung(request):
+	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'Y').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexpatung.html', context)
+def ZPatung(request):
+	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'Z').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexpatung.html', context)
+
+#filtering kriya --------------
+def AKriya(request):
+	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'A').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexkriya.html', context)
+def BKriya(request):
+	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'B').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexkriya.html', context)
+def CKriya(request):
+	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'C').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexkriya.html', context)
+def DKriya(request):
+	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'D').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexkriya.html', context)
+def EKriya(request):
+	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'E').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexkriya.html', context)
+def FKriya(request):
+	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'F').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexkriya.html', context)
+def GKriya(request):
+	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'G').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexkriya.html', context)
+def HKriya(request):
+	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'H').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexkriya.html', context)
+def IKriya(request):
+	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'I').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexkriya.html', context)
+def JKriya(request):
+	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'J').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexkriya.html', context)
+def KKriya(request):
+	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'K').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexkriya.html', context)
+def LKriya(request):
+	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'L').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexkriya.html', context)
+def Mkriya(request):
+	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'M').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexkriya.html', context)
+def NKriya(request):
+	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'N').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexkriya.html', context)
+def OKriya(request):
+	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'O').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexkriya.html', context)
+def PKriya(request):
+	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'P').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexkriya.html', context)
+def QKriya(request):
+	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'Q').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexkriya.html', context)
+def RKriya(request):
+	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'R').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexkriya.html', context)
+def SKriya(request):
+	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'S').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexkriya.html', context)
+def TKriya(request):
+	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'T').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexkriya.html', context)
+def UKriya(request):
+	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'U').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexkriya.html', context)
+def VKriya(request):
+	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'V').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexkriya.html', context)
+def WKriya(request):
+	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'W').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexkriya.html', context)
+def XKriya(request):
+	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'X').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexkriya.html', context)
+def YKriya(request):
+	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'Y').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexkriya.html', context)
+def ZKriya(request):
+	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'Z').order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'perupa/indexkriya.html', context)
+
 
 
 # Karya----------------------------------------------------------------------------------------------------------

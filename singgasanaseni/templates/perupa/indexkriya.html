@@ -1,48 +1,52 @@
+
 {% extends 'base.html' %}
 {% load static %}
+{% load svg %}
+<!DOCTYPE html>
 
-{% block content %}
 
-     <article>
+
+    {% block content %}
+    <article>
       <div class="container-fluid">
 
           <div class="row">
             <div class="col-md-12 sectionkoleksi">
               <span class="divkoleksi divkarya">
-                <h3>Kriya</h3>
+                <h3>Pengrajin</h3>
               </span>
               <div class="sectionfilter">
                 <div class="filterkarya">
                   <label class="filtermenu" style="padding: 0;">Filter</label>
                   <!--filter-->
-                  <div class="filtermenu portfolioFilter">
-                    <a href="#" data-filter="*" class="current">ALL</a>
-                    <a href="#" data-filter=".a">A</a>
-                    <a href="#" data-filter=".b">B</a>
-                    <a href="#" data-filter=".c">C</a>
-                    <a href="#" data-filter=".d">D</a>
-                    <a href="#" data-filter=".e">E</a>
-                    <a href="#" data-filter=".f">F</a>
-                    <a href="#" data-filter=".g">G</a>
-                    <a href="#" data-filter=".h">H</a>
-                    <a href="#" data-filter=".i">I</a>
-                    <a href="#" data-filter=".j">J</a>
-                    <a href="#" data-filter=".k">K</a>
-                    <a href="#" data-filter=".l">L</a>
-                    <a href="#" data-filter=".m">M</a>
-                    <a href="#" data-filter=".n">N</a>
-                    <a href="#" data-filter=".o">O</a>
-                    <a href="#" data-filter=".p">P</a>
-                    <a href="#" data-filter=".q">Q</a>
-                    <a href="#" data-filter=".r">R</a>
-                    <a href="#" data-filter=".s">S</a>
-                    <a href="#" data-filter=".t">T</a>
-                    <a href="#" data-filter=".u">U</a>
-                    <a href="#" data-filter=".v">V</a>
-                    <a href="#" data-filter=".w">W</a>
-                    <a href="#" data-filter=".x">X</a>
-                    <a href="#" data-filter=".y">Y</a>
-                    <a href="#" data-filter=".z">Z</a>
+                  <div class="filtermenu">
+                    <a href="{% url 'Pengrajin-list' %}" class="current">ALL</a>
+                    <a href="{% url 'A-kriya' %}">A</a>
+                    <a href="{% url 'B-kriya' %}">B</a>
+                    <a href="{% url 'C-kriya' %}">C</a>
+                    <a href="{% url 'D-kriya' %}">D</a>
+                    <a href="{% url 'E-kriya' %}">E</a>
+                    <a href="{% url 'F-kriya' %}">F</a>
+                    <a href="{% url 'G-kriya' %}" >G</a>
+                    <a href="{% url 'H-kriya' %}" >H</a>
+                    <a href="{% url 'I-kriya' %}" >I</a>
+                    <a href="{% url 'J-kriya' %}" >J</a>
+                    <a href="{% url 'K-kriya' %}" >K</a>
+                    <a href="{% url 'L-kriya' %}" >L</a>
+                    <a href="{% url 'M-kriya' %}" >M</a>
+                    <a href="{% url 'N-kriya' %}" >N</a>
+                    <a href="{% url 'O-kriya' %}" >O</a>
+                    <a href="{% url 'P-kriya' %}" >P</a>
+                    <a href="{% url 'Q-kriya' %}" >Q</a>
+                    <a href="{% url 'R-kriya' %}" >R</a>
+                    <a href="{% url 'S-kriya' %}" >S</a>
+                    <a href="{% url 'T-kriya' %}" >T</a>
+                    <a href="{% url 'U-kriya' %}" >U</a>
+                    <a href="{% url 'V-kriya' %}" >V</a>
+                    <a href="{% url 'W-kriya' %}" >W</a>
+                    <a href="{% url 'X-kriya' %}" >X</a>
+                    <a href="{% url 'Y-kriya' %}" >Y</a>
+                    <a href="{% url 'Z-kriya' %}" >Z</a>
                   </div>
                 </div>
                 <div class="formsearchkarya">
@@ -59,94 +63,52 @@
           <div class="row bgkarya">
              <div class="col-md-12 sectionkoleksi">
               <span class="divkoleksi" style="border: none;">
-                <h3>page {{ pengrajin.number }}/{{ pengrajin.paginator.num_pages }}</h3>
                 <span class="pagingkarya">
                     <ul class="pagination">
-                        <li class="page-item">    <!-- Jump to First Page -->
-                           {% if pengrajin.number != 1 %}
-                               <li class="previous">
-                                  <a href="?page=1">
-                                    <span aria-hidden="true">&laquo;</span>
-                                  </a>
-                           {% else %}
-                               <li class="previous disabled">
-                               <a><span aria-hidden="true">&laquo;</span></a>
-                           {% endif %}
-                       </li>
-
-                       <li class="page-item">  <!-- Jump to Prvious Page -->
-                           {% if pengrajin.has_previous %}
-                               <li class="previous"> <a href="?page={{ pengrajin.previous_page_number }}">
-                                   <span aria-hidden="true">‹</span></a>
-                           {% else %}
-                               <li class="previous disabled"><a>‹</a>
-                           {% endif %}
-                       </li>
-
-                        {% if pengrajin.has_previous %}
-                       <li class="page-item">  <!-- Show Previous 4 page numbers -->
-                            <li class="previous"> <a class = "skip_prev" href = "">...</a></li>
-                        {% else %}
-                            <li class="next disabled"><a>...</a>
+                        {% if perupa.has_previous %}
+                            <a href="?page={{ perupa.previous_page_number }}" style="width: 20px; height: auto">{% svg 'back' %}</a>
                         {% endif %}
-                       </li>
 
-                        {% for i in "12345" %}
-                        <!-- Change the range ("12345") according to your choice to show numbers -->
-                       <li class="pg" data = {{i}}><a class = "page_number" href=""></a>
-                        {% endfor %}
+                    <form method="GET" >
+                        <input type="number" name="page" id="formpage">
+                    </form>  <p style="margin-top: auto; margin-bottom: auto;">of {{ perupa.paginator.num_pages }}</p>
 
-                        {% if pengrajin.has_next %}
-                       <li class="page-item">  <!-- Show next 4 page numbers -->
-                            <li class="previous"> <a class = "skip_next" href = "">...</a></li>
-                        {% else %}
-                            <li class="next disabled"><a>...</a>
+
+                        {% if perupa.has_next %}
+                            <a href="?page={{ perupa.next_page_number }}" style="width: 20px; height: auto">{% svg 'next' %}</a>
                         {% endif %}
-                       </li>
-
-                       <li class="page-item">  <!-- Jump to Next Page -->
-                        {% if pengrajin.has_next %}
-                            <li class="previous"> <a href="?page={{ pengrajin.next_page_number }}">›</a></li>
-                        {% else %}
-                            <li class="next disabled"><a>›</a>
-                        {% endif %}
-                       </li>
-
-                       <li class="page-item">  <!-- Jump to Last Page -->
-                         {% if pengrajin.number != karya.paginator.num_pages %}
-                            <li class="previous"> <a href="?page={{ pengrajin.paginator.num_pages }}">»</a></li>
-                         {% else %}
-                            <li class="next disabled"><a>»</a>
-                         {% endif %}
-                       </li>
                      </ul>
                 </span>
               </span>
             </div>
-            <div class="col-md-12 containerperupa">
-              <div class="row seckarya portfolioContainer">
-
-                            {% for Perupa in pengrajin %}
-                                <div class="{{ Perupa.Panggilan|slice:"1"|lower }}">
-                                    <p>
-                                      <h5><a href="/perupa/{{ Perupa.id }}">{{ Perupa.Panggilan }}</a></h5>
-                                      <font>{{ Perupa.Tanggal_Lahir }} - {{ Perupa.Tanggal_Wafat }}</font><br>
-                                      <label><a href="#"></a></label>
-                                    </p>
-                                </div>
-                            {% endfor %}
-
-
-              </div>
+           <div class="container">
+            {% for Perupa in perupa.object_list %}
+            <div class="{{ Perupa.Panggilan | slice:"1" | lower }}">
+                <div class="row col-md-12">
+                    <div class="col-md-2">
+                        <a href="/perupa/{{ Perupa.id }}">
+                            <img class="col-12 col-sm-2 col-md-10 px-0" src="/media/{{ Perupa.Gambar }}" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-7">
+                        <h3>
+                            <a href="/perupa/{{ Perupa.id }}">{{ Perupa.Panggilan }}</a>
+                        </h3>
+                        <p>{{ Perupa.Tanggal_Lahir |date:"d M Y" }} - {{ Perupa.Tanggal_Wafat |date:"d M Y" }}</p>
+                    </div>
+                </div>
+              <hr>
             </div>
+               {% endfor %}
           </div>
       </div>
     </article>
     {% endblock %}
 
 
-    <!-- Bootstrap core JavaScript -->
+
     {% block js %}
+    <!-- Bootstrap core JavaScript -->
     <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
     <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
@@ -250,56 +212,9 @@
           });
     </script>
 
-    <script>
-        $(document).ready(function(){
-
-          var skip_pages = 5; //change your number accordingly you want to show numbers
-
-          var total_pages = {{pengrajin.paginator.num_pages}};
-          var current_page = {{pengrajin.number}};
-          var factor = Math.floor(current_page/skip_pages);
-
-          $(".page_number").each(function(i, obj) {   //Showing the discrete numbers
-                var page = factor*(skip_pages) + i + 1;
-                if(current_page%skip_pages == 0)
-                  page = (factor-1)*skip_pages + i + 1;
-                if(page - 1 < total_pages){
-                  $(this).html(page);
-                  $(this).attr("href", "?page=" + page);
-                }
-                else{
-                  var x = i+1;
-                  $('li[data=' + x + ']').css("display", "none");
-                }
-          });
-            var page = current_page%skip_pages;
-            if(page == 0)
-              page = skip_pages;
-            $('li[data=' + page + ']').each(function(){   //Deciding the active class
-              $('li[data=' + page + ']').addClass("active");
-            });
-
-          $(".skip_next").click(function(){   //Skip next ... Function
-              if(current_page%skip_pages == 0)
-                factor = factor-1;
-              var page = (factor+1)*skip_pages + 1;
-              if(page < total_pages)
-                $(this).attr("href", "?page=" + page);
-              else
-                $(this).attr("href", "?page=" + total_pages);
-          })
-          $(".skip_prev").click(function(){ //Skip Previous ... Function
-              if(current_page%skip_pages == 0)
-                factor = factor-1;
-              var page = skip_pages*(factor-1) + 1;
-              if(page > 0)
-                $(this).attr("href", "?page=" + page);
-              else
-                $(this).attr("href", "?page=" + "1");
-          })
-        })
-
-    </script>
+  {% endblock %}
 
 
-{% endblock %}
+  </body>
+
+</html>
