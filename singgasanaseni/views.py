@@ -32,44 +32,44 @@ def PerupaList(request):
 	return render(request, 'perupa/index.html', context)
 
 def Pematunglist(request):
-	Pematung = perupa.object.filter(Kategori='Pematung').order_by('Panggilan')
+	Perupa = perupa.object.filter(Kategori='Pematung').order_by('Panggilan')
 	query = request.GET.get("q")
 	if query:
-		Pematung = Pematung.filter(Nama__icontains=query)
+		Perupa = Perupa.filter(Nama__icontains=query)
 	Page_request_var = "page"
-	paginator = Paginator(Pematung, 16)
+	paginator = Paginator(Perupa, 16)
 	page = request.GET.get(Page_request_var)
 	try:
-		Pematung = paginator.page(page)
+		Perupa = paginator.page(page)
 	except PageNotAnInteger:
-		Pematung = paginator.page(1)
+		Perupa = paginator.page(1)
 	except EmptyPage:
-		Pematung = paginator.page(paginator.num_pages)
+		Perupa = paginator.page(paginator.num_pages)
 
 	context = {
-		"pematung": Pematung,
+		"perupa": Perupa,
 		"page_request_var": Page_request_var
 	}
 
 	return render(request, 'perupa/indexpatung.html', context)
 
 def Pengrajinlist(request):
-	Pengrajin = perupa.object.filter(Kategori='Pengrajin').order_by('Panggilan')
+	Perupa = perupa.object.filter(Kategori='Pengrajin').order_by('Panggilan')
 	query = request.GET.get("q")
 	if query:
-		Pengrajin = Pengrajin.filter(Nama__icontains=query)
+		Perupa = Perupa.filter(Nama__icontains=query)
 	Page_request_var = "page"
-	paginator = Paginator(Pengrajin, 16)
+	paginator = Paginator(Perupa, 16)
 	page = request.GET.get(Page_request_var)
 	try:
-		Pengrajin = paginator.page(page)
+		Perupa = paginator.page(page)
 	except PageNotAnInteger:
-		Pengrajin = paginator.page(1)
+		Perupa = paginator.page(1)
 	except EmptyPage:
-		Pengrajin = paginator.page(paginator.num_pages)
+		Perupa = paginator.page(paginator.num_pages)
 
 	context = {
-		"pengrajin": Pengrajin,
+		"perupa": Perupa,
 		"page_request_var": Page_request_var
 	}
 
