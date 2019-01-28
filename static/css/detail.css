@@ -16,5 +16,58 @@ footer {
     margin-right: auto;
     padding-top: 10px;
     max-height: 700px;
-    max-width: 540px;
+
 }
+
+#filsearch {
+    color: grey;
+
+}
+
+#searchresult {
+    text-align: center;
+}
+
+.search {
+  width: 100%;
+  position: relative
+}
+
+.searchTerm {
+  float: left;
+  width: 100%;
+  border: 3px solid grey;
+  padding: 5px;
+  height: 36px;
+  border-radius: 5px;
+  outline: none;
+  color: grey;
+}
+
+.searchTerm:focus{
+  color: grey;
+}
+
+.searchButton {
+  position: absolute;
+  right: -50px;
+  width: 40px;
+  height: 36px;
+  border: 1px solid grey;
+  background: grey;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
