@@ -42,9 +42,11 @@ INSTALLED_APPS = [
     'singgasanaseni',
     'homepage',
     'search',
-    'svg'
+    'svg',
 
 ]
+
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

@@ -426,14 +426,16 @@ a:hover {
 
 .carousel-caption h3 {
     text-align: left;
-    font-size: 50px;
+    font-size: 60px;
     font-weight: inherit;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.85);
+    font-family: initial;
 }
 
 .carousel-caption p {
     text-align: left;
-    font-style: italic;
-    font-size: 23px;
+    font-size: 20px;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.85);
 }
 
 .thumb {
@@ -830,8 +832,8 @@ footer {
 .rightfoot img{width: 6%;}
 
 .karyalist {
-    /* padding: 7px;
-        position: relative;*/
+    padding: 7px;
+    position: relative;
     margin-bottom: 30px;
     overflow: hidden;
     min-height: 300px;
@@ -845,7 +847,7 @@ footer {
     background-color: #008CBA;
     top: 0;
     background: #fff;
-    width: 90%;
+    width: 96%;
     height: 100%;
     /* display: none; */
     padding: 25px;
@@ -1981,3 +1983,5 @@ a {
 .sticky + .content {
   padding-top: 102px;
 }
+
+

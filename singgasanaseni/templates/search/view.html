@@ -10,33 +10,32 @@
 
 <div class="container">
     <div class="container">
-            <div class="search py-5 my-5">
-                <form method='GET' class='' action='.'>
-                <input type="text" name="q" class="searchTerm" placeholder="What are you looking for?">
-                    <button type="submit" class="searchButton">
-                        <i class="fa fa-search"></i>
-                    </button>
-            </div>
+        <div class="search py-5 my-5">
+            <form method='GET' class='' action='.'>
+            <input type="text" name="q" class="searchTerm" placeholder=" ">
+                <button type="submit" class="searchButton">
+                    <i class="fa fa-search"></i>
+                </button>
+        </div>
     </div>
+</div>
+<div class='row '>
+    <div class='col-md-12 py-5'>
+        <h3 class='my-0 py-0' style="text-align: center" id="searchresult" >{{ count }} results for <b>{{ query }}</b></h3>
+    </div>
+
 </div>
 
 
 
-        <div class='row '>
-            <div class='col-md-12 py-5'>
-                <h3 class='my-0 py-0' style="text-align: center" id="searchresult" >{{ count }} results for <b>{{ query }}</b></h3>
-            </div>
-
-        </div>
-        <hr>
-
-
 <div class="container">
+
     {% for object in object_list %}
         {% with object|class_name as klass %}
           {% if klass == 'perupa' %}
 
               <div class="container">
+                <hr>
                 <div class="row">
                     <div class="col-md-2">
                         <a href="/perupa/{{ object.id }}">
@@ -48,11 +47,11 @@
                         <p>{{ object.Tanggal_Lahir |date:"d M Y" }} - {{ object.Tanggal_Wafat |date:"d M Y" }}</p>
                     </div>
                 </div>
-                <hr>
               </div>
 
           {% elif klass == 'karya' %}
                <div class="container">
+               <hr>
                 <div class="row">
                     <div class="col-md-2 col-sm-10 px-0">
                         <a href="/karya/{{ object.id }}">
@@ -66,11 +65,11 @@
                         {{ object.Material }}</p>
                     </div>
                 </div>
-                <hr>
               </div>
 
           {% elif klass == 'berita' %}
               <div class="container">
+              <hr>
                 <div class="row">
                     <div class="col-md-2 col-sm-10 px-0">
                         <a href="/berita/#{{ object.Judul }}">
@@ -83,7 +82,7 @@
 
                     </div>
                 </div>
-              <hr>
+
               </div>
 
 
