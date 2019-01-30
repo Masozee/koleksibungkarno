@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'homepage',
     'search',
     'svg',
-
+    # 'ensites',
 ]
 
 
