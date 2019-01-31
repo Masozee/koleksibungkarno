@@ -46,36 +46,36 @@
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                   <i class="fa fa-bars menures"></i>
             </a>
-            <a href="#" class="logores">
+            <a href="" class="logores">
               <img src="{% static 'img/logo.jpg' %}">
             </a>
 
             <ul class="cbp-hsmenu" id="menuall">
               <li>
-                <a href="#">Koleksi</a>
+                <a href="#">Collection</a>
                 <ul class="cbp-hssubmenu">
-                  <li class="menufirst"><a href="#"><i>Koleksi benda seni</i></a></li>
-                  <li><a href="{% url 'Perupa-list' %}">Lukisan</a></li>
-                  <li><a href="{% url 'Pematung-list' %}">Patung</a></li>
-                  <li><a href="{% url 'Pengrajin-list' %}">Kriya</a></li>
+                  <li class="menufirst"><a href="#"><i>Art Collections</i></a></li>
+                  <li><a href="{% url 'painter-list' %}">Paintings</a></li>
+                  <li><a href="{% url 'sculptor-list' %}">Statues</a></li>
+                  <li><a href="{% url 'craftman-list' %}">Crafts</a></li>
                 </ul>
               </li>
-              <li><a href="{% url 'karya-list' %}">Galeri</a></li>
+              <li><a href="{% url 'art-list' %}">Gallery</a></li>
               <li>
-                <a href="#">Istana</a>
+                <a href="#">Palaces</a>
                 <ul class="cbp-hssubmenu">
-                  <li class="menufirst"><a href="#"><i>Istana kepresidenan</i></a></li>
-                  <li><a href="{% url 'palace-merdeka' %}">Istana Merdeka</a></li>
-                  <li><a href="{% url 'palace-negara' %}">Istana Negara</a></li>
-                  <li><a href="{% url 'palace-bogor' %}">Istana Bogor</a></li>
-                  <li><a href="{% url 'palace-tampaksiring' %}">Istana Tampaksiring</a></li>
-                  <li><a href="{% url 'palace-cipanas' %}">Istana Cipanas</a></li>
-                  <li><a href="{% url 'palace-yogyakarta' %}">Istana Yogyakarta</a></li>
+                  <li class="menufirst"><a href="#"><i>Presidential Palace</i></a></li>
+                  <li><a href="{% url 'palace-merdeka' %}">Merdeka Palace</a></li>
+                  <li><a href="{% url 'palace-negara' %}">National Palace</a></li>
+                  <li><a href="{% url 'palace-bogor' %}">Bogor Palace</a></li>
+                  <li><a href="{% url 'palace-tampaksiring' %}">Tampaksiring Palace</a></li>
+                  <li><a href="{% url 'palace-cipanas' %}">Cipanas palace</a></li>
+                  <li><a href="{% url 'palace-yogyakarta' %}">Yogyakarta Palace</a></li>
                 </ul>
               </li>
-              <li><a href="#">Publikasi</a></li>
-              <li><a href="{% url 'news-list' %}">Berita</a></li>
-              <li><a href="{% url 'tentang-kami' %}">Tentang Kami</a></li>
+              <li><a href="#">Publication</a></li>
+              <li><a href="{% url 'news-list' %}">News</a></li>
+              <li><a href="{% url 'aboutus' %}">About Us</a></li>
               <li><a href="{% url 'searching' %}"><i class="fa fa-search"></i></a></li>
 
             </ul>
@@ -98,7 +98,7 @@
           <a href="#">Sitemap</a>
         </span>
         <span class="rightfoot">
-            <label><label><a href="{% url 'homepage-en' %}">EN </a>/<a href="{% url 'homepage-views' %}"> ID</a></label></label>
+            <label><a href="{% url 'homepage-en' %}">EN </a>/<a href="{% url 'homepage-views' %}"> ID</a></label>
             <a href="#"><img src="{% static 'img/facebook.jpg' %}"></a>
             <a href="#"><img src="{% static 'img/instagram.jpg' %}"></a>
         </span>

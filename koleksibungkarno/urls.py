@@ -9,6 +9,7 @@ from homepage import views as homepageviews
 from search import views as searchviews
 
 
+
 from django.contrib import admin
 
 # Admin Site Config
@@ -22,6 +23,8 @@ urlpatterns = [
     path('', homepageviews.index, name='homepage-views'),
     path('search/', searchviews.SearchView.as_view(), name='searching' ),
     path('tentangkami/', homepageviews.tentangkami, name='tentang-kami'),
+
+    path('en/', include('ensites.urls')),
 
     # karya udah aktiv--------------------------------------------------------------------------------------------------
     path('karya/', singgasanaseniviews.karyalist, name='karya-list'),
@@ -132,14 +135,14 @@ urlpatterns = [
     #Perupa detail -----------------------------------------------------------------------------------------------------______
     re_path(r'^perupa/(?P<perupa_id>\d+)/$', singgasanaseniviews.Perupadetail, name='perupa-detail'),
 
-    path('berita/', singgasanaseniviews.Beritalist, name='berita-list'),
+    path('news/', singgasanaseniviews.Beritalist, name='news-list'),
 
-    path('istana/bogor', singgasanaseniviews.IstanaBogor, name='istana-bogor'),
-    path('istana/cipanas', singgasanaseniviews.IstanaCipanas, name='istana-cipanas'),
-    path('istana/merdeka', singgasanaseniviews.IstanaMerdeka, name='istana-merdeka'),
-    path('istana/istananegara', singgasanaseniviews.IstanaNegara, name='istana-negara'),
-    path('istana/tampaksiring', singgasanaseniviews.IstanaTampakSiring, name='istana-tampaksiring'),
-    path('istana/yogyakarta', singgasanaseniviews.IstanaYogya, name='istana-yogyakarta'),
+    path('palace/bogor', singgasanaseniviews.IstanaBogor, name='palace-bogor'),
+    path('palace/cipanas', singgasanaseniviews.IstanaCipanas, name='palace-cipanas'),
+    path('palace/merdeka', singgasanaseniviews.IstanaMerdeka, name='palace-merdeka'),
+    path('palace/istananegara', singgasanaseniviews.IstanaNegara, name='palace-negara'),
+    path('palace/tampaksiring', singgasanaseniviews.IstanaTampakSiring, name='palace-tampaksiring'),
+    path('palace/yogyakarta', singgasanaseniviews.IstanaYogya, name='palace-yogyakarta'),
 
 ]
 

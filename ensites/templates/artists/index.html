@@ -1,0 +1,220 @@
+
+{% extends 'enbase.html' %}
+{% load static %}
+{% load svg %}
+
+
+
+
+    {% block content %}
+    <article>
+      <div class="container-fluid">
+
+          <div class="row">
+            <div class="col-md-12 sectionkoleksi">
+              <span class="divkoleksi divkarya">
+                <h3>Perupa</h3>
+              </span>
+              <div class="sectionfilter">
+                <div class="filterkarya">
+                  <label class="filtermenu" style="padding: 0;">Filter</label>
+                  <!--filter-->
+                  <div class="filtermenu">
+                    <a href="{% url 'Perupa-list' %}" class="current">ALL</a>
+                    <a href="{% url 'A-kriya' %}">A</a>
+                    <a href="{% url 'B-list' %}">B</a>
+                    <a href="{% url 'C-list' %}">C</a>
+                    <a href="{% url 'D-list' %}">D</a>
+                    <a href="{% url 'E-list' %}">E</a>
+                    <a href="{% url 'F-list' %}">F</a>
+                    <a href="{% url 'G-list' %}" >G</a>
+                    <a href="{% url 'H-list' %}" >H</a>
+                    <a href="{% url 'I-list' %}" >I</a>
+                    <a href="{% url 'J-list' %}" >J</a>
+                    <a href="{% url 'K-list' %}" >K</a>
+                    <a href="{% url 'L-list' %}" >L</a>
+                    <a href="{% url 'M-list' %}" >M</a>
+                    <a href="{% url 'N-list' %}" >N</a>
+                    <a href="{% url 'O-list' %}" >O</a>
+                    <a href="{% url 'P-list' %}" >P</a>
+                    <a href="{% url 'Q-list' %}" >Q</a>
+                    <a href="{% url 'R-list' %}" >R</a>
+                    <a href="{% url 'S-list' %}" >S</a>
+                    <a href="{% url 'T-list' %}" >T</a>
+                    <a href="{% url 'U-list' %}" >U</a>
+                    <a href="{% url 'V-list' %}" >V</a>
+                    <a href="{% url 'W-list' %}" >W</a>
+                    <a href="{% url 'X-list' %}" >X</a>
+                    <a href="{% url 'Y-list' %}" >Y</a>
+                    <a href="{% url 'Z-list' %}" >Z</a>
+                  </div>
+                </div>
+                <div class="formsearchkarya">
+                  <form>
+                    <form method="GET" action="">
+                        <input type="text" name="q" placeholder="Search  artist">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </form>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row bgkarya">
+             <div class="col-md-12 sectionkoleksi">
+              <span class="divkoleksi" style="border: none;">
+                <span class="pagingkarya">
+                    <ul class="pagination">
+                        {% if perupa.has_previous %}
+                            <a href="?page={{ perupa.previous_page_number }}" style="width: 20px; height: auto">{% svg 'back' %}</a>
+                        {% endif %}
+
+                    <form method="GET" >
+                        <input type="number" name="page" id="formpage">
+                    </form>  <p style="margin-top: auto; margin-bottom: auto;">of {{ perupa.paginator.num_pages }}</p>
+
+
+                        {% if perupa.has_next %}
+                            <a href="?page={{ perupa.next_page_number }}" style="width: 20px; height: auto">{% svg 'next' %}</a>
+                        {% endif %}
+                     </ul>
+                </span>
+              </span>
+            </div>
+           <div class="container">
+            {% for Perupa in perupa.object_list %}
+            <div class="{{ Perupa.Panggilan | slice:"1" | lower }}">
+                <div class="row col-md-12">
+                    <div class="col-md-2">
+                        <a href="/perupa/{{ Perupa.id }}">
+                            <img class="col-12 col-sm-2 col-md-10 px-0" src="/media/{{ Perupa.Gambar }}" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-7">
+                        <h3>
+                            <a href="/perupa/{{ Perupa.id }}">{{ Perupa.Panggilan }}</a>
+                        </h3>
+                        <p>{{ Perupa.Tanggal_Lahir |date:"d M Y" }} - {{ Perupa.Tanggal_Wafat |date:"d M Y" }}</p>
+                    </div>
+                </div>
+              <hr>
+            </div>
+               {% endfor %}
+          </div>
+      </div>
+    </article>
+    {% endblock %}
+
+
+
+    {% block js %}
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{% static 'js/stylish-portfolio.min.js' %}"></script>
+
+    <script src="{% static 'js/jquery.isotope.min.js' %}"></script>
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+
+          $(".sample1").click(function(){
+            $(".popups").fadeToggle();
+            //$(".popups").addClass('animated slideInUp').css("display","block");
+          });
+
+          $(".closepop").click(function(){
+            $(".popups").fadeToggle();
+            //$(".popups").css("display","none");
+           /* $(".popups").addClass('animated slideOutUp');*/
+
+          });
+
+           $("#link1").click(function(){
+              $("#jenisbenda").slideToggle();
+           });
+
+            $("#link2").click(function(){
+              $("#jenistema").slideToggle();
+           });
+        });
+
+
+        $(document).ready(function() {
+              var $container = $('.portfolioContainer');
+              $container.isotope({
+                  filter: '*',
+                  // set columnWidth to a percentage of container width
+                  masonry: { columnWidth: $container.width() / 4 },
+                  animationOptions: {
+                      duration: 750,
+                      easing: 'linear',
+                      queue: false
+                  }
+              });
+
+              $('.portfolioFilter a').click(function(){
+                  $('.portfolioFilter .current').removeClass('current');
+                  $(this).addClass('current');
+
+                  var selector = $(this).attr('data-filter');
+                  $container.isotope({
+                      filter: selector,
+                      animationOptions: {
+                          duration: 750,
+                          easing: 'linear',
+                          queue: false
+                      }
+                   });
+                   return false;
+              });
+
+
+
+
+              // quick search regex
+              var qsRegex;
+              // init Isotope
+              var $grid = $('.portfolioContainer').isotope({
+                filter: function() {
+                  return qsRegex ? $(this).text().match( qsRegex ) : true;
+                }
+              });
+
+              // use value of search field to filter
+              var $quicksearch = $('.quicksearch').keyup( debounce( function() {
+                qsRegex = new RegExp( $quicksearch.val(), 'gi' );
+                $grid.isotope();
+              }, 200 ) );
+
+              function debounce( fn, threshold ) {
+                  var timeout;
+                  threshold = threshold || 100;
+                  return function debounced() {
+                    clearTimeout( timeout );
+                    var args = arguments;
+                    var _this = this;
+                    function delayed() {
+                      fn.apply( _this, args );
+                    }
+                    timeout = setTimeout( delayed, threshold );
+                  };
+                }
+
+
+          });
+    </script>
+
+  {% endblock %}
+
+
+  </body>
+
+</html>

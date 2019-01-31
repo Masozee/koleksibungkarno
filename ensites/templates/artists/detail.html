@@ -1,0 +1,123 @@
+{% extends "enbase.html" %}
+{% load static %}
+
+{% block content %}
+    <article>
+      <div class="container-fluid">
+
+          <div class="row">
+            <div class="col-md-12 sectionprofile">
+              <div class="row">
+                <div class="col-md-3 profil">
+                    <img src="/media/{{ Perupa.Gambar }}">
+                </div>
+                <div class="col-md-5 profildetail">
+                    <h2>{{ Perupa.Nama }}</h2>
+                    <p><i>{{ Perupa.Panggilan }}</i></p>
+                    <label>{{ Perupa.Tanggal_Lahir | date:"d M Y"  }} - {{ Perupa.Tanggal_Wafat |date:"d M Y"  }}</label>
+                    <p>{{ total }} Lukisan</p>
+
+                      <div class="panel-wrapper">
+                        <a href="#show" class="show" id="show">[show full text +]</a>
+                        <a href="#hide" class="hide" id="hide">[hide text -]</a>
+                        <div class="panel">
+                            {{ Perupa.Keterangan }}
+                        </div>
+                        <div class="fade"></div>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row bgkarya">
+             <div class="col-md-12 sectionkoleksi">
+              <span class="divkoleksi" style="border: none;">
+                <h3>page {{ Karyarelated.number }}/{{ Karyarelated.paginator.num_pages }}</h3>
+                <span class="pagingkarya">
+                    <ul class="pagination">
+                        {% if Karyarelated.has_previous %}
+                            <a href="?page={{ Karyarelated.previous_page_number }}">Prev</a>
+                        {% endif %}
+
+                        {% if Karyarelated.has_next %}
+                            <a href="?page={{ Karyarelated.next_page_number }}">Next</a>
+                        {% endif %}
+                     </ul>
+                </span>
+              </span>
+            </div>
+
+            <div class="col-md-12">
+              <div class="row seckarya">
+                  {% for karya in Karyarelated %}
+                  <div class="col-md-3 perupalist karyalist">
+                    <a href="/karya/{{ karya.id }}" class="sample1">
+                      <img src="/media/{{ karya.Gambar }}" class="">
+                        <figcaption>
+                           <h3>{{ karya.Judul }}</h3>
+                            <p>
+                              <i>{{ karya.Perupa }}</i><Br>
+                              {{ karya.Material }}<br>
+                             {{ karya.Dimensi }}
+                            </p>
+                        </figcaption>
+                    </a>
+                  </div>
+                  {% endfor %}
+              </div>
+              </div>
+
+
+              </div>
+            </div>
+          </div>
+      </div>
+    </article>
+
+{% endblock %}
+
+{% block js %}
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{% static 'js/stylish-portfolio.min.js' %}"></script>
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+
+          $(".sample1").click(function(){
+            $(".popups").fadeToggle();
+            //$(".popups").addClass('animated slideInUp').css("display","block");
+          });
+
+          $(".closepop").click(function(){
+            $(".popups").fadeToggle();
+            //$(".popups").css("display","none");
+           /* $(".popups").addClass('animated slideOutUp');*/
+
+          });
+
+           $("#link1").click(function(){
+              $("#jenisbenda").slideToggle();
+           });
+
+            $("#link2").click(function(){
+              $("#jenistema").slideToggle();
+           });
+
+
+            $(".expand").click(function(){
+              alert("test");
+              $(".fulltext").slidedown();
+            });
+
+        });
+    </script>
+
+{% endblock %}

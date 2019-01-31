@@ -2136,14 +2136,14 @@ def karyadetail(request, karya_id):
 	return render(request, 'karya/detail.html', context)
 
 
-# berita----------------------------------------------------------------------------------------------------
+# news----------------------------------------------------------------------------------------------------
 def Beritalist(request):
-	Berita = berita.object.all()
+	Berita = berita.object.all()[:1]
 	return render(request, 'berita/index.html', {'Berita': Berita})
 
 
 
-# istana----------------------------------------------------------------------------------------------------
+# palace----------------------------------------------------------------------------------------------------
 def IstanaBogor(request):
 	return render(request, 'istana/istanabogor.html')
 

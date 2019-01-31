@@ -74,7 +74,7 @@ class karya(models.Model):
         ('Istana Merdeka', 'Istana Merdeka'),
         ('Istana Negara', 'Istana Negara'),
         ('Istana Cipanas', 'Istana Cipanas'),
-        ('istana Yogya', 'Istana Yogya')
+        ('palace Yogya', 'Istana Yogya')
     )
 
     KARYA_CHOICES = (
@@ -143,9 +143,6 @@ class berita(models.Model):
     Upload_date = models.DateTimeField(auto_now_add=True)
 
     object=BeritaManager()
-
-
-
 
     def __str__(self):
         return self.Judul
