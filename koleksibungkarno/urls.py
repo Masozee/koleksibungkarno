@@ -135,7 +135,7 @@ urlpatterns = [
     #Perupa detail -----------------------------------------------------------------------------------------------------______
     re_path(r'^perupa/(?P<perupa_id>\d+)/$', singgasanaseniviews.Perupadetail, name='perupa-detail'),
 
-    path('news/', singgasanaseniviews.Beritalist, name='news-list'),
+    path('berita/', singgasanaseniviews.Beritalist, name='berita-list'),
 
     path('palace/bogor', singgasanaseniviews.IstanaBogor, name='palace-bogor'),
     path('palace/cipanas', singgasanaseniviews.IstanaCipanas, name='palace-cipanas'),

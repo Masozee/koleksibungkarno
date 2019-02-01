@@ -65,21 +65,21 @@
             <div class="col-md-12 sectionkoleksi sectionkoleksilist">
               <div class="row">
                     <div class="col-md-4">
-                      <a href="/koleksi/lukisan/">
+                      <a href="{% url 'Painting-list' %}">
                         <img src="{% static 'img/lukisan.jpeg' %}" class="koleksiimg">
-                        <label class="koleksilabel">Lukisan</label>
+                        <label class="koleksilabel">Paintings</label>
                       </a>
                     </div>
                     <div class="col-md-4">
-                      <a href="koleksi/patung/">
+                      <a href="{% url 'Statue-list' %}">
                         <img src="{% static 'img/patung.jpeg' %}" class="koleksiimg">
-                        <label class="koleksilabel">Patung</label>
+                        <label class="koleksilabel">Statues</label>
                       </a>
                     </div>
                     <div class="col-md-4">
-                      <a href="/koleksi/kriya/">
+                      <a href="{% url 'Craft-list' %}">
                         <img src="{% static 'img/kriya.jpeg' %}" class="koleksiimg">
-                        <label class="koleksilabel">Kriya</label>
+                        <label class="koleksilabel">Crafts</label>
                       </a>
                     </div>
               </div>
@@ -122,8 +122,8 @@
         <div class="row">
             <div class="col-md-12 sectionkoleksi">
               <span class="divkoleksi">
-                <h3>Perupa</h3>
-                <a href="{% url 'Perupa-list' %}">View All</a>
+                <h3>Artists</h3>
+                <a href="{% url 'painter-list' %}">View All</a>
               </span>
             </div>
 
@@ -132,17 +132,17 @@
               <div class="row">
 
                     <div class="listperupa">
-                      <a href="/perupa/12/">
+                      <a href="/en/artists/12/">
                         <img src="{% static 'img/homeartist1.jpg' %}" class="koleksiimg" style="width: 500px; height: 500px">
                       </a>
                     </div>
                     <div class="listperupa">
-                      <a href="/perupa/9/">
+                      <a href="/en/artists/9/">
                         <img src="{% static 'img/homeartist2.jpg' %}" class="koleksiimg" style="width: 500px; height: 500px">
                       </a>
                     </div>
                     <div class="listperupa">
-                      <a href="/perupa/9/">
+                      <a href="/en/artists/13/">
                         <img src="{% static 'img/homeartist3.jpg' %}" class="koleksiimg" style="width: 500px; height: 500px">
                       </a>
                     </div>

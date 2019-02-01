@@ -2138,7 +2138,7 @@ def karyadetail(request, karya_id):
 
 # news----------------------------------------------------------------------------------------------------
 def Beritalist(request):
-	Berita = berita.object.all()[:1]
+	Berita = berita.object.all()
 	return render(request, 'berita/index.html', {'Berita': Berita})
 
 

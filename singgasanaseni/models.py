@@ -39,6 +39,7 @@ class perupa(models.Model):
     Tanggal_Wafat = models.DateField(null=True, blank=True)
     Kategori = models.CharField(max_length=10, choices=PERUPA_CHOICES, default=True)
     Keterangan = models.TextField(null=True, blank=True)
+    Description = models.TextField(null=True, blank=True)
     Gambar = models.FileField(upload_to='perupa/', blank=True, null=True)
     Upload_date = models.DateTimeField(auto_now_add=True)
 
