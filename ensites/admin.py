@@ -4,9 +4,9 @@ from .models import News
 
 # Register your models here.
 class NewsAdmin (admin.ModelAdmin):
-    list_display = ['Tanggal', 'Judul', 'Subjudul', 'Sumber', 'Link', 'Gambar']
+    list_display = ['Date', 'Tittle', 'SubTittle', 'Source', 'Link', 'Image']
     list_filter = ()
-    search_fields = ['Tanggal', 'Judul', 'Subjudul', 'Sumber', 'Link', 'Isiberita', 'Gambar']
+    search_fields = ['Date', 'Tittle', 'SubTittle', 'Source', 'Link', 'Content', 'Image']
     list_per_page = 25
 
 admin.site.register(News,NewsAdmin)
