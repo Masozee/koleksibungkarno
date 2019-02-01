@@ -1,6 +1,5 @@
 from django.urls import path, re_path
-from django.conf import settings
-from django.conf.urls.static import static
+
 
 
 
@@ -15,7 +14,7 @@ urlpatterns = [
 
     path('', homepageviews.enindex, name='homepage-en'),
     path('search/', searchviews.SearchView.as_view(), name='searching' ),
-    path('aboutus/', homepageviews.tentangkami, name='aboutus'),
+    path('aboutus/', homepageviews.aboutus, name='aboutus'),
 
     # karya udah aktiv--------------------------------------------------------------------------------------------------
     path('artworks/', sitesviews.Artlist, name='art-list'),

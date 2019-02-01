@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 class HomeSlide(models.Model):
-    tema = models.CharField(max_length=100, null=True, blank=True)
+    tema = models.CharField(max_length=100,default=True)
     slide1 = models.FileField(upload_to='homepage/')
     caption1 = models.CharField(max_length=25, null=True, blank=True)
     subcaption1 = models.CharField(max_length=50, null=True, blank=True)

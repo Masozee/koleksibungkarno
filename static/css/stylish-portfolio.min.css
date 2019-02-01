@@ -1112,7 +1112,7 @@ footer {
 .listnews figcaption {
     top: auto;
     bottom: 0;
-    width: 90%;
+    width: 100%;
     padding: 1em;
     background: #fff;
     color: #3c4a50;
@@ -1176,6 +1176,7 @@ footer {
 .listnews img {
     max-width: 100%;
     width: 100%;
+    object-fit: cover;
 }
 
 .listnews:hover img {

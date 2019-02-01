@@ -28,3 +28,6 @@ def enindex(request):
 def tentangkami(request):
     return render (request, "tentangkami.html")
 
+def aboutus(request):
+    return render (request, "aboutus.html")
+

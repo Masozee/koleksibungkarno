@@ -2126,7 +2126,7 @@ def alamkotalist(request):
 def karyadetail(request, karya_id):
 	try:
 		Karya = karya.object.get(pk=karya_id)
-	except Perupa.DoesNotExist:
+	except perupa.DoesNotExist:
 		raise Http404('Data karya Belum Tersedia')
 
 	context = {
@@ -2141,7 +2141,17 @@ def Beritalist(request):
 	Berita = berita.object.all()
 	return render(request, 'berita/index.html', {'Berita': Berita})
 
+def BeritaDetail(request, berita_id):
+	try:
+		Berita = berita.object.get(pk=berita_id)
+	except berita.DoesNotExist:
+		raise Http404('Data karya Belum Tersedia')
 
+	context = {
+		"Berita": Berita,
+	}
+
+	return render(request, 'berita/detail.html', {'Berita':Berita})
 
 # palace----------------------------------------------------------------------------------------------------
 def IstanaBogor(request):

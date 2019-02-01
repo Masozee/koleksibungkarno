@@ -136,6 +136,8 @@ urlpatterns = [
     re_path(r'^perupa/(?P<perupa_id>\d+)/$', singgasanaseniviews.Perupadetail, name='perupa-detail'),
 
     path('berita/', singgasanaseniviews.Beritalist, name='berita-list'),
+    re_path(r'^berita/(?P<berita_id>\d+)/$', singgasanaseniviews.BeritaDetail, name='berita-detail'),
+
 
     path('palace/bogor', singgasanaseniviews.IstanaBogor, name='palace-bogor'),
     path('palace/cipanas', singgasanaseniviews.IstanaCipanas, name='palace-cipanas'),
