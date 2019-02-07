@@ -2,16 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="077f652a-7fb8-42a3-b99b-79f8e0d75adb" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a99f47d5-c138-4903-b5a0-d6c8c2026cbb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a99f47d5-c138-4903-b5a0-d6c8c2026cbb.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ensites/templates/art/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ensites/templates/art/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ensites/templates/enbase.html" beforeDir="false" afterPath="$PROJECT_DIR$/ensites/templates/enbase.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ensites/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ensites/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homepage/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/homepage/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homepage/templates/tentangkami.html" beforeDir="false" afterPath="$PROJECT_DIR$/homepage/templates/tentangkami.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homepage/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/homepage/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homepage/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/homepage/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/koleksibungkarno/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/koleksibungkarno/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/templates/perupa/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/templates/perupa/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singgasanaseni/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singgasanaseni/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singgasanaseni/templates/karya/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/templates/karya/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singgasanaseni/templates/karya/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/templates/karya/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singgasanaseni/templates/perupa/indexkriya.html" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/templates/perupa/indexkriya.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/singgasanaseni/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/stylish-portfolio.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/stylish-portfolio.min.css" afterDir="false" />
     </list>
@@ -32,7 +35,28 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Django default" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Django default" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Django default" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Django default" type="feb32156:DbDataSourceImpl" />
+        <item name="collations" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" module-name="koleksibungkarno" sdk-home="$USER_HOME$/MYLAB/venv/rest/bin/python" working-directory="$PROJECT_DIR$">
@@ -44,45 +68,105 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ensites/urls.py">
+        <entry file="file://$PROJECT_DIR$/singgasanaseni/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+            <state relative-caret-position="277">
+              <caret line="103" column="57" selection-start-line="103" selection-start-column="57" selection-end-line="103" selection-end-column="57" />
               <folding>
-                <element signature="e#0#37#0" expanded="true" />
+                <element signature="e#0#44#0" expanded="true" />
+                <element signature="e#895#1456#0" />
+                <element signature="e#1487#2048#0" />
+                <element signature="e#2809#3393#0" />
+                <element signature="e#3415#3999#0" />
+                <element signature="e#4021#4605#0" />
+                <element signature="e#4627#5211#0" />
+                <element signature="e#5233#5817#0" />
+                <element signature="e#5839#6423#0" />
+                <element signature="e#6445#7029#0" />
+                <element signature="e#7051#7635#0" />
+                <element signature="e#7657#8241#0" />
+                <element signature="e#8263#8847#0" />
+                <element signature="e#8869#9453#0" />
+                <element signature="e#9475#10059#0" />
+                <element signature="e#10081#10665#0" />
+                <element signature="e#10687#11271#0" />
+                <element signature="e#11293#11877#0" />
+                <element signature="e#11899#12483#0" />
+                <element signature="e#12505#13089#0" />
+                <element signature="e#13111#13695#0" />
+                <element signature="e#13717#14301#0" />
+                <element signature="e#14323#14907#0" />
+                <element signature="e#14929#15513#0" />
+                <element signature="e#15535#16119#0" />
+                <element signature="e#16141#16725#0" />
+                <element signature="e#16747#17331#0" />
+                <element signature="e#17353#17937#0" />
+                <element signature="e#17959#18543#0" />
+                <element signature="e#18601#19192#0" />
+                <element signature="e#19216#19807#0" />
+                <element signature="e#19831#20422#0" />
+                <element signature="e#20446#21037#0" />
+                <element signature="e#21061#21652#0" />
+                <element signature="e#21676#22267#0" />
+                <element signature="e#22291#22882#0" />
+                <element signature="e#22906#23497#0" />
+                <element signature="e#23521#24112#0" />
+                <element signature="e#24136#24727#0" />
+                <element signature="e#24751#25342#0" />
+                <element signature="e#25366#25957#0" />
+                <element signature="e#25981#26572#0" />
+                <element signature="e#26596#27187#0" />
+                <element signature="e#27211#27802#0" />
+                <element signature="e#27826#28417#0" />
+                <element signature="e#28441#29032#0" />
+                <element signature="e#29056#29647#0" />
+                <element signature="e#29671#30262#0" />
+                <element signature="e#30286#30877#0" />
+                <element signature="e#30901#31492#0" />
+                <element signature="e#31516#32107#0" />
+                <element signature="e#32131#32722#0" />
+                <element signature="e#32746#33337#0" />
+                <element signature="e#33361#33952#0" />
+                <element signature="e#33976#34567#0" />
+                <element signature="e#34623#35214#0" />
+                <element signature="e#35237#35828#0" />
+                <element signature="e#35851#36442#0" />
+                <element signature="e#36465#37056#0" />
+                <element signature="e#37079#37670#0" />
+                <element signature="e#37693#38284#0" />
+                <element signature="e#38307#38898#0" />
+                <element signature="e#38921#39512#0" />
+                <element signature="e#39535#40126#0" />
+                <element signature="e#40149#40740#0" />
+                <element signature="e#40763#41354#0" />
+                <element signature="e#41377#41968#0" />
+                <element signature="e#41991#42582#0" />
+                <element signature="e#42605#43196#0" />
+                <element signature="e#43219#43810#0" />
+                <element signature="e#43833#44424#0" />
+                <element signature="e#44447#45038#0" />
+                <element signature="e#45061#45652#0" />
+                <element signature="e#45675#46266#0" />
+                <element signature="e#46289#46880#0" />
+                <element signature="e#46903#47494#0" />
+                <element signature="e#47517#48108#0" />
+                <element signature="e#48131#48722#0" />
+                <element signature="e#48745#49336#0" />
+                <element signature="e#49359#49950#0" />
+                <element signature="e#49973#50564#0" />
+                <element signature="e#50707#51272#0" />
+                <element signature="e#51301#51885#0" />
+                <element signature="e#51913#52495#0" />
+                <element signature="e#52522#53102#0" />
+                <element signature="e#53244#53844#0" />
+                <element signature="e#53870#54462#0" />
+                <element signature="e#54489#55101#0" />
+                <element signature="e#55130#55742#0" />
+                <element signature="e#55772#56353#0" />
+                <element signature="e#56392#56600#0" />
+                <element signature="e#56736#56829#0" />
+                <element signature="e#56870#57094#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/perupa/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-98">
-              <caret line="30" column="55" lean-forward="true" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/perupa/indexkriya.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-90" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/perupa/indexpatung.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-233" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/static/css/stylish-portfolio.min.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="1178" column="21" selection-start-line="1178" selection-start-column="21" selection-end-line="1178" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -90,10 +174,88 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/koleksibungkarno/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="24" column="73" selection-start-line="24" selection-start-column="73" selection-end-line="24" selection-end-column="73" />
+            <state relative-caret-position="-195">
+              <caret line="47" selection-start-line="47" selection-end-line="47" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/perupa/detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="705">
+              <caret line="47" column="18" lean-forward="true" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/stylish-portfolio.min.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="738" column="20" lean-forward="true" selection-start-line="738" selection-start-column="20" selection-end-line="738" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/homepage/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="653">
+              <caret line="93" column="26" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/homepage/templates/enindex.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1327">
+              <caret line="143" column="44" lean-forward="true" selection-start-line="143" selection-start-column="44" selection-end-line="143" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ensites/templates/enbase.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="67">
+              <caret line="48" column="39" lean-forward="true" selection-start-line="48" selection-start-column="39" selection-end-line="48" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/singgasanaseni/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/singgasanaseni/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -162,14 +324,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/singgasanaseni/templates/karya/kriya.html" />
-        <option value="$PROJECT_DIR$/singgasanaseni/templates/karya/patung.html" />
-        <option value="$PROJECT_DIR$/singgasanaseni/templates/search/search.html" />
         <option value="$PROJECT_DIR$/singgasanaseni/templates/perupa/detail.html" />
         <option value="$PROJECT_DIR$/singgasanaseni/templates/search/view.html" />
         <option value="$PROJECT_DIR$/static/css/detail.css" />
         <option value="$PROJECT_DIR$/users/models.py" />
-        <option value="$PROJECT_DIR$/singgasanaseni/templates/karya/detail.html" />
         <option value="$PROJECT_DIR$/static/css/style.css" />
         <option value="$PROJECT_DIR$/koleksibungkarno/settings.py" />
         <option value="$PROJECT_DIR$/ensites/templates/base.html" />
@@ -189,30 +347,34 @@
         <option value="$PROJECT_DIR$/ensites/views.py" />
         <option value="$PROJECT_DIR$/singgasanaseni/migrations/0010_auto_20181218_1058.py" />
         <option value="$PROJECT_DIR$/singgasanaseni/migrations/0009_auto_20181218_1057.py" />
-        <option value="$PROJECT_DIR$/singgasanaseni/admin.py" />
         <option value="$PROJECT_DIR$/ensites/templates/art/kriya.html" />
         <option value="$PROJECT_DIR$/ensites/templates/art/lukisan.html" />
         <option value="$PROJECT_DIR$/ensites/templates/art/patung.html" />
-        <option value="$PROJECT_DIR$/singgasanaseni/templates/base.html" />
         <option value="$PROJECT_DIR$/homepage/templates/enindex.html" />
-        <option value="$PROJECT_DIR$/homepage/templates/index.html" />
-        <option value="$PROJECT_DIR$/singgasanaseni/models.py" />
         <option value="$PROJECT_DIR$/ensites/models.py" />
         <option value="$PROJECT_DIR$/ensites/admin.py" />
         <option value="$PROJECT_DIR$/dump.json" />
         <option value="$PROJECT_DIR$/singgasanaseni/templates/berita/detail.html" />
-        <option value="$PROJECT_DIR$/singgasanaseni/views.py" />
         <option value="$PROJECT_DIR$/singgasanaseni/templates/berita/index.html" />
         <option value="$PROJECT_DIR$/homepage/models.py" />
-        <option value="$PROJECT_DIR$/ensites/templates/enbase.html" />
         <option value="$PROJECT_DIR$/ensites/templates/art/index.html" />
         <option value="$PROJECT_DIR$/homepage/templates/aboutus.html" />
         <option value="$PROJECT_DIR$/homepage/templates/tentangkami.html" />
         <option value="$PROJECT_DIR$/homepage/views.py" />
-        <option value="$PROJECT_DIR$/koleksibungkarno/urls.py" />
         <option value="$PROJECT_DIR$/ensites/urls.py" />
+        <option value="$PROJECT_DIR$/singgasanaseni/models.py" />
+        <option value="$PROJECT_DIR$/singgasanaseni/templates/karya/detail.html" />
+        <option value="$PROJECT_DIR$/singgasanaseni/templates/karya/index.html" />
+        <option value="$PROJECT_DIR$/singgasanaseni/templates/perupa/indexkriya.html" />
         <option value="$PROJECT_DIR$/singgasanaseni/templates/perupa/index.html" />
+        <option value="$PROJECT_DIR$/singgasanaseni/templates/perupa/index2.html" />
+        <option value="$PROJECT_DIR$/koleksibungkarno/urls.py" />
+        <option value="$PROJECT_DIR$/singgasanaseni/views.py" />
+        <option value="$PROJECT_DIR$/singgasanaseni/templates/base.html" />
         <option value="$PROJECT_DIR$/static/css/stylish-portfolio.min.css" />
+        <option value="$PROJECT_DIR$/homepage/templates/index.html" />
+        <option value="$PROJECT_DIR$/ensites/templates/enbase.html" />
+        <option value="$PROJECT_DIR$/singgasanaseni/admin.py" />
       </list>
     </option>
   </component>
@@ -241,37 +403,6 @@
               <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
               <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
               <item name="singgasanaseni" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
-              <item name="singgasanaseni" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
-              <item name="singgasanaseni" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="perupa" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="stylish-portfolio.css" type="620a8d5e:NestingTreeNode" />
             </path>
           </expand>
           <select />
@@ -324,19 +455,19 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/homepage/templates" />
-      <recent name="$PROJECT_DIR$/singgasanaseni/templates/berita" />
-      <recent name="$PROJECT_DIR$/ensites" />
-      <recent name="$PROJECT_DIR$/singgasanaseni/templates/karya" />
-      <recent name="$PROJECT_DIR$/static/js" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static/css" />
       <recent name="$PROJECT_DIR$/static/img" />
       <recent name="$PROJECT_DIR$/singgasanaseni/templates/search/indexes/singgasanaseni" />
       <recent name="$PROJECT_DIR$/singgasanaseni/templates/search/indexes" />
       <recent name="$PROJECT_DIR$/singgasanaseni/templates/search" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/singgasanaseni/templates/perupa" />
+      <recent name="$PROJECT_DIR$/homepage/templates" />
+      <recent name="$PROJECT_DIR$/singgasanaseni/templates/berita" />
+      <recent name="$PROJECT_DIR$/ensites" />
+      <recent name="$PROJECT_DIR$/singgasanaseni/templates/karya" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -433,12 +564,14 @@
       <workItem from="1548818305189" duration="19197000" />
       <workItem from="1548958347808" duration="4479000" />
       <workItem from="1548990387418" duration="5147000" />
-      <workItem from="1549009035691" duration="339000" />
+      <workItem from="1549009035691" duration="10734000" />
+      <workItem from="1549267916096" duration="3145000" />
+      <workItem from="1549443796424" duration="8246000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="186841000" />
+    <option name="totallyTimeSpent" value="208627000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -453,13 +586,13 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49518073" visible="true" weight="0.21959943" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49518073" visible="true" weight="0.16738197" />
       <window_info id="Structure" order="1" sideWeight="0.5048193" side_tool="true" weight="0.24749643" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3283767" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49757674" weight="0.35350758" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39889959" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49757674" weight="0.35315984" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.47555557" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.37349397" />
@@ -467,9 +600,9 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32771084" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32771084" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49676898" weight="0.42916092" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49676898" visible="true" weight="0.45477074" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5024233" side_tool="true" weight="0.32868218" />
-      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32868218" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.3283767" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -505,48 +638,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ensites/templates/palace/istanamerdeka.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ensites/templates/palace/istananegara.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ensites/templates/palace/istanatampaksiring.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ensites/templates/palace/istanayogyakarta.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ensites/templates/artists/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ensites/templates/artists/indexkriya.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ensites/templates/artists/indexpatung.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -594,13 +685,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="76" column="41" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ensites/templates/art/patung.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1290">
@@ -622,27 +706,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ensites/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="2140" column="19" selection-start-line="2140" selection-start-column="13" selection-end-line="2140" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-            <element signature="e#899#1461#0" />
-            <element signature="e#1491#2053#0" />
-            <element signature="e#18688#19280#0" />
-            <element signature="e#51487#52069#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/homepage/templates/enindex.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="143" column="44" lean-forward="true" selection-start-line="143" selection-start-column="44" selection-end-line="143" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://a99f47d5-c138-4903-b5a0-d6c8c2026cbb/schema/main/table/singgasanaseni_perupa" />
     <entry file="file://$PROJECT_DIR$/dump.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -652,13 +715,6 @@
       </provider>
     </entry>
     <entry file="das://a99f47d5-c138-4903-b5a0-d6c8c2026cbb/schema/main/table/singgasanaseni_karya" />
-    <entry file="file://$PROJECT_DIR$/koleksibungkarno/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="45" column="14" lean-forward="true" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ensites/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -675,39 +731,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/singgasanaseni/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/homepage/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="145" column="125" selection-start-line="145" selection-start-column="125" selection-end-line="145" selection-end-column="125" />
-          <folding>
-            <element signature="e#5752#5787#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/singgasanaseni/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="58" lean-forward="true" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/karya/detail.html">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/berita/index.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -743,16 +766,220 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/singgasanaseni/views.py">
+    <entry file="file://$PROJECT_DIR$/ensites/templates/artists/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="2148" lean-forward="true" selection-start-line="2148" selection-end-line="2148" />
+        <state relative-caret-position="-641">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ensites/templates/art/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="97" selection-start-line="33" selection-start-column="97" selection-end-line="33" selection-end-column="97" />
+          <folding>
+            <element signature="e#448#502#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homepage/templates/aboutus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homepage/templates/tentangkami.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homepage/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://715814d5-5719-43cc-b2e8-ff01eaf374cf/schema/main/table/singgasanaseni_perupa">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/koleksibungkarno/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/perupa/indexpatung.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ensites/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1206">
+          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ensites/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="1650" column="20" selection-start-line="1650" selection-start-column="20" selection-end-line="1650" selection-end-column="20" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
-            <element signature="e#309#865#0" />
+            <element signature="e#899#1461#0" />
+            <element signature="e#1491#2053#0" />
+            <element signature="e#18688#19280#0" />
+            <element signature="e#34786#35378#0" />
+            <element signature="e#35401#35993#0" />
+            <element signature="e#36016#36608#0" />
+            <element signature="e#36631#37223#0" />
+            <element signature="e#37246#37838#0" />
+            <element signature="e#37861#38453#0" />
+            <element signature="e#38476#39068#0" />
+            <element signature="e#39091#39683#0" />
+            <element signature="e#39706#40298#0" />
+            <element signature="e#40321#40913#0" />
+            <element signature="e#40936#41528#0" />
+            <element signature="e#41551#42143#0" />
+            <element signature="e#42166#42758#0" />
+            <element signature="e#42781#43373#0" />
+            <element signature="e#43396#43988#0" />
+            <element signature="e#44011#44603#0" />
+            <element signature="e#44626#45218#0" />
+            <element signature="e#45241#45833#0" />
+            <element signature="e#45856#46448#0" />
+            <element signature="e#46471#47063#0" />
+            <element signature="e#47086#47678#0" />
+            <element signature="e#47701#48293#0" />
+            <element signature="e#48316#48908#0" />
+            <element signature="e#48931#49523#0" />
+            <element signature="e#49546#50138#0" />
+            <element signature="e#50161#50753#0" />
+            <element signature="e#50894#51457#0" />
+            <element signature="e#51487#52069#0" />
+            <element signature="e#52097#52677#0" />
+            <element signature="e#52704#53282#0" />
+            <element signature="e#53425#54023#0" />
+            <element signature="e#54051#54641#0" />
+            <element signature="e#54669#55279#0" />
+            <element signature="e#55310#55920#0" />
+            <element signature="e#55951#56530#0" />
+            <element signature="e#56567#56773#0" />
+            <element signature="e#56907#57002#0" />
+            <element signature="e#57142#57191#0" />
+            <element signature="e#57221#57271#0" />
+            <element signature="e#57302#57353#0" />
+            <element signature="e#57384#57435#0" />
+            <element signature="e#57471#57527#0" />
+            <element signature="e#57556#57610#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/karya/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/karya/kriya.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/perupa/indexkriya.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-169">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/karya/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+          <folding>
+            <element signature="e#200#243#0#HTML" expanded="true" />
+            <element signature="e#450#476#0#HTML" expanded="true" />
+            <element signature="e#504#530#0#HTML" expanded="true" />
+            <element signature="e#659#685#0#HTML" expanded="true" />
+            <element signature="e#667#691#0#HTML" expanded="true" />
+            <element signature="e#739#763#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/perupa/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="84" column="35" selection-start-line="84" selection-start-column="29" selection-end-line="84" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/perupa/index2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="84" column="41" selection-start-line="84" selection-start-column="41" selection-end-line="84" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/koleksibungkarno/urls2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singgasanaseni/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/perupa/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="47" column="18" lean-forward="true" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/koleksibungkarno/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-195">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singgasanaseni/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="103" column="57" selection-start-line="103" selection-start-column="57" selection-end-line="103" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
             <element signature="e#895#1456#0" />
             <element signature="e#1487#2048#0" />
-            <element signature="e#2089#2753#0" />
             <element signature="e#2809#3393#0" />
             <element signature="e#3415#3999#0" />
             <element signature="e#4021#4605#0" />
@@ -840,99 +1067,55 @@
             <element signature="e#54489#55101#0" />
             <element signature="e#55130#55742#0" />
             <element signature="e#55772#56353#0" />
+            <element signature="e#56392#56600#0" />
+            <element signature="e#56736#56829#0" />
+            <element signature="e#56870#57094#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ensites/templates/artists/index.html">
+    <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-641">
-          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        <state relative-caret-position="132">
+          <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ensites/templates/art/index.html">
+    <entry file="file://$PROJECT_DIR$/static/css/stylish-portfolio.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="97" selection-start-line="33" selection-start-column="97" selection-end-line="33" selection-end-column="97" />
-          <folding>
-            <element signature="e#448#502#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="259">
+          <caret line="738" column="20" lean-forward="true" selection-start-line="738" selection-start-column="20" selection-end-line="738" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homepage/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="653">
+          <caret line="93" column="26" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homepage/templates/enindex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1327">
+          <caret line="143" column="44" lean-forward="true" selection-start-line="143" selection-start-column="44" selection-end-line="143" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ensites/templates/enbase.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="59" column="64" selection-start-line="59" selection-start-column="64" selection-end-line="59" selection-end-column="64" />
+        <state relative-caret-position="67">
+          <caret line="48" column="39" lean-forward="true" selection-start-line="48" selection-start-column="39" selection-end-line="48" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homepage/templates/aboutus.html">
+    <entry file="file://$PROJECT_DIR$/singgasanaseni/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/homepage/templates/tentangkami.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/homepage/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="270">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ensites/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/koleksibungkarno/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="24" column="73" selection-start-line="24" selection-start-column="73" selection-end-line="24" selection-end-column="73" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/perupa/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-98">
-          <caret line="30" column="55" lean-forward="true" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/perupa/indexkriya.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/perupa/indexpatung.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-233" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/stylish-portfolio.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="1178" column="21" selection-start-line="1178" selection-start-column="21" selection-end-line="1178" selection-end-column="21" />
         </state>
       </provider>
     </entry>

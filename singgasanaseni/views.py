@@ -14,6 +14,7 @@ def PerupaList(request):
 	if query:
 		Perupa = Perupa.filter(Nama__icontains=query)
 
+
 	Page_request_var = "page"
 	paginator = Paginator(Perupa, 20)
 	page = request.GET.get(Page_request_var)
@@ -101,6 +102,8 @@ def Perupadetail(request, perupa_id):
 	}
 
 	return render(request, 'perupa/detail.html', context)
+
+
 
 #filtering perupa --------------
 def AList(request):

@@ -737,6 +737,7 @@ a:hover {
 .koleksiimg {
     width: 100%;
     max-width: 100%;
+    object-fit: cover;
 }
 
 .koleksilabel {
@@ -1267,6 +1268,8 @@ a {
 
 .filtermenu a {
     cursor: pointer;
+    padding: 5px;
+}
 }
 
 

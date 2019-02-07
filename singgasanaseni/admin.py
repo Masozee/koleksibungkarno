@@ -3,17 +3,20 @@ from .models import *
 
 # Register your models here.
 class KaryaAdmin (admin.ModelAdmin):
+    ordering = ['Judul']
     list_display = ['No_Index', 'Judul', 'Perupa', 'Dimensi', 'Material','Kategori', 'Tahun_Pembuatan', 'Lokasi_Lukisan', 'Naked_Material']
     list_filter = ("Material", "Lokasi_Lukisan")
     search_fields = ['No_Index', 'Judul', 'Dimensi', 'Material', 'Tahun_Pembuatan']
     list_per_page = 25
+
 
 admin.site.register(karya,KaryaAdmin)
 
 
 # perupa admin
 class PerupaAdmin (admin.ModelAdmin):
-    list_display = ['Nama', 'Panggilan', 'Kategori', 'Tanggal_Lahir']
+    ordering = ['Panggilan']
+    list_display = ['Panggilan','Nama', 'Kategori', 'Tanggal_Lahir']
     list_filter = ()
     search_fields = ['Nama', 'Panggilan', 'Kategori', 'Tanggal_Lahir']
     list_per_page = 25

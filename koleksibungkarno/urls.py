@@ -47,6 +47,7 @@ urlpatterns = [
     path('koleksi/kriya/', singgasanaseniviews.Pengrajinlist, name='Pengrajin-list'),
 
 
+
     #Filtering Alfabet -------------------------------------------------------------------------------------------------
     path('koleksi/lukisan/A/', singgasanaseniviews.AList, name='A-list'),
     path('koleksi/lukisan/B/', singgasanaseniviews.BList, name='B-list'),
