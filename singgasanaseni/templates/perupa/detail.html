@@ -25,6 +25,16 @@
                         </div>
                         <div class="fade"></div>
                       </div>
+                    <hr>
+                    <div class="beritarelated">
+                    <h3>Berita Terkait {{ Perupa.Panggilan }}</h3>
+                    {% for berita in beritarelated %}
+
+                    <p><a href="/berita/#{{ berita.Judul | slugify }}">{{ berita.Judul }}</a></p>
+
+
+                    {% endfor %}
+                    </div>
                 </div>
               </div>
             </div>

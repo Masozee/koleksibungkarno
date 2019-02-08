@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="077f652a-7fb8-42a3-b99b-79f8e0d75adb" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/koleksibungkarno/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/koleksibungkarno/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singgasanaseni/templates/perupa/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/templates/perupa/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singgasanaseni/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,169 +60,91 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/singgasanaseni/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="103" column="57" selection-start-line="103" selection-start-column="57" selection-end-line="103" selection-end-column="57" />
+            <state relative-caret-position="190">
+              <caret line="88" column="72" selection-start-line="88" selection-start-column="72" selection-end-line="88" selection-end-column="72" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
-                <element signature="e#895#1456#0" />
-                <element signature="e#1487#2048#0" />
-                <element signature="e#2809#3393#0" />
-                <element signature="e#3415#3999#0" />
-                <element signature="e#4021#4605#0" />
-                <element signature="e#4627#5211#0" />
-                <element signature="e#5233#5817#0" />
-                <element signature="e#5839#6423#0" />
-                <element signature="e#6445#7029#0" />
-                <element signature="e#7051#7635#0" />
-                <element signature="e#7657#8241#0" />
-                <element signature="e#8263#8847#0" />
-                <element signature="e#8869#9453#0" />
-                <element signature="e#9475#10059#0" />
-                <element signature="e#10081#10665#0" />
-                <element signature="e#10687#11271#0" />
-                <element signature="e#11293#11877#0" />
-                <element signature="e#11899#12483#0" />
-                <element signature="e#12505#13089#0" />
-                <element signature="e#13111#13695#0" />
-                <element signature="e#13717#14301#0" />
-                <element signature="e#14323#14907#0" />
-                <element signature="e#14929#15513#0" />
-                <element signature="e#15535#16119#0" />
-                <element signature="e#16141#16725#0" />
-                <element signature="e#16747#17331#0" />
-                <element signature="e#17353#17937#0" />
-                <element signature="e#17959#18543#0" />
-                <element signature="e#18601#19192#0" />
-                <element signature="e#19216#19807#0" />
-                <element signature="e#19831#20422#0" />
-                <element signature="e#20446#21037#0" />
-                <element signature="e#21061#21652#0" />
-                <element signature="e#21676#22267#0" />
-                <element signature="e#22291#22882#0" />
-                <element signature="e#22906#23497#0" />
-                <element signature="e#23521#24112#0" />
-                <element signature="e#24136#24727#0" />
-                <element signature="e#24751#25342#0" />
-                <element signature="e#25366#25957#0" />
-                <element signature="e#25981#26572#0" />
-                <element signature="e#26596#27187#0" />
-                <element signature="e#27211#27802#0" />
-                <element signature="e#27826#28417#0" />
-                <element signature="e#28441#29032#0" />
-                <element signature="e#29056#29647#0" />
-                <element signature="e#29671#30262#0" />
-                <element signature="e#30286#30877#0" />
-                <element signature="e#30901#31492#0" />
-                <element signature="e#31516#32107#0" />
-                <element signature="e#32131#32722#0" />
-                <element signature="e#32746#33337#0" />
-                <element signature="e#33361#33952#0" />
-                <element signature="e#33976#34567#0" />
-                <element signature="e#34623#35214#0" />
-                <element signature="e#35237#35828#0" />
-                <element signature="e#35851#36442#0" />
-                <element signature="e#36465#37056#0" />
-                <element signature="e#37079#37670#0" />
-                <element signature="e#37693#38284#0" />
-                <element signature="e#38307#38898#0" />
-                <element signature="e#38921#39512#0" />
-                <element signature="e#39535#40126#0" />
-                <element signature="e#40149#40740#0" />
-                <element signature="e#40763#41354#0" />
-                <element signature="e#41377#41968#0" />
-                <element signature="e#41991#42582#0" />
-                <element signature="e#42605#43196#0" />
-                <element signature="e#43219#43810#0" />
-                <element signature="e#43833#44424#0" />
-                <element signature="e#44447#45038#0" />
-                <element signature="e#45061#45652#0" />
-                <element signature="e#45675#46266#0" />
-                <element signature="e#46289#46880#0" />
-                <element signature="e#46903#47494#0" />
-                <element signature="e#47517#48108#0" />
-                <element signature="e#48131#48722#0" />
-                <element signature="e#48745#49336#0" />
-                <element signature="e#49359#49950#0" />
-                <element signature="e#49973#50564#0" />
-                <element signature="e#50707#51272#0" />
-                <element signature="e#51301#51885#0" />
-                <element signature="e#51913#52495#0" />
-                <element signature="e#52522#53102#0" />
-                <element signature="e#53244#53844#0" />
-                <element signature="e#53870#54462#0" />
-                <element signature="e#54489#55101#0" />
-                <element signature="e#55130#55742#0" />
-                <element signature="e#55772#56353#0" />
-                <element signature="e#56392#56600#0" />
-                <element signature="e#56736#56829#0" />
-                <element signature="e#56870#57094#0" />
+                <element signature="e#1488#2049#0" />
+                <element signature="e#2812#3396#0" />
+                <element signature="e#3418#4002#0" />
+                <element signature="e#4024#4608#0" />
+                <element signature="e#4630#5214#0" />
+                <element signature="e#5236#5820#0" />
+                <element signature="e#5842#6426#0" />
+                <element signature="e#6448#7032#0" />
+                <element signature="e#7054#7638#0" />
+                <element signature="e#7660#8244#0" />
+                <element signature="e#8266#8850#0" />
+                <element signature="e#8872#9456#0" />
+                <element signature="e#9478#10062#0" />
+                <element signature="e#10084#10668#0" />
+                <element signature="e#10690#11274#0" />
+                <element signature="e#11296#11880#0" />
+                <element signature="e#11902#12486#0" />
+                <element signature="e#12508#13092#0" />
+                <element signature="e#13114#13698#0" />
+                <element signature="e#13720#14304#0" />
+                <element signature="e#14326#14910#0" />
+                <element signature="e#14932#15516#0" />
+                <element signature="e#15538#16122#0" />
+                <element signature="e#16144#16728#0" />
+                <element signature="e#16750#17334#0" />
+                <element signature="e#17356#17940#0" />
+                <element signature="e#17962#18546#0" />
+                <element signature="e#18604#19195#0" />
+                <element signature="e#19219#19810#0" />
+                <element signature="e#19834#20425#0" />
+                <element signature="e#20449#21040#0" />
+                <element signature="e#21064#21655#0" />
+                <element signature="e#21679#22270#0" />
+                <element signature="e#22294#22885#0" />
+                <element signature="e#22909#23500#0" />
+                <element signature="e#23524#24115#0" />
+                <element signature="e#24139#24730#0" />
+                <element signature="e#24754#25345#0" />
+                <element signature="e#25369#25960#0" />
+                <element signature="e#25984#26575#0" />
+                <element signature="e#26599#27190#0" />
+                <element signature="e#27214#27805#0" />
+                <element signature="e#27829#28420#0" />
+                <element signature="e#28444#29035#0" />
+                <element signature="e#29059#29650#0" />
+                <element signature="e#29674#30265#0" />
+                <element signature="e#30289#30880#0" />
+                <element signature="e#30904#31495#0" />
+                <element signature="e#31519#32110#0" />
+                <element signature="e#32134#32725#0" />
+                <element signature="e#32749#33340#0" />
+                <element signature="e#33364#33955#0" />
+                <element signature="e#33979#34570#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/koleksibungkarno/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-195">
-              <caret line="47" selection-start-line="47" selection-end-line="47" />
-              <folding>
-                <element signature="e#0#46#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/perupa/detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="47" column="18" lean-forward="true" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+            <state relative-caret-position="201">
+              <caret line="32" column="71" lean-forward="true" selection-start-line="32" selection-start-column="71" selection-end-line="32" selection-end-column="71" />
+              <folding>
+                <element signature="e#703#1102#0#HTML" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/css/stylish-portfolio.min.css">
+        <entry file="file://$PROJECT_DIR$/singgasanaseni/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="738" column="20" lean-forward="true" selection-start-line="738" selection-start-column="20" selection-end-line="738" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/homepage/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="653">
-              <caret line="93" column="26" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/homepage/templates/enindex.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1327">
-              <caret line="143" column="44" lean-forward="true" selection-start-line="143" selection-start-column="44" selection-end-line="143" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ensites/templates/enbase.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="48" column="39" lean-forward="true" selection-start-line="48" selection-start-column="39" selection-end-line="48" selection-end-column="39" />
+            <state relative-caret-position="184">
+              <caret line="135" column="31" lean-forward="true" selection-start-line="135" selection-start-column="31" selection-end-line="135" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#781#1762#0" />
+                <element signature="e#1808#2064#0" />
+                <element signature="e#2106#2275#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -226,7 +152,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/singgasanaseni/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
+            <state relative-caret-position="303">
               <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
@@ -235,11 +161,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/koleksibungkarno/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="27" column="60" lean-forward="true" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
+            <state relative-caret-position="405">
+              <caret line="27" column="83" selection-start-line="27" selection-start-column="83" selection-end-line="27" selection-end-column="83" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/perupa/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="73" column="91" selection-start-line="73" selection-start-column="91" selection-end-line="73" selection-end-column="91" />
             </state>
           </provider>
         </entry>
@@ -307,8 +242,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/singgasanaseni/templates/perupa/detail.html" />
-        <option value="$PROJECT_DIR$/singgasanaseni/templates/search/view.html" />
         <option value="$PROJECT_DIR$/static/css/detail.css" />
         <option value="$PROJECT_DIR$/users/models.py" />
         <option value="$PROJECT_DIR$/static/css/style.css" />
@@ -348,16 +281,18 @@
         <option value="$PROJECT_DIR$/singgasanaseni/templates/karya/detail.html" />
         <option value="$PROJECT_DIR$/singgasanaseni/templates/karya/index.html" />
         <option value="$PROJECT_DIR$/singgasanaseni/templates/perupa/indexkriya.html" />
-        <option value="$PROJECT_DIR$/singgasanaseni/templates/perupa/index.html" />
         <option value="$PROJECT_DIR$/singgasanaseni/templates/perupa/index2.html" />
         <option value="$PROJECT_DIR$/koleksibungkarno/urls.py" />
-        <option value="$PROJECT_DIR$/singgasanaseni/views.py" />
         <option value="$PROJECT_DIR$/singgasanaseni/templates/base.html" />
         <option value="$PROJECT_DIR$/static/css/stylish-portfolio.min.css" />
         <option value="$PROJECT_DIR$/homepage/templates/index.html" />
         <option value="$PROJECT_DIR$/ensites/templates/enbase.html" />
         <option value="$PROJECT_DIR$/singgasanaseni/admin.py" />
+        <option value="$PROJECT_DIR$/ensites/dump.json" />
         <option value="$PROJECT_DIR$/koleksibungkarno/settings.py" />
+        <option value="$PROJECT_DIR$/singgasanaseni/templates/perupa/index.html" />
+        <option value="$PROJECT_DIR$/singgasanaseni/views.py" />
+        <option value="$PROJECT_DIR$/singgasanaseni/templates/perupa/detail.html" />
       </list>
     </option>
   </component>
@@ -380,12 +315,30 @@
             <path>
               <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
               <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
+              <item name="ensites" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
+              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
               <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
               <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
               <item name="singgasanaseni" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
+              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
+              <item name="singgasanaseni" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
+              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
+              <item name="singgasanaseni" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="perupa" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -439,11 +392,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/static/css" />
       <recent name="$PROJECT_DIR$/static/img" />
       <recent name="$PROJECT_DIR$/singgasanaseni/templates/search/indexes/singgasanaseni" />
       <recent name="$PROJECT_DIR$/singgasanaseni/templates/search/indexes" />
-      <recent name="$PROJECT_DIR$/singgasanaseni/templates/search" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/singgasanaseni/templates/perupa" />
@@ -549,12 +502,12 @@
       <workItem from="1548990387418" duration="5147000" />
       <workItem from="1549009035691" duration="10734000" />
       <workItem from="1549267916096" duration="3145000" />
-      <workItem from="1549443796424" duration="8709000" />
+      <workItem from="1549443796424" duration="13257000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="209090000" />
+    <option name="totallyTimeSpent" value="213638000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -569,7 +522,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49518073" visible="true" weight="0.16738197" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49518073" visible="true" weight="0.16738197" />
       <window_info id="Structure" order="1" sideWeight="0.5048193" side_tool="true" weight="0.24749643" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -583,7 +536,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32771084" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32771084" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49676898" visible="true" weight="0.45477074" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49676898" visible="true" weight="0.45477074" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5024233" side_tool="true" weight="0.32868218" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.3283767" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -621,13 +574,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ensites/templates/artists/indexpatung.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../venv/singgasanaseni/lib/python3.7/sre_parse.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="118">
@@ -898,13 +844,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/perupa/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="84" column="35" selection-start-line="84" selection-start-column="29" selection-end-line="84" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/perupa/index2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
@@ -921,22 +860,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/singgasanaseni/models.py">
+    <entry file="file://$PROJECT_DIR$/homepage/templates/enindex.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1327">
+          <caret line="143" column="44" lean-forward="true" selection-start-line="143" selection-start-column="44" selection-end-line="143" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/perupa/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" column="18" lean-forward="true" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/dump.json">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/koleksibungkarno/urls.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -944,108 +876,6 @@
           <caret line="47" selection-start-line="47" selection-end-line="47" />
           <folding>
             <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/singgasanaseni/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="103" column="57" selection-start-line="103" selection-start-column="57" selection-end-line="103" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-            <element signature="e#895#1456#0" />
-            <element signature="e#1487#2048#0" />
-            <element signature="e#2809#3393#0" />
-            <element signature="e#3415#3999#0" />
-            <element signature="e#4021#4605#0" />
-            <element signature="e#4627#5211#0" />
-            <element signature="e#5233#5817#0" />
-            <element signature="e#5839#6423#0" />
-            <element signature="e#6445#7029#0" />
-            <element signature="e#7051#7635#0" />
-            <element signature="e#7657#8241#0" />
-            <element signature="e#8263#8847#0" />
-            <element signature="e#8869#9453#0" />
-            <element signature="e#9475#10059#0" />
-            <element signature="e#10081#10665#0" />
-            <element signature="e#10687#11271#0" />
-            <element signature="e#11293#11877#0" />
-            <element signature="e#11899#12483#0" />
-            <element signature="e#12505#13089#0" />
-            <element signature="e#13111#13695#0" />
-            <element signature="e#13717#14301#0" />
-            <element signature="e#14323#14907#0" />
-            <element signature="e#14929#15513#0" />
-            <element signature="e#15535#16119#0" />
-            <element signature="e#16141#16725#0" />
-            <element signature="e#16747#17331#0" />
-            <element signature="e#17353#17937#0" />
-            <element signature="e#17959#18543#0" />
-            <element signature="e#18601#19192#0" />
-            <element signature="e#19216#19807#0" />
-            <element signature="e#19831#20422#0" />
-            <element signature="e#20446#21037#0" />
-            <element signature="e#21061#21652#0" />
-            <element signature="e#21676#22267#0" />
-            <element signature="e#22291#22882#0" />
-            <element signature="e#22906#23497#0" />
-            <element signature="e#23521#24112#0" />
-            <element signature="e#24136#24727#0" />
-            <element signature="e#24751#25342#0" />
-            <element signature="e#25366#25957#0" />
-            <element signature="e#25981#26572#0" />
-            <element signature="e#26596#27187#0" />
-            <element signature="e#27211#27802#0" />
-            <element signature="e#27826#28417#0" />
-            <element signature="e#28441#29032#0" />
-            <element signature="e#29056#29647#0" />
-            <element signature="e#29671#30262#0" />
-            <element signature="e#30286#30877#0" />
-            <element signature="e#30901#31492#0" />
-            <element signature="e#31516#32107#0" />
-            <element signature="e#32131#32722#0" />
-            <element signature="e#32746#33337#0" />
-            <element signature="e#33361#33952#0" />
-            <element signature="e#33976#34567#0" />
-            <element signature="e#34623#35214#0" />
-            <element signature="e#35237#35828#0" />
-            <element signature="e#35851#36442#0" />
-            <element signature="e#36465#37056#0" />
-            <element signature="e#37079#37670#0" />
-            <element signature="e#37693#38284#0" />
-            <element signature="e#38307#38898#0" />
-            <element signature="e#38921#39512#0" />
-            <element signature="e#39535#40126#0" />
-            <element signature="e#40149#40740#0" />
-            <element signature="e#40763#41354#0" />
-            <element signature="e#41377#41968#0" />
-            <element signature="e#41991#42582#0" />
-            <element signature="e#42605#43196#0" />
-            <element signature="e#43219#43810#0" />
-            <element signature="e#43833#44424#0" />
-            <element signature="e#44447#45038#0" />
-            <element signature="e#45061#45652#0" />
-            <element signature="e#45675#46266#0" />
-            <element signature="e#46289#46880#0" />
-            <element signature="e#46903#47494#0" />
-            <element signature="e#47517#48108#0" />
-            <element signature="e#48131#48722#0" />
-            <element signature="e#48745#49336#0" />
-            <element signature="e#49359#49950#0" />
-            <element signature="e#49973#50564#0" />
-            <element signature="e#50707#51272#0" />
-            <element signature="e#51301#51885#0" />
-            <element signature="e#51913#52495#0" />
-            <element signature="e#52522#53102#0" />
-            <element signature="e#53244#53844#0" />
-            <element signature="e#53870#54462#0" />
-            <element signature="e#54489#55101#0" />
-            <element signature="e#55130#55742#0" />
-            <element signature="e#55772#56353#0" />
-            <element signature="e#56392#56600#0" />
-            <element signature="e#56736#56829#0" />
-            <element signature="e#56870#57094#0" />
           </folding>
         </state>
       </provider>
@@ -1064,20 +894,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homepage/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="653">
-          <caret line="93" column="26" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/homepage/templates/enindex.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1327">
-          <caret line="143" column="44" lean-forward="true" selection-start-line="143" selection-start-column="44" selection-end-line="143" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ensites/templates/enbase.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="67">
@@ -1087,7 +903,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/singgasanaseni/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
+        <state relative-caret-position="303">
           <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
@@ -1095,10 +911,110 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/singgasanaseni/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="135" column="31" lean-forward="true" selection-start-line="135" selection-start-column="31" selection-end-line="135" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#781#1762#0" />
+            <element signature="e#1808#2064#0" />
+            <element signature="e#2106#2275#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/koleksibungkarno/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="27" column="60" lean-forward="true" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
+        <state relative-caret-position="405">
+          <caret line="27" column="83" selection-start-line="27" selection-start-column="83" selection-end-line="27" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homepage/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="653">
+          <caret line="93" column="26" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/perupa/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="73" column="91" selection-start-line="73" selection-start-column="91" selection-end-line="73" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singgasanaseni/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="88" column="72" selection-start-line="88" selection-start-column="72" selection-end-line="88" selection-end-column="72" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#1488#2049#0" />
+            <element signature="e#2812#3396#0" />
+            <element signature="e#3418#4002#0" />
+            <element signature="e#4024#4608#0" />
+            <element signature="e#4630#5214#0" />
+            <element signature="e#5236#5820#0" />
+            <element signature="e#5842#6426#0" />
+            <element signature="e#6448#7032#0" />
+            <element signature="e#7054#7638#0" />
+            <element signature="e#7660#8244#0" />
+            <element signature="e#8266#8850#0" />
+            <element signature="e#8872#9456#0" />
+            <element signature="e#9478#10062#0" />
+            <element signature="e#10084#10668#0" />
+            <element signature="e#10690#11274#0" />
+            <element signature="e#11296#11880#0" />
+            <element signature="e#11902#12486#0" />
+            <element signature="e#12508#13092#0" />
+            <element signature="e#13114#13698#0" />
+            <element signature="e#13720#14304#0" />
+            <element signature="e#14326#14910#0" />
+            <element signature="e#14932#15516#0" />
+            <element signature="e#15538#16122#0" />
+            <element signature="e#16144#16728#0" />
+            <element signature="e#16750#17334#0" />
+            <element signature="e#17356#17940#0" />
+            <element signature="e#17962#18546#0" />
+            <element signature="e#18604#19195#0" />
+            <element signature="e#19219#19810#0" />
+            <element signature="e#19834#20425#0" />
+            <element signature="e#20449#21040#0" />
+            <element signature="e#21064#21655#0" />
+            <element signature="e#21679#22270#0" />
+            <element signature="e#22294#22885#0" />
+            <element signature="e#22909#23500#0" />
+            <element signature="e#23524#24115#0" />
+            <element signature="e#24139#24730#0" />
+            <element signature="e#24754#25345#0" />
+            <element signature="e#25369#25960#0" />
+            <element signature="e#25984#26575#0" />
+            <element signature="e#26599#27190#0" />
+            <element signature="e#27214#27805#0" />
+            <element signature="e#27829#28420#0" />
+            <element signature="e#28444#29035#0" />
+            <element signature="e#29059#29650#0" />
+            <element signature="e#29674#30265#0" />
+            <element signature="e#30289#30880#0" />
+            <element signature="e#30904#31495#0" />
+            <element signature="e#31519#32110#0" />
+            <element signature="e#32134#32725#0" />
+            <element signature="e#32749#33340#0" />
+            <element signature="e#33364#33955#0" />
+            <element signature="e#33979#34570#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/perupa/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="32" column="71" lean-forward="true" selection-start-line="32" selection-start-column="71" selection-end-line="32" selection-end-column="71" />
+          <folding>
+            <element signature="e#703#1102#0#HTML" />
+          </folding>
         </state>
       </provider>
     </entry>

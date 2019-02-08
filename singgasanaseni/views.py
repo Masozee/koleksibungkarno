@@ -12,21 +12,22 @@ def PerupaList(request):
 	query = request.GET.get("q")
 
 	if query:
-		Perupa = Perupa.filter(Nama__icontains=query)
+		Perupa1 = Perupa.filter(Nama__icontains=query)
+
 
 
 	Page_request_var = "page"
 	paginator = Paginator(Perupa, 20)
 	page = request.GET.get(Page_request_var)
 	try:
-		Perupa = paginator.page(page)
+		Perupa1 = paginator.page(page)
 	except PageNotAnInteger:
-		Perupa = paginator.page(1)
+		Perupa1 = paginator.page(1)
 	except EmptyPage:
-		Perupa = paginator.page(paginator.num_pages)
+		Perupa1 = paginator.page(paginator.num_pages)
 
 	context = {
-		"perupa": Perupa,
+		"perupa": Perupa1,
 		"page_request_var": Page_request_var
 	}
 
@@ -85,6 +86,8 @@ def Perupadetail(request, perupa_id):
 	Karyarelated = karya.object.filter(Perupa__id=Perupa.id, Perupa__karya__Naked_Material=False).distinct()
 	total = Karyarelated.count()
 
+	beritarelated = berita.object.filter(Isiberita__icontains=Perupa)[:4]
+
 	paginator = Paginator(Karyarelated, 20)  # Show 25 contacts per page
 
 	page = request.GET.get('page')
@@ -98,6 +101,7 @@ def Perupadetail(request, perupa_id):
 	context = {
 		"Perupa": Perupa,
 		"Karyarelated": Karyarelated,
+		"beritarelated":beritarelated,
 		"total": total
 	}
 
