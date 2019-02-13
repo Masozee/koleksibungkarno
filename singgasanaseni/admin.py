@@ -4,10 +4,16 @@ from .models import *
 # Register your models here.
 class KaryaAdmin (admin.ModelAdmin):
     ordering = ['Judul']
-    list_display = ['No_Index', 'Judul', 'Perupa', 'Dimensi', 'Material','Kategori', 'Tahun_Pembuatan', 'Lokasi_Lukisan', 'Naked_Material']
+    list_display = ['No_Index', 'Judul', 'Perupa', 'Dimensi', 'Material','Kategori', 'Tahun_Pembuatan', 'Lokasi_Lukisan', 'Naked_Material', 'tag_list']
     list_filter = ("Material", "Lokasi_Lukisan")
     search_fields = ['No_Index', 'Judul', 'Dimensi', 'Material', 'Tahun_Pembuatan']
     list_per_page = 25
+
+    def get_queryset(self, request):
+        return super(KaryaAdmin, self).get_queryset(request).prefetch_related('tags')
+
+    def tag_list(self, obj):
+        return u", ".join(o.name for o in obj.tags.all())
 
 
 admin.site.register(karya,KaryaAdmin)

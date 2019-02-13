@@ -1,4 +1,5 @@
 from django.db import models
+from taggit.managers import TaggableManager
 
 
 from django.db.models import Q
@@ -42,6 +43,7 @@ class perupa(models.Model):
     Description = models.TextField(null=True, blank=True)
     Gambar = models.FileField(upload_to='perupa/', blank=True, null=True)
     Upload_date = models.DateTimeField(auto_now_add=True)
+
 
     object  = PerupaManager()
 
@@ -105,6 +107,8 @@ class karya(models.Model):
     Keterangan = models.TextField(null=True, blank=True)
     Naked_Material = models.BooleanField(default=False)
     Upload_date = models.DateTimeField(auto_now_add=True)
+    tags = TaggableManager()
+
 
     object = KaryaManager()
 

@@ -1,5 +1,6 @@
 from django.shortcuts import render, Http404
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.views.generic import ListView
 
 
 
@@ -107,7 +108,23 @@ def Perupadetail(request, perupa_id):
 
 	return render(request, 'perupa/detail.html', context)
 
+#Tagging ----------------------------------------------------------------------------------------------
+class BookListView(ListView):
+    """The listing for all books."""
+    template_name = "karya/tagged.html"
+    context_object_name = ""
 
+class TagListView(ListView):
+    """The listing for tagged books."""
+    template_name = "karya/tagged.html"
+
+    def get_queryset(self):
+        return karya.object.filter(tags__slug=self.kwargs.get("slug")).all()
+
+    def get_context_data(self, **kwargs):
+        context = super(TagListView, self).get_context_data(**kwargs)
+        context["tag"] = self.kwargs.get("slug")
+        return context
 
 #filtering perupa --------------
 def AList(request):

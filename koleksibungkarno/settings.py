@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'search',
     'svg',
     'ensites',
+    'taggit',
 ]
 
 
