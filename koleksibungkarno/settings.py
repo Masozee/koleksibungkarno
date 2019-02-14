@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'svg',
     'ensites',
     'taggit',
+
 ]
 
 
@@ -145,4 +146,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'images')
 
 
 #SETTINGAN UNTUK THIRD PARTY
+
 
