@@ -2,6 +2,7 @@ from django.urls import path, re_path
 
 
 from singgasanaseni import views as singgasanaseniviews
+from django.contrib.auth.decorators import login_required, permission_required
 
 
 
@@ -20,6 +21,8 @@ urlpatterns = [
     path('karya/lukisan/alam-dan-benda/', singgasanaseniviews.alamlist, name='alam-list'),
     path('karya/lukisan/perjuangan-dan-potret-para-pejuang/', singgasanaseniviews.juanglist, name='juang-list'),
     path('karya/lukisan/tradisi-budaya-mitologi-keseharian/', singgasanaseniviews.tradisilist, name='tradisi-list'),
+
+    path('karya/lukisan/nude/', login_required(singgasanaseniviews.nudelist)),
 
     re_path(r'^karya/(?P<karya_id>\d+)/$', singgasanaseniviews.karyadetail, name='karya-detail'),
 

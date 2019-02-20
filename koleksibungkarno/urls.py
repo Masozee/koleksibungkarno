@@ -26,7 +26,7 @@ urlpatterns = [
     path('', include('singgasanaseni.urls')),
     path('en/', include('ensites.urls')),
     re_path(r'^tagged/(?P<slug>[-\w]+)/$', TagListView.as_view(), name="tagged"),
-
+    path('accounts/', include('django.contrib.auth.urls')),
 
 ]
 

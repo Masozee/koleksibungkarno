@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'svg',
     'ensites',
     'taggit',
+    'django_filters',
 
 ]
 
@@ -145,6 +146,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'images')
 
 
 
+
 #SETTINGAN UNTUK THIRD PARTY
+
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
 
 
