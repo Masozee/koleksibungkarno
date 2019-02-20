@@ -4,7 +4,7 @@ from django.conf.urls.static import static
 from rest_framework.urlpatterns import format_suffix_patterns
 
 
-from singgasanaseni import views as singgasanaseniviews
+
 from homepage import views as homepageviews
 from search import views as searchviews
 

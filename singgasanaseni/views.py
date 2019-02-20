@@ -1,7 +1,7 @@
 from django.shortcuts import render, Http404
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.generic import ListView
-from .filters import PerupaFilter
+
 
 from singgasanaseni.models import perupa, karya, berita
 
