@@ -22,7 +22,7 @@ urlpatterns = [
     path('karya/lukisan/perjuangan-dan-potret-para-pejuang/', singgasanaseniviews.juanglist, name='juang-list'),
     path('karya/lukisan/tradisi-budaya-mitologi-keseharian/', singgasanaseniviews.tradisilist, name='tradisi-list'),
 
-    path('karya/lukisan/nude/', login_required(singgasanaseniviews.nudelist)),
+    path('karya/lukisan/fine-art/', login_required(singgasanaseniviews.nudelist), name= 'nude-list'),
 
     re_path(r'^karya/(?P<karya_id>\d+)/$', singgasanaseniviews.karyadetail, name='karya-detail'),
 

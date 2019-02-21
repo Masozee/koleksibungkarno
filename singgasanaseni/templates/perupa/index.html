@@ -95,6 +95,12 @@
                             <a href="/perupa/{{ Perupa.id }}">{{ Perupa.Panggilan }}</a>
                         </h3>
                         <p>{{ Perupa.Tanggal_Lahir |date:"d M Y" }} - {{ Perupa.Tanggal_Wafat |date:"d M Y" }}</p>
+                        <p>
+                            {% for karya in Perupa.karya_set.all %}
+                                {{ karya.Judul }}
+                            {% endfor %}
+                        </p>
+
                     </div>
                 </div>
               <hr>

@@ -1,18 +1,24 @@
 from django.shortcuts import render, Http404
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.generic import ListView
-
+from django.db.models import Count
 
 from singgasanaseni.models import perupa, karya, berita
 
 
 # Perupa-----------------------------------------------------------------------------------------------
-def PerupaList2(request):
+
+
+def PerupaList(request):
     Perupa = perupa.object.filter(Kategori='Pelukis').order_by('Panggilan')
     query = request.GET.get("q")
 
     if query:
-        Perupa1 = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa.filter(Nama__icontains=query)
+
+    Karya = karya.object.annotate(Count('Perupa'))
+
+    hitung = Karya.count()
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -26,35 +32,13 @@ def PerupaList2(request):
 
     context = {
         "perupa": Perupa1,
-        "page_request_var": Page_request_var
+        "page_request_var": Page_request_var,
+        "karya": Karya,
+        "hitung":hitung
     }
 
     return render(request, 'perupa/index.html', context)
 
-
-def PerupaList(request):
-	Perupa = perupa.object.filter(Kategori='Pelukis').order_by('Panggilan')
-	query = request.GET.get("q")
-
-	if query:
-		Perupa = Perupa.filter(Nama__icontains=query)
-
-	Page_request_var = "page"
-	paginator = Paginator(Perupa, 20)
-	page = request.GET.get(Page_request_var)
-	try:
-		Perupa1 = paginator.page(page)
-	except PageNotAnInteger:
-		Perupa1 = paginator.page(1)
-	except EmptyPage:
-		Perupa1 = paginator.page(paginator.num_pages)
-
-	context = {
-		"perupa": Perupa1,
-		"page_request_var": Page_request_var
-	}
-
-	return render(request, 'perupa/index.html', context)
 
 def Pematunglist(request):
     Perupa = perupa.object.filter(Kategori='Pematung').order_by('Panggilan')
@@ -2336,6 +2320,7 @@ def alamkotalist(request):
 
     return render(request, 'karya/index.html', context)
 
+
 def nudelist(request):
     Karya = karya.object.all().filter(Naked_Material=True).order_by('Kategori').distinct()
     query = request.GET.get("q")
@@ -2376,7 +2361,7 @@ def karyadetail(request, karya_id):
 
 # news----------------------------------------------------------------------------------------------------
 def Beritalist(request):
-    Berita = berita.object.all().order_by('Tanggal')
+    Berita = berita.object.all().order_by('-Tanggal').distinct()
     return render(request, 'berita/index.html', {'Berita': Berita})
 
 

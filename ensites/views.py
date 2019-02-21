@@ -2123,6 +2123,30 @@ def landscapelist(request):
 
 	return render(request, 'art/index.html', context)
 
+def nudelist(request):
+    Karya = karya.object.all().filter(Naked_Material=True).order_by('Kategori').distinct()
+    query = request.GET.get("q")
+    if query:
+        Karya = Karya.filter(Judul__icontains=query)
+
+    Page_request_var = "page"
+    paginator = Paginator(Karya, 12)
+    page = request.GET.get(Page_request_var)
+    try:
+        Karya = paginator.page(page)
+    except PageNotAnInteger:
+        Karya = paginator.page(1)
+    except EmptyPage:
+        Karya = paginator.page(paginator.num_pages)
+
+    context = {
+        "karya": Karya,
+        "page_request_var": Page_request_var,
+
+    }
+
+    return render(request, 'art/index.html', context)
+
 def Artdetail(request, karya_id):
 	try:
 		Karya = karya.object.get(pk=karya_id)

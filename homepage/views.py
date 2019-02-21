@@ -6,7 +6,7 @@ from homepage.models import HomeSlide
 
 # Create your views here.
 def index(request):
-    Berita = berita.object.all().order_by("Tanggal")[:4]
+    Berita = berita.object.all().order_by("-Tanggal")[:4]
     Slide = HomeSlide.objects.all()
 
     context = {

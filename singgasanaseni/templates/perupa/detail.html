@@ -27,15 +27,6 @@
                       </div>
                     <hr>
                     <div class="beritarelated">
-                    <h4>Berita Terkait {{ Perupa.Panggilan }}</h4>
-                    {% for berita in beritarelated %}
-
-                    <ul>
-                        <li>
-                            <a href="/berita/#{{ berita.Judul | slugify }}"><b>{{ berita.Judul }}</b></a><br>
-                            <i>{{ berita.Sumber }}</i>
-                        </li>
-                    </ul>
 
                     {% endfor %}
                     </div>
