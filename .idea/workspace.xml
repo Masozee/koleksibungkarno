@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="077f652a-7fb8-42a3-b99b-79f8e0d75adb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/koleksibungkarno/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/koleksibungkarno/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/koleksibungkarno/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/koleksibungkarno/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/templates/istana/istanabogor.html" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/templates/istana/istanabogor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/templates/istana/istanacipanas.html" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/templates/istana/istanacipanas.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/templates/istana/istanamerdeka.html" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/templates/istana/istanamerdeka.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/templates/istana/istananegara.html" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/templates/istana/istananegara.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/templates/istana/istanatampaksiring.html" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/templates/istana/istanatampaksiring.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/templates/istana/istanayogyakarta.html" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/templates/istana/istanayogyakarta.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/templates/perupa/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/templates/perupa/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,6 +55,15 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/perupa/detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="343">
+              <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/singgasanaseni/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
@@ -79,7 +76,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/perupa/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="283">
@@ -105,6 +102,15 @@
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/koleksibungkarno/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -220,7 +226,6 @@
         <option value="$PROJECT_DIR$/singgasanaseni/templates/agus.html" />
         <option value="$PROJECT_DIR$/koleksibungkarno/sitemaps.py" />
         <option value="$PROJECT_DIR$/singgasanaseni/models.py" />
-        <option value="$PROJECT_DIR$/koleksibungkarno/settings.py" />
         <option value="$PROJECT_DIR$/singgasanaseni/templates/istana/istanabogor.html" />
         <option value="$PROJECT_DIR$/singgasanaseni/templates/istana/istanacipanas.html" />
         <option value="$PROJECT_DIR$/singgasanaseni/templates/istana/istananegara.html" />
@@ -231,6 +236,7 @@
         <option value="$PROJECT_DIR$/singgasanaseni/templates/istana/istanayogyakarta.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/singgasanaseni/templates/perupa/index.html" />
+        <option value="$PROJECT_DIR$/koleksibungkarno/settings.py" />
       </list>
     </option>
   </component>
@@ -272,6 +278,11 @@
           <expand>
             <path>
               <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
+              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
+              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
               <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -442,12 +453,12 @@
       <workItem from="1550628733424" duration="9465000" />
       <workItem from="1550756978282" duration="574000" />
       <workItem from="1551233570115" duration="4602000" />
-      <workItem from="1551256207620" duration="4492000" />
+      <workItem from="1551256207620" duration="4657000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="264830000" />
+    <option name="totallyTimeSpent" value="264995000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -619,13 +630,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/perupa/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../venv/singgasanaseni/lib/python3.7/site-packages/django/contrib/sites/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
@@ -713,13 +717,6 @@
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/koleksibungkarno/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="50" column="11" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -817,6 +814,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
           <caret line="101" column="29" selection-start-line="101" selection-start-column="29" selection-end-line="101" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/perupa/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/koleksibungkarno/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
         </state>
       </provider>
     </entry>

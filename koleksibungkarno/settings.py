@@ -47,7 +47,6 @@ INSTALLED_APPS = [
     'svg',
     'ensites',
     'taggit',
-    'django_filters',
     'robots'
 
 
