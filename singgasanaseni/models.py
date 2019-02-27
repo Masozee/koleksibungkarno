@@ -1,6 +1,6 @@
 from django.db import models
 from taggit.managers import TaggableManager
-
+from django.urls import reverse
 
 from django.db.models import Q
 
@@ -50,6 +50,11 @@ class perupa(models.Model):
 
     def __str__(self):
         return self.Panggilan
+
+    def get_absolute_url(self):
+        return reverse('perupa-detail', args=[str(self.id)])
+
+
 
 
 
@@ -117,6 +122,9 @@ class karya(models.Model):
     def __str__(self):
         return self.Judul
 
+    def get_absolute_url(self):
+        return reverse('karya-detail', args=[str(self.id)])
+
 
 class BeritaQuerySet(models.QuerySet):
     def search(self, query=None):
@@ -152,3 +160,5 @@ class berita(models.Model):
     def __str__(self):
         return self.Judul
 
+    def get_absolute_url(self):
+        return reverse('berita-list', args=[str(self.id)])

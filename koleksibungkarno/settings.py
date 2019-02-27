@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sitemaps',
+    'django.contrib.sites',
     'singgasanaseni',
     'homepage',
     'search',
@@ -46,10 +48,12 @@ INSTALLED_APPS = [
     'ensites',
     'taggit',
     'django_filters',
+    'robots'
+
 
 ]
 
-
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
