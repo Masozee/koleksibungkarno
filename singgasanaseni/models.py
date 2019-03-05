@@ -145,12 +145,12 @@ class BeritaManager(models.Manager):
         return self.get_queryset().search(query=query)
 
 class berita(models.Model):
-    Tanggal = models.DateField()
-    Judul = models.TextField()
+    Tanggal = models.DateField(blank=True, null=True)
+    Judul = models.TextField(blank=True, null=True)
     Subjudul = models.TextField(blank=True, null=True)
-    Sumber = models.CharField(max_length=10)
-    Link = models.TextField()
-    Isiberita = models.TextField()
+    Sumber = models.CharField(max_length=10, blank=True, null=True)
+    Link = models.TextField(blank=True, null=True)
+    Isiberita = models.TextField(blank=True, null=True)
     Gambar=models.FileField(upload_to='berita/', blank=True)
     Published=models.BooleanField(default=True)
     Upload_date = models.DateTimeField(auto_now_add=True)
