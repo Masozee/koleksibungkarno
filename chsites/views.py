@@ -7,7 +7,7 @@ from singgasanaseni.models import perupa, karya, berita, HomeSlide
 
 
 #Slider
-def enindex(request):
+def chindex(request):
     Berita = berita.object.all().order_by("Tanggal")[:4]
     Slide = HomeSlide.objects.all()
 
@@ -15,7 +15,7 @@ def enindex(request):
         "Berita": Berita,
         "Slide": Slide
     }
-    return render (request, "enindex.html", context)
+    return render (request, "chindex.html", context)
 
 def aboutus(request):
     return render (request, "aboutus.html")

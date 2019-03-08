@@ -2,7 +2,7 @@ from django.urls import path, re_path
 from django.contrib.auth.decorators import login_required
 
 
-from homepage import views as homepageviews
+
 from search import views as searchviews
 from ensites import views as sitesviews
 
@@ -11,9 +11,9 @@ from ensites import views as sitesviews
 
 urlpatterns = [
 
-    path('', homepageviews.enindex, name='homepage-en'),
+    path('', sitesviews.enindex, name='homepage-en'),
     path('search/', searchviews.SearchView.as_view(), name='searching' ),
-    path('aboutus/', homepageviews.aboutus, name='aboutus'),
+    path('aboutus/', sitesviews.aboutus, name='aboutus'),
 
     # karya udah aktiv--------------------------------------------------------------------------------------------------
     path('artworks/', sitesviews.Artlist, name='art-list'),
@@ -28,7 +28,7 @@ urlpatterns = [
     path('artworks/paintings/warfare-and-potraits-of-heroes/', sitesviews.Heroeslist, name='heroes-list'),
     path('artworks/paintings/tradition-culture-mythology-activities/', sitesviews.traditionlist, name='tradition-list'),
     path('artworks/paintings/nude/', login_required(sitesviews.nudelist)),
-    path('artworks/paintings/nude/', login_required(sitesviews.nudelist)),
+
 
     re_path(r'^artworks/(?P<karya_id>\d+)/$', sitesviews.Artdetail, name='art-detail'),
 

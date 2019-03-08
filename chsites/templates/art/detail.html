@@ -1,0 +1,38 @@
+{% extends 'chbase.html' %}
+
+{% load static %}
+
+{% block css %}
+<link href="{% static 'css/detail.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
+
+
+<article>
+
+    <div class="container" style= "max-height: 600px; max-width: 100%">
+        <div class="row">
+            <div class="col-md-6">
+                <img class=" imgdetail " src="/media/{{ Karya.Gambar }}" alt="">
+            </div>
+            <div class="col-md-6">
+                <div class="centered">
+                    <h5 style="font-size: 1.7rem;">{{ Karya.Judul }}</h5>
+                    <p><a href="/perupa/{{ Karya.Perupa_id }}">{{ Karya.Perupa }}</a></p>
+                    <p style="font-size: 14px;">{{ Karya.Dimensi }}</p>
+                    <p style="font-size: 17px;">{{ Karya.Material }}</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</article>
+{% endblock %}
+
+{% block js %}
+
+
+{% endblock %}

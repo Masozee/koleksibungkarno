@@ -1,0 +1,174 @@
+{% extends "chbase.html" %}
+{% load static %}
+{% load svg %}
+
+{% block content %}
+    <article>
+      <div class="container-fluid">
+
+          <div class="row">
+            <div class="col-md-12 sectionkoleksi">
+              <span class="divkoleksi divkarya">
+                <h3>Collection > Statues</h3>
+              </span>
+              <div class="sectionfilter">
+                <div class="filterkarya">
+                  <label class="filtermenu" style="padding: 0; font-size: smaller; color: #3c4a50">Filter</label>
+
+                {% for jenis in filter.qs %}
+                <li>{{ jenis.Jenis }}</li>
+                {% endfor %}
+                </ul-->
+
+                  <div class="filtermenu jeniskarya " method="get">
+                    <a id="link1">Types of arts objects +</a>
+                    <ul id="jenisbenda" class="jenisbenda" name="featured">
+                      <li value="Lukisan"><a href="{% url 'Painting-list' %}">Paintings</a></li>
+                      <li value="Patung"><a href="{% url 'Statue-list' %}">Statues</a></li>
+                      <li value="Kriya"><a href="{% url 'Craft-list' %}">Crafts</a></li>
+                    </ul>
+                  </div>
+
+
+                </div>
+                <div class="formsearchkarya">
+                  <form method="GET" action="">
+                    <input type="text" name="q" placeholder="Search collection and artist">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </a>
+                </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row bgkarya">
+             <div class="col-md-12 sectionkoleksi">
+              <span-- class="divkoleksi" style="border: none;">
+                <span class="pagingkarya">
+                    <ul class="pagination">
+                        {% if karya.has_previous %}
+                            <a href="?page={{ karya.previous_page_number }}" style="width: 20px; height: auto">{% svg 'back' %}</a>
+                        {% endif %}
+
+                    <form method="GET" >
+                        <input type="number" name="page" id="formpage">
+                    </form>  <p>of {{ karya.paginator.num_pages }}</p>
+
+
+                        {% if karya.has_next %}
+                            <a href="?page={{ karya.next_page_number }}" style="width: 20px; height: auto">{% svg 'next' %}</a>
+                        {% endif %}
+                     </ul>
+
+                </span>
+              </span>
+            </div>
+
+            <div class="col-md-12">
+              <div class="row seckarya">
+                  {% for Karya in karya %}
+                  <div class="col-md-3 perupalist karyalist">
+                    <a href="/karya/{{ Karya.id }}">
+                      <img src="/media/{{ Karya.Gambar }}" class="">
+                        <figcaption>
+                           <h3>{{ Karya.Judul }}</h3>
+                            <p>
+                              <i>{{ Karya.Perupa }}</i><Br>
+                              {{ Karya.Material }}<br>
+                              {{ Karya.Dimensi }}
+                        </figcaption>
+                    </a>
+                  </div>
+                  {% endfor %}
+
+
+
+              </div>
+            </div>
+          </div>
+      </div>
+    </article>
+
+
+    <!--popups-->
+
+{% endblock %}
+
+{% block js %}
+     <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{% static 'js/stylish-portfolio.min.js' %}"></script>
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+
+           $("#link1").click(function(){
+              $("#jenisbenda").slideToggle();
+           });
+
+            $("#link2").click(function(){
+              $("#jenistema").slideToggle();
+           });
+
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+
+          var skip_pages = 5; //change your number accordingly you want to show numbers
+
+          var total_pages = {{karya.paginator.num_pages}};
+          var current_page = {{karya.number}};
+          var factor = Math.floor(current_page/skip_pages);
+
+          $(".page_number").each(function(i, obj) {   //Showing the discrete numbers
+                var page = factor*(skip_pages) + i + 1;
+                if(current_page%skip_pages == 0)
+                  page = (factor-1)*skip_pages + i + 1;
+                if(page - 1 < total_pages){
+                  $(this).html(page);
+                  $(this).attr("href", "?page=" + page);
+                }
+                else{
+                  var x = i+1;
+                  $('li[data=' + x + ']').css("display", "none");
+                }
+          });
+            var page = current_page%skip_pages;
+            if(page == 0)
+              page = skip_pages;
+            $('li[data=' + page + ']').each(function(){   //Deciding the active class
+              $('li[data=' + page + ']').addClass("active");
+            });
+
+          $(".skip_next").click(function(){   //Skip next ... Function
+              if(current_page%skip_pages == 0)
+                factor = factor-1;
+              var page = (factor+1)*skip_pages + 1;
+              if(page < total_pages)
+                $(this).attr("href", "?page=" + page);
+              else
+                $(this).attr("href", "?page=" + total_pages);
+          })
+          $(".skip_prev").click(function(){ //Skip Previous ... Function
+              if(current_page%skip_pages == 0)
+                factor = factor-1;
+              var page = skip_pages*(factor-1) + 1;
+              if(page > 0)
+                $(this).attr("href", "?page=" + page);
+              else
+                $(this).attr("href", "?page=" + "1");
+          })
+        })
+
+    </script>
+
+{% endblock %}

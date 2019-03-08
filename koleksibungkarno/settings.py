@@ -42,10 +42,10 @@ INSTALLED_APPS = [
     'django.contrib.sitemaps',
     'django.contrib.sites',
     'singgasanaseni',
-    'homepage',
     'search',
-    'svg',
     'ensites',
+    'chsites',
+    'svg',
     'taggit',
     'robots'
 
@@ -138,6 +138,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 TEMPLATE_DIRS = (os.path.join(BASE_DIR,  'templates'),)
+
+
 
 STATIC_ROOT = ''
 

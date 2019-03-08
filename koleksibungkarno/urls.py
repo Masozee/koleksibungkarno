@@ -6,7 +6,7 @@ from django.contrib.sitemaps.views import sitemap
 
 
 
-from homepage import views as homepageviews
+#from homepage import views as homepageviews
 from search import views as searchviews
 
 from singgasanaseni.views import TagListView
@@ -28,11 +28,14 @@ sitemaps = {
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', homepageviews.index, name='homepage-views'),
-    path('search/', searchviews.SearchView.as_view(), name='searching' ),
-    path('tentangkami/', homepageviews.tentangkami, name='tentang-kami'),
+    path('cari/', searchviews.SearchView.as_view(), name='cari' ),
+
+    #multisite
     path('', include('singgasanaseni.urls')),
     path('en/', include('ensites.urls')),
+    path('ch/', include('chsites.urls')),
+
+    #thirdparty
     re_path(r'^tagged/(?P<slug>[-\w]+)/$', TagListView.as_view(), name="tagged"),
     path('accounts/', include('django.contrib.auth.urls')),
 

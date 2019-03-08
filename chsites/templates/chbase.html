@@ -1,0 +1,144 @@
+{% load static %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Singgasanaseni</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{%  static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+    <!-- Custom Fonts -->
+    <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="{% static 'vendor/simple-line-icons/css/simple-line-icons.css' %}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{% static 'css/stylish-portfolio.min.css' %}" rel="stylesheet">
+    <script src="{% static 'js/modernizr.custom.js' %}"></script>
+
+    {% block css %}
+
+    {% endblock %}
+
+  </head>
+
+   <body id="page-top">
+      <nav class="navbar cbp-hsmenu-wrapper" id="cbp-hsmenu-wrapper">
+        <div class="container-fluid">
+           <div class="navbar-header">
+            <a class="navbar-brand" href="/">
+              <img src="{% static 'img/logo.jpg' %}">
+            </a>
+          </div>
+
+          <div class="cbp-hsinner">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars menures"></i>
+            </a>
+            <a href="" class="logores">
+              <img src="{% static 'img/logo.jpg' %}">
+            </a>
+
+            <ul class="cbp-hsmenu" id="menuall">
+              <li>
+                <a href="#">艺术家</a>
+                <ul class="cbp-hssubmenu">
+                  <li class="menufirst"><a href="#"><i>艺术收藏品</i></a></li>
+                  <li><a href="{% url 'painter-list' %}">绘画</a></li>
+                  <li><a href="{% url 'sculptor-list' %}">雕像</a></li>
+                  <li><a href="{% url 'craftman-list' %}">手工业</a></li>
+                </ul>
+              </li>
+              <li><a href="{% url 'art-list' %}">画廊</a></li>
+              <li>
+                <a href="#">宫殿</a>
+                <ul class="cbp-hssubmenu">
+                  <li class="menufirst"><a href="#"><i>总统府</i></a></li>
+                  <li><a href="{% url 'palace-merdeka' %}">宫 Merdeka </a></li>
+                  <li><a href="{% url 'palace-negara' %}">宫 National</a></li>
+                  <li><a href="{% url 'palace-bogor' %}">宫 Bogor</a></li>
+                  <li><a href="{% url 'palace-tampaksiring' %}">宫 Tampaksiring</a></li>
+                  <li><a href="{% url 'palace-cipanas' %}">宫 Cipanas palace</a></li>
+                  <li><a href="{% url 'palace-yogyakarta' %}">宫 Yogyakarta</a></li>
+                </ul>
+              </li>
+              <li><a href="#">出版物</a></li>
+              <li><a href="{% url 'news-list' %}">新闻</a></li>
+              <li><a href="{% url 'aboutus' %}">关于我们</a></li>
+              <li><a href="{% url 'searching' %}"><i class="fa fa-search"></i></a></li>
+
+            </ul>
+            </div>
+          </div>
+        </nav>
+
+        {% block content %}
+`
+        {% endblock %}
+
+    <footer class="footermenu">
+        <span class="firstfoot">
+          &copy; 2018-2019 Yayasan Singgasana Seni
+        </span>
+        <span>
+          <a href="#">Privacy Policy</a>
+        </span>
+        <span>
+          <a href="#">Sitemap</a>
+        </span>
+        <span class="rightfoot">
+            <label><a href="{% url 'homepage-en' %}">EN </a>/<a href="{% url 'homepage-views' %}"> ID</a></label>
+            <a href="#"><img src="{% static 'img/facebook.jpg' %}"></a>
+            <a href="#"><img src="{% static 'img/instagram.jpg' %}"></a>
+        </span>
+    </footer>
+
+
+      <script>
+    function openSearch() {
+        document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function closeSearch() {
+        document.getElementById("myOverlay").style.display = "none";
+    }
+    </script>
+     {% block js %}
+
+    {% endblock %}
+
+    <script src="{% static 'js/cbpHorizontalSlideOutMenu.min.js' %}"></script>
+
+    <script>
+      var menu = new cbpHorizontalSlideOutMenu( document.getElementById( 'cbp-hsmenu-wrapper' ) );
+    </script>
+
+    <script>
+      function myFunction() {
+      var x = document.getElementById("menuall");
+      if (x.className === "cbp-hsmenu") {
+          x.className += " responsive";
+      } else {
+          x.className = "cbp-hsmenu";
+      }
+      }
+    </script>
+
+
+
+
+
+  </body>
+
+</html>

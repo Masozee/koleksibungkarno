@@ -1,0 +1,71 @@
+{% extends "chbase.html" %}
+{% load static %}
+
+{% block content %}
+
+ <article>
+      <div class="container-fluid">
+          <!--koleksi-->
+          <div class="row sectionistana">
+            <div class="col-md-3 sidebaristana sidebarberita">
+              <div class="fixedmenuberita" id="menufixed">
+                  {% for berita in Berita %}
+                    <div class="beritaterkait">
+                         <label class="date">{{ berita.Tanggal }}</label>
+                         <font><a href="#{{ berita.Judul | slugify }}">{{ berita.Judul }}</a></font><br>
+                         <p>{{ berita.Isiberita | truncatechars:"50" }}</p>
+                         <label class="source"><i>{{ berita.Sumber }}</i></label><br>
+                         <span>&nbsp;&nbsp;&nbsp;</span>
+                     </div>
+                {% endfor %}
+            </div>
+            </div>
+
+          <div class="col-md-7 isiberita">
+          {% for berita in Berita %}
+            <div id="{{ berita.Judul |slugify }}">
+              <img src="/media/{{ berita.Gambar }}" class="imgartikel">
+                <div class="heading">
+                    <label class="date">{{ berita.Tanggal }}</label>
+                        <h3>{{ berita.Judul }}</h3>
+                    <label class="title">{{ berita.Subjudul }} </label>
+                </div>
+                <p>
+                  {{ berita.Isiberita }}
+                </p>
+            </div><hr/>
+          {% endfor %}
+          </div>
+          </div>
+      </div>
+    </article>
+
+
+
+{% endblock content%}
+
+{% block js %}
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{% static 'js/stylish-portfolio.min.js' %}"></script>
+
+     <script type="text/javascript">
+      window.onscroll = function() {myFunction()};
+      var header = document.getElementById("menufixed");
+      //var sticky = header.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset > 110 ) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
+
+{% endblock %}
