@@ -13,11 +13,11 @@
           <div class="row">
             <div class="col-md-12 sectionkoleksi">
               <span class="divkoleksi divkarya">
-                <h3>Pematung</h3>
+                <h3>雕塑家</h3>
               </span>
               <div class="sectionfilter">
                 <div class="filterkarya">
-                  <label class="filtermenu" style="padding: 0;">Filter</label>
+                  <label class="filtermenu" style="padding: 0;">过滤</label>
                   <!--filter-->
                   <div class="filtermenu">
                     <a href="{% url 'Pematung-list' %}" class="current">ALL</a>
@@ -94,7 +94,7 @@
                         <h3>
                             <a href="/perupa/{{ Perupa.id }}">{{ Perupa.Panggilan }}</a>
                         </h3>
-                        <p>{{ Perupa.Tanggal_Lahir |date:"d M Y" }} - {{ Perupa.Tanggal_Wafat |date:"d M Y" }}</p>
+                        <p>{{ Perupa.Tempat_Lahir }} {{ Perupa.Tanggal_Lahir }} - {{ Perupa.Tempat_Wafat }} {{ Perupa.Tanggal_Wafat }}</p>
                     </div>
                 </div>
               <hr>
