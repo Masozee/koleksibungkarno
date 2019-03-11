@@ -23,6 +23,31 @@ def chaboutus(request):
 
 
 # Perupa-----------------------------------------------------------------------------------------------
+def chArtArtist(request):
+	Perupa = perupa.object.all().order_by('Panggilan')
+	query = request.GET.get("q")
+
+	if query:
+		Perupa = Perupa.filter(Nama__icontains=query)
+
+	Page_request_var = "page"
+	paginator = Paginator(Perupa, 20)
+	page = request.GET.get(Page_request_var)
+	try:
+		Perupa = paginator.page(page)
+	except PageNotAnInteger:
+		Perupa = paginator.page(1)
+	except EmptyPage:
+		Perupa = paginator.page(paginator.num_pages)
+
+	context = {
+		"perupa": Perupa,
+		"page_request_var": Page_request_var
+	}
+
+	return render(request, 'artist/indexlukisan.html', context)
+
+
 def chPainterArtist(request):
 	Perupa = perupa.object.filter(Kategori='Pelukis').order_by('Panggilan')
 	query = request.GET.get("q")

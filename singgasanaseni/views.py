@@ -6,7 +6,7 @@ from django.db.models import Count
 from singgasanaseni.models import perupa, karya, berita, HomeSlide
 
 
-#home------------------------
+# home------------------------
 
 def index(request):
     Berita = berita.object.all().order_by("-Tanggal")[:4]
@@ -16,16 +16,41 @@ def index(request):
         "Berita": Berita,
         "Slide": Slide
     }
-    return render (request, "index.html", context)
+    return render(request, "index.html", context)
+
 
 def tentangkami(request):
-    return render (request, "tentangkami.html")
+    return render(request, "tentangkami.html")
 
 
 # Perupa-----------------------------------------------------------------------------------------------
 
-
 def PerupaList(request):
+    Perupa = perupa.object.all().order_by('Panggilan')
+    query = request.GET.get("q")
+
+    if query:
+        Perupa = Perupa.filter(Nama__icontains=query)
+
+    Page_request_var = "page"
+    paginator = Paginator(Perupa, 20)
+    page = request.GET.get(Page_request_var)
+    try:
+        Perupa = paginator.page(page)
+    except PageNotAnInteger:
+        Perupa = paginator.page(1)
+    except EmptyPage:
+        Perupa = paginator.page(paginator.num_pages)
+
+    context = {
+        "perupa": Perupa,
+        "page_request_var": Page_request_var
+    }
+
+    return render(request, 'perupa/index.html', context)
+
+
+def PelukisList(request):
     Perupa = perupa.object.filter(Kategori='Pelukis').order_by('Panggilan')
     query = request.GET.get("q")
 
@@ -50,10 +75,10 @@ def PerupaList(request):
         "perupa": Perupa1,
         "page_request_var": Page_request_var,
         "karya": Karya,
-        "hitung":hitung
+        "hitung": hitung
     }
 
-    return render(request, 'perupa/index.html', context)
+    return render(request, 'perupa/indexlukis.html', context)
 
 
 def Pematunglist(request):
@@ -2313,7 +2338,8 @@ def tradisilist(request):
 
 
 def alamkotalist(request):
-    Karya = karya.object.all().filter(Kategori='Pemandangan Alam dan Kota', Naked_Material=False).order_by('Kategori').distinct()
+    Karya = karya.object.all().filter(Kategori='Pemandangan Alam dan Kota', Naked_Material=False).order_by(
+        'Kategori').distinct()
     query = request.GET.get("q")
     if query:
         Karya = Karya.filter(Judul__icontains=query)
