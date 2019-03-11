@@ -3,7 +3,23 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.generic import ListView
 from django.db.models import Count
 
-from singgasanaseni.models import perupa, karya, berita
+from singgasanaseni.models import perupa, karya, berita, HomeSlide
+
+
+#home------------------------
+
+def index(request):
+    Berita = berita.object.all().order_by("-Tanggal")[:4]
+    Slide = HomeSlide.objects.all()
+
+    context = {
+        "Berita": Berita,
+        "Slide": Slide
+    }
+    return render (request, "index.html", context)
+
+def tentangkami(request):
+    return render (request, "tentangkami.html")
 
 
 # Perupa-----------------------------------------------------------------------------------------------
@@ -2297,7 +2313,7 @@ def tradisilist(request):
 
 
 def alamkotalist(request):
-    Karya = karya.object.all().filter(Kategori='Pemandangan Alam dan Kota').order_by('Kategori').distinct()
+    Karya = karya.object.all().filter(Kategori='Pemandangan Alam dan Kota', Naked_Material=False).order_by('Kategori').distinct()
     query = request.GET.get("q")
     if query:
         Karya = Karya.filter(Judul__icontains=query)

@@ -8,6 +8,9 @@ from django.contrib.auth.decorators import login_required, permission_required
 
 urlpatterns = [
 
+    path('', singgasanaseniviews.index, name='homepage-views'),
+    path('tentangkami/', singgasanaseniviews.tentangkami, name='tentang-kami'),
+
 
     # karya --------------------------------------------------------------------------------------------------
     path('karya/', singgasanaseniviews.karyalist, name='karya-list'),

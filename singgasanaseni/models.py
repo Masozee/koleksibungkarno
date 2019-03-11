@@ -34,13 +34,13 @@ class perupa(models.Model):
     Nama = models.CharField(max_length=50)
     Panggilan = models.CharField(max_length=50, null=True, blank= True)
     Alamat = models.TextField(null=True, blank=True)
-    Tempat_Lahir = models.CharField(max_length=50, null=True, blank=True)
-    Tanggal_Lahir = models.CharField(max_length=15, null=True, blank=True)
-    Tempat_Wafat = models.CharField(max_length=50, null=True, blank=True)
-    Tanggal_Wafat = models.CharField(max_length=15, null=True, blank=True)
+    Tempat_Lahir = models.CharField(max_length=50, blank=True)
+    Tanggal_Lahir = models.CharField(max_length=50, blank=True)
+    Tempat_Wafat = models.CharField(max_length=50, blank=True)
+    Tanggal_Wafat = models.CharField(max_length=50, blank=True)
     Kategori = models.CharField(max_length=10, choices=PERUPA_CHOICES, default=True)
-    Keterangan = models.TextField(null=True, blank=True)
-    Description = models.TextField(null=True, blank=True)
+    Keterangan = models.TextField(null=True, blank=True, default="No detailed Information available")
+    Description = models.TextField(null=True, blank=True, default="No detailed Information available")
     Gambar = models.FileField(upload_to='perupa/', blank=True, null=True)
     Upload_date = models.DateTimeField(auto_now_add=True)
 
@@ -99,7 +99,7 @@ class karya(models.Model):
         ('Patung dan Kriya', 'Patung dan Kriya'),
     )
 
-    No_Index = models.CharField(max_length=50, unique=True)
+    No_Index = models.CharField(max_length=50)
     Judul = models.CharField(max_length=100)
     Perupa = models.ForeignKey(perupa ,on_delete=models.CASCADE)
     Jenis = models.CharField(max_length=10, choices=KARYA_CHOICES,)
@@ -148,10 +148,10 @@ class berita(models.Model):
     Tanggal = models.DateField(blank=True, null=True)
     Judul = models.TextField(blank=True, null=True)
     Subjudul = models.TextField(blank=True, null=True)
-    Sumber = models.CharField(max_length=10, blank=True, null=True)
+    Sumber = models.CharField(max_length=50, blank=True, null=True)
     Link = models.TextField(blank=True, null=True)
-    Isiberita = models.TextField(blank=True, null=True)
-    Gambar=models.FileField(upload_to='berita/', blank=True)
+    Isiberita = models.TextField()
+    Gambar=models.FileField(upload_to='berita/', blank=True, null=True)
     Published=models.BooleanField(default=True)
     Upload_date = models.DateTimeField(auto_now_add=True)
 
@@ -162,3 +162,21 @@ class berita(models.Model):
 
     def get_absolute_url(self):
         return reverse('berita-list', args=[str(self.id)])
+
+class HomeSlide(models.Model):
+    tema = models.CharField(max_length=100,default=True)
+    slide1 = models.FileField(upload_to='homepage/')
+    caption1 = models.CharField(max_length=25, null=True, blank=True)
+    subcaption1 = models.CharField(max_length=50, null=True, blank=True)
+    link1=models.TextField(null=True, blank=True)
+    slide2 = models.FileField(upload_to='homepage/')
+    caption2 = models.CharField(max_length=25, null=True, blank=True)
+    subcaption2 = models.CharField(max_length=50, null=True, blank=True)
+    link2 = models.TextField(null=True, blank=True)
+    slide3 = models.FileField(upload_to='homepage/')
+    caption3 = models.CharField(max_length=25, null=True, blank=True)
+    subcaption3 = models.CharField(max_length=50, null=True, blank=True)
+    link3 = models.TextField(null=True, blank=True)
+
+    def __str__(self):
+        return self.tema

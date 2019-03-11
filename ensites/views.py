@@ -15,10 +15,10 @@ def enindex(request):
         "Berita": Berita,
         "Slide": Slide
     }
-    return render (request, "enindex.html", context)
+    return render (request, "homepage/enindex.html", context)
 
 def aboutus(request):
-    return render (request, "aboutus.html")
+    return render (request, "homepage/aboutus.html")
 
 
 # Perupa-----------------------------------------------------------------------------------------------

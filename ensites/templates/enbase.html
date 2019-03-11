@@ -37,7 +37,7 @@
       <nav class="navbar cbp-hsmenu-wrapper" id="cbp-hsmenu-wrapper">
         <div class="container-fluid">
            <div class="navbar-header">
-            <a class="navbar-brand" href="/">
+            <a class="navbar-brand" href="{% url 'homepage-en' %}">
               <img src="{% static 'img/logo.jpg' %}">
             </a>
           </div>
@@ -46,7 +46,7 @@
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                   <i class="fa fa-bars menures"></i>
             </a>
-            <a href="" class="logores">
+            <a href="{% url 'homepage-en' %}" class="logores">
               <img src="{% static 'img/logo.jpg' %}">
             </a>
 
@@ -98,7 +98,7 @@
           <a href="#">Sitemap</a>
         </span>
         <span class="rightfoot">
-            <label><a href="{% url 'homepage-en' %}">EN </a>/<a href="{% url 'homepage-views' %}"> ID</a></label>
+            <label><a href="{% url 'homepage-ch' %}">CH</a>/<a href="{% url 'homepage-en' %}">EN</a>/<a href="{% url 'homepage-views' %}">ID</a></label>
             <a href="#"><img src="{% static 'img/facebook.jpg' %}"></a>
             <a href="#"><img src="{% static 'img/instagram.jpg' %}"></a>
         </span>

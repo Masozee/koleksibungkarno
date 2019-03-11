@@ -12,9 +12,9 @@
                     <img src="/media/{{ Perupa.Gambar }}">
                 </div>
                 <div class="col-md-5 profildetail">
-                    <h2>{{ Perupa.Nama }}</h2>
-                    <p><i>{{ Perupa.Panggilan }}</i></p>
-                    <label>{{ Perupa.Tanggal_Lahir | date:"d M Y"  }} - {{ Perupa.Tanggal_Wafat |date:"d M Y"  }}</label>
+                    <h2>{{ Perupa.Panggilan }}</h2>
+                    <p><i>{{ Perupa.Nama }}</i></p>
+                    <label>{{ Perupa.Tempat_Lahir }} {{ Perupa.Tanggal_Lahir}} - {{ Perupa.Tanggal_Wafat }} {{ Perupa.Tanggal_Wafat}}</label>
                     <p>{{ total }} Lukisan</p>
 
                       <div class="panel-wrapper">
@@ -25,11 +25,6 @@
                         </div>
                         <div class="fade"></div>
                       </div>
-                    <hr>
-                    <div class="beritarelated">
-
-                    {% endfor %}
-                    </div>
                 </div>
               </div>
             </div>

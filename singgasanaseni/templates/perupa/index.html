@@ -94,7 +94,7 @@
                         <h3>
                             <a href="/perupa/{{ Perupa.id }}">{{ Perupa.Panggilan }}</a>
                         </h3>
-                        <p>{{ Perupa.Tanggal_Lahir |date:"d M Y" }} - {{ Perupa.Tanggal_Wafat |date:"d M Y" }}</p>
+                        <p>{{ Perupa.Tempat_Lahir }} {{ Perupa.Tanggal_Lahir  }} - {{ Perupa.Tempat_Wafat }} {{ Perupa.Tanggal_Wafat }}</p>
                         <!--p>
                             {% for karya in Perupa.karya_set.all %}
                                 {{ karya.Judul }}
@@ -154,7 +154,7 @@
 
 
         $(document).ready(function() {
-              var $container = $('.portfolioContainer');
+              var $container = $('.portfolioContainer');.
               $container.isotope({
                   filter: '*',
                   // set columnWidth to a percentage of container width

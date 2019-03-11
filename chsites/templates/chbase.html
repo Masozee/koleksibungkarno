@@ -1,5 +1,5 @@
 {% load static %}
-{% load i18n %}
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -37,7 +37,7 @@
       <nav class="navbar cbp-hsmenu-wrapper" id="cbp-hsmenu-wrapper">
         <div class="container-fluid">
            <div class="navbar-header">
-            <a class="navbar-brand" href="/">
+            <a class="navbar-brand" href="{% url 'homepage-ch' %}">
               <img src="{% static 'img/logo.jpg' %}">
             </a>
           </div>
@@ -46,7 +46,7 @@
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                   <i class="fa fa-bars menures"></i>
             </a>
-            <a href="" class="logores">
+            <a href="{% url 'homepage-ch' %}" class="logores">
               <img src="{% static 'img/logo.jpg' %}">
             </a>
 
@@ -55,28 +55,28 @@
                 <a href="#">艺术家</a>
                 <ul class="cbp-hssubmenu">
                   <li class="menufirst"><a href="#"><i>艺术收藏品</i></a></li>
-                  <li><a href="{% url 'painter-list' %}">绘画</a></li>
-                  <li><a href="{% url 'sculptor-list' %}">雕像</a></li>
-                  <li><a href="{% url 'craftman-list' %}">手工业</a></li>
+                  <li><a href="{% url 'painter-list-ch' %}">绘画</a></li>
+                  <li><a href="{% url 'sculptor-list-ch' %}">雕像</a></li>
+                  <li><a href="{% url 'craftman-list-ch' %}">手工业</a></li>
                 </ul>
               </li>
-              <li><a href="{% url 'art-list' %}">画廊</a></li>
+              <li><a href="{% url 'art-list-ch' %}">画廊</a></li>
               <li>
                 <a href="#">宫殿</a>
                 <ul class="cbp-hssubmenu">
                   <li class="menufirst"><a href="#"><i>总统府</i></a></li>
-                  <li><a href="{% url 'palace-merdeka' %}">宫 Merdeka </a></li>
-                  <li><a href="{% url 'palace-negara' %}">宫 National</a></li>
-                  <li><a href="{% url 'palace-bogor' %}">宫 Bogor</a></li>
-                  <li><a href="{% url 'palace-tampaksiring' %}">宫 Tampaksiring</a></li>
-                  <li><a href="{% url 'palace-cipanas' %}">宫 Cipanas palace</a></li>
-                  <li><a href="{% url 'palace-yogyakarta' %}">宫 Yogyakarta</a></li>
+                  <li><a href="{% url 'palace-merdeka-ch' %}">宫 Merdeka </a></li>
+                  <li><a href="{% url 'palace-negara-ch' %}">宫 National</a></li>
+                  <li><a href="{% url 'palace-bogor-ch' %}">宫 Bogor</a></li>
+                  <li><a href="{% url 'palace-tampaksiring-ch' %}">宫 Tampaksiring</a></li>
+                  <li><a href="{% url 'palace-cipanas-ch' %}">宫 Cipanas palace</a></li>
+                  <li><a href="{% url 'palace-yogyakarta-ch' %}">宫 Yogyakarta</a></li>
                 </ul>
               </li>
               <li><a href="#">出版物</a></li>
-              <li><a href="{% url 'news-list' %}">新闻</a></li>
-              <li><a href="{% url 'aboutus' %}">关于我们</a></li>
-              <li><a href="{% url 'searching' %}"><i class="fa fa-search"></i></a></li>
+              <li><a href="{% url 'news-list-ch' %}">新闻</a></li>
+              <li><a href="{% url 'aboutus-ch' %}">关于我们</a></li>
+              <li><a href="{% url 'searching-ch' %}"><i class="fa fa-search"></i></a></li>
 
             </ul>
             </div>
@@ -98,7 +98,7 @@
           <a href="#">Sitemap</a>
         </span>
         <span class="rightfoot">
-            <label><a href="{% url 'homepage-en' %}">EN </a>/<a href="{% url 'homepage-views' %}"> ID</a></label>
+            <label><a href="{% url 'homepage-ch' %}">CH</a>/<a href="{% url 'homepage-en' %}">EN</a>/<a href="{% url 'homepage-views' %}">ID</a></label>
             <a href="#"><img src="{% static 'img/facebook.jpg' %}"></a>
             <a href="#"><img src="{% static 'img/instagram.jpg' %}"></a>
         </span>

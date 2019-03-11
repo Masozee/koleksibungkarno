@@ -22,9 +22,9 @@ admin.site.register(karya,KaryaAdmin)
 # perupa admin
 class PerupaAdmin (admin.ModelAdmin):
     ordering = ['Panggilan']
-    list_display = ['Panggilan','Nama', 'Kategori', 'Tanggal_Lahir']
+    list_display = ['Panggilan','Nama', 'Kategori', 'Tanggal_Lahir', 'Tanggal_Wafat']
     list_filter = ()
-    search_fields = ['Nama', 'Panggilan', 'Kategori', 'Tanggal_Lahir']
+    search_fields = ['Nama', 'Panggilan', 'Kategori', ]
     list_per_page = 25
 
 admin.site.register(perupa, PerupaAdmin)
@@ -39,3 +39,4 @@ class BeritaAdmin (admin.ModelAdmin):
 
 admin.site.register(berita,BeritaAdmin)
 
+admin.site.register(HomeSlide)

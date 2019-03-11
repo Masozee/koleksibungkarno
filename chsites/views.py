@@ -15,14 +15,14 @@ def chindex(request):
         "Berita": Berita,
         "Slide": Slide
     }
-    return render (request, "chindex.html", context)
+    return render (request, "chhome/chindex.html", context)
 
-def aboutus(request):
-    return render (request, "aboutus.html")
+def chaboutus(request):
+    return render (request, "chhome/aboutus.html")
 
 
 # Perupa-----------------------------------------------------------------------------------------------
-def PainterArtist(request):
+def chPainterArtist(request):
 	Perupa = perupa.object.filter(Kategori='Pelukis').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -44,9 +44,9 @@ def PainterArtist(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/index.html', context)
+	return render(request, 'artist/index.html', context)
 
-def Sculptorlist(request):
+def chSculptorlist(request):
 	Perupa = perupa.object.filter(Kategori='Pematung').order_by('Panggilan')
 	query = request.GET.get("q")
 	if query:
@@ -66,9 +66,9 @@ def Sculptorlist(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexpatung.html', context)
+	return render(request, 'artist/indexpatung.html', context)
 
-def Craftmanlist(request):
+def chCraftmanlist(request):
 	Perupa = perupa.object.filter(Kategori='Pengrajin').order_by('Panggilan')
 	query = request.GET.get("q")
 	if query:
@@ -88,9 +88,9 @@ def Craftmanlist(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexkriya.html', context)
+	return render(request, 'artist/indexkriya.html', context)
 
-def Artistsdetail(request, perupa_id):
+def chArtistsdetail(request, perupa_id):
 	try:
 		Perupa = perupa.object.get(pk=perupa_id)
 	except perupa.DoesNotExist:
@@ -115,10 +115,10 @@ def Artistsdetail(request, perupa_id):
 		"total": total
 	}
 
-	return render(request, 'artists/detail.html', context)
+	return render(request, 'artist/detail.html', context)
 
 #filtering perupa --------------
-def AArtist(request):
+def chAArtist(request):
 	Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith= 'A').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -140,8 +140,8 @@ def AArtist(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/index.html', context)
-def BArtist(request):
+	return render(request, 'artist/index.html', context)
+def chBArtist(request):
 	Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith= 'B').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -163,8 +163,8 @@ def BArtist(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/index.html', context)
-def CArtist(request):
+	return render(request, 'artist/index.html', context)
+def chCArtist(request):
 	Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith= 'C').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -186,8 +186,8 @@ def CArtist(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/index.html', context)
-def DArtist(request):
+	return render(request, 'artist/index.html', context)
+def chDArtist(request):
 	Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith= 'D').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -209,8 +209,8 @@ def DArtist(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/index.html', context)
-def EArtist(request):
+	return render(request, 'artist/index.html', context)
+def chEArtist(request):
 	Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith= 'E').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -232,8 +232,8 @@ def EArtist(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/index.html', context)
-def FArtist(request):
+	return render(request, 'artist/index.html', context)
+def chFArtist(request):
 	Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith= 'F').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -255,8 +255,8 @@ def FArtist(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/index.html', context)
-def GArtist(request):
+	return render(request, 'artist/index.html', context)
+def chGArtist(request):
 	Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith= 'G').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -278,8 +278,8 @@ def GArtist(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/index.html', context)
-def HArtist(request):
+	return render(request, 'artist/index.html', context)
+def chHArtist(request):
 	Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith= 'H').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -301,8 +301,8 @@ def HArtist(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/index.html', context)
-def IArtist(request):
+	return render(request, 'artist/index.html', context)
+def chIArtist(request):
 	Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith= 'I').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -324,8 +324,8 @@ def IArtist(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/index.html', context)
-def JArtist(request):
+	return render(request, 'artist/index.html', context)
+def chJArtist(request):
 	Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith= 'J').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -347,8 +347,8 @@ def JArtist(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/index.html', context)
-def KArtist(request):
+	return render(request, 'artist/index.html', context)
+def chKArtist(request):
 	Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith= 'K').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -370,8 +370,8 @@ def KArtist(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/index.html', context)
-def LArtist(request):
+	return render(request, 'artist/index.html', context)
+def chLArtist(request):
 	Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith= 'L').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -393,8 +393,8 @@ def LArtist(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/index.html', context)
-def MArtist(request):
+	return render(request, 'artist/index.html', context)
+def chMArtist(request):
 	Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith= 'M').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -416,8 +416,8 @@ def MArtist(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/index.html', context)
-def NArtist(request):
+	return render(request, 'artist/index.html', context)
+def chNArtist(request):
 	Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith= 'N').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -439,8 +439,8 @@ def NArtist(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/index.html', context)
-def OArtist(request):
+	return render(request, 'artist/index.html', context)
+def chOArtist(request):
 	Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith= 'O').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -462,8 +462,8 @@ def OArtist(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/index.html', context)
-def PArtist(request):
+	return render(request, 'artist/index.html', context)
+def chPArtist(request):
 	Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith= 'P').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -485,8 +485,8 @@ def PArtist(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/index.html', context)
-def QArtist(request):
+	return render(request, 'artist/index.html', context)
+def chQArtist(request):
 	Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith= 'Q').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -508,8 +508,8 @@ def QArtist(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/index.html', context)
-def RArtist(request):
+	return render(request, 'artist/index.html', context)
+def chRArtist(request):
 	Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith= 'R').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -531,8 +531,8 @@ def RArtist(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/index.html', context)
-def SArtist(request):
+	return render(request, 'artist/index.html', context)
+def chSArtist(request):
 	Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith= 'S').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -554,8 +554,8 @@ def SArtist(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/index.html', context)
-def TArtist(request):
+	return render(request, 'artist/index.html', context)
+def chTArtist(request):
 	Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith= 'T').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -577,8 +577,8 @@ def TArtist(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/index.html', context)
-def UArtist(request):
+	return render(request, 'artist/index.html', context)
+def chUArtist(request):
 	Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith= 'U').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -600,8 +600,8 @@ def UArtist(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/index.html', context)
-def VArtist(request):
+	return render(request, 'artist/index.html', context)
+def chVArtist(request):
 	Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith= 'V').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -623,8 +623,8 @@ def VArtist(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/index.html', context)
-def WArtist(request):
+	return render(request, 'artist/index.html', context)
+def chWArtist(request):
 	Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith= 'W').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -646,8 +646,8 @@ def WArtist(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/index.html', context)
-def XArtist(request):
+	return render(request, 'artist/index.html', context)
+def chXArtist(request):
 	Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith= 'X').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -669,8 +669,8 @@ def XArtist(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/index.html', context)
-def YArtist(request):
+	return render(request, 'artist/index.html', context)
+def chYArtist(request):
 	Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith= 'Y').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -692,8 +692,8 @@ def YArtist(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/index.html', context)
-def ZArtist(request):
+	return render(request, 'artist/index.html', context)
+def chZArtist(request):
 	Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith= 'Z').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -715,10 +715,10 @@ def ZArtist(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/index.html', context)
+	return render(request, 'artist/index.html', context)
 
 #filtering patung --------------
-def ASculptor(request):
+def chASculptor(request):
 	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'A').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -740,8 +740,8 @@ def ASculptor(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexpatung.html', context)
-def BSculptor(request):
+	return render(request, 'artist/indexpatung.html', context)
+def chBSculptor(request):
 	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'B').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -763,8 +763,8 @@ def BSculptor(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexpatung.html', context)
-def CSculptor(request):
+	return render(request, 'artist/indexpatung.html', context)
+def chCSculptor(request):
 	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'C').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -786,8 +786,8 @@ def CSculptor(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexpatung.html', context)
-def DSculptor(request):
+	return render(request, 'artist/indexpatung.html', context)
+def chDSculptor(request):
 	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'D').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -809,8 +809,8 @@ def DSculptor(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexpatung.html', context)
-def ESculptor(request):
+	return render(request, 'artist/indexpatung.html', context)
+def chESculptor(request):
 	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'E').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -832,8 +832,8 @@ def ESculptor(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexpatung.html', context)
-def FSculptor(request):
+	return render(request, 'artist/indexpatung.html', context)
+def chFSculptor(request):
 	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'F').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -855,8 +855,8 @@ def FSculptor(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexpatung.html', context)
-def GSculptor(request):
+	return render(request, 'artist/indexpatung.html', context)
+def chGSculptor(request):
 	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'G').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -878,8 +878,8 @@ def GSculptor(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexpatung.html', context)
-def HSculptor(request):
+	return render(request, 'artist/indexpatung.html', context)
+def chHSculptor(request):
 	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'H').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -901,8 +901,8 @@ def HSculptor(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexpatung.html', context)
-def ISculptor(request):
+	return render(request, 'artist/indexpatung.html', context)
+def chISculptor(request):
 	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'I').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -924,8 +924,8 @@ def ISculptor(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexpatung.html', context)
-def JSculptor(request):
+	return render(request, 'artist/indexpatung.html', context)
+def chJSculptor(request):
 	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'J').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -947,8 +947,8 @@ def JSculptor(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexpatung.html', context)
-def KSculptor(request):
+	return render(request, 'artist/indexpatung.html', context)
+def chKSculptor(request):
 	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'K').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -970,8 +970,8 @@ def KSculptor(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexpatung.html', context)
-def LSculptor(request):
+	return render(request, 'artist/indexpatung.html', context)
+def chLSculptor(request):
 	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'L').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -993,8 +993,8 @@ def LSculptor(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexpatung.html', context)
-def MSculptor(request):
+	return render(request, 'artist/indexpatung.html', context)
+def chMSculptor(request):
 	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'M').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1016,8 +1016,8 @@ def MSculptor(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexpatung.html', context)
-def NSculptor(request):
+	return render(request, 'artist/indexpatung.html', context)
+def chNSculptor(request):
 	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'N').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1039,8 +1039,8 @@ def NSculptor(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexpatung.html', context)
-def OSculptor(request):
+	return render(request, 'artist/indexpatung.html', context)
+def chOSculptor(request):
 	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'O').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1062,8 +1062,8 @@ def OSculptor(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexpatung.html', context)
-def PSculptor(request):
+	return render(request, 'artist/indexpatung.html', context)
+def chPSculptor(request):
 	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'P').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1085,8 +1085,8 @@ def PSculptor(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexpatung.html', context)
-def QSculptor(request):
+	return render(request, 'artist/indexpatung.html', context)
+def chQSculptor(request):
 	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'Q').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1108,8 +1108,8 @@ def QSculptor(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexpatung.html', context)
-def RSculptor(request):
+	return render(request, 'artist/indexpatung.html', context)
+def chRSculptor(request):
 	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'R').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1131,8 +1131,8 @@ def RSculptor(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexpatung.html', context)
-def SSculptor(request):
+	return render(request, 'artist/indexpatung.html', context)
+def chSSculptor(request):
 	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'S').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1154,8 +1154,8 @@ def SSculptor(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexpatung.html', context)
-def TSculptor(request):
+	return render(request, 'artist/indexpatung.html', context)
+def chTSculptor(request):
 	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'T').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1177,8 +1177,8 @@ def TSculptor(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexpatung.html', context)
-def USculptor(request):
+	return render(request, 'artist/indexpatung.html', context)
+def chUSculptor(request):
 	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'U').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1200,8 +1200,8 @@ def USculptor(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexpatung.html', context)
-def VSculptor(request):
+	return render(request, 'artist/indexpatung.html', context)
+def chVSculptor(request):
 	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'V').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1223,8 +1223,8 @@ def VSculptor(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexpatung.html', context)
-def WSculptor(request):
+	return render(request, 'artist/indexpatung.html', context)
+def chWSculptor(request):
 	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'W').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1246,8 +1246,8 @@ def WSculptor(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexpatung.html', context)
-def XSculptor(request):
+	return render(request, 'artist/indexpatung.html', context)
+def chXSculptor(request):
 	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'X').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1269,8 +1269,8 @@ def XSculptor(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexpatung.html', context)
-def YSculptor(request):
+	return render(request, 'artist/indexpatung.html', context)
+def chYSculptor(request):
 	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'Y').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1292,8 +1292,8 @@ def YSculptor(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexpatung.html', context)
-def ZSculptor(request):
+	return render(request, 'artist/indexpatung.html', context)
+def chZSculptor(request):
 	Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith= 'Z').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1315,10 +1315,10 @@ def ZSculptor(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexpatung.html', context)
+	return render(request, 'artist/indexpatung.html', context)
 
 #filtering kriya --------------
-def ACraft(request):
+def chACraft(request):
 	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'A').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1340,8 +1340,8 @@ def ACraft(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexkriya.html', context)
-def BCraft(request):
+	return render(request, 'artist/indexkriya.html', context)
+def chBCraft(request):
 	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'B').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1363,8 +1363,8 @@ def BCraft(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexkriya.html', context)
-def CCraft(request):
+	return render(request, 'artist/indexkriya.html', context)
+def chCCraft(request):
 	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'C').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1386,8 +1386,8 @@ def CCraft(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexkriya.html', context)
-def DCraft(request):
+	return render(request, 'artist/indexkriya.html', context)
+def chDCraft(request):
 	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'D').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1409,8 +1409,8 @@ def DCraft(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexkriya.html', context)
-def ECraft(request):
+	return render(request, 'artist/indexkriya.html', context)
+def chECraft(request):
 	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'E').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1432,8 +1432,8 @@ def ECraft(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexkriya.html', context)
-def FCraft(request):
+	return render(request, 'artist/indexkriya.html', context)
+def chFCraft(request):
 	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'F').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1455,8 +1455,8 @@ def FCraft(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexkriya.html', context)
-def GCraft(request):
+	return render(request, 'artist/indexkriya.html', context)
+def chGCraft(request):
 	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'G').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1478,8 +1478,8 @@ def GCraft(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexkriya.html', context)
-def HCraft(request):
+	return render(request, 'artist/indexkriya.html', context)
+def chHCraft(request):
 	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'H').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1501,8 +1501,8 @@ def HCraft(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexkriya.html', context)
-def ICraft(request):
+	return render(request, 'artist/indexkriya.html', context)
+def chICraft(request):
 	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'I').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1524,8 +1524,8 @@ def ICraft(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexkriya.html', context)
-def JCraft(request):
+	return render(request, 'artist/indexkriya.html', context)
+def chJCraft(request):
 	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'J').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1547,8 +1547,8 @@ def JCraft(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexkriya.html', context)
-def KCraft(request):
+	return render(request, 'artist/indexkriya.html', context)
+def chKCraft(request):
 	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'K').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1570,8 +1570,8 @@ def KCraft(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexkriya.html', context)
-def LCraft(request):
+	return render(request, 'artist/indexkriya.html', context)
+def chLCraft(request):
 	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'L').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1593,8 +1593,8 @@ def LCraft(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexkriya.html', context)
-def MCraft(request):
+	return render(request, 'artist/indexkriya.html', context)
+def chMCraft(request):
 	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'M').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1616,8 +1616,8 @@ def MCraft(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexkriya.html', context)
-def NCraft(request):
+	return render(request, 'artist/indexkriya.html', context)
+def chNCraft(request):
 	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'N').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1639,8 +1639,8 @@ def NCraft(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexkriya.html', context)
-def OCraft(request):
+	return render(request, 'artist/indexkriya.html', context)
+def chOCraft(request):
 	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'O').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1662,8 +1662,8 @@ def OCraft(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexkriya.html', context)
-def PCraft(request):
+	return render(request, 'artist/indexkriya.html', context)
+def chPCraft(request):
 	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'P').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1685,8 +1685,8 @@ def PCraft(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexkriya.html', context)
-def QCraft(request):
+	return render(request, 'artist/indexkriya.html', context)
+def chQCraft(request):
 	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'Q').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1708,8 +1708,8 @@ def QCraft(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexkriya.html', context)
-def RCraft(request):
+	return render(request, 'artist/indexkriya.html', context)
+def chRCraft(request):
 	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'R').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1731,8 +1731,8 @@ def RCraft(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexkriya.html', context)
-def SCraft(request):
+	return render(request, 'artist/indexkriya.html', context)
+def chSCraft(request):
 	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'S').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1754,8 +1754,8 @@ def SCraft(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexkriya.html', context)
-def TCraft(request):
+	return render(request, 'artist/indexkriya.html', context)
+def chTCraft(request):
 	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'T').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1777,8 +1777,8 @@ def TCraft(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexkriya.html', context)
-def UCraft(request):
+	return render(request, 'artist/indexkriya.html', context)
+def chUCraft(request):
 	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'U').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1800,8 +1800,8 @@ def UCraft(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexkriya.html', context)
-def VCraft(request):
+	return render(request, 'artist/indexkriya.html', context)
+def chVCraft(request):
 	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'V').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1823,8 +1823,8 @@ def VCraft(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexkriya.html', context)
-def WCraft(request):
+	return render(request, 'artist/indexkriya.html', context)
+def chWCraft(request):
 	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'W').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1846,8 +1846,8 @@ def WCraft(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexkriya.html', context)
-def XCraft(request):
+	return render(request, 'artist/indexkriya.html', context)
+def chXCraft(request):
 	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'X').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1869,8 +1869,8 @@ def XCraft(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexkriya.html', context)
-def YCraft(request):
+	return render(request, 'artist/indexkriya.html', context)
+def chYCraft(request):
 	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'Y').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1892,8 +1892,8 @@ def YCraft(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexkriya.html', context)
-def ZCraft(request):
+	return render(request, 'artist/indexkriya.html', context)
+def chZCraft(request):
 	Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith= 'Z').order_by('Panggilan')
 	query = request.GET.get("q")
 
@@ -1915,12 +1915,12 @@ def ZCraft(request):
 		"page_request_var": Page_request_var
 	}
 
-	return render(request, 'artists/indexkriya.html', context)
+	return render(request, 'artist/indexkriya.html', context)
 
 
 
 # Karya----------------------------------------------------------------------------------------------------------
-def Artlist(request):
+def chArtlist(request):
 	Karya = karya.object.all().filter(Naked_Material=False).order_by('Kategori').distinct()
 	query = request.GET.get("q")
 	if query:
@@ -1942,9 +1942,9 @@ def Artlist(request):
 
 	}
 
-	return render(request, 'art/index.html', context)
+	return render(request, 'chart/index.html', context)
 
-def Paintinglist(request):
+def chPaintinglist(request):
 	Karya = karya.object.all().filter(Jenis='Lukisan', Naked_Material=False).order_by('Kategori').distinct()
 	query = request.GET.get("q")
 	if query:
@@ -1966,9 +1966,9 @@ def Paintinglist(request):
 
 	}
 
-	return render(request, 'art/lukisan.html', context)
+	return render(request, 'chart/lukisan.html', context)
 
-def Statuelist(request):
+def chStatuelist(request):
 	Karya = karya.object.all().filter(Jenis='Patung', Naked_Material=False).order_by('Kategori').distinct()
 	query = request.GET.get("q")
 	if query:
@@ -1990,9 +1990,9 @@ def Statuelist(request):
 
 	}
 
-	return render(request, 'art/patung.html', context)
+	return render(request, 'chart/patung.html', context)
 
-def Craftlist(request):
+def chCraftlist(request):
 	Karya = karya.object.all().filter(Jenis='Kriya', Naked_Material=False).order_by('Kategori').distinct()
 	query = request.GET.get("q")
 	if query:
@@ -2014,11 +2014,11 @@ def Craftlist(request):
 
 	}
 
-	return render(request, 'art/kriya.html', context)
+	return render(request, 'chart/kriya.html', context)
 
 #Filtering tema ------------------------------------------------------------------------------------------------
 
-def Potraitlist(request):
+def chPotraitlist(request):
 	Karya = karya.object.all().filter(Kategori='Potret dan Sensualitas', Naked_Material=False).order_by('Kategori').distinct()
 	query = request.GET.get("q")
 	if query:
@@ -2040,9 +2040,9 @@ def Potraitlist(request):
 
 	}
 
-	return render(request, 'art/index.html', context)
+	return render(request, 'chart/index.html', context)
 
-def Naturelist(request):
+def chNaturelist(request):
 	Karya = karya.object.all().filter(Kategori='Alam dan Benda', Naked_Material=False).order_by('Kategori').distinct()
 	query = request.GET.get("q")
 	if query:
@@ -2064,9 +2064,9 @@ def Naturelist(request):
 
 	}
 
-	return render(request, 'art/index.html', context)
+	return render(request, 'chart/index.html', context)
 
-def Heroeslist(request):
+def chHeroeslist(request):
 	Karya = karya.object.all().filter(Kategori='Perjuangan dan Potret Para Pejuang', Naked_Material=False).order_by('Kategori').distinct()
 	query = request.GET.get("q")
 	if query:
@@ -2088,9 +2088,9 @@ def Heroeslist(request):
 
 	}
 
-	return render(request, 'art/index.html', context)
+	return render(request, 'chart/index.html', context)
 
-def traditionlist(request):
+def chtraditionlist(request):
 	Karya = karya.object.all().filter(Kategori='Tradisi/Budaya/Mitologi/Keseharian', Naked_Material=False).order_by('Kategori').distinct()
 	query = request.GET.get("q")
 	if query:
@@ -2112,9 +2112,9 @@ def traditionlist(request):
 
 	}
 
-	return render(request, 'art/index.html', context)
+	return render(request, 'chart/index.html', context)
 
-def landscapelist(request):
+def chlandscapelist(request):
 	Karya = karya.object.all().filter(Kategori='Pemandangan Alam dan Kota').order_by('Kategori').distinct()
 	query = request.GET.get("q")
 	if query:
@@ -2136,9 +2136,9 @@ def landscapelist(request):
 
 	}
 
-	return render(request, 'art/index.html', context)
+	return render(request, 'chart/index.html', context)
 
-def nudelist(request):
+def chnudelist(request):
     Karya = karya.object.all().filter(Naked_Material=True).order_by('Kategori').distinct()
     query = request.GET.get("q")
     if query:
@@ -2160,9 +2160,9 @@ def nudelist(request):
 
     }
 
-    return render(request, 'art/index.html', context)
+    return render(request, 'chart/index.html', context)
 
-def Artdetail(request, karya_id):
+def chArtdetail(request, karya_id):
 	try:
 		Karya = karya.object.get(pk=karya_id)
 	except Perupa.DoesNotExist:
@@ -2172,33 +2172,33 @@ def Artdetail(request, karya_id):
 		"Karya": Karya,
 	}
 
-	return render(request, 'art/detail.html', context)
+	return render(request, 'chart/detail.html', context)
 
 
 # news----------------------------------------------------------------------------------------------------
-def Newslist(request):
+def chNewslist(request):
 	Berita = berita.object.all()[:1]
-	return render(request, 'news/index.html', {'Berita': Berita})
+	return render(request, 'chnews/index.html', {'Berita': Berita})
 
 
 
 # palace----------------------------------------------------------------------------------------------------
-def PalaceBogor(request):
-	return render(request, 'palace/istanabogor.html')
+def chPalaceBogor(request):
+	return render(request, 'chpalace/istanabogor.html')
 
-def PalaceNegara(request):
-	return render(request, 'palace/istananegara.html')
+def chPalaceNegara(request):
+	return render(request, 'chpalace/istananegara.html')
 
-def PalaceCipanas(request):
-	return render(request, 'palace/istanacipanas.html')
+def chPalaceCipanas(request):
+	return render(request, 'chpalace/istanacipanas.html')
 
-def PalaceMerdeka(request):
-	return render(request, 'palace/istanamerdeka.html')
+def chPalaceMerdeka(request):
+	return render(request, 'chpalace/istanamerdeka.html')
 
-def PalaceTampakSiring(request):
-	return render(request, 'palace/istanatampaksiring.html')
+def chPalaceTampakSiring(request):
+	return render(request, 'chpalace/istanatampaksiring.html')
 
-def PalaceYogya(request):
-	return render(request, 'palace/istanayogyakarta.html')
+def chPalaceYogya(request):
+	return render(request, 'chpalace/istanayogyakarta.html')
 
 
