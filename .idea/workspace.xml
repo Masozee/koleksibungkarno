@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="077f652a-7fb8-42a3-b99b-79f8e0d75adb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/chsites/templates/artist/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/chsites/templates/artist/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chsites/templates/artist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/chsites/templates/artist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chsites/templates/artist/indexkriya.html" beforeDir="false" afterPath="$PROJECT_DIR$/chsites/templates/artist/indexkriya.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chsites/templates/artist/indexlukisan.html" beforeDir="false" afterPath="$PROJECT_DIR$/chsites/templates/artist/indexlukisan.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chsites/templates/artist/indexpatung.html" beforeDir="false" afterPath="$PROJECT_DIR$/chsites/templates/artist/indexpatung.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ensites/templates/artists/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/ensites/templates/artists/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ensites/templates/artists/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ensites/templates/artists/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ensites/templates/artists/indexkriya.html" beforeDir="false" afterPath="$PROJECT_DIR$/ensites/templates/artists/indexkriya.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ensites/templates/artists/indexlukis.html" beforeDir="false" afterPath="$PROJECT_DIR$/ensites/templates/artists/indexlukis.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ensites/templates/artists/indexpatung.html" beforeDir="false" afterPath="$PROJECT_DIR$/ensites/templates/artists/indexpatung.html" afterDir="false" />
-    </list>
+    <list default="true" id="077f652a-7fb8-42a3-b99b-79f8e0d75adb" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,29 +51,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ensites/templates/artists/index.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/koleksibungkarno/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="96" column="134" selection-start-line="96" selection-start-column="134" selection-end-line="96" selection-end-column="134" />
+            <state relative-caret-position="-326">
+              <folding>
+                <element signature="e#0#46#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ensites/templates/artists/indexkriya.html">
+        <entry file="file://$PROJECT_DIR$/singgasanaseni/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="96" column="134" selection-start-line="96" selection-start-column="134" selection-end-line="96" selection-end-column="134" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ensites/templates/artists/indexlukis.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="96" column="134" selection-start-line="96" selection-start-column="134" selection-end-line="96" selection-end-column="134" />
+            <state relative-caret-position="2880">
+              <caret line="192" column="24" lean-forward="true" selection-start-line="192" selection-start-column="24" selection-end-line="192" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,6 +102,30 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/singgasanaseni/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-34482">
+              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+              <folding>
+                <element signature="e#0#44#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/singgasanaseni/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-299">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chsites/templates/artist/indexkriya.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="236">
@@ -137,17 +146,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chsites/templates/artist/indexpatung.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="96" column="134" selection-start-line="96" selection-start-column="134" selection-end-line="96" selection-end-column="134" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="das://715814d5-5719-43cc-b2e8-ff01eaf374cf/schema/main/table/singgasanaseni_perupa">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+            <state relative-caret-position="1530">
+              <caret line="102" column="16" lean-forward="true" selection-start-line="102" selection-start-column="16" selection-end-line="102" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -362,13 +362,6 @@
               <item name="singgasanaseni" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
-              <item name="singgasanaseni" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="perupa" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -547,12 +540,12 @@
       <workItem from="1552058600371" duration="243000" />
       <workItem from="1552134070829" duration="592000" />
       <workItem from="1552134692738" duration="5287000" />
-      <workItem from="1552187501284" duration="8862000" />
+      <workItem from="1552187501284" duration="9278000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="283862000" />
+    <option name="totallyTimeSpent" value="284278000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -567,12 +560,12 @@
     <frame x="0" y="23" width="1440" height="842" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49518073" visible="true" weight="0.15593705" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49518073" visible="true" weight="0.15593705" />
       <window_info id="Structure" order="1" sideWeight="0.5048193" side_tool="true" weight="0.24749643" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3283767" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49757674" visible="true" weight="0.3906465" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49757674" weight="0.3906465" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.47180194" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -581,7 +574,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32737276" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32737276" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49676898" weight="0.25997248" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49676898" visible="true" weight="0.25997248" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5024233" side_tool="true" weight="0.32868218" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.3283767" />
       <window_info anchor="bottom" id="Messages" order="14" />
@@ -623,9 +616,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/chsites/templates/chpalace/istananegara.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/chsites/templates/chpalace/istanatampaksiring.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -833,16 +823,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/singgasanaseni/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/koleksibungkarno/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -854,26 +834,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/singgasanaseni/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="192" column="24" lean-forward="true" selection-start-line="192" selection-start-column="24" selection-end-line="192" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/singgasanaseni/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
@@ -963,17 +923,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chsites/templates/artist/indexpatung.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="96" column="134" selection-start-line="96" selection-start-column="134" selection-end-line="96" selection-end-column="134" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://715814d5-5719-43cc-b2e8-ff01eaf374cf/schema/main/table/singgasanaseni_perupa">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chsites/templates/artist/indexpatung.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="102" column="16" lean-forward="true" selection-start-line="102" selection-start-column="16" selection-end-line="102" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singgasanaseni/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2880">
+          <caret line="192" column="24" lean-forward="true" selection-start-line="192" selection-start-column="24" selection-end-line="192" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singgasanaseni/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34482">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singgasanaseni/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-299">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/koleksibungkarno/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-326">
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
