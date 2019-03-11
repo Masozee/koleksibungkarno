@@ -4,6 +4,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 
 from singgasanaseni.models import perupa, karya, berita, HomeSlide
+from ensites.models import News
 
 
 #Slider
@@ -2177,7 +2178,7 @@ def Artdetail(request, karya_id):
 
 # news----------------------------------------------------------------------------------------------------
 def Newslist(request):
-	Berita = berita.object.all()[:1]
+	Berita = News.object.all()[:1]
 	return render(request, 'news/index.html', {'Berita': Berita})
 
 

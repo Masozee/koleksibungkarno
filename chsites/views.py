@@ -4,6 +4,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 
 from singgasanaseni.models import perupa, karya, berita, HomeSlide
+from chsites.models import News
 
 
 #Slider
@@ -2165,7 +2166,7 @@ def chnudelist(request):
 def chArtdetail(request, karya_id):
 	try:
 		Karya = karya.object.get(pk=karya_id)
-	except Perupa.DoesNotExist:
+	except karya.DoesNotExist:
 		raise Http404('Data karya Belum Tersedia')
 
 	context = {
@@ -2177,7 +2178,7 @@ def chArtdetail(request, karya_id):
 
 # news----------------------------------------------------------------------------------------------------
 def chNewslist(request):
-	Berita = berita.object.all()[:1]
+	Berita = News.object.all()
 	return render(request, 'chnews/index.html', {'Berita': Berita})
 
 

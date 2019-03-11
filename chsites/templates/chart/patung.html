@@ -9,11 +9,11 @@
           <div class="row">
             <div class="col-md-12 sectionkoleksi">
               <span class="divkoleksi divkarya">
-                <h3>Collection > Statues</h3>
+                <h3>采集 > 雕像</h3>
               </span>
               <div class="sectionfilter">
                 <div class="filterkarya">
-                  <label class="filtermenu" style="padding: 0; font-size: smaller; color: #3c4a50">Filter</label>
+                  <label class="filtermenu" style="padding: 0; font-size: smaller; color: #3c4a50">过滤</label>
 
                 {% for jenis in filter.qs %}
                 <li>{{ jenis.Jenis }}</li>
@@ -21,14 +21,13 @@
                 </ul-->
 
                   <div class="filtermenu jeniskarya " method="get">
-                    <a id="link1">Types of arts objects +</a>
+                    <a id="link1">艺术品的类型 +</a>
                     <ul id="jenisbenda" class="jenisbenda" name="featured">
-                      <li value="Lukisan"><a href="{% url 'Painting-list' %}">Paintings</a></li>
-                      <li value="Patung"><a href="{% url 'Statue-list' %}">Statues</a></li>
-                      <li value="Kriya"><a href="{% url 'Craft-list' %}">Crafts</a></li>
+                      <li value="Lukisan"><a href="{% url 'Painting-list-ch' %}">绘画</a></li>
+                      <li value="Patung"><a href="{% url 'Statue-list-ch' %}">雕像</a></li>
+                      <li value="Kriya"><a href="{% url 'Craft-list-ch' %}">手工业</a></li>
                     </ul>
                   </div>
-
 
                 </div>
                 <div class="formsearchkarya">

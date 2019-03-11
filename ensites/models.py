@@ -38,3 +38,6 @@ class News(models.Model):
 
     def __str__(self):
         return self.Tittle
+
+    class Meta:
+        verbose_name_plural = 'News in english'

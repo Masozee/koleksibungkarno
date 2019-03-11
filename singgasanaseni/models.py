@@ -54,6 +54,9 @@ class perupa(models.Model):
     def get_absolute_url(self):
         return reverse('perupa-detail', args=[str(self.id)])
 
+    class Meta:
+        verbose_name_plural = 'Perupa'
+
 
 
 
@@ -125,6 +128,10 @@ class karya(models.Model):
     def get_absolute_url(self):
         return reverse('karya-detail', args=[str(self.id)])
 
+    class Meta:
+        verbose_name_plural = 'Karya'
+
+
 
 class BeritaQuerySet(models.QuerySet):
     def search(self, query=None):
@@ -163,6 +170,10 @@ class berita(models.Model):
     def get_absolute_url(self):
         return reverse('berita-list', args=[str(self.id)])
 
+    class Meta:
+        verbose_name_plural = 'Berita'
+
+
 class HomeSlide(models.Model):
     tema = models.CharField(max_length=100,default=True)
     slide1 = models.FileField(upload_to='homepage/')
@@ -180,3 +191,6 @@ class HomeSlide(models.Model):
 
     def __str__(self):
         return self.tema
+
+    class Meta:
+        verbose_name_plural = 'Slider'
