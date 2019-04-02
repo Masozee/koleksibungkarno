@@ -27,10 +27,11 @@ def tentangkami(request):
 
 def PerupaList(request):
     Perupa = perupa.object.all().order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -52,10 +53,11 @@ def PerupaList(request):
 
 def PelukisList(request):
     Perupa = perupa.object.filter(Kategori='Pelukis').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Karya = karya.object.annotate(Count('Perupa'))
 
@@ -83,9 +85,10 @@ def PelukisList(request):
 
 def Pematunglist(request):
     Perupa = perupa.object.filter(Kategori='Pematung').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
     Page_request_var = "page"
     paginator = Paginator(Perupa, 16)
     page = request.GET.get(Page_request_var)
@@ -106,9 +109,10 @@ def Pematunglist(request):
 
 def Pengrajinlist(request):
     Perupa = perupa.object.filter(Kategori='Pengrajin').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
     Page_request_var = "page"
     paginator = Paginator(Perupa, 16)
     page = request.GET.get(Page_request_var)
@@ -133,7 +137,7 @@ def Perupadetail(request, perupa_id):
     except perupa.DoesNotExist:
         raise Http404('404.html')
 
-    Karyarelated = karya.object.filter(Perupa__id=Perupa.id, Perupa__karya__Naked_Material=False).distinct()
+    Karyarelated = karya.object.filter(Perupa__id=Perupa.id ).distinct()
     total = Karyarelated.count()
 
     beritarelated = berita.object.filter(Isiberita__icontains=Perupa)[:4]
@@ -181,10 +185,11 @@ class TagListView(ListView):
 # filtering perupa --------------
 def AList(request):
     Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith='A').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -206,10 +211,11 @@ def AList(request):
 
 def BList(request):
     Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith='B').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -231,10 +237,11 @@ def BList(request):
 
 def CList(request):
     Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith='C').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -256,10 +263,11 @@ def CList(request):
 
 def DList(request):
     Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith='D').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -281,10 +289,11 @@ def DList(request):
 
 def EList(request):
     Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith='E').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -306,10 +315,11 @@ def EList(request):
 
 def FList(request):
     Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith='F').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -331,10 +341,11 @@ def FList(request):
 
 def GList(request):
     Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith='G').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -356,10 +367,11 @@ def GList(request):
 
 def HList(request):
     Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith='H').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -381,10 +393,11 @@ def HList(request):
 
 def IList(request):
     Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith='I').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -406,10 +419,11 @@ def IList(request):
 
 def JList(request):
     Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith='J').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -431,10 +445,11 @@ def JList(request):
 
 def KList(request):
     Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith='K').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -456,10 +471,11 @@ def KList(request):
 
 def LList(request):
     Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith='L').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -481,10 +497,11 @@ def LList(request):
 
 def MList(request):
     Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith='M').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -506,10 +523,11 @@ def MList(request):
 
 def NList(request):
     Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith='N').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -531,10 +549,11 @@ def NList(request):
 
 def OList(request):
     Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith='O').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -556,10 +575,11 @@ def OList(request):
 
 def PList(request):
     Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith='P').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -581,10 +601,11 @@ def PList(request):
 
 def QList(request):
     Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith='Q').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -606,10 +627,11 @@ def QList(request):
 
 def RList(request):
     Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith='R').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -631,10 +653,11 @@ def RList(request):
 
 def SList(request):
     Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith='S').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -656,10 +679,11 @@ def SList(request):
 
 def TList(request):
     Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith='T').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -681,10 +705,11 @@ def TList(request):
 
 def UList(request):
     Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith='U').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -706,10 +731,11 @@ def UList(request):
 
 def VList(request):
     Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith='V').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -731,10 +757,11 @@ def VList(request):
 
 def WList(request):
     Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith='W').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -756,10 +783,11 @@ def WList(request):
 
 def XList(request):
     Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith='X').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -781,10 +809,11 @@ def XList(request):
 
 def YList(request):
     Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith='Y').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -806,10 +835,11 @@ def YList(request):
 
 def ZList(request):
     Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith='Z').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -832,10 +862,11 @@ def ZList(request):
 # filtering patung --------------
 def APatung(request):
     Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith='A').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -857,10 +888,11 @@ def APatung(request):
 
 def BPatung(request):
     Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith='B').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -882,10 +914,11 @@ def BPatung(request):
 
 def CPatung(request):
     Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith='C').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -907,10 +940,11 @@ def CPatung(request):
 
 def DPatung(request):
     Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith='D').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -932,10 +966,11 @@ def DPatung(request):
 
 def EPatung(request):
     Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith='E').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -957,10 +992,11 @@ def EPatung(request):
 
 def FPatung(request):
     Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith='F').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -982,10 +1018,11 @@ def FPatung(request):
 
 def GPatung(request):
     Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith='G').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1007,10 +1044,11 @@ def GPatung(request):
 
 def HPatung(request):
     Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith='H').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1032,10 +1070,11 @@ def HPatung(request):
 
 def IPatung(request):
     Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith='I').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1057,10 +1096,11 @@ def IPatung(request):
 
 def JPatung(request):
     Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith='J').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1082,10 +1122,11 @@ def JPatung(request):
 
 def KPatung(request):
     Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith='K').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1107,10 +1148,11 @@ def KPatung(request):
 
 def LPatung(request):
     Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith='L').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1132,10 +1174,11 @@ def LPatung(request):
 
 def MPatung(request):
     Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith='M').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1157,10 +1200,11 @@ def MPatung(request):
 
 def NPatung(request):
     Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith='N').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1182,10 +1226,11 @@ def NPatung(request):
 
 def OPatung(request):
     Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith='O').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1207,10 +1252,11 @@ def OPatung(request):
 
 def PPatung(request):
     Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith='P').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1232,10 +1278,11 @@ def PPatung(request):
 
 def QPatung(request):
     Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith='Q').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1257,10 +1304,11 @@ def QPatung(request):
 
 def RPatung(request):
     Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith='R').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1282,10 +1330,11 @@ def RPatung(request):
 
 def SPatung(request):
     Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith='S').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1307,10 +1356,11 @@ def SPatung(request):
 
 def TPatung(request):
     Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith='T').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1332,10 +1382,11 @@ def TPatung(request):
 
 def UPatung(request):
     Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith='U').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1357,10 +1408,11 @@ def UPatung(request):
 
 def VPatung(request):
     Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith='V').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1382,10 +1434,11 @@ def VPatung(request):
 
 def WPatung(request):
     Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith='W').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1407,10 +1460,11 @@ def WPatung(request):
 
 def XPatung(request):
     Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith='X').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1432,10 +1486,11 @@ def XPatung(request):
 
 def YPatung(request):
     Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith='Y').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1457,10 +1512,11 @@ def YPatung(request):
 
 def ZPatung(request):
     Perupa = perupa.object.filter(Kategori='Pematung', Panggilan__startswith='Z').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1483,10 +1539,11 @@ def ZPatung(request):
 # filtering kriya --------------
 def AKriya(request):
     Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith='A').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1508,10 +1565,11 @@ def AKriya(request):
 
 def BKriya(request):
     Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith='B').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1533,10 +1591,11 @@ def BKriya(request):
 
 def CKriya(request):
     Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith='C').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1558,10 +1617,11 @@ def CKriya(request):
 
 def DKriya(request):
     Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith='D').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1583,10 +1643,11 @@ def DKriya(request):
 
 def EKriya(request):
     Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith='E').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1608,10 +1669,11 @@ def EKriya(request):
 
 def FKriya(request):
     Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith='F').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1633,10 +1695,11 @@ def FKriya(request):
 
 def GKriya(request):
     Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith='G').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1658,10 +1721,11 @@ def GKriya(request):
 
 def HKriya(request):
     Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith='H').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1683,10 +1747,11 @@ def HKriya(request):
 
 def IKriya(request):
     Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith='I').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1708,10 +1773,11 @@ def IKriya(request):
 
 def JKriya(request):
     Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith='J').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1733,10 +1799,11 @@ def JKriya(request):
 
 def KKriya(request):
     Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith='K').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1758,10 +1825,11 @@ def KKriya(request):
 
 def LKriya(request):
     Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith='L').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1783,10 +1851,11 @@ def LKriya(request):
 
 def Mkriya(request):
     Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith='M').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1808,10 +1877,11 @@ def Mkriya(request):
 
 def NKriya(request):
     Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith='N').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1833,10 +1903,11 @@ def NKriya(request):
 
 def OKriya(request):
     Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith='O').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1858,10 +1929,11 @@ def OKriya(request):
 
 def PKriya(request):
     Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith='P').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1883,10 +1955,11 @@ def PKriya(request):
 
 def QKriya(request):
     Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith='Q').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1908,10 +1981,11 @@ def QKriya(request):
 
 def RKriya(request):
     Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith='R').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1933,10 +2007,11 @@ def RKriya(request):
 
 def SKriya(request):
     Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith='S').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1958,10 +2033,11 @@ def SKriya(request):
 
 def TKriya(request):
     Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith='T').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -1983,10 +2059,11 @@ def TKriya(request):
 
 def UKriya(request):
     Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith='U').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -2008,10 +2085,11 @@ def UKriya(request):
 
 def VKriya(request):
     Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith='V').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -2033,10 +2111,11 @@ def VKriya(request):
 
 def WKriya(request):
     Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith='W').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -2058,10 +2137,11 @@ def WKriya(request):
 
 def XKriya(request):
     Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith='X').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -2083,10 +2163,11 @@ def XKriya(request):
 
 def YKriya(request):
     Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith='Y').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -2108,10 +2189,11 @@ def YKriya(request):
 
 def ZKriya(request):
     Perupa = perupa.object.filter(Kategori='Pengrajin', Panggilan__startswith='Z').order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)
@@ -2134,9 +2216,10 @@ def ZKriya(request):
 # Karya----------------------------------------------------------------------------------------------------------
 def karyalist(request):
     Karya = karya.object.all().filter(Naked_Material=False).order_by('Kategori').distinct()
+    Karya_Q = karya.object.all()
     query = request.GET.get("q")
     if query:
-        Karya = Karya.filter(Judul__icontains=query)
+        Karya = Karya_Q.filter(Judul__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Karya, 12)
@@ -2159,9 +2242,10 @@ def karyalist(request):
 
 def lukisanlist(request):
     Karya = karya.object.all().filter(Jenis='Lukisan', Naked_Material=False).order_by('Kategori').distinct()
+    Karya_Q = karya.object.all()
     query = request.GET.get("q")
     if query:
-        Karya = Karya.filter(Judul__icontains=query)
+        Karya = Karya_Q.filter(Judul__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Karya, 12)
@@ -2184,9 +2268,10 @@ def lukisanlist(request):
 
 def Patunglist(request):
     Karya = karya.object.all().filter(Jenis='Patung', Naked_Material=False).order_by('Kategori').distinct()
+    Karya_Q = karya.object.all()
     query = request.GET.get("q")
     if query:
-        Karya = Karya.filter(Judul__icontains=query)
+        Karya = Karya_Q.filter(Judul__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Karya, 12)
@@ -2209,9 +2294,10 @@ def Patunglist(request):
 
 def kriyalist(request):
     Karya = karya.object.all().filter(Jenis='Kriya', Naked_Material=False).order_by('Kategori').distinct()
+    Karya_Q = karya.object.all()
     query = request.GET.get("q")
     if query:
-        Karya = Karya.filter(Judul__icontains=query)
+        Karya = Karya_Q.filter(Judul__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Karya, 12)
@@ -2237,9 +2323,10 @@ def kriyalist(request):
 def potretlist(request):
     Karya = karya.object.all().filter(Kategori='Potret dan Sensualitas', Naked_Material=False).order_by(
         'Kategori').distinct()
+    Karya_Q = karya.object.all()
     query = request.GET.get("q")
     if query:
-        Karya = Karya.filter(Judul__icontains=query)
+        Karya = Karya_Q.filter(Judul__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Karya, 12)
@@ -2262,9 +2349,10 @@ def potretlist(request):
 
 def alamlist(request):
     Karya = karya.object.all().filter(Kategori='Alam dan Benda', Naked_Material=False).order_by('Kategori').distinct()
+    Karya_Q = karya.object.all()
     query = request.GET.get("q")
     if query:
-        Karya = Karya.filter(Judul__icontains=query)
+        Karya = Karya_Q.filter(Judul__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Karya, 12)
@@ -2288,9 +2376,10 @@ def alamlist(request):
 def juanglist(request):
     Karya = karya.object.all().filter(Kategori='Perjuangan dan Potret Para Pejuang', Naked_Material=False).order_by(
         'Kategori').distinct()
+    Karya_Q = karya.object.all()
     query = request.GET.get("q")
     if query:
-        Karya = Karya.filter(Judul__icontains=query)
+        Karya = Karya_Q.filter(Judul__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Karya, 12)
@@ -2314,9 +2403,10 @@ def juanglist(request):
 def tradisilist(request):
     Karya = karya.object.all().filter(Kategori='Tradisi/Budaya/Mitologi/Keseharian', Naked_Material=False).order_by(
         'Kategori').distinct()
+    Karya_Q = karya.object.all()
     query = request.GET.get("q")
     if query:
-        Karya = Karya.filter(Judul__icontains=query)
+        Karya = Karya_Q.filter(Judul__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Karya, 12)
@@ -2340,9 +2430,10 @@ def tradisilist(request):
 def alamkotalist(request):
     Karya = karya.object.all().filter(Kategori='Pemandangan Alam dan Kota', Naked_Material=False).order_by(
         'Kategori').distinct()
+    Karya_Q = karya.object.all()
     query = request.GET.get("q")
     if query:
-        Karya = Karya.filter(Judul__icontains=query)
+        Karya = Karya_Q.filter(Judul__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Karya, 12)
@@ -2365,9 +2456,10 @@ def alamkotalist(request):
 
 def nudelist(request):
     Karya = karya.object.all().filter(Naked_Material=True).order_by('Kategori').distinct()
+    Karya_Q = karya.object.all()
     query = request.GET.get("q")
     if query:
-        Karya = Karya.filter(Judul__icontains=query)
+        Karya = Karya_Q.filter(Judul__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Karya, 12)
