@@ -14,7 +14,7 @@
                 <div class="col-md-5 profildetail">
                     <h2>{{ Perupa.Panggilan }}</h2>
                     <p><i>{{ Perupa.Nama }}</i></p>
-                    <label>{{ Perupa.Tempat_Lahir }} {{ Perupa.Tanggal_Lahir}} - {{ Perupa.Tanggal_Wafat }} {{ Perupa.Tanggal_Wafat}}</label>
+                    <label>{{ Perupa.Tempat_Lahir }} {{ Perupa.Tanggal_Lahir}} - {{ Perupa.Tempat_Wafat }} {{ Perupa.Tanggal_Wafat}}</label>
                     <p>{{ total }} Lukisan</p>
 
                       <div class="panel-wrapper">
@@ -22,6 +22,7 @@
                         <a href="#hide" class="hide" id="hide">[hide text -]</a>
                         <div class="panel">
                             {{ Perupa.Keterangan }}
+                            <i style="font-size: 12px">Sumber : <a href="{{ Perupa.Link }}">{{ Perupa.Sumber }}</a></i>
                         </div>
                         <div class="fade"></div>
                       </div>

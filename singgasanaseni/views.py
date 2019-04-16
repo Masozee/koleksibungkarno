@@ -24,13 +24,13 @@ def tentangkami(request):
 
 
 # Perupa-----------------------------------------------------------------------------------------------
-
 def PerupaList(request):
     Perupa = perupa.object.all().order_by('Panggilan')
+    Perupa_Q = perupa.object.all()
     query = request.GET.get("q")
 
     if query:
-        Perupa = Perupa.filter(Nama__icontains=query)
+        Perupa = Perupa_Q.filter(Nama__icontains=query)
 
     Page_request_var = "page"
     paginator = Paginator(Perupa, 20)

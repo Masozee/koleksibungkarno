@@ -41,6 +41,8 @@ class perupa(models.Model):
     Kategori = models.CharField(max_length=10, choices=PERUPA_CHOICES, default=True)
     Keterangan = models.TextField(null=True, blank=True, default="No detailed Information available")
     Description = models.TextField(null=True, blank=True, default="No detailed Information available")
+    Sumber = models.CharField(max_length=50, blank=True )
+    Link = models.TextField(blank=True, default="#")
     Gambar = models.FileField(upload_to='perupa/', blank=True, null=True)
     Upload_date = models.DateTimeField(auto_now_add=True)
 

@@ -1,5 +1,5 @@
 footer {
-    position: fixed !important;
+    position: static !important;
     right: 0;
     bottom: 0;
     left: 0;
@@ -17,9 +17,37 @@ footer {
     max-height: 700px;
     alignment: center;
     padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: auto;
 
 
 
+}
+
+.bdfooter{
+     border:1px solid #c6c7c7 !important;
+}
+
+.borderfooter {
+   border-right: 1px solid #00000038;
+ }
+
+.linkfooter li{
+    list-style: none;
+}
+
+.linkfooter li a{
+    color: #000;
+     font-size: 16px;
+}
+
+ .footer h4{
+    font-size: 16px;
+}
+
+  footer{
+     background: #efefef;
+    padding: 20px;
 }
 
 #filsearch {
@@ -178,3 +206,4 @@ footer {
     font-size: 3em;
   }
 }
+

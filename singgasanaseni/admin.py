@@ -22,7 +22,7 @@ admin.site.register(karya,KaryaAdmin)
 # perupa admin
 class PerupaAdmin (admin.ModelAdmin):
     ordering = ['Panggilan']
-    list_display = ['Panggilan','Nama', 'Kategori', 'Tanggal_Lahir', 'Tanggal_Wafat']
+    list_display = ['Panggilan','Nama', 'Kategori', 'Tanggal_Lahir', 'Tanggal_Wafat', 'Upload_date']
     list_filter = ()
     search_fields = ['Nama', 'Panggilan', 'Kategori', ]
     list_per_page = 25

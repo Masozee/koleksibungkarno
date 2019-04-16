@@ -87,7 +87,7 @@
 `
         {% endblock %}
 
-    <footer class="footermenu">
+    <!--footer class="footermenu">
         <span class="firstfoot">
           &copy; 2018-2019 Yayasan Singgasana Seni
         </span>
@@ -102,8 +102,50 @@
             <a href="#"><img src="{% static 'img/facebook.jpg' %}"></a>
             <a href="#"><img src="{% static 'img/instagram.jpg' %}"></a>
         </span>
+    </footer-->
+        <footer class="bdfooter footer">
+      <div class="container">
+        <div class="row">
+        <div class="col-md-3 borderfooter">
+          <h4>SINGGASANA <br> SENI </h4><BR>
+          <label class="brown">2019. Yayasan Singgasana seni<Br>All Right Reserved</label>
+        </div>
+        <div class="col-md-2">
+          <ul class="linkfooter nopad">
+            <li><a href="{% url 'Perupa-list' %}">PERUPA</a></li>
+            <li><a href="{% url 'karya-list' %}">GALERI</a></li>
+            <li><a href="{% url 'istana-negara' %}">ISTANA</a></li>
+            <li><a href="#">PUBLIKASI</a></li>
+            <li><a href="{% url 'berita-list' %}">BERITA</a></li>
+            <li><a href="{% url 'tentang-kami' %}">TENTANG KAMI</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 borderfooter thcolumn">
+          <a href="#" class="brown">Contact</a><br>
+          <a href="#" class="brown">Terms Of Services</a><br>
+          <a href="#" class="brown">Privacy Policy</a><br>
+        </div>
+        <div class="col-md-2 borderfooter fhcolumn">
+          <h4>FOLLOW US</h4><Br>
+          <span>
+            <a href="#">Facebook</a><br>
+            <a href="#">Twitter</a><br>
+            <a href="#">Instagram</a><br>
+            <a href="#">Rss</a>
+          </span>
+        </div>
+        <div class="col-md-2 text-right lscolumn">
+          <h4>BAHASA</h4><br>
+          <span>
+            <a href="#">Indonesia</a><br>
+            <a href="#">English</a><br>
+            <a href="#">China</a><br>
+          </span>
+        </div>
+      </div>
+      </div>
+      <!-- /.container -->
     </footer>
-
 
       <script>
     function openSearch() {

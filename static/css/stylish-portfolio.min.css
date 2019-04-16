@@ -813,10 +813,32 @@ float: left;*/
     color: #000
 }
 
-footer {
-    background: #fff;
+
+
+.bdfooter{
+     border:1px solid #c6c7c7 !important;
+}
+
+.borderfooter {
+   border-right: 1px solid #00000038;
+ }
+
+.linkfooter li{
+    list-style: none;
+}
+
+.linkfooter li a{
     color: #000;
-    padding: 1% 4%;
+     font-size: 16px;
+}
+
+ .footer h4{
+    font-size: 16px;
+}
+
+  footer{
+     background: white;
+    padding: 20px;
 }
 
 .footermenu span.firstfoot{    padding-left: 0;padding-right: 5%;}
