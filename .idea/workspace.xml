@@ -2,337 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="077f652a-7fb8-42a3-b99b-79f8e0d75adb" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/images/karya/21_Wiwiek_Sumitro__Sarinah__MG_2014_.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/Copy_of_30_Zsigmond_Kisfaludi_Strobl__Pemanah_MG_2633.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/Copy_of_Perkawinan_Adat_Rusia_new.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/LMF_BunrinHeian_Potret-Raryo_ohzoh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/LMF_CHoju_Rusa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/LMF_Hiroshi_Purung_Puyuh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/LMF_Maffolani_Wanita_Telandjang.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/LMF_Tanilit_Menjemur_ikan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MF_5314.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_1495_WjWDgst.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_1777.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_2920.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_2932.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_2934.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_2948.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_2955.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_2976.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_2982.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_2992.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_3001.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_3020.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_3027.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_3040.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_3049.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_3061.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_3070.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_3077.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_3078.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_3082.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_3097.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_3102.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_3113.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_3126.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_3135.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_3142.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_3154.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_3155.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_3161.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_3170.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_3170_7yVSrV1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_3182.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_3192.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_3199.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_3199_Pkns5Gr.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_3209.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_3220.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_3229.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_3584.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_3592.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_3756.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_3897.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_3937.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_3970.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_3979.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4460.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4484.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4507.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4512.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4522.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4529.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4557.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4562.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4572.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4578.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4588.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4597.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4601.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4610.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4618.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4627.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4635.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4669.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4675.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4679.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4691.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4699.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4716.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4723.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4734.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4743.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4755.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4755_EHGVNpx.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4763.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4773.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4787.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4801.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4813.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4902.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4909.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4917.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4952.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4980.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_4989.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_5151.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_5156.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_5167.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_5174.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_5185.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_5241.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_5257.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_5259.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_5277.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_5281.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_5293.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_7690_HU0IOuS.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/MG_8080.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/Screen_Shot_2019-03-21_at_18.47.45.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/Screen_Shot_2019-03-21_at_18.56.43.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/Screen_Shot_2019-03-21_at_19.59.05.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/Screen_Shot_2019-03-21_at_20.00.13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/_MG_0308_copy_Henk_Ngantung.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/_MG_0308_copy_Henk_Ngantung_dJKzbGy.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/_MG_0551-copy_0355_Pohon-pohon_Di_Kebun_Nakajima.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/_MG_0649_copy.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/_MG_1045_strobl__After_the_Bath_Furdes_utan_Bogor_122x50.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/_MG_1129_copy_478_Bunga_Teratai_dan_Burung_Layang___Padma_Siauw_Tjhiang.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/_MG_1129_copy_478_Bunga_Teratai_dan_Burung_Layang___Padma_Siauw_Tjhiang_HXVNHDw.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/_MG_2976_copy_3052_Pemandangan_Gunung_DR._Atl2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/_MG_5178_copy_431_Bunga_Dalam_Vas_.__Anna_Gasteiger.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/karya/_MG_9672_copy_Strobl_Bronze30x11x_Horseherd_at_HortobagyHortobagyi_csikos.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/418px-Presiden_Sukarno.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/879px-CPW_Schoemaker.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/AAGdTuras.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/AGUS_WAKIDI.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Abdullah_Suriosubroto.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Adrien_Jean_Le_Mayeur_de_Merpres.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Alfred_Sisley_photo_full.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Amri_Yahya_-_color.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Arthur_Hill_Gilbert.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Artist10_-_Shinsui_Ito.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Artist_01_-_Raden_Saleh.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Artist_02_-_Basuki_Abdullah.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Artist_03_-_Abdurrahim_Buza_ETBm43m.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Artist_04_-_Abas_Alibasyah_dDrqIwt.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Artist_05_-_A_Sadali_FiM9RPw.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Artist_06_-_Agus_Djaya_ixUWIJw.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Artist_07_-_Anak_Agung_Gde_Sobrat_FNbUk9H.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Artist_09_-_Antonio_Garcia_Llamas_FNMqin9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Artist_11_-_Chen_Shoamei.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Artist_12_-_Barli.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Artist_13_-_Antonio_Blanco.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Artist_14_-_Arie_Smit.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Artist_15_-_Auke.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Artist_16_-_Chavda.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Artist_26_-_Frida_Holleman.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Artist_27_-_Henk_Ngantung.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Artist_28_-_Gerard_Pieter_Adolfs.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Artist_30_-_IGM_Poleng.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Artist_31_-_Hendra_Gunawan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Artist_32_-_IGK_Kobot.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Artist_33_-_Kawabata_Ryushi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Artist_34_-_Lee_Man_Fong.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Artist_35_-_Jimmy_Pandy.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Artist_36_-_Romualdo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Artist_37_-_Le_Mayeur.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Artist_38_-_Kiyokata_Kaburaki.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Artist_39_-_Konstantin_Makovsky.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Artist_40_-_Itji_Tarmizi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_0onfwWp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_1oulTjw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_34hraLe.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_62H4Mdx.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_87AGeQS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_9vTMIQl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_C4pr3aP.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_EQQlnsf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_EnOhE9D.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_F7BbMnw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_FmOSAWi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_IRn8Mld.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_KIx3XNY.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_KTabxh9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_Ke6CDMN.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_KttnYfe.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_MGnDQcG.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_NF8Rfjc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_NYbNUtK.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_NrHgB1J.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_OBRJrCX.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_OPMaO4b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_Q4PkUBk.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_QCNDr5x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_QeZJuVz.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_REQG2um.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_UZZ6n5O.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_VCIbanK.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_WLHKiL6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_WsycGop.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_XMplx80.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_XcrCXea.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_ZBF3Yb9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_eIOyWVv.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_eyuqU5Y.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_f1r3meo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_f931P70.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_fWPtQ4C.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_hfb69pf_a1Oxxvx.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_iHo41Pn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_iNKen00.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_jwn2hv3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_mIJRy5x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_mLxtF4Q.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_mQGiN5l.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_nebCwen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_oDmqYHv.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_qTS0bpJ.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_teFNpJR.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_vPLqMg3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_woz4AsD.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_xgA98NY.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_y5SxBni.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_yUSforE.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/BK_Icon2_yWdeoxM.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Brodskaya_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/CYBIS.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Di6Xaq2V4AADK5B.jpg_large.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Eva_Schulze-Knabe_self_portrait.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Fred-Williams-1981.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Hendra_Gunawan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/HenkNgantung2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Henri_Matisse_1913_photograph_by_Alvin_Langdon_Coburn.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/IMG-20190328-WA0009.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/IMG-20190329-WA0014.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/IMG-20190329-WA0023.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/IMG-20190329-WA0025.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/IMG-20190405-WA0002.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/IMG-20190405-WA0015.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/IMG-20190405-WA0015_D2Ilnsi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Ignacio_Beteta_Quintana.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Igor_Talwinski_1959_in_Paris.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Igor_Talwinski_1959_in_Paris_kzXYRGH.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/KARTONO_YUDHOKUSUMO.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Kawabata_Ryushi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Kiyokata_Kaburaki_01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Konstantin_Makovsky-Self-Portrait-1856.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Lee-Man-Fong-pic.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Nhek_Dim.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Ole_Peter_Hansen.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Olof_August_Anders_Jernbeg_-_from_Svenskt_Portrattgalleri_XX.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Otto_Djaya.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Rupert_Bunny_portrait.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Rusli.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/SAVE_20190328_170126.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/SAVE_20190404_225508.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/SAVE_20190404_230232.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/SAVE_20190404_230436.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/SAVE_20190404_230733.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Screen_Shot_2019-03-15_at_16.27.00.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Soedibio.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Sudarso.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/Tito-Corbella-49.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/WhatsApp_Image_2019-03-13_at_9.21.02_PM.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/WhatsApp_Image_2019-03-14_at_10.24.00_PM.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/WhatsApp_Image_2019-03-15_at_12.09.19_AM.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/WhatsApp_Image_2019-03-15_at_12.28.15_AM.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/WhatsApp_Image_2019-03-15_at_4.25.07_PM.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/WhatsApp_Image_2019-03-15_at_8.24.54_PM.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/WhatsApp_Image_2019-03-15_at_8.31.14_PM.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/WhatsApp_Image_2019-03-18_at_10.05.00_PM.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/WhatsApp_Image_2019-03-18_at_10.10.29_PM.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/WhatsApp_Image_2019-03-18_at_7.20.50_PM.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/WhatsApp_Image_2019-03-18_at_7.54.31_PM.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/WhatsApp_Image_2019-03-18_at_8.05.50_PM.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/WhatsApp_Image_2019-03-18_at_8.53.14_PM.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/WhatsApp_Image_2019-03-18_at_9.57.31_PM.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/WhatsApp_Image_2019-03-20_at_10.24.45_PM.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/WhatsApp_Image_2019-03-21_at_9.01.35_PM.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/WhatsApp_Image_2019-03-29_at_9.32.16_PM.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/WhatsApp_Image_2019-03-29_at_9.40.20_PM.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/WhatsApp_Image_2019-03-30_at_12.00.26_AM.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/WhatsApp_Image_2019-03-30_at_12.11.27_AM.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/WhatsApp_Image_2019-04-04_at_7.14.10_PM.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/WhatsApp_Image_2019-04-04_at_7.16.42_PM.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/William_Halewijn_new.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/alfredo-carmelo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/amruus.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/anna_geteiger.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/azis_sb_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/bagong.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/banner-soetopojpg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/barli.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/charles_sayers.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/defc0124339a546db08d78cf85d2fc3f.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/e88e0-zelfportretfridaholleman.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/hofker.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/huyenvanthuan-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/i_gusti_ketut_kobot.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/image004154.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/inyoman-gunarsa.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/koempoel_sujatno_potret.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/lim.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/luigi_amato.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/medium-50168dadc56f8f09c75d89b59f89f4ccc6492a07.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/mersad_berber.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/modigliani.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/montoya__at_10.47.52_PM.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/nasjah_djamin.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/p22at-d.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/russellflint-photo5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/small_mochtar_apin.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/styka.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/theo_meier.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/timthumb.php.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/tino_sidin_pop.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/vermeer.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/walter_spies.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/wen_peor.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/widayat.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/willem_dooyewaard.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/yuki_ogura.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/yuri_semenyuk.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/perupa/yury.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ensites/templates/art/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/ensites/templates/art/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ensites/templates/art/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ensites/templates/art/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ensites/templates/artists/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/ensites/templates/artists/detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ensites/templates/artists/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ensites/templates/artists/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ensites/templates/artists/indexkriya.html" beforeDir="false" afterPath="$PROJECT_DIR$/ensites/templates/artists/indexkriya.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ensites/templates/artists/indexlukis.html" beforeDir="false" afterPath="$PROJECT_DIR$/ensites/templates/artists/indexlukis.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ensites/templates/artists/indexpatung.html" beforeDir="false" afterPath="$PROJECT_DIR$/ensites/templates/artists/indexpatung.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ensites/templates/enbase.html" beforeDir="false" afterPath="$PROJECT_DIR$/ensites/templates/enbase.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ensites/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ensites/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ensites/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ensites/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/singgasanaseni/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/templates/karya/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/templates/karya/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/templates/karya/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/templates/karya/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/templates/perupa/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/templates/perupa/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/templates/search/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/templates/search/view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/templatetags/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/templatetags/proper_paginate.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/templatetags/url_replace.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/detail.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/stylish-portfolio.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/stylish-portfolio.min.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -384,22 +65,107 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/karya/index.html">
+        <entry file="file://$PROJECT_DIR$/ensites/templates/artists/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="61" column="65" selection-start-line="61" selection-start-column="65" selection-end-line="61" selection-end-column="65" />
+            <state relative-caret-position="227">
+              <caret line="94" column="44" selection-start-line="94" selection-start-column="38" selection-end-line="94" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ensites/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="35" column="65" selection-start-line="35" selection-start-column="65" selection-end-line="35" selection-end-column="65" />
               <folding>
-                <element signature="e#2367#2388#0#HTML" expanded="true" />
+                <element signature="e#0#37#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ensites/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+            <state relative-caret-position="2264">
+              <caret line="168" selection-start-line="168" selection-end-line="168" />
+              <folding>
+                <element signature="e#0#44#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ensites/templates/artists/indexlukis.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="88" column="43" selection-start-line="88" selection-start-column="43" selection-end-line="88" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ensites/templates/enbase.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="602">
+              <caret line="137" column="23" selection-start-line="137" selection-start-column="23" selection-end-line="137" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="514">
+              <caret line="135" column="41" lean-forward="true" selection-start-line="135" selection-start-column="41" selection-end-line="135" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/css/stylish-portfolio.min.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="1868" column="1" lean-forward="true" selection-start-line="1868" selection-start-column="1" selection-end-line="1868" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ensites/templates/art/detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="585">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+              <folding>
+                <element signature="e#900#943#0#HTML" expanded="true" />
+                <element signature="e#1241#1267#0#HTML" expanded="true" />
+                <element signature="e#1359#1385#0#HTML" expanded="true" />
+                <element signature="e#1431#1455#0#HTML" expanded="true" />
+                <element signature="e#1503#1527#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/karya/detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" lean-forward="true" selection-end-line="37" selection-end-column="14" />
+              <folding>
+                <element signature="e#200#243#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ensites/templates/art/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="970">
+              <caret line="75" column="41" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -417,7 +183,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>!iporta</find>
       <find>lukisan</find>
       <find>List</find>
       <find>-patung</find>
@@ -447,14 +212,13 @@
       <find>foo</find>
       <find>footer</find>
       <find>-list</find>
+      <find>-artist</find>
     </findStrings>
     <replaceStrings>
       <replace>Karya</replace>
       <replace>perupa</replace>
       <replace>Perupa</replace>
       <replace>Artists</replace>
-      <replace>-sculptor</replace>
-      <replace>-craft</replace>
       <replace>Palace</replace>
       <replace>Sculptor</replace>
       <replace>istana</replace>
@@ -474,6 +238,9 @@
       <replace>-list-ch</replace>
       <replace>-artists</replace>
       <replace>-artist</replace>
+      <replace>-sculptor</replace>
+      <replace>-</replace>
+      <replace>-craft</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -483,9 +250,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/singgasanaseni/templates/istana/istanayogyakarta.html" />
-        <option value="$PROJECT_DIR$/singgasanaseni/templates/perupa/index.html" />
-        <option value="$USER_HOME$/.Trash/koleksibungkarno/singgasanaseni/models.py" />
         <option value="$PROJECT_DIR$/chsites/templates/chindex.html" />
         <option value="$PROJECT_DIR$/chsites/templates/search/view.html" />
         <option value="$PROJECT_DIR$/chsites/templates/chbase.html" />
@@ -507,15 +271,10 @@
         <option value="$PROJECT_DIR$/chsites/templates/chart/kriya.html" />
         <option value="$PROJECT_DIR$/chsites/templates/chart/lukisan.html" />
         <option value="$PROJECT_DIR$/chsites/templates/chart/patung.html" />
-        <option value="$PROJECT_DIR$/ensites/views.py" />
         <option value="$PROJECT_DIR$/singgasanaseni/urls.py" />
         <option value="$PROJECT_DIR$/chsites/views.py" />
         <option value="$PROJECT_DIR$/koleksibungkarno/settings.py" />
         <option value="$PROJECT_DIR$/chsites/templates/artist/index.html" />
-        <option value="$PROJECT_DIR$/ensites/templates/artists/indexkriya.html" />
-        <option value="$PROJECT_DIR$/ensites/templates/artists/indexlukis.html" />
-        <option value="$PROJECT_DIR$/ensites/templates/artists/indexpatung.html" />
-        <option value="$PROJECT_DIR$/ensites/templates/artists/detail.html" />
         <option value="$PROJECT_DIR$/chsites/templates/artist/detail.html" />
         <option value="$PROJECT_DIR$/chsites/templates/artist/indexkriya.html" />
         <option value="$PROJECT_DIR$/chsites/templates/artist/indexlukisan.html" />
@@ -529,16 +288,24 @@
         <option value="$PROJECT_DIR$/static/css/style.css" />
         <option value="$PROJECT_DIR$/singgasanaseni/templates/perupa/detail.html" />
         <option value="$PROJECT_DIR$/singgasanaseni/templates/search/view.html" />
-        <option value="$PROJECT_DIR$/ensites/templates/enbase.html" />
-        <option value="$PROJECT_DIR$/ensites/templates/artists/index.html" />
-        <option value="$PROJECT_DIR$/singgasanaseni/templates/base.html" />
         <option value="$PROJECT_DIR$/singgasanaseni/templates/karya/index.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/ensites/views.py" />
+        <option value="$PROJECT_DIR$/ensites/templates/artists/index.html" />
+        <option value="$PROJECT_DIR$/ensites/templates/artists/indexlukis.html" />
+        <option value="$PROJECT_DIR$/ensites/templates/artists/detail.html" />
+        <option value="$PROJECT_DIR$/ensites/templates/artists/indexpatung.html" />
+        <option value="$PROJECT_DIR$/ensites/templates/artists/indexkriya.html" />
+        <option value="$PROJECT_DIR$/ensites/urls.py" />
+        <option value="$PROJECT_DIR$/ensites/templates/art/index.html" />
+        <option value="$PROJECT_DIR$/ensites/templates/art/detail.html" />
+        <option value="$PROJECT_DIR$/ensites/templates/enbase.html" />
+        <option value="$PROJECT_DIR$/singgasanaseni/templates/base.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="75" />
     <option name="width" value="1440" />
     <option name="height" value="842" />
   </component>
@@ -560,7 +327,63 @@
             <path>
               <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
               <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
+              <item name="ensites" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
+              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
+              <item name="ensites" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
+              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
+              <item name="ensites" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="art" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
+              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
+              <item name="ensites" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="homepage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
+              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
               <item name="singgasanaseni" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
+              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
+              <item name="singgasanaseni" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
+              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
+              <item name="singgasanaseni" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="karya" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
+              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
+              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
+              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="stylish-portfolio.css" type="620a8d5e:NestingTreeNode" />
             </path>
           </expand>
           <select />
@@ -741,12 +564,13 @@
       <workItem from="1552134070829" duration="592000" />
       <workItem from="1552134692738" duration="5287000" />
       <workItem from="1552187501284" duration="9278000" />
-      <workItem from="1555391221194" duration="5036000" />
+      <workItem from="1555391221194" duration="6172000" />
+      <workItem from="1555419336873" duration="5636000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="293622000" />
+    <option name="totallyTimeSpent" value="300394000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -758,16 +582,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="842" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="842" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49518073" visible="true" weight="0.33404863" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49518073" visible="true" weight="0.3390558" />
       <window_info id="Structure" order="1" sideWeight="0.5048193" side_tool="true" weight="0.24749643" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3283767" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49757674" weight="0.3906465" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.47180194" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.47180194" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3727648" />
@@ -775,8 +599,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32737276" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32737276" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49676898" weight="0.25997248" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5024233" side_tool="true" weight="0.32868218" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49642345" weight="0.25997248" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5035765" side_tool="true" weight="0.25997248" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.3283767" />
       <window_info anchor="bottom" id="Messages" order="14" />
       <window_info anchor="bottom" id="manage.py@koleksibungkarno" order="15" weight="0.32961586" />
@@ -787,22 +611,22 @@
       <window_info anchor="right" id="Database" order="4" weight="0.57796854" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49518073" visible="true" weight="0.15379113" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49518073" visible="true" weight="0.3390558" />
       <window_info id="Structure" order="1" sideWeight="0.5048193" side_tool="true" weight="0.24749643" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3283767" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49757674" weight="0.3906465" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.47180194" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49757674" visible="true" weight="0.3906465" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.47180194" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.37349397" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3727648" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32771084" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32737276" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32771084" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49676898" weight="0.25997248" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5024233" side_tool="true" weight="0.32868218" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32737276" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49642345" weight="0.25997248" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5035765" side_tool="true" weight="0.25997248" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.3283767" />
       <window_info anchor="bottom" id="Messages" order="14" />
       <window_info anchor="bottom" id="manage.py@koleksibungkarno" order="15" weight="0.32961586" />
@@ -817,27 +641,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ensites/templates/palace/istanacipanas.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ensites/templates/palace/istanabogor.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://715814d5-5719-43cc-b2e8-ff01eaf374cf/schema/main/table/ensites_news">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ensites/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -967,20 +770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ensites/templates/artists/indexlukis.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="96" column="134" selection-start-line="96" selection-start-column="134" selection-end-line="96" selection-end-column="134" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ensites/templates/artists/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="134" selection-start-line="16" selection-start-column="134" selection-end-line="16" selection-end-column="134" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chsites/templates/artist/detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1058,38 +847,10 @@
     <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ensites/templates/artists/indexpatung.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="57" selection-start-line="48" selection-start-column="57" selection-end-line="48" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ensites/templates/artists/indexkriya.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="56" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/karya/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1343">
           <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/stylish-portfolio.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="843" column="66" selection-start-line="843" selection-start-column="66" selection-end-line="843" selection-end-column="66" />
         </state>
       </provider>
     </entry>
@@ -1127,59 +888,15 @@
     <entry file="file://$PROJECT_DIR$/static/img/logo.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="55" column="38" lean-forward="true" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
-          <folding>
-            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ensites/templates/enbase.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="127" column="52" lean-forward="true" selection-start-line="127" selection-start-column="52" selection-end-line="127" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ensites/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-917">
-          <caret line="86" column="52" selection-start-line="86" selection-start-column="52" selection-end-line="86" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/img/logo1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/static/img/logomenu.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ensites/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="41" column="10" lean-forward="true" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ensites/templates/artists/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="30" column="57" lean-forward="true" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/karya/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
+        <state relative-caret-position="915">
           <caret line="61" column="65" selection-start-line="61" selection-start-column="65" selection-end-line="61" selection-end-column="65" />
           <folding>
             <element signature="e#2367#2388#0#HTML" expanded="true" />
@@ -1191,6 +908,116 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ensites/templates/artists/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="94" column="44" selection-start-line="94" selection-start-column="38" selection-end-line="94" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ensites/templates/artists/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ensites/templates/artists/indexpatung.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="88" column="38" lean-forward="true" selection-start-line="88" selection-start-column="38" selection-end-line="88" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ensites/templates/artists/indexkriya.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="94" column="47" selection-start-line="94" selection-start-column="47" selection-end-line="94" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ensites/templates/homepage/enindex.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ensites/templates/artists/indexlukis.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="88" column="43" selection-start-line="88" selection-start-column="43" selection-end-line="88" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ensites/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2264">
+          <caret line="168" selection-start-line="168" selection-end-line="168" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ensites/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="35" column="65" selection-start-line="35" selection-start-column="65" selection-end-line="35" selection-end-column="65" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ensites/templates/art/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="970">
+          <caret line="75" column="41" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/karya/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-end-line="37" selection-end-column="14" />
+          <folding>
+            <element signature="e#200#243#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ensites/templates/art/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="e#900#943#0#HTML" expanded="true" />
+            <element signature="e#1241#1267#0#HTML" expanded="true" />
+            <element signature="e#1359#1385#0#HTML" expanded="true" />
+            <element signature="e#1431#1455#0#HTML" expanded="true" />
+            <element signature="e#1503#1527#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ensites/templates/enbase.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="602">
+          <caret line="137" column="23" selection-start-line="137" selection-start-column="23" selection-end-line="137" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="135" column="41" lean-forward="true" selection-start-line="135" selection-start-column="41" selection-end-line="135" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/stylish-portfolio.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="1868" column="1" lean-forward="true" selection-start-line="1868" selection-start-column="1" selection-end-line="1868" selection-end-column="1" />
         </state>
       </provider>
     </entry>

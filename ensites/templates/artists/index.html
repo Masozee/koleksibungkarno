@@ -20,7 +20,7 @@
                   <label class="filtermenu" style="padding: 0;">Filter</label>
                   <!--filter-->
                   <div class="filtermenu">
-                    <a href="{% url 'painter-artist' %}" class="current">ALL</a>
+                    <a href="{% url 'painter-list' %}" class="current">ALL</a>
                     <a href="{% url 'A-artist' %}">A</a>
                     <a href="{% url 'B-artist' %}">B</a>
                     <a href="{% url 'C-artist' %}">C</a>
@@ -92,7 +92,7 @@
                     </div>
                     <div class="col-md-7">
                         <h3>
-                            <a href="/perupa/{{ Perupa.id }}">{{ Perupa.Panggilan }}</a>
+                            <a href="/artist/{{ Perupa.id }}">{{ Perupa.Panggilan }}</a>
                         </h3>
                         <p>{{ Perupa.Tempat_Lahir }} {{ Perupa.Tanggal_Lahir }} - {{ Perupa.Tempat_Wafat }} {{ Perupa.Tanggal_Wafat }}</p>
                     </div>

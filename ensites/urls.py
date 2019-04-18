@@ -33,7 +33,8 @@ urlpatterns = [
     re_path(r'^artworks/(?P<karya_id>\d+)/$', sitesviews.Artdetail, name='art-detail'),
 
     #koleksi isinya kumpulan perupa ------------------------------------------------------------------------------------
-    path('collection/artists/', sitesviews.PainterArtist, name='painter-list'),
+    path('collection/artist/', sitesviews.ArtArtist, name='artist-list'),
+    path('collection/painter/', sitesviews.PainterArtist, name='painter-list'),
     path('collection/sculptor/', sitesviews.Sculptorlist, name='sculptor-list'),
     path('collection/craftsman/', sitesviews.Craftmanlist, name='craftman-list'),
 
@@ -124,7 +125,7 @@ urlpatterns = [
     path('collection/craftsman/Z/', sitesviews.ZCraft, name='Z-craft'),
 
     #Perupa detail -----------------------------------------------------------------------------------------------------______
-    re_path(r'^artists/(?P<perupa_id>\d+)/$', sitesviews.Artistsdetail, name='artist-detail'),
+    re_path(r'^artist/(?P<perupa_id>\d+)/$', sitesviews.Artistsdetail, name='artist-detail'),
 
     path('news/', sitesviews.Newslist, name='news-list'),
 

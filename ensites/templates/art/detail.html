@@ -12,17 +12,17 @@
 
 <article>
 
-    <div class="container" style= "max-height: 600px; max-width: 100%">
-        <div class="row">
+    <div class="container" style= "max-height: 768px; max-width: 100%">
+        <div class="row col-md-12">
             <div class="col-md-6">
                 <img class=" imgdetail " src="/media/{{ Karya.Gambar }}" alt="">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-3" style="padding-left: 10%;">
                 <div class="centered">
-                    <h5 style="font-size: 1.7rem;">{{ Karya.Judul }}</h5>
-                    <p><a href="/perupa/{{ Karya.Perupa_id }}">{{ Karya.Perupa }}</a></p>
+                    <h5 style="font-size: 1.7rem;"><a href="/perupa/{{ Karya.Perupa_id }}">{{ Karya.Perupa }}</a></h5>
+                    <p style="font-style: italic">{{ Karya.Judul }}</p>
                     <p style="font-size: 14px;">{{ Karya.Dimensi }}</p>
-                    <p style="font-size: 17px;">{{ Karya.Material }}</p>
+                    <p style="font-size: 14px;">{{ Karya.Material }}</p>
                 </div>
 
             </div>
@@ -36,3 +36,4 @@
 
 
 {% endblock %}
+

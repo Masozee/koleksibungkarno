@@ -20,33 +20,33 @@
                   <label class="filtermenu" style="padding: 0;">Filter</label>
                   <!--filter-->
                   <div class="filtermenu">
-                    <a href="{% url 'Pematung-list' %}" class="current">ALL</a>
-                    <a href="{% url 'A-patung' %}">A</a>
-                    <a href="{% url 'B-patung' %}">B</a>
-                    <a href="{% url 'C-patung' %}">C</a>
-                    <a href="{% url 'D-patung' %}">D</a>
-                    <a href="{% url 'E-patung' %}">E</a>
-                    <a href="{% url 'F-patung' %}">F</a>
-                    <a href="{% url 'G-patung' %}" >G</a>
-                    <a href="{% url 'H-patung' %}" >H</a>
-                    <a href="{% url 'I-patung' %}" >I</a>
-                    <a href="{% url 'J-patung' %}" >J</a>
-                    <a href="{% url 'K-patung' %}" >K</a>
-                    <a href="{% url 'L-patung' %}" >L</a>
-                    <a href="{% url 'M-patung' %}" >M</a>
-                    <a href="{% url 'N-patung' %}" >N</a>
-                    <a href="{% url 'O-patung' %}" >O</a>
-                    <a href="{% url 'P-patung' %}" >P</a>
-                    <a href="{% url 'Q-patung' %}" >Q</a>
-                    <a href="{% url 'R-patung' %}" >R</a>
-                    <a href="{% url 'S-patung' %}" >S</a>
-                    <a href="{% url 'T-patung' %}" >T</a>
-                    <a href="{% url 'U-patung' %}" >U</a>
-                    <a href="{% url 'V-patung' %}" >V</a>
-                    <a href="{% url 'W-patung' %}" >W</a>
-                    <a href="{% url 'X-patung' %}" >X</a>
-                    <a href="{% url 'Y-patung' %}" >Y</a>
-                    <a href="{% url 'Z-patung' %}" >Z</a>
+                    <a href="{% url 'sculptor-list' %}" class="current">ALL</a>
+                    <a href="{% url 'A-sculptor' %}">A</a>
+                    <a href="{% url 'B-sculptor' %}">B</a>
+                    <a href="{% url 'C-sculptor' %}">C</a>
+                    <a href="{% url 'D-sculptor' %}">D</a>
+                    <a href="{% url 'E-sculptor' %}">E</a>
+                    <a href="{% url 'F-sculptor' %}">F</a>
+                    <a href="{% url 'G-sculptor' %}" >G</a>
+                    <a href="{% url 'H-sculptor' %}" >H</a>
+                    <a href="{% url 'I-sculptor' %}" >I</a>
+                    <a href="{% url 'J-sculptor' %}" >J</a>
+                    <a href="{% url 'K-sculptor' %}" >K</a>
+                    <a href="{% url 'L-sculptor' %}" >L</a>
+                    <a href="{% url 'M-sculptor' %}" >M</a>
+                    <a href="{% url 'N-sculptor' %}" >N</a>
+                    <a href="{% url 'O-sculptor' %}" >O</a>
+                    <a href="{% url 'P-sculptor' %}" >P</a>
+                    <a href="{% url 'Q-sculptor' %}" >Q</a>
+                    <a href="{% url 'R-sculptor' %}" >R</a>
+                    <a href="{% url 'S-sculptor' %}" >S</a>
+                    <a href="{% url 'T-sculptor' %}" >T</a>
+                    <a href="{% url 'U-sculptor' %}" >U</a>
+                    <a href="{% url 'V-sculptor' %}" >V</a>
+                    <a href="{% url 'W-sculptor' %}" >W</a>
+                    <a href="{% url 'X-sculptor' %}" >X</a>
+                    <a href="{% url 'Y-sculptor' %}" >Y</a>
+                    <a href="{% url 'Z-sculptor' %}" >Z</a>
                   </div>
                 </div>
                 <div class="formsearchkarya">
@@ -86,13 +86,13 @@
             <div class="{{ Perupa.Panggilan | slice:"1" | lower }}">
                 <div class="row col-md-12">
                     <div class="col-md-2">
-                        <a href="/perupa/{{ Perupa.id }}">
+                        <a href="/en/artist/{{ Perupa.id }}">
                             <img class="col-12 col-sm-2 col-md-10 px-0" src="/media/{{ Perupa.Gambar }}" alt="">
                         </a>
                     </div>
                     <div class="col-md-7">
                         <h3>
-                            <a href="/perupa/{{ Perupa.id }}">{{ Perupa.Panggilan }}</a>
+                            <a href="/en/artist/{{ Perupa.id }}">{{ Perupa.Panggilan }}</a>
                         </h3>
                         <p>{{ Perupa.Tempat_Lahir }} {{ Perupa.Tanggal_Lahir }} - {{ Perupa.Tempat_Wafat }} {{ Perupa.Tanggal_Wafat }}</p>
                     </div>

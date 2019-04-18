@@ -166,6 +166,7 @@ def AArtist(request):
 	}
 
 	return render(request, 'artists/index.html', context)
+
 def BArtist(request):
 	Perupa = perupa.object.filter(Kategori='Pelukis', Panggilan__startswith= 'B').order_by('Panggilan')
 	query = request.GET.get("q")
