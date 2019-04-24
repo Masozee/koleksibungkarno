@@ -21,7 +21,7 @@
                         <a href="#show" class="show" id="show">[show full text +]</a>
                         <a href="#hide" class="hide" id="hide">[hide text -]</a>
                         <div class="panel">
-                            {{ Perupa.Keterangan }}
+                            {{ Perupa.Keterangan }}<br>
                             <i style="font-size: 12px">Sumber : <a href="{{ Perupa.Link }}">{{ Perupa.Sumber }}</a></i>
                         </div>
                         <div class="fade"></div>
@@ -33,7 +33,7 @@
           <div class="row bgkarya">
              <div class="col-md-12 sectionkoleksi">
               <span class="divkoleksi" style="border: none;">
-                <h3>page {{ Karyarelated.number }}/{{ Karyarelated.paginator.num_pages }}</h3>
+                <h3 style="vertical-align: bottom">Halaman {{ Karyarelated.number }}/{{ Karyarelated.paginator.num_pages }}</h3>
                 <span class="pagingkarya">
                     <ul class="pagination">
                         {% if Karyarelated.has_previous %}

@@ -2,6 +2,7 @@ from django.db import models
 
 
 from django.db.models import Q
+from singgasanaseni.models import karya
 
 
 
@@ -41,3 +42,4 @@ class News(models.Model):
 
     class Meta:
         verbose_name_plural = 'News in english'
+

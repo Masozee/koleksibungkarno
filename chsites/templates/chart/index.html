@@ -38,7 +38,7 @@
                 </div>
                 <div class="formsearchkarya">
                   <form method="GET" action="">
-                    <input type="text" name="q" placeholder="Search collection and artist">
+                    <input type="text" name="q" placeholder="找艺术品">
                     <i class="fa fa-search" id="filsearch" aria-hidden="true"></i>
                   </a>
                 </form>
@@ -73,7 +73,7 @@
               <div class="row seckarya">
                   {% for Karya in karya %}
                   <div class="col-md-3 perupalist karyalist">
-                    <a href="/karya/{{ Karya.id }}">
+                    <a href="/ch/artworks/{{ Karya.id }}">
                       <img src="/media/{{ Karya.Gambar }}" class="">
                         <figcaption>
                            <h3>{{ Karya.Judul }}</h3>
