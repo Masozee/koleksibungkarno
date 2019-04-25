@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="077f652a-7fb8-42a3-b99b-79f8e0d75adb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/templates/karya/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/templates/karya/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/stylish-portfolio.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/stylish-portfolio.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -261,7 +261,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
     <option name="x" value="416" />
     <option name="y" value="23" />
     <option name="width" value="800" />
@@ -587,12 +587,12 @@
       <workItem from="1555391221194" duration="6172000" />
       <workItem from="1555419336873" duration="8396000" />
       <workItem from="1555721671392" duration="183000" />
-      <workItem from="1555929797459" duration="15715000" />
+      <workItem from="1555929797459" duration="16016000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="319052000" />
+    <option name="totallyTimeSpent" value="319353000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -604,15 +604,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <frame x="416" y="23" width="800" height="542" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49518073" visible="true" weight="0.22389127" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49518073" visible="true" weight="0.41292876" />
       <window_info id="Structure" order="1" sideWeight="0.5048193" side_tool="true" weight="0.24749643" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3283767" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49713877" visible="true" weight="0.49194548" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49713877" visible="true" weight="0.4918033" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.47180194" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -621,7 +620,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32737276" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32737276" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49570817" weight="0.2639405" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49570817" weight="0.49882904" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50429183" side_tool="true" weight="0.43805873" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.3283767" />
       <window_info anchor="bottom" id="Messages" order="14" />
