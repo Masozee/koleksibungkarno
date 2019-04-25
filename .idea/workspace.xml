@@ -2,35 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="077f652a-7fb8-42a3-b99b-79f8e0d75adb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chsites/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chsites/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chsites/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/chsites/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chsites/templates/artist/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/chsites/templates/artist/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chsites/templates/artist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/chsites/templates/artist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chsites/templates/artist/indexkriya.html" beforeDir="false" afterPath="$PROJECT_DIR$/chsites/templates/artist/indexkriya.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chsites/templates/artist/indexlukisan.html" beforeDir="false" afterPath="$PROJECT_DIR$/chsites/templates/artist/indexlukisan.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chsites/templates/artist/indexpatung.html" beforeDir="false" afterPath="$PROJECT_DIR$/chsites/templates/artist/indexpatung.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chsites/templates/chart/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/chsites/templates/chart/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chsites/templates/chart/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/chsites/templates/chart/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chsites/templates/chbase.html" beforeDir="false" afterPath="$PROJECT_DIR$/chsites/templates/chbase.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ensites/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ensites/migrations/0002_auto_20190415_1615.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ensites/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ensites/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ensites/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ensites/templates/art/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/ensites/templates/art/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ensites/templates/enbase.html" beforeDir="false" afterPath="$PROJECT_DIR$/ensites/templates/enbase.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/migrations/0002_auto_20190415_1615.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/templates/karya/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/templates/karya/detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/singgasanaseni/templates/karya/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/templates/karya/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/templates/perupa/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/templates/perupa/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/templates/perupa/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/templates/perupa/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/detail.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/stylish-portfolio.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/stylish-portfolio.min.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -121,11 +93,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chsites/templates/chart/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="356">
               <caret line="75" column="41" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/css/stylish-portfolio.min.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="14055">
+              <caret line="937" column="48" lean-forward="true" selection-start-line="937" selection-start-column="48" selection-end-line="937" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/karya/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="60" column="89" selection-start-line="60" selection-start-column="89" selection-end-line="60" selection-end-column="89" />
+              <folding>
+                <element signature="e#2565#2598#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -245,9 +238,7 @@
         <option value="$PROJECT_DIR$/singgasanaseni/templates/karya/detail.html" />
         <option value="$PROJECT_DIR$/static/css/detail.css" />
         <option value="$PROJECT_DIR$/static/css/style.css" />
-        <option value="$PROJECT_DIR$/static/css/stylish-portfolio.min.css" />
         <option value="$PROJECT_DIR$/singgasanaseni/templates/perupa/index.html" />
-        <option value="$PROJECT_DIR$/singgasanaseni/templates/karya/index.html" />
         <option value="$PROJECT_DIR$/singgasanaseni/templates/perupa/detail.html" />
         <option value="$PROJECT_DIR$/singgasanaseni/templates/base.html" />
         <option value="$PROJECT_DIR$/chsites/templates/chbase.html" />
@@ -265,6 +256,8 @@
         <option value="$PROJECT_DIR$/ensites/templates/art/detail.html" />
         <option value="$PROJECT_DIR$/chsites/templates/chart/detail.html" />
         <option value="$PROJECT_DIR$/chsites/templates/chart/index.html" />
+        <option value="$PROJECT_DIR$/singgasanaseni/templates/karya/index.html" />
+        <option value="$PROJECT_DIR$/static/css/stylish-portfolio.min.css" />
       </list>
     </option>
   </component>
@@ -594,12 +587,12 @@
       <workItem from="1555391221194" duration="6172000" />
       <workItem from="1555419336873" duration="8396000" />
       <workItem from="1555721671392" duration="183000" />
-      <workItem from="1555929797459" duration="14773000" />
+      <workItem from="1555929797459" duration="15715000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="318110000" />
+    <option name="totallyTimeSpent" value="319052000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -614,12 +607,12 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49518073" visible="true" weight="0.22389127" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49518073" visible="true" weight="0.22389127" />
       <window_info id="Structure" order="1" sideWeight="0.5048193" side_tool="true" weight="0.24749643" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3283767" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49713877" weight="0.49194548" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49713877" visible="true" weight="0.49194548" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.47180194" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -628,7 +621,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32737276" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32737276" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49570817" visible="true" weight="0.2639405" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49570817" weight="0.2639405" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50429183" side_tool="true" weight="0.43805873" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.3283767" />
       <window_info anchor="bottom" id="Messages" order="14" />
@@ -812,17 +805,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/karya/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="57" column="24" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
-          <folding>
-            <element signature="e#2365#2386#0#HTML" expanded="true" />
-            <element signature="e#2907#2927#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ensites/templates/homepage/aboutus.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -834,13 +816,6 @@
             <element signature="e#1449#1470#0#HTML" expanded="true" />
             <element signature="e#1492#1522#0#HTML" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/stylish-portfolio.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-799">
-          <caret line="1775" column="1" lean-forward="true" selection-start-line="1775" selection-start-column="1" selection-end-line="1775" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1039,6 +1014,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="356">
           <caret line="75" column="41" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/karya/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="60" column="89" selection-start-line="60" selection-start-column="89" selection-end-line="60" selection-end-column="89" />
+          <folding>
+            <element signature="e#2565#2598#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/stylish-portfolio.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14055">
+          <caret line="937" column="48" lean-forward="true" selection-start-line="937" selection-start-column="48" selection-end-line="937" selection-end-column="48" />
         </state>
       </provider>
     </entry>

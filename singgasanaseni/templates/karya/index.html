@@ -55,7 +55,7 @@
                             <a href="?page={{ karya.previous_page_number }}" style="width: 20px; height: auto">{% svg 'back' %}</a>
                         {% endif %}
 
-                        <h3 style="height: 32px">Halaman {{ karya.number }}/{{ karya.paginator.num_pages }}</h3>
+                        <h3>Halaman {{ karya.number }}/{{ karya.paginator.num_pages }}</h3>
 
                         {% if karya.has_next %}
                             <a href="?page={{ karya.next_page_number }}" style="width: 20px; height: auto">{% svg 'next' %}</a>
