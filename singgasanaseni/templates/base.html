@@ -88,6 +88,12 @@
 `
         {% endblock %}
 
+        {% block ga %}
+            {% if use_ga %}
+                {% include "snippets/ga.html" with ga_tracking_id=ga_tracking_id %}
+            {% endif %}
+        {% endblock ga %}
+
     <!--footer class="footermenu">
         <span class="firstfoot">
           &copy; 2018-2019 Yayasan Singgasana Seni

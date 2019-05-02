@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="077f652a-7fb8-42a3-b99b-79f8e0d75adb" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/koleksibungkarno/celery.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/singgasanaseni/context_processors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/singgasanaseni/templates/snippets/ga.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chsites/templates/chpalace/istanabogor.html" beforeDir="false" afterPath="$PROJECT_DIR$/chsites/templates/chpalace/istanabogor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chsites/templates/chpalace/istanacipanas.html" beforeDir="false" afterPath="$PROJECT_DIR$/chsites/templates/chpalace/istanacipanas.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chsites/templates/chpalace/istanamerdeka.html" beforeDir="false" afterPath="$PROJECT_DIR$/chsites/templates/chpalace/istanamerdeka.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chsites/templates/chpalace/istananegara.html" beforeDir="false" afterPath="$PROJECT_DIR$/chsites/templates/chpalace/istananegara.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chsites/templates/chpalace/istanatampaksiring.html" beforeDir="false" afterPath="$PROJECT_DIR$/chsites/templates/chpalace/istanatampaksiring.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chsites/templates/chpalace/istanayogyakarta.html" beforeDir="false" afterPath="$PROJECT_DIR$/chsites/templates/chpalace/istanayogyakarta.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/singgasanaseni/templates/istana/istanabogor.html" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/templates/istana/istanabogor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chsites/templates/chbase.html" beforeDir="false" afterPath="$PROJECT_DIR$/chsites/templates/chbase.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ensites/templates/enbase.html" beforeDir="false" afterPath="$PROJECT_DIR$/ensites/templates/enbase.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koleksibungkarno/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/koleksibungkarno/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koleksibungkarno/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/koleksibungkarno/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/singgasanaseni/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/singgasanaseni/templates/base.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,13 +50,6 @@
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="Django default" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
-        <item name="singgasanaseni_karya: table" type="3d80ac25:SqliteImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Django default" type="feb32156:DbDataSourceImpl" />
         <item name="collations" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
     </expand>
@@ -68,96 +64,79 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chsites/templates/chart/detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/koleksibungkarno/celery.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chsites/templates/chart/index.html">
+        <entry file="file://$PROJECT_DIR$/koleksibungkarno/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1125">
-              <caret line="75" column="41" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/css/stylish-portfolio.min.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="937" column="48" selection-start-line="937" selection-start-column="48" selection-end-line="937" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/istana/istanabogor.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chsites/templates/chpalace/istanacipanas.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="14" selection-start-column="14" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chsites/templates/chpalace/istanamerdeka.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="14" selection-start-column="14" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chsites/templates/chpalace/istananegara.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="14" selection-start-column="14" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chsites/templates/chpalace/istanatampaksiring.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="14" selection-start-column="14" selection-end-column="14" />
+            <state relative-caret-position="337">
+              <caret line="82" selection-start-line="82" selection-end-line="82" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/chsites/templates/chpalace/istanayogyakarta.html">
+        <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+            <state relative-caret-position="315">
+              <caret line="100" column="14" lean-forward="true" selection-start-line="100" selection-start-column="14" selection-end-line="100" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/karya/index.html">
+        <entry file="file://$PROJECT_DIR$/ensites/templates/enbase.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="60" column="89" selection-start-line="60" selection-start-column="89" selection-end-line="60" selection-end-column="89" />
+            <state relative-caret-position="304">
+              <caret line="90" selection-start-line="90" selection-end-line="90" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chsites/templates/chbase.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/koleksibungkarno/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
               <folding>
-                <element signature="e#2565#2598#0#HTML" expanded="true" />
+                <element signature="e#0#46#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/singgasanaseni/context_processors.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="38" lean-forward="true" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/snippets/ga.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/koleksibungkarno/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -166,8 +145,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -244,16 +223,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ensites/templates/palace/istanayogyakarta.html" />
-        <option value="$PROJECT_DIR$/ensites/templates/palace/istanacipanas.html" />
-        <option value="$PROJECT_DIR$/ensites/templates/palace/istanabogor.html" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$PROJECT_DIR$/chsites/templates/chart/kriya.html" />
         <option value="$PROJECT_DIR$/chsites/templates/chart/lukisan.html" />
         <option value="$PROJECT_DIR$/chsites/templates/chart/patung.html" />
         <option value="$PROJECT_DIR$/singgasanaseni/urls.py" />
         <option value="$PROJECT_DIR$/chsites/views.py" />
-        <option value="$PROJECT_DIR$/koleksibungkarno/settings.py" />
         <option value="$PROJECT_DIR$/singgasanaseni/views.py" />
         <option value="$PROJECT_DIR$/singgasanaseni/models.py" />
         <option value="$PROJECT_DIR$/singgasanaseni/admin.py" />
@@ -271,9 +244,6 @@
         <option value="$PROJECT_DIR$/static/css/style.css" />
         <option value="$PROJECT_DIR$/singgasanaseni/templates/perupa/index.html" />
         <option value="$PROJECT_DIR$/singgasanaseni/templates/perupa/detail.html" />
-        <option value="$PROJECT_DIR$/singgasanaseni/templates/base.html" />
-        <option value="$PROJECT_DIR$/chsites/templates/chbase.html" />
-        <option value="$PROJECT_DIR$/ensites/templates/enbase.html" />
         <option value="$PROJECT_DIR$/chsites/templates/artist/indexkriya.html" />
         <option value="$PROJECT_DIR$/chsites/templates/artist/indexlukisan.html" />
         <option value="$PROJECT_DIR$/chsites/templates/artist/indexpatung.html" />
@@ -295,12 +265,22 @@
         <option value="$PROJECT_DIR$/chsites/templates/chpalace/istananegara.html" />
         <option value="$PROJECT_DIR$/chsites/templates/chpalace/istanatampaksiring.html" />
         <option value="$PROJECT_DIR$/chsites/templates/chpalace/istanayogyakarta.html" />
+        <option value="$PROJECT_DIR$/koleksibungkarno/celery.py" />
+        <option value="$PROJECT_DIR$/singgasanaseni/templates/snippets/ga.html" />
+        <option value="$PROJECT_DIR$/koleksibungkarno/urls.py" />
+        <option value="$PROJECT_DIR$/singgasanaseni/context_procesors.py" />
+        <option value="$PROJECT_DIR$/singgasanaseni/context_processors.py" />
+        <option value="$PROJECT_DIR$/singgasanaseni/templates/base.html" />
+        <option value="$PROJECT_DIR$/koleksibungkarno/settings.py" />
+        <option value="$PROJECT_DIR$/ensites/templates/enbase.html" />
+        <option value="$PROJECT_DIR$/chsites/templates/chbase.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="y" value="23" />
+    <option name="width" value="720" />
+    <option name="height" value="841" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -310,154 +290,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
-              <item name="chsites" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
-              <item name="chsites" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
-              <item name="chsites" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
-              <item name="chsites" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="artist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
-              <item name="chsites" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="chart" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
-              <item name="chsites" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="chpalace" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
-              <item name="ensites" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
-              <item name="ensites" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
-              <item name="ensites" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
-              <item name="ensites" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="art" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
-              <item name="ensites" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="artists" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
-              <item name="ensites" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="homepage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
-              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
-              <item name="singgasanaseni" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
-              <item name="singgasanaseni" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
-              <item name="singgasanaseni" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="istana" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
-              <item name="singgasanaseni" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="karya" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
-              <item name="singgasanaseni" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="perupa" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="stylish-portfolio.css" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="fonts" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -475,6 +307,50 @@
               <item name="koleksibungkarno" type="cbb8eebc:String" user="koleksibungkarno" />
               <item name="$USER_HOME$/MATERI KULIAH/semester v/koleksibungkarno" type="cbb8eebc:String" user="$USER_HOME$/MATERI KULIAH/semester v/koleksibungkarno" />
               <item name=".idea" type="cbb8eebc:String" user=".idea" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
+              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
+              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
+              <item name="chsites" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
+              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
+              <item name="chsites" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
+              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
+              <item name="ensites" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
+              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
+              <item name="ensites" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
+              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
+              <item name="singgasanaseni" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="koleksibungkarno" type="b2602c69:ProjectViewProjectNode" />
+              <item name="koleksibungkarno" type="462c0819:PsiDirectoryNode" />
+              <item name="singgasanaseni" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -505,19 +381,19 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/chsites/templates/chpalace" />
-      <recent name="$PROJECT_DIR$/ensites/templates/artists" />
-      <recent name="$PROJECT_DIR$/singgasanaseni/templates/perupa" />
-      <recent name="$PROJECT_DIR$/chsites/templates/artist" />
-      <recent name="$PROJECT_DIR$/homepage/templates" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/ensites/templates/homepage" />
       <recent name="$PROJECT_DIR$/chsites/templates/chhome" />
       <recent name="$PROJECT_DIR$/static/js" />
       <recent name="$PROJECT_DIR$/static/css" />
       <recent name="$PROJECT_DIR$/static/img" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/chsites/templates" />
+      <recent name="$PROJECT_DIR$/ensites/templates" />
+      <recent name="$PROJECT_DIR$/chsites" />
+      <recent name="$PROJECT_DIR$/ensites" />
+      <recent name="$PROJECT_DIR$/chsites/templates/chpalace" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -637,12 +513,15 @@
       <workItem from="1555419336873" duration="8396000" />
       <workItem from="1555721671392" duration="183000" />
       <workItem from="1555929797459" duration="16242000" />
-      <workItem from="1556191485770" duration="680000" />
+      <workItem from="1556191485770" duration="1256000" />
+      <workItem from="1556246349149" duration="441000" />
+      <workItem from="1556791770005" duration="188000" />
+      <workItem from="1556792235991" duration="3457000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="320259000" />
+    <option name="totallyTimeSpent" value="324921000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -657,21 +536,21 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49518073" visible="true" weight="0.22961374" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49518073" visible="true" weight="0.1788269" />
       <window_info id="Structure" order="1" sideWeight="0.5048193" side_tool="true" weight="0.24749643" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3283767" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49713877" weight="0.4918033" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49713877" weight="0.29739776" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.47180194" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3727648" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.37174723" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32737276" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32713756" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32737276" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49570817" weight="0.49882904" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32713756" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49570817" visible="true" weight="0.39157373" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50429183" side_tool="true" weight="0.43805873" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.3283767" />
       <window_info anchor="bottom" id="Messages" order="14" />
@@ -680,7 +559,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32956383" />
-      <window_info anchor="right" id="Database" order="4" weight="0.57796854" />
+      <window_info anchor="right" id="Database" order="4" weight="0.057939913" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49518073" visible="true" weight="0.22389127" />
@@ -713,26 +592,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/img/logo1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/logomenu.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ensites/templates/artists/indexpatung.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="88" column="38" lean-forward="true" selection-start-line="88" selection-start-column="38" selection-end-line="88" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ensites/templates/artists/indexkriya.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="94" column="47" selection-start-line="94" selection-start-column="47" selection-end-line="94" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ensites/templates/artists/indexlukis.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -774,16 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/koleksibungkarno/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="53" lean-forward="true" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/detail.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -821,27 +670,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ensites/templates/homepage/enindex.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="136" column="17" lean-forward="true" selection-start-line="136" selection-start-column="17" selection-end-line="136" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chsites/templates/chbase.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ensites/templates/enbase.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chsites/templates/artist/indexkriya.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -925,13 +753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/koleksibungkarno/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-451">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ensites/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="457">
@@ -998,55 +819,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chsites/templates/chart/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chsites/templates/chart/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="75" column="41" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="41" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/chsites/templates/chpalace/istanabogor.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/karya/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
           <caret line="60" column="89" selection-start-line="60" selection-start-column="89" selection-end-line="60" selection-end-column="89" />
-          <folding>
-            <element signature="e#2565#2598#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/stylish-portfolio.min.css">
+    <entry file="file://$PROJECT_DIR$/chsites/templates/chpalace/istanayogyakarta.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="937" column="48" selection-start-line="937" selection-start-column="48" selection-end-line="937" selection-end-column="48" />
+        <state relative-caret-position="3">
+          <caret line="172" column="60" selection-start-line="172" selection-start-column="60" selection-end-line="172" selection-end-column="60" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chsites/templates/chpalace/istanabogor.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/istana/istanabogor.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chsites/templates/chpalace/istanacipanas.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chsites/templates/chpalace/istanamerdeka.html">
+    <entry file="file://$PROJECT_DIR$/chsites/templates/chpalace/istanatampaksiring.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="14" selection-start-column="14" selection-end-column="14" />
@@ -1060,17 +850,103 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chsites/templates/chpalace/istanatampaksiring.html">
+    <entry file="file://$PROJECT_DIR$/chsites/templates/chpalace/istanamerdeka.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="14" selection-start-column="14" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chsites/templates/chpalace/istanayogyakarta.html">
+    <entry file="file://$PROJECT_DIR$/chsites/templates/chpalace/istanacipanas.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/istana/istanabogor.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/stylish-portfolio.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="937" column="48" selection-start-line="937" selection-start-column="48" selection-end-line="937" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chsites/templates/chart/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="75" column="41" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chsites/templates/chart/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/koleksibungkarno/celery.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/koleksibungkarno/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/snippets/ga.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/koleksibungkarno/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/koleksibungkarno/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ensites/templates/enbase.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chsites/templates/chbase.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singgasanaseni/context_processors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="38" lean-forward="true" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singgasanaseni/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="100" column="14" lean-forward="true" selection-start-line="100" selection-start-column="14" selection-end-line="100" selection-end-column="14" />
         </state>
       </provider>
     </entry>

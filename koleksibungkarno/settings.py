@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'chsites',
     'svg',
     'taggit',
-    'robots'
+    'robots',
 
 
 ]
@@ -77,6 +77,10 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+
+                'singgasanaseni.context_processors.ga_tracking_id',
+                'singgasanaseni.context_processors.use_ga',
+
             ],
         },
     },
@@ -157,4 +161,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'images')
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 
+USE_GA = os.environ.get('DJANGO_USE_GA', False)
+USE_GA = {'True': True, 'False': False}.get(USE_GA, False)
 
+GA_TRACKING_ID = 'UA-139449526-1'

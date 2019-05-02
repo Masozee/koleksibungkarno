@@ -46,6 +46,8 @@ urlpatterns = [
     #URL Robots
     path('robots.txt', include('robots.urls'), name="robots"),
 
+
+
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)
