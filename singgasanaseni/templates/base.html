@@ -89,9 +89,7 @@
         {% endblock %}
 
         {% block ga %}
-            {% if use_ga %}
-                {% include "snippets/ga.html" with ga_tracking_id=ga_tracking_id %}
-            {% endif %}
+            {% include "snippets/ga.html" with ga_tracking_id=ga_tracking_id %}
         {% endblock ga %}
 
     <!--footer class="footermenu">

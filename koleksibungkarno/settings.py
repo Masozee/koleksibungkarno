@@ -78,8 +78,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
 
-                'singgasanaseni.context_processors.ga_tracking_id',
-                'singgasanaseni.context_processors.use_ga',
+                'singgasanaseni.context_processors.ga_tracking_id'
 
             ],
         },
@@ -160,8 +159,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'images')
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
-
-USE_GA = os.environ.get('DJANGO_USE_GA', False)
-USE_GA = {'True': True, 'False': False}.get(USE_GA, False)
 
 GA_TRACKING_ID = 'UA-139449526-1'
