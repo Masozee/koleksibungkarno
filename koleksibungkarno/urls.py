@@ -33,7 +33,7 @@ urlpatterns = [
     #multisite
     path('', include('singgasanaseni.urls')),
     path('en/', include('ensites.urls')),
-    path('ch/', include('chsites.urls')),
+    #path('ch/', include('chsites.urls')),
 
     #thirdparty
     re_path(r'^tagged/(?P<slug>[-\w]+)/$', TagListView.as_view(), name="tagged"),

@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'singgasanaseni',
     'search',
     'ensites',
-    'chsites',
+    #'chsites',
     'svg',
     'taggit',
     'robots',

@@ -1,6 +1,7 @@
 from django.db import models
 from taggit.managers import TaggableManager
 from django.urls import reverse
+import datetime
 
 from django.db.models import Q
 
@@ -196,3 +197,16 @@ class HomeSlide(models.Model):
 
     class Meta:
         verbose_name_plural = 'Slider'
+
+class Inquiry(models.Model):
+    Nama = models.CharField(max_length=50)
+    Email = models.EmailField()
+    Judul = models.CharField(max_length=50)
+    Pertanyaan = models.TextField()
+    Replied = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.Judul
+
+    class Meta:
+        verbose_name_plural = 'Inquiry'

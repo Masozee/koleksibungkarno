@@ -40,3 +40,12 @@ class BeritaAdmin (admin.ModelAdmin):
 admin.site.register(berita,BeritaAdmin)
 
 admin.site.register(HomeSlide)
+
+
+class InquiryAdmin (admin.ModelAdmin):
+    list_display = ['Email', 'Judul', 'Nama']
+    list_filter = ()
+    search_fields = ['Email', 'Judul', 'Nama']
+    list_per_page = 25
+
+admin.site.register(Inquiry,InquiryAdmin)
