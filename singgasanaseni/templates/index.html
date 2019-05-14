@@ -152,6 +152,63 @@
             </div>
 
         </div>
+
+        <!--form>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+
+            <script src='https://www.google.com/recaptcha/api.js'></script>
+            <div class="g-recaptcha" data-sitekey="6LerfqMUAAAAAD5VqfqUaHWGjCfwrMUV_DJptrF5"></div>
+
+            <button type="submit" class="btn btn-primary">Post</button>
+        </form-->
+
+        <!--FORM popup-->
+
+          <div class="form-popup">
+			<div class="container form-wrapper">
+				<button class="btn close-form">Close</button>
+
+				<form id="my-form" novalidate="novalidate" method="post">
+                     {% csrf_token %}
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<h1 class="form-title">INQUIRY FORM</h1>
+						</div>
+					</div>
+
+					<div class="row">
+
+						<div class="form-group col-md-6">
+							<label for="nama">Nama</label>
+							<input type="text" class="form-control" id="name" name="name" required="">
+						</div>
+						<div class="form-group col-md-6">
+							<label for="email">E-mail</label>
+							<input type="text" class="form-control" id="email" name="email" required="">
+						</div>
+                        <div class="form-group col-md-12">
+							<label for="judul">Judul</label>
+							<input type="text" class="form-control" id="email" name="email" required="">
+						</div>
+					</div>
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <label for="pertanyaan">Pertanyaan</label>
+                            <textarea name="something" class="form-control" id=""></textarea>
+                        </div>
+                    </div>
+					<script src='https://www.google.com/recaptcha/api.js'></script>
+                    <div class="g-recaptcha" data-sitekey="6LerfqMUAAAAAD5VqfqUaHWGjCfwrMUV_DJptrF5"></div>
+
+					<button type="submit" class="btn send-form">Send</button>
+				</form>
+			</div>
+		</div>
+  <div class="success-message">
+    <h1>You success reset this form</h1>
+  </div>
       </div>
     </article>
 
@@ -184,6 +241,37 @@
           x.className = "cbp-hsmenu";
         }
       }
+    </script>
+
+    <script>
+    $(document).ready(function() {
+
+        $('.open-form').click(function() {
+            $('.form-popup').show();
+        });
+        $('.close-form').click(function() {
+            $('.form-popup').hide();
+        });
+
+        $('.open-form').click(function() {
+        $('#my-form').trigger( 'reset' );
+
+        setTimeout(function() {
+            $('.success-message').hide()
+        }, 1500);
+	});
+
+	$(document).mouseup(function(e) {
+		var container = $(".form-wrapper");
+		var form = $(".form-popup");
+
+		if (!container.is(e.target) && container.has(e.target).length === 0) {
+			form.hide();
+		}
+	});
+
+
+    });
     </script>
 
 

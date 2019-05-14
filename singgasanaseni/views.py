@@ -1,9 +1,15 @@
-from django.shortcuts import render, Http404
+import json
+import urllib
+
+from django.shortcuts import render, Http404, redirect
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.generic import ListView
 from django.db.models import Count
+from .forms import InquiryForm
+from django.conf import settings
+from django.contrib import messages
 
-from singgasanaseni.models import perupa, karya, berita, HomeSlide
+from singgasanaseni.models import perupa, karya, berita, HomeSlide, Inquiry
 
 
 # home------------------------
@@ -12,9 +18,38 @@ def index(request):
     Berita = berita.object.all().order_by("-Tanggal")[:4]
     Slide = HomeSlide.objects.all()
 
+    form = InquiryForm(request.POST)
+    if request.method == 'POST':
+        Nama = request.POST.get('nama')
+        Email = request.POST.get('email')
+        Judul = request.POST.get('judul')
+        Pertanyaan = request.POST.get('pertanyaan')
+
+        if form.is_valid():
+
+            recaptcha_response = request.POST.get('g-recaptcha-response')
+            url = 'https://www.google.com/recaptcha/api/siteverify'
+            values = {
+                'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
+                'response': recaptcha_response
+            }
+            data = urllib.parse.urlencode(values).encode()
+            req = urllib.request.Request(url, data=data)
+            response = urllib.request.urlopen(req)
+            result = json.loads(response.read().decode())
+
+            if result['success']:
+                form.save()
+                messages.success(request, 'New comment added with success!')
+            else:
+                messages.error(request, 'Invalid reCAPTCHA. Please try again.')
+
+
+
     context = {
         "Berita": Berita,
-        "Slide": Slide
+        "Slide": Slide,
+        "form": form,
     }
     return render(request, "index.html", context)
 
