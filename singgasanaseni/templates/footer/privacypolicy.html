@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+ <article>
+      <div class="container-fluid">
+          <!--koleksi-->
+          <div class="row sectionistana">
+            <div class="col-md-3 sidebaristana sidebarberita">
+              <div class="fixedmenuberita" id="menufixed">
+                  {% for term in privacy %}
+                    <div class="beritaterkait">
+                         <font><a href="#{{ term.Judul | slugify }}">{{ term.Judul }}</a></font><br>
+                         <span>&nbsp;&nbsp;&nbsp;</span>
+                     </div>
+                {% endfor %}
+            </div>
+            </div>
+
+          <div class="col-md-7 isiberita" style="text-align: justify; color: #2f3238">
+          {% for term in privacy %}
+            <div id="{{ term.Judul |slugify }}">
+                <div class="heading">
+                        <h3>{{ term.Judul }}</h3>
+                </div>
+                <p>
+                  {{ term.Isi }}
+                </p>
+            </div><hr/>
+          {% endfor %}
+          </div>
+          </div>
+      </div>
+    </article>
+
+
+
+{% endblock content%}
+
+{% block js %}
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{% static 'js/stylish-portfolio.min.js' %}"></script>
+
+     <script type="text/javascript">
+      window.onscroll = function() {myFunction()};
+      var header = document.getElementById("menufixed");
+      //var sticky = header.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset > 110 ) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
+
+{% endblock %}
+

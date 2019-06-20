@@ -2,7 +2,9 @@
 
 {% load static %}
 
-
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+{% endblock %}
 {% block content %}
 
     <!-- Header -->
@@ -166,7 +168,7 @@
 
         <!--FORM popup-->
 
-          <div class="form-popup">
+          <!--div class="form-popup">
 			<div class="container form-wrapper">
 				<button class="btn close-form">Close</button>
 
@@ -210,7 +212,7 @@
     <h1>You success reset this form</h1>
   </div>
       </div>
-    </article>
+    </article-->
 
   {% endblock content%}
 

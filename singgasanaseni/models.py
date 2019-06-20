@@ -107,6 +107,7 @@ class karya(models.Model):
 
     No_Index = models.CharField(max_length=50)
     Judul = models.CharField(max_length=100)
+    Judul_EN = models.CharField(max_length=100, blank=True,)
     Perupa = models.ForeignKey(perupa ,on_delete=models.CASCADE)
     Jenis = models.CharField(max_length=10, choices=KARYA_CHOICES,)
     Kategori = models.CharField(max_length=50, choices=KATEGORI_CHOICES, default=True)
@@ -118,6 +119,7 @@ class karya(models.Model):
     Keterangan = models.TextField(null=True, blank=True)
     Naked_Material = models.BooleanField(default=False)
     Upload_date = models.DateTimeField(auto_now_add=True)
+    edited_date = models.DateTimeField(auto_now=True)
     tags = TaggableManager()
 
 
@@ -133,6 +135,10 @@ class karya(models.Model):
 
     class Meta:
         verbose_name_plural = 'Karya'
+
+    def save(self, *args, **kwargs):
+        self.Judul_EN = self.Judul
+        super(karya, self).save(*args, **kwargs)
 
 
 
@@ -210,3 +216,45 @@ class Inquiry(models.Model):
 
     class Meta:
         verbose_name_plural = 'Inquiry'
+
+class Tos(models.Model):
+    Judul = models.CharField(max_length=150)
+    Isi = models.TextField()
+    Judul_en = models.CharField(max_length=150)
+    Isi_en = models.TextField()
+    Created = models.DateTimeField(auto_now_add=True)
+    Edited = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.Judul
+
+    class Meta:
+        verbose_name_plural = 'Term of Services'
+
+class Privacy(models.Model):
+    Judul = models.CharField(max_length=150)
+    Isi = models.TextField()
+    Judul_en = models.CharField(max_length=150)
+    Isi_en = models.TextField()
+    Created = models.DateTimeField(auto_now_add=True)
+    Edited = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.Judul
+
+    class Meta:
+        verbose_name_plural = 'Privacy Policy'
+
+class FAQ(models.Model):
+    Pertanyaan = models.CharField(max_length=150)
+    Jawaban = models.TextField()
+    Pertanyaan_en = models.CharField(max_length=150)
+    Jawaban_en = models.TextField()
+    Created = models.DateTimeField(auto_now_add=True)
+    Edited = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.Pertanyaan
+
+    class Meta:
+        verbose_name_plural = 'FAQ'

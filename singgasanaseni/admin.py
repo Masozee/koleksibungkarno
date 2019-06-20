@@ -1,10 +1,11 @@
 from django.contrib import admin
 from .models import *
+import datetime
 
 # Register your models here.
 class KaryaAdmin (admin.ModelAdmin):
     ordering = ['Judul']
-    list_display = ['No_Index', 'Judul', 'Perupa', 'Dimensi', 'Material','Kategori', 'Tahun_Pembuatan', 'Lokasi_Lukisan', 'Naked_Material', 'tag_list']
+    list_display = ['No_Index', 'Judul','Judul_EN', 'Perupa', 'Dimensi', 'Material','Kategori', 'Tahun_Pembuatan', 'Lokasi_Lukisan', 'Naked_Material', 'edited_date']
     list_filter = ("Material", "Lokasi_Lukisan")
     search_fields = ['No_Index', 'Judul', 'Dimensi', 'Material', 'Tahun_Pembuatan']
     list_per_page = 25
@@ -49,3 +50,7 @@ class InquiryAdmin (admin.ModelAdmin):
     list_per_page = 25
 
 admin.site.register(Inquiry,InquiryAdmin)
+
+admin.site.register(Tos)
+admin.site.register(Privacy)
+admin.site.register(FAQ)

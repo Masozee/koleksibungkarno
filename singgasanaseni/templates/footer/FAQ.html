@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+ <article>
+      <div class="container-fluid">
+          <!--koleksi-->
+
+          <div class="col-md-8 centered" style="padding-top: 15px" >
+          {% for term in Faq %}
+            <div id="{{ term.Judul |slugify }}" style="text-align: center">
+                <div class="heading centered">
+                        <h3>{{ term.Pertanyaan }}</h3>
+                </div>
+                <p class= "centered" style="text-align: justify; line-height: 1; color: #3c4a50">
+                  {{ term.Jawaban }}
+                </p>
+            </div><hr/>
+          {% endfor %}
+          </div>
+          </div>
+      </div>
+    </article>
+
+
+
+{% endblock content%}
+
+{% block js %}
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{% static 'js/stylish-portfolio.min.js' %}"></script>
+
+     <script type="text/javascript">
+      window.onscroll = function() {myFunction()};
+      var header = document.getElementById("menufixed");
+      //var sticky = header.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset > 110 ) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
+
+{% endblock %}
+

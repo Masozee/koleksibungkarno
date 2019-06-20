@@ -9,22 +9,65 @@ from .forms import InquiryForm
 from django.conf import settings
 from django.contrib import messages
 
-from singgasanaseni.models import perupa, karya, berita, HomeSlide, Inquiry
+from singgasanaseni.models import perupa, karya, berita, HomeSlide, Inquiry, Tos, Privacy, FAQ
 
 
 # home------------------------
+
+
+
+
 
 def index(request):
     Berita = berita.object.all().order_by("-Tanggal")[:4]
     Slide = HomeSlide.objects.all()
 
-    form = InquiryForm(request.POST)
+    """form = InquiryForm(request.POST)
     if request.method == 'POST':
-        Nama = request.POST.get('nama')
-        Email = request.POST.get('email')
-        Judul = request.POST.get('judul')
-        Pertanyaan = request.POST.get('pertanyaan')
 
+
+        if form.is_valid():
+            Nama = request.POST.get('nama')
+            Email = request.POST.get('email')
+            Judul = request.POST.get('judul')
+            Pertanyaan = request.POST.get('pertanyaan')
+
+            recaptcha_response = request.POST.get('g-recaptcha-response')
+            url = 'https://www.google.com/recaptcha/api/siteverify'
+            values = {
+                'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
+                'response': recaptcha_response
+            }
+            data = urllib.parse.urlencode(values).encode()
+            req = urllib.request.Request(url, data=data)
+            response = urllib.request.urlopen(req)
+            result = json.loads(response.read().decode())
+
+            if result['success']:
+                form.save()
+                messages.success(request, 'New comment added with success!')
+            else:
+                messages.error(request, 'Invalid reCAPTCHA. Please try again.')"""
+
+
+
+    context = {
+        "Berita": Berita,
+        "Slide": Slide,
+       # "form": form,
+    }
+    return render(request, "index.html", context)
+
+
+def tentangkami(request):
+    return render(request, "tentangkami.html")
+
+
+
+def Inquiry_Form(request):
+
+    if request.method == 'POST':
+        form = InquiryForm(request.POST)
         if form.is_valid():
 
             recaptcha_response = request.POST.get('g-recaptcha-response')
@@ -44,18 +87,11 @@ def index(request):
             else:
                 messages.error(request, 'Invalid reCAPTCHA. Please try again.')
 
+            return redirect('/')
+    else:
+        form = InquiryForm()
 
-
-    context = {
-        "Berita": Berita,
-        "Slide": Slide,
-        "form": form,
-    }
-    return render(request, "index.html", context)
-
-
-def tentangkami(request):
-    return render(request, "tentangkami.html")
+    return render(request, 'inquiry/inquiry.html', {'form': form})
 
 
 # Perupa-----------------------------------------------------------------------------------------------
@@ -2569,3 +2605,16 @@ def IstanaTampakSiring(request):
 
 def IstanaYogya(request):
     return render(request, 'istana/istanayogyakarta.html')
+
+
+def PrivacyPolicy(request):
+    PRIVACY = Privacy.objects.all().order_by('-Judul').distinct()
+    return render(request, 'footer/privacypolicy.html', {'privacy': PRIVACY})
+
+def ToS(request):
+    Terms = Tos.objects.all().order_by('-Judul').distinct()
+    return render(request, 'footer/tos.html', {'Terms': Terms})
+
+def faq(request):
+    Faq = FAQ.objects.all().distinct()
+    return render(request, 'footer/FAQ.html', {'Faq': Faq})

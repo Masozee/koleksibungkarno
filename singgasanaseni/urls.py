@@ -10,7 +10,11 @@ urlpatterns = [
 
     path('', singgasanaseniviews.index, name='homepage-views'),
     path('tentangkami/', singgasanaseniviews.tentangkami, name='tentang-kami'),
+    path('inquiry/', singgasanaseniviews.Inquiry_Form, name = 'inquiry'),
 
+    path('termsofservices/', singgasanaseniviews.ToS, name= 'Tos'),
+    path('privacypolicy/', singgasanaseniviews.PrivacyPolicy, name='Privacy-policy'),
+    path('FAQ/', singgasanaseniviews.faq, name='faq'),
 
     # karya --------------------------------------------------------------------------------------------------
     path('karya/', singgasanaseniviews.karyalist, name='karya-list'),
